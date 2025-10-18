@@ -247,15 +247,12 @@ void Processor::SetQuery(string const & query, bool categorialRequest /* = false
   m_isCategorialRequest = categorialRequest;
 
   auto const locales = GetCategoryLocales();
-  if (!FillCategories(tokenSlice, locales, m_categories, m_preferredTypes))
+  // Try to match query to cuisine categories.
+  if (FillCategories(tokenSlice, locales, m_categories, m_cuisineTypes))
   {
-    // Try to match query to cuisine categories.
-    if (FillCategories(tokenSlice, locales, GetDefaultCuisineCategories(), m_cuisineTypes))
-    {
-      /// @todo What if I'd like to find "Burger" street? @see "BurgerStreet" test.
-      m_isCategorialRequest = true;
-      m_preferredTypes = ftypes::IsEatChecker::Instance().GetTypes();
-    }
+    /// @todo What if I'd like to find "Burger" street? @see "BurgerStreet" test.
+    m_isCategorialRequest = true;
+    m_preferredTypes = ftypes::IsEatChecker::Instance().GetTypes();
   }
 
   if (!m_isCategorialRequest)
