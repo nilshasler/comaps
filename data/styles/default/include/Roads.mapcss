@@ -1198,6 +1198,7 @@ line|z15-[railway=preserved],
 line|z16-[railway=miniature],
 line|z16-[railway=disused],
 line|z16-[railway=abandoned],
+line|z17-[railway=turntable],
 {color: @railway; opacity: 0.7;}
 
 line|z13-[railway=light_rail][!tunnel],
@@ -1380,6 +1381,9 @@ line|z16-[railway=abandoned],
 line|z15-[railway=construction],
 line|z16-[railway=disused],
 {width: 1;dashes: 1.8,5.4;}
+
+line|z17-[railway=turntable],
+{width: 1.6;}
 
 /* 9.2 Rail tunnel 14-22 ZOOM */
 

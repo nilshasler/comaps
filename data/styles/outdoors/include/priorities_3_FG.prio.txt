@@ -307,6 +307,7 @@ railway-miniature-tunnel                            # line z13-
 railway-preserved                                   # line z13-
 railway-preserved-bridge                            # line z13- (also has line::bridgeblack z16-, line::bridgewhite z15-)
 railway-preserved-tunnel                            # line z13-
+railway-turntable                                   # line z17-
 === 160
 
 highway-footway-bridge                              # line z11- (also has line::bridgeblack z17-, line::bridgewhite z15-, pathtext z13-)

@@ -961,6 +961,7 @@
     <string name="type.railway.rail.highspeed">High-Speed Railway</string>
     <string name="type.railway.rail.tourism">Touristic Railway</string>
     <string name="type.railway.rail.main">Railway</string>
+    <string name="type.railway.turntable">Railway Turntable</string>
     <!-- Includes ordinary railway=rail w/o more specific usage= and service= tags. -->
     <string name="type.railway.rail.branch">Railway Branch</string>
     <!-- Non-passenger utility tracks: industrial, military, test. -->
