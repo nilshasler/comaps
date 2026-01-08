@@ -168,9 +168,7 @@
     <item name="android:cacheColorHint">@android:color/transparent</item>
   </style>
 
-  <style name="MwmWidget.TextView" parent="Widget.MaterialComponents.TextView">
-    <item name="android:background">@android:color/transparent</item>
-  </style>
+  <style name="MwmWidget.TextView" parent="Widget.MaterialComponents.TextView" />
 
   <style name="MwmWidget.TextView.Item">
     <item name="android:layout_width">match_parent</item>
