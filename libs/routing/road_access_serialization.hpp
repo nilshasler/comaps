@@ -458,7 +458,7 @@ private:
     positionsAccessConditional.clear();
 
     auto openingHoursDeserializer = GetOpeningHoursSerDesForRouting();
-    auto const size = ReadPrimitiveFromSource<size_t>(src);
+    auto const size = ReadPrimitiveFromSource<uint64_t>(src);
 
     positionsAccessConditional.reserve(size);
     uint32_t prevFeatureId = 0;
