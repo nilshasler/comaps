@@ -54,6 +54,9 @@ public class LanguagesFragment extends BaseMwmRecyclerFragment<LanguagesAdapter>
 
     for (Language lang : Editor.nativeGetSupportedLanguages(false))
     {
+      if (existingLanguages.contains(lang.code))
+        continue;
+
       // Separately extract system languages
       for (int i = 0; i < systemLocales.size(); i++)
       {
@@ -65,7 +68,7 @@ public class LanguagesFragment extends BaseMwmRecyclerFragment<LanguagesAdapter>
         }
       }
 
-      if (existingLanguages.contains(lang.code) || systemLanguages.contains(lang))
+      if (systemLanguages.contains(lang))
         continue;
 
       languages.add(lang);
