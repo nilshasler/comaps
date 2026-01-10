@@ -670,8 +670,6 @@
     <string name="type.public_transport.platform">Kay</string>
     <string name="type.railway">Hyns Horn</string>
     <string name="type.railway.abandoned">Hyns Horn Gesys</string>
-    <string name="type.railway.abandoned.bridge">Pons Hyns Horn Gesys</string>
-    <string name="type.railway.abandoned.tunnel">Kowfordh Hyns Horn Gesys</string>
     <string name="type.railway.construction">Hyns Horn Drehevyans</string>
     <string name="type.railway.crossing">Treusva Hyns Horn</string>
     <string name="type.railway.disused">Hyns Horn Undevnydhys</string>
@@ -877,7 +875,6 @@
     <string name="type.amenity.charging_station">Poyntys-karga</string>
     <string name="type.amenity.charging_station.bicycle">Poyntys-karga Diwros</string>
     <string name="type.amenity.charging_station.motorcar">Poyntys-karga Karr</string>
-    <string name="type.amenity.charging_station.motorcar.small">Poynt-karga Karr</string>
     <string name="type.leisure.bowling_alley">Kres Gwari Pelyow</string>
     <string name="type.amenity.compressed_air">Ayr Strooth</string>
     <string name="type.amenity.driving_school">Skol Lewya</string>
@@ -1407,4 +1404,9 @@
     <string name="type.leisure.sports_hall">Hel sport</string>
     <string name="type.xmas.tree">Gwedhen Nadelik</string>
     <string name="type.power.substation">Istredanva</string>
+    <string name="type.railway.miniature">Hyns Horn Munys</string>
+    <string name="type.railway.miniature.bridge">Pons Hyns Horn Munys</string>
+    <string name="type.railway.miniature.tunnel">Kowfordh Hyns Horn Munys</string>
+    <string name="type.railway.turntable">Tabel-Tro Hyns Horn</string>
+    <string name="type.tourism.information.tactile_map">Mappa rag Toch</string>
 </resources>

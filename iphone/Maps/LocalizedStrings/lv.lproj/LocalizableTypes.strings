@@ -890,12 +890,10 @@
 "type.public_transport.platform" = "Platform";
 "type.railway" = "Railway";
 "type.railway.abandoned" = "Abandoned Railway";
-"type.railway.abandoned.bridge" = "Abandoned Railway Bridge";
-"type.railway.abandoned.tunnel" = "Abandoned Railway Tunnel";
 "type.railway.construction" = "Railway Construction";
 "type.railway.crossing" = "Railway Crossing";
 "type.railway.disused" = "Disused Railway";
-"type.railway.funicular" = "Funicular";
+"type.railway.funicular" = "Funikulieris";
 "type.railway.funicular.bridge" = "Funicular Bridge";
 "type.railway.funicular.tunnel" = "Funicular Tunnel";
 "type.railway.halt" = "Rail Halt";
@@ -1503,7 +1501,6 @@
 "type.leisure.sports_centre.sport.pelota" = "Sporta centrs";
 "type.leisure.sports_centre.sport.skiing" = "Sporta centrs";
 "type.leisure.sports_centre.sport.cricket" = "Sporta centrs";
-"type.amenity.charging_station.motorcar.small" = "Mašīnu uzlādes punkts";
 "type.leisure.sports_centre.sport.equestrian" = "Sporta centrs";
 "type.leisure.sports_centre.sport.volleyball" = "Sporta centrs";
 "type.leisure.sports_centre.sport.curling" = "Sporta centrs";

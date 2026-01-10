@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "公共交通站台";
 "type.railway" = "铁路要素";
 "type.railway.abandoned" = "铁路遗迹";
-"type.railway.abandoned.bridge" = "铁路桥遗迹";
-"type.railway.abandoned.tunnel" = "铁路隧道遗迹";
 "type.railway.construction" = "在建铁路";
 "type.railway.crossing" = "铁路道口";
 "type.railway.disused" = "废弃铁路";
@@ -1488,5 +1486,4 @@
 "type.office.security" = "保安室";
 "type.power.portal" = "能源站";
 "type.building.guardhouse" = "保安亭";
-"type.amenity.charging_station.motorcar.small" = "充电桩";
 "type.amenity.bench.backless" = "长凳";

@@ -432,7 +432,6 @@
     <string name="type.highway.pedestrian.area">Пішохідна зона</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.pedestrian.bridge">Міст</string>
-
     <string name="type.highway.pedestrian.square">Площа</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.pedestrian.tunnel">Тунель</string>
@@ -802,8 +801,6 @@
     <string name="type.public_transport">Громадський транспорт</string>
     <string name="type.railway">Залізниця</string>
     <string name="type.railway.abandoned">Закинута залізниця</string>
-    <string name="type.railway.abandoned.bridge">Закинутий залізничний міст</string>
-    <string name="type.railway.abandoned.tunnel">Закинутий залізничний тунель</string>
     <string name="type.railway.construction">Будівництво залізниці</string>
     <string name="type.railway.crossing">Пішохідний перехід</string>
     <string name="type.railway.disused">Недійсна залізниця</string>

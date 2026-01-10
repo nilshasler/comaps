@@ -172,4 +172,6 @@
     <string name="type.waterway">জলপথ</string>
     <string name="type.waterway.canal">ক্যানাল</string>
     <string name="type.waterway.drain">ড্রেন</string>
+    <string name="type.amenity.bar">বার</string>
+    <string name="type.amenity.bicycle_parking">সাইকেল পার্কিং</string>
 </resources>

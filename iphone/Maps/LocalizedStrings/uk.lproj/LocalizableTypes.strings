@@ -465,7 +465,6 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.pedestrian.bridge" = "Міст";
-
 "type.highway.pedestrian.square" = "Площа";
 
 /* These translations are used for all type.highway.*.tunnel. */
@@ -891,8 +890,6 @@
 "type.public_transport.platform" = "Платформа";
 "type.railway" = "Залізниця";
 "type.railway.abandoned" = "Закинута залізниця";
-"type.railway.abandoned.bridge" = "Закинутий залізничний міст";
-"type.railway.abandoned.tunnel" = "Закинутий залізничний тунель";
 "type.railway.construction" = "Будівництво залізниці";
 "type.railway.crossing" = "Пішохідний перехід";
 "type.railway.disused" = "Недійсна залізниця";

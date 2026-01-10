@@ -1303,8 +1303,6 @@
     <string name="type.power.pole">Stâlp de electricitate</string>
     <string name="type.public_transport.platform">Platformă</string>
     <string name="type.railway.abandoned">Linie moartă</string>
-    <string name="type.railway.abandoned.bridge">Pod de cale ferată abandonat</string>
-    <string name="type.railway.abandoned.tunnel">Tunel de cale ferată abandonat</string>
     <string name="type.railway.construction">Construcții Feroviare</string>
     <string name="type.railway.crossing">Trecere la nivel cu calea ferată</string>
     <string name="type.railway.disused">Cale ferată abandonată</string>

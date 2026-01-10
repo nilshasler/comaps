@@ -66,9 +66,9 @@
     <!-- "Add new bookmark list" dialog title -->
     <string name="add_new_set">Naujo sąrašo pridėjimas</string>
     <!-- Add Bookmark list dialog - hint when the list name is empty -->
-    <string name="bookmark_set_name">Žymių sąrašo pavadinimas</string>
+    <string name="bookmark_set_name">Sąrašo pavadinimas</string>
     <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
-    <string name="bookmarks">Žymės</string>
+    <string name="bookmarks">Vietos</string>
     <!-- Add bookmark dialog - bookmark name -->
     <string name="name">Pavadinimas</string>
     <!-- Editor title above street and house number, duplicates [type.building.address] in types_strings.txt -->
@@ -488,7 +488,7 @@
     <string name="minute">min</string>
     <string name="day">d</string>
     <string name="placepage_more_button">Išsamiau</string>
-    <string name="placepage_edit_bookmark_button">Taisyti žymę</string>
+    <string name="placepage_edit_bookmark_button">Taisyti Įsimintą vietą</string>
     <string name="placepage_personal_notes_hint">Asmeninės pastabos (tekstas arba HTML)</string>
     <string name="editor_reset_edits_message">Anuliuoti visus vietinius pakeitimus?</string>
     <string name="editor_reset_edits_button">Atsisakyti pakeitimų</string>

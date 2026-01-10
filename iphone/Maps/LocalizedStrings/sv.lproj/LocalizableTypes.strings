@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "Perrong";
 "type.railway" = "Järnväg";
 "type.railway.abandoned" = "Nerlagd järnväg";
-"type.railway.abandoned.bridge" = "Nerlagd järnvägsbro";
-"type.railway.abandoned.tunnel" = "Nerlagd järnvägstunnel";
 "type.railway.construction" = "Järnväg under uppbyggnad";
 "type.railway.crossing" = "Järnvägsövergång";
 "type.railway.disused" = "Otrafikerad järnväg";

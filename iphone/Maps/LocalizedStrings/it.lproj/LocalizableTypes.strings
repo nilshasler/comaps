@@ -889,8 +889,6 @@
 "type.public_transport.platform" = "Banchina";
 "type.railway" = "Ferrovia";
 "type.railway.abandoned" = "Ferrovia abbandonata";
-"type.railway.abandoned.bridge" = "Ponte ferroviario abbandonato";
-"type.railway.abandoned.tunnel" = "Tunnel ferroviario abbandonato";
 "type.railway.construction" = "Binari in costruzione";
 "type.railway.crossing" = "Passaggio ferroviario";
 "type.railway.disused" = "Ferrovia in disuso";
@@ -1489,7 +1487,6 @@
 "type.power.portal" = "Portale elettrico";
 "type.building.guardhouse" = "Guardiola";
 "type.shop.lighting" = "Negozio di illuminazione";
-"type.amenity.charging_station.motorcar.small" = "Colonnina di ricarica";
 "type.amenity.bench.backless" = "Panchina senza schienale";
 "type.man_made.observatory" = "Osservatorio";
 "type.cardinal.north" = "Nord";

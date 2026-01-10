@@ -888,8 +888,6 @@
 "type.public_transport.platform" = "Платформа";
 "type.railway" = "Железопътна линия";
 "type.railway.abandoned" = "Изоставена железопътна линия";
-"type.railway.abandoned.bridge" = "Изоставен железопътен мост";
-"type.railway.abandoned.tunnel" = "Изоставен железопътен тунел";
 "type.railway.construction" = "Строителство на железопътни линии";
 "type.railway.crossing" = "Железопътен прелез";
 "type.railway.disused" = "Неизползвана железопътна линия";

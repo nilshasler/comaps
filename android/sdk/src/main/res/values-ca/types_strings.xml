@@ -1039,7 +1039,6 @@
     <string name="type.man_made.telescope.radio">Telescopi (Ràdio)</string>
     <string name="type.man_made.telescope.gamma">Telescopi (Gamma)</string>
     <string name="type.man_made.observatory">Observatori</string>
-    <string name="type.amenity.charging_station.motorcar.small">Punt de Càrrega de Cotxes</string>
     <string name="type.amenity.sailing_school">Escola de Navegació</string>
     <string name="type.amenity.flight_school">Escola de Vol</string>
     <string name="type.amenity.prep_school">Escola Preparatòria</string>

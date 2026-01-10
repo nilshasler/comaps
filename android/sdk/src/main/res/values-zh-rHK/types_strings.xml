@@ -430,7 +430,6 @@
     <string name="type.highway.pedestrian.area">路</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.pedestrian.bridge">橋</string>
-
     <string name="type.highway.pedestrian.square">廣場</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.pedestrian.tunnel">隧道</string>
@@ -1330,8 +1329,6 @@
     <string name="type.public_transport">公共交通要素</string>
     <string name="type.public_transport.platform">公共交通月台</string>
     <string name="type.railway.abandoned">鐵路遺跡</string>
-    <string name="type.railway.abandoned.bridge">鐵路橋遺跡</string>
-    <string name="type.railway.abandoned.tunnel">鐵路隧道遺跡</string>
     <string name="type.railway.funicular.bridge">纜索鐵路橋軌道</string>
     <string name="type.railway.funicular.tunnel">纜索鐵路隧道軌道</string>
     <string name="type.railway.light_rail">輕軌軌道</string>

@@ -421,7 +421,6 @@
     <string name="type.highway.pedestrian.area">Piyada ərazisi</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.pedestrian.bridge">Körpü</string>
-
     <string name="type.highway.pedestrian.square">Kvadrat</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.pedestrian.tunnel">Tunel</string>
@@ -787,8 +786,6 @@
     <string name="type.public_transport.platform">Platforma</string>
     <string name="type.railway">Dəmir yolu</string>
     <string name="type.railway.abandoned">Tərk edilmiş dəmir yolu</string>
-    <string name="type.railway.abandoned.bridge">Tərk edilmiş dəmir yolu</string>
-    <string name="type.railway.abandoned.tunnel">Tərk edilmiş dəmir yolu</string>
     <string name="type.railway.construction">Dəmir yolu tikintisi</string>
     <string name="type.railway.crossing">Dəmiryol kəsişməsi</string>
     <string name="type.railway.disused">Istifadəsiz dəmir yolu</string>

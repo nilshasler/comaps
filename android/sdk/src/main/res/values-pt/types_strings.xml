@@ -782,8 +782,6 @@
     <string name="type.public_transport.platform">Plataforma de transporte público</string>
     <string name="type.railway">Ferrovia</string>
     <string name="type.railway.abandoned">Ferrovia abandonada</string>
-    <string name="type.railway.abandoned.bridge">Ferrovia abandonada</string>
-    <string name="type.railway.abandoned.tunnel">Ferrovia abandonada</string>
     <string name="type.railway.construction">Ferrovia em construção</string>
     <string name="type.railway.crossing">Passagem pedestre</string>
     <string name="type.railway.disused">Ferrovia em desuso</string>
@@ -1400,7 +1398,6 @@
     <string name="type.power.portal">Portal de Energia</string>
     <string name="type.shop.lighting">Loja de Iluminação</string>
     <string name="type.amenity.bench.backless">Banco sem Encosto</string>
-    <string name="type.amenity.charging_station.motorcar.small">Ponto de Carregamento de Carro</string>
     <string name="type.leisure.bandstand">Coreto</string>
     <string name="type.leisure.sports_centre.sport.multi">Centro Desportivo</string>
     <string name="type.leisure.sports_centre.sport.american_football">Centro Desportivo</string>

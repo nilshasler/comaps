@@ -798,8 +798,6 @@
     <string name="type.public_transport.platform">Platform</string>
     <string name="type.railway">Spoorweg</string>
     <string name="type.railway.abandoned">Voormalig treinspoor</string>
-    <string name="type.railway.abandoned.bridge">Voormalige spoorbrug</string>
-    <string name="type.railway.abandoned.tunnel">Voormalige spoortunnel</string>
     <string name="type.railway.construction">Treinspoor in aanbouw</string>
     <string name="type.railway.crossing">Spoorwegovergang</string>
     <string name="type.railway.disused">Ongebruikt spoor</string>
@@ -1405,7 +1403,6 @@
     <string name="type.man_made.telescope.radio">Telescoop (radio)</string>
     <string name="type.man_made.telescope.gamma">Telescoop (gamma)</string>
     <string name="type.man_made.observatory">Observatorium</string>
-    <string name="type.amenity.charging_station.motorcar.small">Autolaadpunt</string>
     <string name="type.amenity.car_pooling">Carpool</string>
     <string name="type.emergency.life_ring">Reddingsboei</string>
     <string name="type.leisure.bandstand">Muziekpodium</string>
@@ -1501,4 +1498,11 @@
     <string name="type.amenity.food_sharing">Voedsel delen</string>
     <string name="type.amenity.give_box">Giftenkist</string>
     <string name="type.amenity.hydrant">Watertappunt|waterkraan</string>
+    <string name="type.railway.miniature">Miniatuurspoorweg</string>
+    <string name="type.railway.miniature.bridge">Miniatuurspoorbrug</string>
+    <string name="type.railway.miniature.tunnel">Miniatuurspoortunnel</string>
+    <string name="type.railway.turntable">Spoorwegdraaischijf</string>
+    <string name="type.tourism.information.tactile_map">Reliëfkaart</string>
+    <string name="type.railway.disused.bridge">Niet meer gebruikte spoorbrug</string>
+    <string name="type.railway.disused.tunnel">Niet meer gebruikte spoortunnel</string>
 </resources>

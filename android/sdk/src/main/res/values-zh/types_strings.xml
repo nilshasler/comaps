@@ -794,8 +794,6 @@
     <string name="type.public_transport.platform">公共交通站台</string>
     <string name="type.railway">铁路要素</string>
     <string name="type.railway.abandoned">铁路遗迹</string>
-    <string name="type.railway.abandoned.bridge">铁路桥遗迹</string>
-    <string name="type.railway.abandoned.tunnel">铁路隧道遗迹</string>
     <string name="type.railway.construction">在建铁路</string>
     <string name="type.railway.disused">废弃铁路</string>
     <string name="type.railway.funicular">缆车</string>
@@ -1396,7 +1394,6 @@
     <string name="type.barrier.wicket_gate">旁门</string>
     <string name="type.amenity.animal_shelter">动物收容所</string>
     <string name="type.amenity.bench.backless">长凳</string>
-    <string name="type.amenity.charging_station.motorcar.small">充电桩</string>
     <string name="type.office.security">保安室</string>
     <string name="type.building.guardhouse">保安亭</string>
     <string name="type.power.portal">能源站</string>

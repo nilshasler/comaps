@@ -1092,7 +1092,7 @@
 "pref_mapappearance_title" = "Kartets Utseende";
 "pref_maplanguage_title" = "Kart Språk";
 "transliteration_title_disabled_summary" = "Disabled when always using the local language for the map";
-"pref_maplanguage_local" = "Lokalt Språk";
+"pref_maplanguage_local" = "Lokalt språk";
 "existence_confirmed_time_ago" = "Existence confirmed %@";
 "hours_confirmed_time_ago" = "Confirmed %@";
 "offline_explanation_text" = "Et kart må lastes ned for å vise og navigere i området.\nLast ned kartene for områdene du vil reise til.";

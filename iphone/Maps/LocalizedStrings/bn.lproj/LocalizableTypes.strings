@@ -345,7 +345,7 @@
 "type.shop.medical_supply" = "Medical Supplies Store";
 "type.military.bunker" = "Bunker";
 "type.barrier.guard_rail" = "Guard Rail";
-"type.amenity.bar" = "Bar";
+"type.amenity.bar" = "বার";
 "type.highway.footway.bicycle" = "Cycle & Foot Path";
 "type.barrier.border_control" = "Border Control";
 "type.sport.scuba_diving" = "Scuba Diving Site";
@@ -425,7 +425,7 @@
 "type.piste_type.sled" = "Sledding Piste";
 "type.shop.funeral_directors" = "Funeral Directors";
 "type.sport.volleyball" = "ভলিবল";
-"type.amenity.bicycle_parking" = "Bicycle Parking";
+"type.amenity.bicycle_parking" = "সাইকেল পার্কিং";
 "type.railway.subway_entrance.kazan" = "Subway Entrance";
 "type.cuisine.austrian" = "Austrian";
 "type.railway.subway_entrance.istanbul" = "Subway Entrance";
@@ -850,7 +850,6 @@
 "type.place.city.capital.5" = "City";
 "type.power.plant" = "Power Plant";
 "type.shop.car" = "Car Dealership";
-"type.railway.abandoned.bridge" = "Abandoned Railway Bridge";
 "type.railway.subway_entrance.dubai" = "Subway Entrance";
 "type.historic.boundary_stone" = "Boundary Stone";
 "type.cuisine.german" = "জার্মান";
@@ -885,7 +884,6 @@
 "type.tourism.information.map" = "Tourist Map";
 "type.craft.shoemaker" = "Shoe Repair";
 "type.railway.subway_entrance.madrid" = "Subway Entrance";
-"type.railway.abandoned.tunnel" = "Abandoned Railway Tunnel";
 "type.attraction.big_wheel" = "Big Wheel";
 "type.landuse.commercial" = "Commercial Area";
 "type.cuisine.hotdog" = "Hotdog";

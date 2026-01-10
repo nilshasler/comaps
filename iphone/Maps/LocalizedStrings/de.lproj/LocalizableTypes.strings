@@ -971,8 +971,6 @@
 "type.public_transport.platform" = "Plattform";
 "type.railway" = "Eisenbahn";
 "type.railway.abandoned" = "Ehemalige Eisenbahnstrecke";
-"type.railway.abandoned.bridge" = "Ehemalige Eisenbahnbrücke";
-"type.railway.abandoned.tunnel" = "Ehemaliger Eisenbahntunnel";
 "type.railway.construction" = "Eisenbahnstrecke im Bau";
 "type.railway.crossing" = "Bahnübergang";
 "type.railway.disused" = "Stillgelegte Bahnstrecke";

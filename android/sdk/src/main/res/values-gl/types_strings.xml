@@ -403,7 +403,6 @@
     <string name="type.highway.pedestrian">Cale peonil</string>
     <string name="type.highway.pedestrian.area">Zona peonil</string>
     <string name="type.highway.pedestrian.bridge">Puente peonil</string>
-
     <string name="type.highway.pedestrian.square">Praza</string>
     <string name="type.highway.pedestrian.tunnel">Túnel peonil</string>
     <string name="type.highway.primary">Estrada principal</string>
@@ -731,8 +730,6 @@
     <string name="type.man_made.utility_pole">Poste</string>
     <string name="type.public_transport">Transporte público</string>
     <string name="type.railway.abandoned">Vía férrea abandonada</string>
-    <string name="type.railway.abandoned.bridge">Puente ferroviario abandonado</string>
-    <string name="type.railway.abandoned.tunnel">Túnel ferroviario abandonado</string>
     <string name="type.railway.construction">Vía férrea en construción</string>
     <string name="type.railway.crossing">Paso a nivel</string>
     <string name="type.railway.disused">Vía férrea en desuso</string>

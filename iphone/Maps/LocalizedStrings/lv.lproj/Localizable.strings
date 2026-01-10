@@ -672,11 +672,11 @@
 "placepage_call_button" = "Zvanīt";
 "placepage_edit_bookmark_button" = "Rediģēt grāmatzīmi";
 "placepage_bookmark_name_hint" = "Grāmatzīmes nosaukums";
-"placepage_personal_notes_hint" = "Personīgi pieraksti (teksts vai HTML)";
+"placepage_personal_notes_hint" = "Personīgas piezīmes (teksts vai HTML)";
 "placepage_delete_bookmark_button" = "Dzēst grāmatzīmi";
 "editor_edits_sent_message" = "Jūsu piezīmi nosūtīsim uz „OpenStreetMap“";
 "editor_comment_hint" = "Komentārs…";
-"editor_reset_edits_message" = "Vai izmest visas lokāli saglabātās izmaiņas?";
+"editor_reset_edits_message" = "Vai atmest visas vietējās izmaiņas?";
 "editor_reset_edits_button" = "Atmest izmaiņas";
 "editor_remove_place_message" = "Vai dzēst pievienoto vietu?";
 "editor_remove_place_button" = "Dzēst";
@@ -756,7 +756,7 @@
 "bookmark_lists" = "Saraksti";
 
 /* Do not display all bookmark lists on the map */
-"bookmark_lists_hide_all" = "Slēpt visus";
+"bookmark_lists_hide_all" = "Paslēpt visus";
 "bookmark_lists_show_all" = "Rādīt visus";
 "bookmarks_create_new_group" = "Izveidot jaunu sarakstu";
 
@@ -766,7 +766,7 @@
 "downloader_percent" = "%@ (%@ no %@)";
 "downloader_process" = "Lejupielādē %@…";
 "downloader_applying" = "Pielieto %@…";
-"bookmarks_error_message_share_general" = "Programmas kļūdas dēļ kopīgošana neizdevās";
+"bookmarks_error_message_share_general" = "Nav iespējams kopīgot lietotnes kļūdas dēļ";
 "bookmarks_error_title_share_empty" = "Kopīgošanas kļūda";
 "bookmarks_error_message_share_empty" = "Nav iespējams kopīgot tukšu sarakstu";
 "bookmarks_error_message_empty_list_name" = "Ierakstiet saraksta nosaukumu";
@@ -1000,7 +1000,7 @@
 
 /* Main screen title "Map" displayed in the navigation back button's menu. */
 "map" = "Karte";
-"drive_through" = "Caurbrauktuve caur";
+"drive_through" = "Caurbrauktuve";
 
 /* Restaurant or other food place's menu URL field in the Editor */
 "website_menu" = "Saite uz ēdienkarti";
@@ -1081,7 +1081,7 @@
 "track_recording_alert_title" = "Saglabāt ceļu grāmatzīmju sadaļā?";
 
 /* Message for the toast when saving the track recording is finished but nothing to save. */
-"track_recording_toast_nothing_to_save" = "Ceļš ir tukšs – nav ko saglabāt";
+"track_recording_toast_nothing_to_save" = "Ceļš ir tukšs – nav nekā saglabājama";
 "edit_track" = "Labot ceļu";
 "osm_profile_view_edit_history" = "Skatīt labojumu vēsturi";
 "osm_profile_view_notes" = "Skatīt piezīmes";

@@ -796,8 +796,6 @@
     <string name="type.public_transport.platform">Platform</string>
     <string name="type.railway">Demiryolu</string>
     <string name="type.railway.abandoned">Terk edilmiş demiryolu</string>
-    <string name="type.railway.abandoned.bridge">Terk edilmiş demiryolu</string>
-    <string name="type.railway.abandoned.tunnel">Terk Edilmiş Demiryolu</string>
     <string name="type.railway.construction">Demiryolu İnşaatı</string>
     <string name="type.railway.crossing">Demiryolu Geçişi</string>
     <string name="type.railway.disused">Kullanılmayan demiryolu</string>
@@ -1398,7 +1396,6 @@
     <string name="type.attraction.bumper_car">Çarpışan Arabalar</string>
     <string name="type.amenity.ranger_station">Orman Bekçisi</string>
     <string name="type.amenity.bench.backless">Sırtı Açık Bank</string>
-    <string name="type.amenity.charging_station.motorcar.small">Araç Şarj Noktası</string>
     <string name="type.amenity.sailing_school">Denizcilik Okulu</string>
     <string name="type.natural.tree">Ağaç</string>
     <string name="type.xmas.tree">Yılbaşı Ağacı</string>

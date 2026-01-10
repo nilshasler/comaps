@@ -242,7 +242,6 @@
 "type.railway.station.subway.guangzhou" = "Subway Station";
 "type.cuisine.savory_pancakes" = "Savory Pancakes";
 "type.power.plant" = "Power Plant";
-"type.railway.abandoned.bridge" = "Abandoned Railway Bridge";
 "type.historic.boundary_stone" = "Boundary Stone";
 "type.cuisine.german" = "German";
 "type.amenity.townhall" = "Town Hall";
@@ -283,7 +282,6 @@
 "type.historic.memorial.statue" = "Statue";
 "type.craft.shoemaker" = "Shoe Repair";
 "type.railway.subway_entrance.madrid" = "Subway Entrance";
-"type.railway.abandoned.tunnel" = "Abandoned Railway Tunnel";
 "type.attraction.big_wheel" = "Big Wheel";
 "type.landuse.commercial" = "Commercial Area";
 "type.cuisine.hotdog" = "Hotdog";
@@ -385,7 +383,6 @@
 "type.shop.greengrocer" = "Greengrocer";
 "type.cuisine.local" = "Local";
 "type.highway.pedestrian.bridge" = "Pedestrian Bridge";
-
 "type.highway.pedestrian.square" = "Square";
 "type.highway.primary.tunnel" = "Tunnel";
 "type.railway.station.subway.samara" = "Subway Station";

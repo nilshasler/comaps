@@ -151,7 +151,6 @@
 "type.amenity.studio" = "Medijski studio";
 "type.aeroway" = "Infrastruktura zračnega prostora";
 "type.amenity.love_hotel" = "Hotel za zaljubljence";
-"type.amenity.charging_station.motorcar.small" = "Polnilno mesto za avtomobile";
 "type.amenity.cinema" = "Kino";
 "type.man_made.observatory" = "Zvezdarna";
 "type.man_made.telescope.optical" = "Teleskop (svetlobni)";
@@ -794,5 +793,16 @@
 "type.place.village" = "Vas";
 "type.power" = "Energetika";
 "type.power.generator" = "Generator";
-"type.power.generator.solar" = "Sončna elektrarna";
-"type.power.generator.wind" = "Vetrna elektrarna";
+"type.power.generator.solar" = "Sončni generator";
+"type.power.generator.wind" = "Vetrni generator";
+"type.power.plant.hydro" = "Hidroelektrarna";
+"type.power.plant.wind" = "Vetrna elektrarna";
+"type.power.generator.gas" = "Plinska turbinska elektrarna";
+"type.power.generator.hydro" = "Hidroelektrarna";
+"type.power.line" = "Daljnovod";
+"type.power.line.underground" = "Podzemni vod";
+"type.power.minor_line" = "Manjši daljnovod";
+"type.power.plant" = "Elektrarna";
+"type.power.plant.coal" = "Elektrarna na premog";
+"type.power.plant.gas" = "Plinska turbinska elektrarna";
+"type.power.plant.solar" = "Sončna elektrarna";

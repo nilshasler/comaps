@@ -72,7 +72,7 @@
     <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
     <string name="bookmarks">Marcadores</string>
     <!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
-    <string name="bookmarks_and_tracks">Marcadores y trazas</string>
+    <string name="bookmarks_and_tracks">Favoritos</string>
     <!-- Add bookmark dialog - bookmark name -->
     <string name="name">Nombre</string>
     <!-- Editor title above street and house number, duplicates [type.building.address] in types_strings.txt -->
@@ -94,7 +94,7 @@
     <!-- Error moving map files from one storage to another -->
     <string name="move_maps_error">Error al mover los archivos de mapas</string>
     <!-- Ask user to wait several minutes (some long process in modal dialog). -->
-    <string name="wait_several_minutes">Esto podría tardar varios minutos.\nAguarda…</string>
+    <string name="wait_several_minutes">Esto podría tardar varios minutos.\nPor favor, espera…</string>
     <!-- Measurement units title in settings activity -->
     <string name="measurement_units">Unidades de medida</string>
     <!-- Detailed description of Measurement Units settings button -->
@@ -148,14 +148,14 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notas</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Marcadores de CoMaps compartidos con usted</string>
-    <string name="share_bookmarks_email_body">¡Hola! \n\nAdjunto mis marcadores de la aplicación CoMaps. Por favor, ábralos si tiene instalado CoMaps. O, si no lo tiene, descargue la aplicación para su dispositivo iOS o Android siguiendo este enlace: https://www.comaps.app/es/download/ \n\n¡Disfrute viajando con CoMaps!</string>
+    <string name="share_bookmarks_email_subject">Mis favoritos de CoMaps</string>
+    <string name="share_bookmarks_email_body">¡Hola! \n\nAdjunto mis favoritos de la aplicación CoMaps. Por favor, ábralos si tiene instalado CoMaps. O, si no lo tiene, descargue la aplicación para su dispositivo iOS o Android siguiendo este enlace: https://www.comaps.app/es/download/ \n\n¡Disfrute viajando con CoMaps!</string>
     <!-- message title of loading file -->
-    <string name="load_kmz_title">Cargando marcadores</string>
+    <string name="load_kmz_title">Cargando favoritos</string>
     <!-- Kmz file successful loading -->
-    <string name="load_kmz_successful">¡Los marcadores se han cargado con éxito! Puedes encontrarlos en el mapa o en la pantalla de Gestor de Marcadores.</string>
+    <string name="load_kmz_successful">¡Los favoritos se han cargado con éxito! Puedes encontrarlos en el mapa o en la pantalla de Gestor de Favoritos.</string>
     <!-- Kml file loading failed -->
-    <string name="load_kmz_failed">No se pudieron cargar los marcadores. El archivo podría tener daños o defectos.</string>
+    <string name="load_kmz_failed">No se pudieron cargar los favoritos. El archivo podría tener daños o defectos.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">La aplicación no reconoce el tipo de archivo: \n%1$s</string>
     <!-- Failed to open a bookmarks or tracks file in CoMaps. -->
@@ -169,7 +169,7 @@
     <!-- Alert message that downloading is in progress. -->
     <string name="downloading_is_active">La descarga del mapa está en curso</string>
     <!-- Share my position using SMS, %1$@ contains om:// and %2$@ https://comaps.app link WITHOUT NAME. @NOTE non-ascii symbols in the link will result in max 70 characters SMS instead of 140. -->
-    <string name="my_position_share_sms">¡Mira mi ubicación actual en CoMaps! %1$s o %2$s ¿No tiene mapas offline? Descárgalos aquí: https://www.comaps.app/es/download/</string>
+    <string name="my_position_share_sms">¡Mira mi ubicación actual en CoMaps! %1$s o %2$s ¿No tienes mapas offline? Descárgalos aquí: https://www.comaps.app/es/download/</string>
     <!-- Subject for emailed bookmark -->
     <string name="bookmark_share_email_subject">¡Mira mi marcador en el mapa de CoMaps!</string>
     <!-- Subject for emailed position -->
@@ -355,12 +355,12 @@
     <string name="dialog_routing_intermediate_not_determined">Por favor, ajuste la parada intermedia</string>
     <string name="dialog_routing_system_error">Error del sistema</string>
     <string name="dialog_routing_application_error">No se pudo crear la ruta debido a un error en la aplicación</string>
-    <string name="dialog_routing_try_again">Intenta nuevamente</string>
+    <string name="dialog_routing_try_again">Inténtalo de nuevo</string>
     <string name="not_now">Ahora no</string>
     <string name="dialog_routing_download_and_build_cross_route">¿Deseas descargar el mapa y crear una ruta mejor que abarque más de un mapa?</string>
     <string name="dialog_routing_download_cross_route">Descarga mapas adicionales para crear una ruta mejor que cruce los límites de este mapa.</string>
     <!-- SECTION: Strings for downloading map from search -->
-    <string name="search_without_internet_advertisement">Para empezar a buscar y crear rutas, descarga el mapa. Después de eso, ya no necesitarás una conexión a Internet.</string>
+    <string name="search_without_internet_advertisement">Para empezar a buscar y crear rutas, descarga el mapa. Después de eso, ya no necesitarás conexión a Internet.</string>
     <string name="search_select_map">Seleccionar mapa</string>
     <!-- «Show» context menu -->
     <string name="show">Mostrar</string>
@@ -504,7 +504,7 @@
     <string name="placepage_more_button">Más</string>
     <string name="placepage_edit_bookmark_button">Editar marcador</string>
     <string name="placepage_personal_notes_hint">Notas personales (texto o html)</string>
-    <string name="editor_reset_edits_message">¿Restablecer todos los cambios locales?</string>
+    <string name="editor_reset_edits_message">¿Descartar todos los cambios locales?</string>
     <string name="editor_reset_edits_button">Descartar cambios</string>
     <string name="editor_remove_place_message">¿Eliminar el lugar añadido?</string>
     <string name="editor_remove_place_button">Eliminar</string>
@@ -524,7 +524,7 @@
     <!-- Displayed when saving some edits to the map to warn against publishing personal data -->
     <string name="editor_share_to_all_dialog_title">¿Quieres enviarlo a todos los usuarios?</string>
     <!-- Dialog before publishing the modifications to the public map. -->
-    <string name="editor_share_to_all_dialog_message_1">Cerciórate de que no has introducido ningún dato privado o personal.</string>
+    <string name="editor_share_to_all_dialog_message_1">Asegúrate de que no has introducido ningún dato privado o personal</string>
     <string name="editor_share_to_all_dialog_message_2">Los editores de OpenStreetMap comprobarán los cambios y se pondrán en contacto contigo si tienen alguna pregunta.</string>
     <string name="navigation_stop_button">Detener</string>
     <!-- Shown as toast when starting the recent track recording -->
@@ -567,7 +567,7 @@
     <string name="dialog_error_storage_message">El almacenamiento externo no está disponible; puede que se haya quitado o dañado la tarjeta SD, o el sistema de archivos solo permite lectura. Por favor, compruébalo ó escríbenos a support@comaps.app</string>
     <string name="setting_emulate_bad_storage">Emular almacenamiento dañado</string>
     <string name="error_enter_correct_name">Por favor, introduce un nombre válido</string>
-    <string name="bookmark_lists">Listas</string>
+    <string name="bookmark_lists">Listas de favoritos</string>
     <!-- Do not display all bookmark lists on the map -->
     <string name="bookmark_lists_hide_all">Ocultar todo</string>
     <string name="bookmark_lists_show_all">Mostrar todo</string>
@@ -603,7 +603,7 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privacidad</string>
-    <string name="privacy_policy">Normativa de privacidad</string>
+    <string name="privacy_policy">Política de privacidad</string>
     <string name="terms_of_use">Condiciones de uso</string>
     <string name="button_layer_traffic">Tráfico</string>
     <string name="subway">Metro</string>
@@ -915,7 +915,7 @@
     <string name="editor_submit">Enviar</string>
     <string name="power_management">Gestión de energía</string>
     <string name="place_page_map_too_old_title">Datos del mapa anticuados</string>
-    <string name="place_page_map_too_old_description">Tus datos del mapa están muy anticuados, por favor actualiza el mapa.</string>
+    <string name="place_page_map_too_old_description">Tu mapa está muy desactualizado, por favor actualízalo.</string>
     <string name="place_page_app_too_old_description">Tus datos del mapa están muy anticuados, por favor actualiza la aplicación CoMaps.</string>
     <string name="place_page_update_too_old_map">Actualizar mapa de la región</string>
     <string name="place_page_too_old_to_edit">La edición de OpenStreetMap está deshabilitada porque los datos del mapa están muy anticuados.</string>
@@ -924,7 +924,7 @@
     <string name="navigation_start_tts_disabled_message">Instrucciones por voz deshabilitadas: Motor de TTS no disponible</string>
     <string name="advanced">Avanzado</string>
     <string name="download_resources_custom_url_title">Servidor de mapas personalizado</string>
-    <string name="download_resources_custom_url_message">Sobreescribe el servidor de mapas por defecto. Deja en blanco para usar el servidor de CoMaps por defecto.</string>
+    <string name="download_resources_custom_url_message">Sobreescribe el servidor de mapas por defecto. Déjalo en blanco para usar el servidor de CoMaps por defecto.</string>
     <string name="download_resources_custom_url_summary_none">No establecido</string>
     <string name="download_resources_custom_url_error_scheme">Por favor introduce un URL empezando con http:// o https://</string>
 </resources>

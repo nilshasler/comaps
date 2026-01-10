@@ -889,8 +889,6 @@
 "type.public_transport.platform" = "Stoppested";
 "type.railway" = "Jernbane";
 "type.railway.abandoned" = "Forladt jernbane";
-"type.railway.abandoned.bridge" = "Forladt jernbanebro";
-"type.railway.abandoned.tunnel" = "Forladt jernbanetunnel";
 "type.railway.construction" = "Jernbanebyggeri";
 "type.railway.crossing" = "Jernbaneovergang";
 "type.railway.disused" = "Ubenyttet jernbane";
@@ -1488,7 +1486,6 @@
 "type.power.portal" = "Kraftværksportal";
 "type.building.guardhouse" = "Sikkerhedsbås";
 "type.shop.lighting" = "Lysbutik";
-"type.amenity.charging_station.motorcar.small" = "Ladestander til biler";
 "type.leisure.sports_centre.sport.american_football" = "Idrætscenter";
 "type.leisure.sports_centre.sport.multi" = "Idrætscenter";
 "type.amenity.bench.backless" = "Bænk";

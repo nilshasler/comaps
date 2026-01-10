@@ -977,8 +977,6 @@
     <string name="type.power.tower">Електрическа кула</string>
     <string name="type.power.pole">Електрически стълб</string>
     <string name="type.railway.abandoned">Изоставена железопътна линия</string>
-    <string name="type.railway.abandoned.bridge">Изоставен железопътен мост</string>
-    <string name="type.railway.abandoned.tunnel">Изоставен железопътен тунел</string>
     <string name="type.railway.construction">Строителство на железопътни линии</string>
     <string name="type.railway.crossing">Железопътен прелез</string>
     <string name="type.railway.disused">Неизползвана железопътна линия</string>

@@ -865,8 +865,6 @@
     <string name="type.public_transport">Öffentlicher Verkehr</string>
     <string name="type.railway">Eisenbahn</string>
     <string name="type.railway.abandoned">Ehemalige Eisenbahnstrecke</string>
-    <string name="type.railway.abandoned.bridge">Ehemalige Eisenbahnbrücke</string>
-    <string name="type.railway.abandoned.tunnel">Ehemaliger Eisenbahntunnel</string>
     <string name="type.railway.construction">Eisenbahnstrecke im Bau</string>
     <string name="type.railway.crossing">Bahnübergang</string>
     <string name="type.railway.disused">Stillgelegte Bahnstrecke</string>
@@ -1504,4 +1502,11 @@
     <string name="type.amenity.food_sharing">Food Sharing</string>
     <string name="type.natural.sand">Sand</string>
     <string name="type.amenity.hydrant">Beregnungshydrant</string>
+    <string name="type.railway.disused.tunnel">Stillgelegter Eisenbahntunnel</string>
+    <string name="type.railway.disused.bridge">Stillgelegte Eisenbahnbrücke</string>
+    <string name="type.railway.miniature.bridge">Miniatur-Eisenbahnbrücke</string>
+    <string name="type.railway.miniature.tunnel">Miniatur-Eisenbahntunnel</string>
+    <string name="type.railway.turntable">Eisenbahn-Drehscheibe</string>
+    <string name="type.tourism.information.tactile_map">Taktile Karte</string>
+    <string name="type.railway.miniature">Miniatureisenbahn</string>
 </resources>

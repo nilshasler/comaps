@@ -465,7 +465,6 @@
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.pedestrian.bridge" = "पादचारी पूल";
-
 "type.highway.pedestrian.square" = "चौरस";
 
 /* These translations are used for all type.highway.*.tunnel. */
@@ -891,8 +890,6 @@
 "type.public_transport.platform" = "फलाट";
 "type.railway" = "रेल्वे";
 "type.railway.abandoned" = "Abandoned Railway";
-"type.railway.abandoned.bridge" = "Abandoned Railway Bridge";
-"type.railway.abandoned.tunnel" = "Abandoned Railway Tunnel";
 "type.railway.construction" = "रेल्वेचे बांधकाम";
 "type.railway.crossing" = "रेल्वे ओलांडणी";
 "type.railway.disused" = "Disused Railway";

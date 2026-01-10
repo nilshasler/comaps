@@ -138,7 +138,6 @@
     <string name="type.amenity.charging_station">Krovimo stotelė</string>
     <string name="type.amenity.charging_station.bicycle">Elektrinių dviračių krovimo stotelė</string>
     <string name="type.amenity.charging_station.motorcar">Elektromobilių krovimo stotelė</string>
-    <string name="type.amenity.charging_station.motorcar.small">Elektromobilių krovimo taškas</string>
     <string name="type.amenity.childcare">Lopšelis</string>
     <string name="type.amenity.cinema">Kino teatras</string>
     <string name="type.leisure.bowling_alley">Boulingo klubas</string>
@@ -850,8 +849,6 @@
     <string name="type.public_transport.platform">Platforma</string>
     <string name="type.railway">Geležinkelis</string>
     <string name="type.railway.abandoned">Dalinai išmontuotas geležinkelis</string>
-    <string name="type.railway.abandoned.bridge">Dalinai išmontuoto geležinkelio tiltas</string>
-    <string name="type.railway.abandoned.tunnel">Dalinai išmontuoto geležinkelio tunelis</string>
     <string name="type.railway.construction">Statomas geležinkelis</string>
     <string name="type.railway.crossing">Geležinkelio perėja</string>
     <string name="type.railway.disused">Apleistas geležinkelis</string>
@@ -1429,4 +1426,9 @@
     <string name="type.piste_type.sled.area">Rogučių trasa</string>
     <string name="type.leisure.sports_centre">Sporto centras</string>
     <string name="type.sport.tennis">Lauko tenisas</string>
+    <string name="type.railway.miniature">Mažasis geležinkelis</string>
+    <string name="type.railway.miniature.bridge">Mažojo geležinkelio tiltas</string>
+    <string name="type.railway.miniature.tunnel">Mažojo geležinkelio tunelis</string>
+    <string name="type.railway.turntable">Grįžratis</string>
+    <string name="type.tourism.information.tactile_map">Taktilinis žemėlapis</string>
 </resources>

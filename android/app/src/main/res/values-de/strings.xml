@@ -68,11 +68,11 @@
     <!-- "Add new bookmark list" dialog title -->
     <string name="add_new_set">Neue Liste erstellen</string>
     <!-- Add Bookmark list dialog - hint when the list name is empty -->
-    <string name="bookmark_set_name">Name der Lesezeichenliste</string>
+    <string name="bookmark_set_name">Name der Liste</string>
     <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
-    <string name="bookmarks">Lesezeichen</string>
+    <string name="bookmarks">Orte</string>
     <!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
-    <string name="bookmarks_and_tracks">Lesezeichen und Tracks</string>
+    <string name="bookmarks_and_tracks">Favoriten</string>
     <!-- Add bookmark dialog - bookmark name -->
     <string name="name">Name</string>
     <!-- Editor title above street and house number, duplicates [type.building.address] in types_strings.txt -->
@@ -148,10 +148,10 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notizen</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">CoMaps-Lesezeichen wurden mit dir geteilt</string>
+    <string name="share_bookmarks_email_subject">Meine CoMaps-Favoriten</string>
     <string name="share_bookmarks_email_body">Hallo! \n \nIm Anhang sind meine Lesezeichen aus der CoMaps-App. Du kannst sie in CoMaps öffnen. Wenn du die App nicht installiert hast, kannst du sie unter https://www.comaps.app/de/download/ herunterladen. \n \nViel Spaß beim Navigieren mit CoMaps!</string>
     <!-- message title of loading file -->
-    <string name="load_kmz_title">Lesezeichen werden geladen</string>
+    <string name="load_kmz_title">Favoriten laden</string>
     <!-- Kmz file successful loading -->
     <string name="load_kmz_successful">Lesezeichen erfolgreich geladen! Du kannst dieses nun auf deiner Karte oder im Lesezeichen-Manager anzeigen lassen.</string>
     <!-- Kml file loading failed -->
@@ -499,7 +499,7 @@
     <string name="minute">min</string>
     <string name="day">d</string>
     <string name="placepage_more_button">Mehr</string>
-    <string name="placepage_edit_bookmark_button">Lesezeichen bearbeiten</string>
+    <string name="placepage_edit_bookmark_button">Gespeicherten Ort bearbeiten</string>
     <string name="placepage_personal_notes_hint">Persönliche Notizen (Text oder html)</string>
     <string name="editor_reset_edits_message">Alle lokalen Änderungen verwerfen?</string>
     <string name="editor_reset_edits_button">Änderungen verwerfen</string>
@@ -564,17 +564,17 @@
     <string name="dialog_error_storage_message">Der externe Speicher ist nicht verfügbar, möglicherweise wurde die SD-Karte entfernt oder sie ist beschädigt oder das Dateisystem ist schreibgeschützt. Bitte überprüfe das oder kontaktiere uns unter support@comaps.app</string>
     <string name="setting_emulate_bad_storage">Fehlerhaften Speicher emulieren</string>
     <string name="error_enter_correct_name">Bitte gebe deinen korrekten Namen ein</string>
-    <string name="bookmark_lists">Listen</string>
+    <string name="bookmark_lists">Favoritenlisten</string>
     <!-- Do not display all bookmark lists on the map -->
     <string name="bookmark_lists_hide_all">Alle ausblenden</string>
     <string name="bookmark_lists_show_all">Alle anzeigen</string>
     <plurals name="bookmarks_places">
-        <item quantity="one">%d Lesezeichen</item>
-        <item quantity="other">%d Lesezeichen</item>
+        <item quantity="one">%d gespeicherter Ort</item>
+        <item quantity="other">%d gespeicherte Orte</item>
     </plurals>
     <string name="bookmarks_create_new_group">Neue Liste erstellen</string>
     <!-- Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files -->
-    <string name="bookmarks_import">Lesezeichen und Tracks importieren</string>
+    <string name="bookmarks_import">Favoriten importieren</string>
     <string name="bookmarks_error_message_share_general">Teilen wegen eines Anwendungsfehlers nicht möglich</string>
     <string name="bookmarks_error_title_share_empty">Fehler beim Teilen</string>
     <string name="bookmarks_error_message_share_empty">Eine leere Liste kann nicht geteilt werden</string>
@@ -603,7 +603,7 @@
     <string name="subway">U-Bahn</string>
     <string name="layers_title">Kartenstile und Ebenen</string>
     <string name="bookmarks_empty_list_title">Die Liste ist leer</string>
-    <string name="bookmarks_empty_list_message">Zum Hinzufügen eines Lesezeichens tippe in der Karte auf den Ort und dann unten auf das Stern-Symbol</string>
+    <string name="bookmarks_empty_list_message">Um einen Ort zu speichern, tipp einfach auf einen Ort auf der Karte und dann auf das Sternsymbol</string>
     <string name="category_desc_more">…mehr</string>
     <string name="export_file">KMZ exportieren</string>
     <string name="export_file_gpx">GPX exportieren</string>
@@ -656,7 +656,7 @@
     <!-- max. 10 symbols, both iOS and Android -->
     <string name="sort">Sortieren…</string>
     <!-- Android, title, max 20-22 symbols -->
-    <string name="sort_bookmarks">Lesezeichen sortieren</string>
+    <string name="sort_bookmarks">Favoriten sortieren</string>
     <!-- Android -->
     <string name="by_default">Nach Voreinstellung</string>
     <!-- Android -->
@@ -774,7 +774,7 @@
     <string name="browser_not_available">Webbrowser ist nicht verfügbar</string>
     <string name="volume">Lautstärke</string>
     <!-- Bookmark categories screen, button that opens share dialog to export all bookmarks and tracks -->
-    <string name="bookmarks_export">Alle Lesezeichen und Tracks exportieren</string>
+    <string name="bookmarks_export">Alle Orte und Tracks exportieren</string>
     <!-- button in (app) TTS settings, to open the system TTS settings. -->
     <string name="pref_tts_open_system_settings">Einstellungen des Sprachsynthesesystems</string>
     <!-- toast displayed when pressing the "Speech synthesis system settings" button, and the system settings aren't found. -->
@@ -806,7 +806,7 @@
     <!-- Title for the "Stop Without Saving" action for the alert when saving a track recording. -->
     <string name="continue_recording">Aufnahme fortsetzen</string>
     <!-- Title for the alert when saving a track recording. -->
-    <string name="track_recording_alert_title">In Lesezeichen und Tracks speichern?</string>
+    <string name="track_recording_alert_title">Zu Favoriten hinzufügen?</string>
     <!-- Message for the toast when saving the track recording is finished but nothing to save. -->
     <string name="track_recording_toast_nothing_to_save">Route ist leer - nichts zu speichern</string>
     <!-- Error message when there are no File Manager apps installed to select a folder when importing Bookmarks and Tracks -->
@@ -838,13 +838,13 @@
     <string name="ruler">Lineal</string>
     <string name="route_type">Routentyp</string>
     <string name="pedestrian">Fußgänger</string>
-    <string name="bookmark_color">Lesezeichenfarbe</string>
+    <string name="bookmark_color">Farbe für Favoriten</string>
     <string name="about_help">Über &amp; Hilfe</string>
     <string name="panoramax">Panoramax-Bild</string>
     <string name="pref_backup_summary">Backup automatisch in einem Ordner auf deinem Gerät erstellen</string>
     <string name="pref_backup_now_summary">Backup sofort erstellen</string>
     <string name="pref_backup_now_summary_ok">Backup erfolgreich abgeschlossen</string>
-    <string name="pref_backup_now_summary_empty_lists">Keine Lesezeichen und Tracks für Backup vorhanden</string>
+    <string name="pref_backup_now_summary_empty_lists">Keine Orte und Tracks zum Sichern</string>
     <string name="pref_backup_now_summary_failed">Backup fehlgeschlagen</string>
     <string name="pref_backup_now_summary_folder_unavailable">Der Backup-Ordner ist nicht verfügbar</string>
     <string name="pref_backup_location_summary_initial">Bitte wähle zuerst einen Ordner und erteile die Berechtigung</string>
@@ -852,7 +852,7 @@
     <string name="pref_backup_interval_title">Automatisches Backup</string>
     <string name="backup_interval_every_day">Täglich</string>
     <string name="backup_interval_manual_only">Aus (nur manuell)</string>
-    <string name="pref_backup_title">Backup von Lesezeichen und Tracks</string>
+    <string name="pref_backup_title">Favoriten sichern</string>
     <string name="pref_backup_status_summary_success">Letztes erfolgreiches Backup</string>
     <string name="dialog_report_error_with_logs">Bitte sende uns einen Fehlerbericht:\n - in den Einstellungen \"Protokollierung aktivieren\"\n - das Problem reproduzieren\n - im Bildschirm \"Über &amp; Hilfe\" drücke den \"App-Fehler melden\"-Knopf und sende via E-Mail oder Chat\n - die Protokollierung deaktivieren</string>
     <string name="dialog_report_error_missing_folder">Der ausgewählte Backup-Ort ist nicht verfügbar oder beschreibbar. Bitte wähle einen anderen Ort.</string>
@@ -920,4 +920,5 @@
     <string name="download_resources_custom_url_summary_none">Nicht konfiguriert</string>
     <string name="download_resources_custom_url_message">Standardserver für Kartendownloads überschreiben. Leer lassen, um den CoMaps-Standardserver zu nutzen.</string>
     <string name="download_resources_custom_url_error_scheme">Bitte eine vollständige URL eingeben, die mit https:// oder http:// anfängt</string>
+    <string name="pref_maplanguage_local">Lokale Sprache</string>
 </resources>

@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "Platform";
 "type.railway" = "Demiryolu";
 "type.railway.abandoned" = "Terk edilmiş demiryolu";
-"type.railway.abandoned.bridge" = "Terk edilmiş demiryolu";
-"type.railway.abandoned.tunnel" = "Terk Edilmiş Demiryolu";
 "type.railway.construction" = "Demiryolu İnşaatı";
 "type.railway.crossing" = "Demiryolu Geçişi";
 "type.railway.disused" = "Kullanılmayan demiryolu";
@@ -1489,7 +1487,6 @@
 "type.power.portal" = "Elektrik Portalı";
 "type.building.guardhouse" = "Güvenlik Kulübesi";
 "type.shop.lighting" = "Aydınlatma dükkanı";
-"type.amenity.charging_station.motorcar.small" = "Araç Şarj Noktası";
 "type.amenity.bench.backless" = "Sırtı Açık Bank";
 "type.amenity.sailing_school" = "Denizcilik Okulu";
 "type.natural.tree" = "Ağaç";

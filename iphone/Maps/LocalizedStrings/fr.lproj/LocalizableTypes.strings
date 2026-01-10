@@ -891,8 +891,6 @@
 "type.public_transport.platform" = "Quai de transport en commun";
 "type.railway" = "Chemin de fer";
 "type.railway.abandoned" = "Chemin de fer abandonné";
-"type.railway.abandoned.bridge" = "Chemin de fer abandonné";
-"type.railway.abandoned.tunnel" = "Chemin de fer abandonné";
 "type.railway.construction" = "Chemin de fer en construction";
 "type.railway.crossing" = "Passage à niveau pour piéton";
 "type.railway.disused" = "Chemin de fer désaffecté";
@@ -1490,7 +1488,6 @@
 "type.power.portal" = "Portique haute tension";
 "type.building.guardhouse" = "Guérite de sécurité";
 "type.shop.lighting" = "Boutique de luminaires";
-"type.amenity.charging_station.motorcar.small" = "Borne de recharge pour voiture";
 "type.amenity.bench.backless" = "Banc sans dossier";
 "type.leisure.bandstand" = "Kiosque à musique";
 "type.leisure.sports_centre.sport.soccer" = "Complexe sportif";

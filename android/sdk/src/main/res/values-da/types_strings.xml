@@ -1281,8 +1281,6 @@
     <string name="type.railway.platform">Jernbaneperron</string>
     <string name="type.railway">Jernbane</string>
     <string name="type.railway.crossing">Jernbaneovergang</string>
-    <string name="type.railway.abandoned.bridge">Forladt jernbanebro</string>
-    <string name="type.railway.abandoned.tunnel">Forladt jernbanetunnel</string>
     <string name="type.railway.construction">Jernbanebyggeri</string>
     <string name="type.railway.disused">Ubenyttet jernbane</string>
     <string name="type.railway.funicular.bridge">Kabelbanebro</string>
@@ -1389,7 +1387,6 @@
     <string name="type.natural.wetland.reedbed">Rørskov</string>
     <string name="type.shop.lighting">Lysbutik</string>
     <string name="type.amenity.bench.backless">Bænk</string>
-    <string name="type.amenity.charging_station.motorcar.small">Ladestander til biler</string>
     <string name="type.leisure.sports_centre.sport.multi">Idrætscenter</string>
     <string name="type.leisure.sports_centre.sport.american_football">Idrætscenter</string>
     <string name="type.amenity.car_pooling">Samkørsel</string>

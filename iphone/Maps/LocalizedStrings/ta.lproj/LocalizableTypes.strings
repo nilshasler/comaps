@@ -46,7 +46,6 @@
 "type.amenity.casino" = "கேசினோ";
 "type.leisure.adult_gaming_centre" = "அகவை வந்தோர் கேமிங் நடுவண்";
 "type.leisure.amusement_arcade" = "ஆர்கேட்";
-"type.amenity.charging_station.motorcar.small" = "கார் சார்சிங் பாயிண்ட்";
 "type.amenity.childcare" = "நாற்றங்கால்";
 "type.amenity.cinema" = "சினிமா";
 "type.amenity.studio" = "மீடியா ச்டுடியோ";
@@ -786,8 +785,6 @@
 "type.public_transport.platform" = "மேடை";
 "type.railway" = "ரயில்வே";
 "type.railway.abandoned" = "கைவிடப்பட்ட ரயில்வே";
-"type.railway.abandoned.bridge" = "கைவிடப்பட்ட ரயில்வே பாலம்";
-"type.railway.abandoned.tunnel" = "கைவிடப்பட்ட ரயில்வே சுரங்கப்பாதை";
 "type.railway.construction" = "ரயில்வே கட்டுமானம்";
 "type.railway.crossing" = "ரயில்வே கடத்தல்";
 "type.railway.disused" = "பயன்படுத்தப்படாத ரயில்வே";

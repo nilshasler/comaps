@@ -889,8 +889,6 @@
 "type.public_transport.platform" = "Plataforma de transporte público";
 "type.railway" = "Ferrovia";
 "type.railway.abandoned" = "Ferrovia abandonada";
-"type.railway.abandoned.bridge" = "Ferrovia abandonada";
-"type.railway.abandoned.tunnel" = "Ferrovia abandonada";
 "type.railway.construction" = "Ferrovia em construção";
 "type.railway.crossing" = "Passagem pedestre";
 "type.railway.disused" = "Ferrovia em desuso";
@@ -1503,7 +1501,6 @@
 "type.leisure.sports_centre.sport.pelota" = "Centro esportivo";
 "type.leisure.sports_centre.sport.skiing" = "Centro esportivo";
 "type.leisure.sports_centre.sport.cricket" = "Centro esportivo";
-"type.amenity.charging_station.motorcar.small" = "Ponto de carregamento para carros";
 "type.leisure.sports_centre.sport.equestrian" = "Centro esportivo";
 "type.leisure.sports_centre.sport.volleyball" = "Centro esportivo";
 "type.leisure.sports_centre.sport.curling" = "Centro esportivo";

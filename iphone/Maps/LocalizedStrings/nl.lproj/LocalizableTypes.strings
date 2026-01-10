@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "Platform";
 "type.railway" = "Spoorweg";
 "type.railway.abandoned" = "Voormalig treinspoor";
-"type.railway.abandoned.bridge" = "Voormalige spoorbrug";
-"type.railway.abandoned.tunnel" = "Voormalige spoortunnel";
 "type.railway.construction" = "Treinspoor in aanbouw";
 "type.railway.crossing" = "Spoorwegovergang";
 "type.railway.disused" = "Ongebruikt spoor";
@@ -1496,7 +1494,6 @@
 "type.man_made.telescope.radio" = "Telescoop (radio)";
 "type.man_made.telescope.gamma" = "Telescoop (gamma)";
 "type.man_made.observatory" = "Observatorium";
-"type.amenity.charging_station.motorcar.small" = "Autolaadpunt";
 "type.amenity.car_pooling" = "Carpool";
 "type.emergency.life_ring" = "Reddingsboei";
 "type.leisure.bandstand" = "Muziekpodium";

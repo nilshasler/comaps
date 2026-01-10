@@ -465,7 +465,7 @@
 "dialog_routing_intermediate_not_determined" = "Por favor, ajuste la parada intermedia.";
 "dialog_routing_system_error" = "Error del sistema";
 "dialog_routing_application_error" = "No se pudo crear la ruta debido a un error en la aplicación.";
-"dialog_routing_try_again" = "Intenta nuevamente";
+"dialog_routing_try_again" = "Inténtalo de nuevo";
 "dialog_routing_download_and_build_cross_route" = "¿Deseas descargar el mapa y crear una ruta mejor que abarque más de un mapa?";
 "dialog_routing_download_cross_route" = "Descarga mapas adicionales para crear una ruta mejor que cruce los límites de este mapa.";
 
@@ -682,7 +682,7 @@
 "placepage_delete_bookmark_button" = "Eliminar marcador";
 "editor_edits_sent_message" = "Su nota se enviará a OpenStreetMap";
 "editor_comment_hint" = "Comentario…";
-"editor_reset_edits_message" = "¿Restablecer todos los cambios locales?";
+"editor_reset_edits_message" = "¿Descartar todos los cambios locales?";
 "editor_reset_edits_button" = "Descartar cambios";
 "editor_remove_place_message" = "¿Eliminar el lugar añadido?";
 "editor_remove_place_button" = "Eliminar";
@@ -700,7 +700,7 @@
 "editor_share_to_all_dialog_title" = "¿Quieres enviarlo a todos los usuarios?";
 
 /* Dialog before publishing the modifications to the public map. */
-"editor_share_to_all_dialog_message_1" = "Cerciórate de que no has introducido ningún dato privado o personal.";
+"editor_share_to_all_dialog_message_1" = "Asegúrate de que no has introducido ningún dato privado o personal";
 "editor_share_to_all_dialog_message_2" = "Los editores de OpenStreetMap comprobarán los cambios y se pondrán en contacto contigo si tienen alguna pregunta.";
 "navigation_stop_button" = "Detener";
 
@@ -784,7 +784,7 @@
 "bookmarks_convert_error_title" = "Error";
 "bookmarks_convert_error_message" = "No se convirtieron algunos archivos.";
 "restore" = "Restaurar";
-"privacy_policy" = "Normativa de privacidad";
+"privacy_policy" = "Política de privacidad";
 "terms_of_use" = "Condiciones de uso";
 "button_layer_subway" = "Metro";
 "layers_title" = "Estilos y capas del mapa";

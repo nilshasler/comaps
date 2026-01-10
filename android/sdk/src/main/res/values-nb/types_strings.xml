@@ -1319,7 +1319,6 @@
     <string name="type.leisure.fitness_centre.sport.yoga">Yogastudio</string>
     <string name="type.leisure.bandstand">Musikkpaviljong</string>
     <string name="type.cuisine.bubble_tea">Boblete</string>
-    <string name="type.amenity.charging_station.motorcar.small">Billadingspunkt</string>
     <string name="type.amenity.studio">Mediastudio</string>
     <string name="type.aerialway.magic_carpet">Teppeheis</string>
     <string name="type.barrier.ditch">Grøft</string>
@@ -1331,8 +1330,6 @@
     <string name="type.aerialway.platter">Tallerkentrekk</string>
     <string name="type.aerialway.j.bar">Skitrekk (J-krok)</string>
     <string name="type.aerialway.t.bar">Skitrekk (T-krok)</string>
-    <string name="type.railway.abandoned.tunnel">Nedlagt jernbanetunnel</string>
-    <string name="type.railway.abandoned.bridge">Nedlagt jernbanebru</string>
     <string name="type.railway.abandoned">Nedlagt jernbane</string>
     <string name="type.shop.lighting">Lampebutikk</string>
     <string name="type.leisure.sports_centre.sport.swimming">Svømmesenter</string>
@@ -1391,4 +1388,5 @@
     <string name="type.man_made.works">Fabrikk</string>
     <string name="type.man_made.mast.communication">Kommunikasjonsmast</string>
     <string name="type.man_made.wastewater_plant">Avløpsrenseanlegg</string>
+    <string name="type.tourism.information.tactile_map">Berøringskart</string>
 </resources>

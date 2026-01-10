@@ -151,7 +151,6 @@
     <string name="type.amenity.love_hotel">Hotel za zaljubljence</string>
     <string name="type.amenity.studio">Medijski studio</string>
     <string name="type.leisure.amusement_arcade">Arkadne igre</string>
-    <string name="type.amenity.charging_station.motorcar.small">Polnilno mesto za avtomobile</string>
     <string name="type.amenity.childcare">Vrtec</string>
     <string name="type.amenity.cinema">Kino</string>
     <string name="type.amenity.boat_rental">Izposoja čolnov</string>
@@ -795,6 +794,17 @@
     <string name="type.place.village">Vas</string>
     <string name="type.power">Energetika</string>
     <string name="type.power.generator">Generator</string>
-    <string name="type.power.generator.solar">Sončna elektrarna</string>
-    <string name="type.power.generator.wind">Vetrna elektrarna</string>
+    <string name="type.power.generator.solar">Sončni generator</string>
+    <string name="type.power.generator.wind">Vetrni generator</string>
+    <string name="type.power.plant.hydro">Hidroelektrarna</string>
+    <string name="type.power.plant.wind">Vetrna elektrarna</string>
+    <string name="type.power.generator.gas">Plinska turbinska elektrarna</string>
+    <string name="type.power.generator.hydro">Hidroelektrarna</string>
+    <string name="type.power.line">Daljnovod</string>
+    <string name="type.power.line.underground">Podzemni vod</string>
+    <string name="type.power.minor_line">Manjši daljnovod</string>
+    <string name="type.power.plant">Elektrarna</string>
+    <string name="type.power.plant.coal">Elektrarna na premog</string>
+    <string name="type.power.plant.gas">Plinska turbinska elektrarna</string>
+    <string name="type.power.plant.solar">Sončna elektrarna</string>
 </resources>

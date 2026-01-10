@@ -25,4 +25,5 @@
     <string name="months_ago">%s মাস আগে</string>
     <string name="years_ago">%s বছর আগে</string>
     <string name="m">মি</string>
+    <string name="ft">ফুট</string>
 </resources>

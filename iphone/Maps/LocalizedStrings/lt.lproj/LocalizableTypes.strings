@@ -877,8 +877,6 @@
 "type.public_transport.platform" = "Platforma";
 "type.railway" = "Geležinkelis";
 "type.railway.abandoned" = "Dalinai išmontuotas geležinkelis";
-"type.railway.abandoned.bridge" = "Dalinai išmontuoto geležinkelio tiltas";
-"type.railway.abandoned.tunnel" = "Dalinai išmontuoto geležinkelio tunelis";
 "type.railway.construction" = "Statomas geležinkelis";
 "type.railway.crossing" = "Geležinkelio perėja";
 "type.railway.disused" = "Apleistas geležinkelis";
@@ -1471,7 +1469,6 @@
 "type.man_made.telescope.radio" = "Teleskopas (radijo bangų)";
 "type.man_made.telescope.gamma" = "Teleskopas (gama spindulių)";
 "type.man_made.observatory" = "Observatorija";
-"type.amenity.charging_station.motorcar.small" = "Elektromobilių krovimo taškas";
 "type.amenity.sailing_school" = "Buriavimo mokykla";
 "type.amenity.flight_school" = "Aviacijos mokykla";
 "type.amenity.prep_school" = "Parengiamoji mokykla";

@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "Ooteplatvorm";
 "type.railway" = "Raudtee";
 "type.railway.abandoned" = "Mahajäetud raudtee";
-"type.railway.abandoned.bridge" = "Mahajäetud sild";
-"type.railway.abandoned.tunnel" = "Mahajäetud raudteetunnel";
 "type.railway.construction" = "Ehitusel raudtee";
 "type.railway.crossing" = "Raudtee ülesõit";
 "type.railway.disused" = "Kasutamata raudtee";
@@ -1490,7 +1488,6 @@
 "type.building.guardhouse" = "Valvuriputka";
 "type.shop.lighting" = "Lambipood";
 "type.amenity.bench.backless" = "Ilma seljatoeta pink";
-"type.amenity.charging_station.motorcar.small" = "Auto laadimispunkt";
 "type.leisure.fitness_centre.sport.yoga" = "Joogastuudio";
 "type.leisure.sports_centre.sport.table_tennis" = "Lauatennisekeskus";
 "type.leisure.sports_centre.sport.american_football" = "Spordikeskus";

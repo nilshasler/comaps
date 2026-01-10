@@ -1360,8 +1360,6 @@
     <string name="type.railway.preserved.tunnel">Túnel ferroviario conservado</string>
     <string name="type.power.pole">Poste eléctrico</string>
     <string name="type.man_made.utility_pole">Poste</string>
-    <string name="type.railway.abandoned.tunnel">Túnel ferroviario abandonado</string>
-    <string name="type.railway.abandoned.bridge">Puente ferroviario abandonado</string>
     <string name="type.railway.funicular.bridge">Puente de funicular</string>
     <string name="type.railway.funicular.tunnel">Túnel de funicular</string>
     <string name="type.railway.light_rail.tunnel">Túnel de tren ligero</string>
@@ -1401,7 +1399,6 @@
     <string name="type.power.portal">Torre de alta tensión</string>
     <string name="type.shop.lighting">Tienda de iluminación</string>
     <string name="type.amenity.bench.backless">Banco sin respaldo</string>
-    <string name="type.amenity.charging_station.motorcar.small">Punto de carga para autos</string>
     <string name="type.leisure.bandstand">Templete</string>
     <string name="type.leisure.sports_centre.sport.multi">Centro deportivo</string>
     <string name="type.leisure.sports_centre.sport.american_football">Centro deportivo</string>

@@ -805,8 +805,6 @@
     <string name="type.public_transport.platform">Ooteplatvorm</string>
     <string name="type.railway">Raudtee</string>
     <string name="type.railway.abandoned">Mahajäetud raudtee</string>
-    <string name="type.railway.abandoned.bridge">Mahajäetud sild</string>
-    <string name="type.railway.abandoned.tunnel">Mahajäetud raudteetunnel</string>
     <string name="type.railway.construction">Ehitusel raudtee</string>
     <string name="type.railway.crossing">Raudtee ülesõit</string>
     <string name="type.railway.disused">Kasutamata raudtee</string>
@@ -1399,7 +1397,6 @@
     <string name="type.office.security">Turvafirma kontor</string>
     <string name="type.shop.lighting">Lambipood</string>
     <string name="type.amenity.bench.backless">Ilma seljatoeta pink</string>
-    <string name="type.amenity.charging_station.motorcar.small">Auto laadimispunkt</string>
     <string name="type.leisure.bandstand">Väike vabaõhulava</string>
     <string name="type.leisure.sports_centre.sport.multi">Spordikeskus</string>
     <string name="type.leisure.fitness_centre.sport.yoga">Joogastuudio</string>
@@ -1501,4 +1498,11 @@
     <string name="type.cardinal.north">Põhjas</string>
     <string name="type.cardinal.south">Lõunas</string>
     <string name="type.cardinal.west">Läänes</string>
+    <string name="type.railway.miniature">Väikeraudtee/pargiraudtee</string>
+    <string name="type.railway.miniature.bridge">Väikeraudtee/pargiraudtee sild</string>
+    <string name="type.railway.miniature.tunnel">Väikeraudtee/pargiraudtee tunnel</string>
+    <string name="type.railway.turntable">Raudtee pöördesild</string>
+    <string name="type.tourism.information.tactile_map">Kombatav kaart</string>
+    <string name="type.railway.disused.bridge">Kasutuselt eemaldatud raudteesild</string>
+    <string name="type.railway.disused.tunnel">Kasutuselt eemaldatud raudteetunnel</string>
 </resources>

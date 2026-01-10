@@ -71,8 +71,6 @@
     <string name="type.public_transport.platform">大眾運輸月台</string>
     <string name="type.railway">鐵路元素</string>
     <string name="type.railway.abandoned">鐵路遺跡</string>
-    <string name="type.railway.abandoned.bridge">鐵路橋遺跡</string>
-    <string name="type.railway.abandoned.tunnel">鐵路隧道遺跡</string>
     <string name="type.railway.construction">鐵路在建</string>
     <string name="type.railway.crossing">鐵路平交道</string>
     <string name="type.railway.disused">鐵路廢線</string>

@@ -773,8 +773,6 @@
     <string name="type.public_transport.platform">Quai de transport en commun</string>
     <string name="type.railway">Chemin de fer</string>
     <string name="type.railway.abandoned">Chemin de fer abandonné</string>
-    <string name="type.railway.abandoned.bridge">Chemin de fer abandonné</string>
-    <string name="type.railway.abandoned.tunnel">Chemin de fer abandonné</string>
     <string name="type.railway.construction">Chemin de fer en construction</string>
     <string name="type.railway.crossing">Passage à niveau pour piéton</string>
     <string name="type.railway.disused">Chemin de fer désaffecté</string>
@@ -1400,7 +1398,6 @@
     <string name="type.power.portal">Portique haute tension</string>
     <string name="type.shop.lighting">Boutique de luminaires</string>
     <string name="type.amenity.bench.backless">Banc sans dossier</string>
-    <string name="type.amenity.charging_station.motorcar.small">Borne de recharge pour voiture</string>
     <string name="type.leisure.bandstand">Kiosque à musique</string>
     <string name="type.leisure.sports_centre.sport.multi">Complexe sportif</string>
     <string name="type.leisure.sports_centre.sport.american_football">Complexe sportif</string>

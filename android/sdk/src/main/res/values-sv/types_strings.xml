@@ -1262,9 +1262,7 @@
     <string name="type.public_transport.platform">Perrong</string>
     <string name="type.railway">Järnväg</string>
     <string name="type.railway.abandoned">Nerlagd järnväg</string>
-    <string name="type.railway.abandoned.tunnel">Nerlagd järnvägstunnel</string>
     <string name="type.railway.construction">Järnväg under uppbyggnad</string>
-    <string name="type.railway.abandoned.bridge">Nerlagd järnvägsbro</string>
     <string name="type.aeroway">Luftfart</string>
     <string name="type.amenity.bicycle_repair_station">Cykelreparationsstation</string>
     <string name="type.amenity.sanitary_dump_station">Tömning av kemtoalett</string>

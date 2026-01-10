@@ -1094,7 +1094,7 @@
 "pref_mapappearance_title" = "Kaart uiterlijk";
 "pref_maplanguage_title" = "Kaarttaal";
 "transliteration_title_disabled_summary" = "Uitgeschakeld wanneer altijd de lokale taal voor de kaart wordt gebruikt";
-"pref_maplanguage_local" = "Lokale Taal";
+"pref_maplanguage_local" = "Plaatselijke taal";
 "existence_confirmed_time_ago" = "Bestaan bevestigd %@";
 "hours_confirmed_time_ago" = "Bevestigd %@";
 "offline_explanation_title" = "Offline kaarten";

@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "Platformă";
 "type.railway" = "Cale ferată";
 "type.railway.abandoned" = "Linie moartă";
-"type.railway.abandoned.bridge" = "Pod de cale ferată abandonat";
-"type.railway.abandoned.tunnel" = "Tunel de cale ferată abandonat";
 "type.railway.construction" = "Construcții Feroviare";
 "type.railway.crossing" = "Trecere la nivel cu calea ferată";
 "type.railway.disused" = "Cale ferată abandonată";

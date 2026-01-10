@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "大眾運輸月台";
 "type.railway" = "鐵路元素";
 "type.railway.abandoned" = "鐵路遺跡";
-"type.railway.abandoned.bridge" = "鐵路橋遺跡";
-"type.railway.abandoned.tunnel" = "鐵路隧道遺跡";
 "type.railway.construction" = "鐵路在建";
 "type.railway.crossing" = "鐵路平交道";
 "type.railway.disused" = "鐵路廢線";

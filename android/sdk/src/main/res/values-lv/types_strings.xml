@@ -118,7 +118,6 @@
     <string name="type.leisure.sports_centre.sport.australian_football">Sporta centrs</string>
     <string name="type.leisure.sports_centre.sport.multi">Sporta centrs</string>
     <string name="type.leisure.sports_centre.sport.american_football">Sporta centrs</string>
-    <string name="type.amenity.charging_station.motorcar.small">Mašīnu uzlādes punkts</string>
     <string name="type.amenity.childcare">Bērnudārzs</string>
     <string name="type.leisure.bandstand">Estrāde</string>
     <string name="type.leisure.common">Valsts zemes īpašums</string>
@@ -182,4 +181,7 @@
     <string name="type.xmas.tree">Ziemassvētku egle</string>
     <string name="type.entrance.emergency">Ārkārtas izeja</string>
     <string name="type.lateral.port">Osta</string>
+    <string name="type.railway.disused.tunnel">Neizmantots dzelzceļa tunelis</string>
+    <string name="type.railway.funicular">Funikulieris</string>
+    <string name="type.railway.disused.bridge">Neizmantots dzelzceļa tilts</string>
 </resources>

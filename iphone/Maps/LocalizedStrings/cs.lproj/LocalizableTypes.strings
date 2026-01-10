@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "Nástupiště";
 "type.railway" = "Železnice";
 "type.railway.abandoned" = "Zaniklá železnice";
-"type.railway.abandoned.bridge" = "Most zaniklé železnice";
-"type.railway.abandoned.tunnel" = "Tunel zaniklé železnice";
 "type.railway.construction" = "Železniční stavba";
 "type.railway.crossing" = "Železniční přejezd";
 "type.railway.disused" = "Nepoužívaná železnice";
@@ -1489,7 +1487,6 @@
 "type.power.portal" = "Portál el. vedení";
 "type.building.guardhouse" = "Vrátnice";
 "type.shop.lighting" = "Obchod s osvětlením";
-"type.amenity.charging_station.motorcar.small" = "Nabíjecí stanice aut";
 "type.amenity.bench.backless" = "Lavička bez opěradla";
 "type.leisure.sports_centre.sport.soccer" = "Sportovní centrum";
 "type.leisure.sports_centre.sport.athletics" = "Sportovní centrum";

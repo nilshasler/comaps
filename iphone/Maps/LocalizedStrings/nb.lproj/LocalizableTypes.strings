@@ -890,8 +890,6 @@
 "type.public_transport.platform" = "Plattform";
 "type.railway" = "Jernbane";
 "type.railway.abandoned" = "Nedlagt jernbane";
-"type.railway.abandoned.bridge" = "Nedlagt jernbanebru";
-"type.railway.abandoned.tunnel" = "Nedlagt jernbanetunnel";
 "type.railway.construction" = "Jernbanebygging";
 "type.railway.crossing" = "Jernbaneovergang";
 "type.railway.disused" = "Ubenyttet jernbane";
@@ -1521,7 +1519,6 @@
 "type.leisure.sports_centre.sport.field_hockey" = "Sportssenter";
 "type.leisure.sports_centre.sport.bowls" = "Sportssenter";
 "type.leisure.bandstand" = "Musikkpaviljong";
-"type.amenity.charging_station.motorcar.small" = "Billadingspunkt";
 "type.shop.lighting" = "Lampebutikk";
 "type.leisure.sports_centre.sport.swimming" = "Svømmesenter";
 "type.amenity.bench.backless" = "Benk uten rygg";
