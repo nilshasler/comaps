@@ -14,6 +14,7 @@
 		270C9C282E16AB6F00ABA688 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270C9C252E16AB6300ABA688 /* Profile.swift */; };
 		27176A862E65B0150015F25F /* Icon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 27176A852E65B0150015F25F /* Icon.icon */; };
 		27176A8A2E65B01B0015F25F /* Debug Icon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 27176A892E65B01B0015F25F /* Debug Icon.icon */; };
+		272CA4492F127221005A3F5B /* subtypes.csv in Resources */ = {isa = PBXBuildFile; fileRef = 272CA4482F127221005A3F5B /* subtypes.csv */; };
 		272F1F392E0EE09000FA52EF /* ExistingProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F1F382E0EE08A00FA52EF /* ExistingProfileView.swift */; };
 		272F1F3B2E0EE0A300FA52EF /* NoExistingProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F1F3A2E0EE09500FA52EF /* NoExistingProfileView.swift */; };
 		272F1F3D2E0EE0C800FA52EF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F1F3C2E0EE0C400FA52EF /* ProfileView.swift */; };
@@ -764,6 +765,7 @@
 		270C9C252E16AB6300ABA688 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		27176A852E65B0150015F25F /* Icon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Icon.icon; sourceTree = "<group>"; };
 		27176A892E65B01B0015F25F /* Debug Icon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = "Debug Icon.icon"; sourceTree = "<group>"; };
+		272CA4482F127221005A3F5B /* subtypes.csv */ = {isa = PBXFileReference; lastKnownFileType = text; name = subtypes.csv; path = ../../data/subtypes.csv; sourceTree = SOURCE_ROOT; };
 		272F1F382E0EE08A00FA52EF /* ExistingProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistingProfileView.swift; sourceTree = "<group>"; };
 		272F1F3A2E0EE09500FA52EF /* NoExistingProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoExistingProfileView.swift; sourceTree = "<group>"; };
 		272F1F3C2E0EE0C400FA52EF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -3954,6 +3956,7 @@
 				F623DA6A1C9C2731006A3436 /* opening_hours_how_to_edit.html */,
 				FA85F632145DDDC20090E1A0 /* packed_polygons.bin */,
 				451950391B7A3E070085DA05 /* patterns.txt */,
+				272CA4482F127221005A3F5B /* subtypes.csv */,
 				FAAEA7D0161BD26600CCD661 /* synonyms.txt */,
 				BB25B1A51FB32767007276FA /* transit_colors.txt */,
 				FA64D9A813F975AD00350ECF /* types.txt */,
@@ -4281,6 +4284,7 @@
 				34AB66681FC5AA330078E451 /* TransportTransitPedestrian.xib in Resources */,
 				F6D67CDE2062BBA60032FD38 /* MWMBCCreateCategoryAlert.xib in Resources */,
 				3490D2E31CE9DD2500D0B838 /* MWMSideButtonsView.xib in Resources */,
+				272CA4492F127221005A3F5B /* subtypes.csv in Resources */,
 				F6E2FE2E1E097BA00083EBEC /* MWMStreetEditorEditTableViewCell.xib in Resources */,
 				3463BA691DE81DB90082417F /* MWMTrafficButtonViewController.xib in Resources */,
 				F623DA6C1C9C2731006A3436 /* opening_hours_how_to_edit.html in Resources */,

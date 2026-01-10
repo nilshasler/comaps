@@ -11,6 +11,7 @@
 #include "indexer/classificator.hpp"
 #include "indexer/feature_impl.hpp"
 #include "indexer/ftypes_matcher.hpp"
+#include "indexer/ftypes_subtypes.hpp"
 
 #include "platform/platform.hpp"
 
@@ -351,9 +352,11 @@ private:
 // - both amenity-charging_station-motorcar and amenity-charging_station-bicycle are left;
 void LeaveLongestTypes(std::vector<generator::TypeStrings> & matchedTypes)
 {
-  auto const isChargingStation = [](auto const & lhs, auto const & rhs)
+  // Prevents types, that either have subtypes or are subtypes, from being removed
+  auto subtypes = ftypes::Subtypes::Instance();
+  auto const hasSubtypeRelatedTypes = [subtypes](auto const & lhs, auto const & rhs)
   {
-    return lhs.size() > 1 && rhs.size() > 1 && lhs.at(1) == "charging_station" && rhs.at(1) == "charging_station" && lhs.at(0) == "amenity" && rhs.at(0) == "amenity";
+    return subtypes.IsPathOfTypeWithSubtypesOrSubtype(lhs) || subtypes.IsPathOfTypeWithSubtypesOrSubtype(rhs);
   };
 
   auto const equalPrefix = [](auto const & lhs, auto const & rhs)
@@ -374,9 +377,10 @@ void LeaveLongestTypes(std::vector<generator::TypeStrings> & matchedTypes)
     return lhs < rhs;
   };
 
-  auto const isEqual = [&equalPrefix, &isChargingStation](auto const & lhs, auto const & rhs)
+  // `true` means it will be deleted, because being equal means it isn't unique
+  auto const isEqual = [&equalPrefix, &hasSubtypeRelatedTypes](auto const & lhs, auto const & rhs)
   {
-    if (isChargingStation(lhs, rhs))
+    if (hasSubtypeRelatedTypes(lhs, rhs))
       return false;
     
     if (equalPrefix(lhs, rhs))

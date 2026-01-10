@@ -3,6 +3,7 @@
 #include "indexer/feature.hpp"
 #include "indexer/feature_algo.hpp"
 #include "indexer/ftypes_matcher.hpp"
+#include "indexer/ftypes_subtypes.hpp"
 #include "indexer/road_shields_parser.hpp"
 
 #include "geometry/mercator.hpp"
@@ -119,6 +120,7 @@ std::string MapObject::GetLocalizedAllTypes(bool withMainType) const
   copy.SortBySpec();
 
   auto const & isPoi = ftypes::IsPoiChecker::Instance();
+  auto const & subtypes = ftypes::Subtypes::Instance();
   auto const & isDirectional = ftypes::IsDirectionalChecker::Instance();
   auto const & amenityChecker = ftypes::IsAmenityChecker::Instance();
   auto const & charingStationCarChecker = ftypes::IsCharingStationCarChecker::Instance();
@@ -141,7 +143,7 @@ std::string MapObject::GetLocalizedAllTypes(bool withMainType) const
     }
 
     // Ignore types that are not POI
-    if (!isMainType && !isPoi(type) && !isDirectional(type))
+    if (!isMainType && !isPoi(type) && !subtypes.IsTypeWithSubtypesOrSubtype(type) && !isDirectional(type))
       continue;
 
     // Ignore general amenity

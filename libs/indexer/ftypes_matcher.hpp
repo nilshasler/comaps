@@ -519,14 +519,6 @@ public:
   DECLARE_CHECKER_INSTANCE(IsDirectionalChecker);
 };
 
-class IsCharingStationChecker : public ftypes::BaseChecker
-{
-  IsCharingStationChecker();
-
-public:
-  DECLARE_CHECKER_INSTANCE(IsCharingStationChecker);
-};
-
 class IsCharingStationCarChecker : public ftypes::BaseChecker
 {
   IsCharingStationCarChecker();

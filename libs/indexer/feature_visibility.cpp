@@ -5,6 +5,7 @@
 #include "indexer/feature.hpp"
 #include "indexer/feature_data.hpp"
 #include "indexer/ftypes_matcher.hpp"
+#include "indexer/ftypes_subtypes.hpp"
 #include "indexer/scales.hpp"
 
 #include "base/assert.hpp"
@@ -133,6 +134,9 @@ bool TypeAlwaysExists(uint32_t type, GeomType geomType = GeomType::Undefined)
     return false;
 
   if (IsUsefulStandaloneType(type, geomType))
+    return true;
+
+  if (ftypes::Subtypes::Instance().IsTypeWithSubtypesOrSubtype(type))
     return true;
 
   uint8_t const typeLevel = ftype::GetLevel(type);

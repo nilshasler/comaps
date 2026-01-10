@@ -3,6 +3,7 @@
 #include "indexer/classificator.hpp"
 #include "indexer/feature.hpp"
 #include "indexer/ftypes_matcher.hpp"
+#include "indexer/ftypes_subtypes.hpp"
 
 #include "base/assert.hpp"
 #include "base/macros.hpp"
@@ -191,25 +192,13 @@ void TypesHolder::SortBySpec()
   auto const getPriority = [&cl](uint32_t type) { return cl.GetObject(type)->GetMaxOverlaysPriority(); };
 
   auto const & checker = UselessTypesChecker::Instance();
-  auto const & isChargingStationChecker = ftypes::IsCharingStationChecker::Instance();
-  auto const & isChargingStationSmallChecker = ftypes::IsCharingStationSmallChecker::Instance();
+  auto const & subtypes = ftypes::Subtypes::Instance();
 
-  std::stable_sort(begin(), end(), [&checker, &getPriority, &isChargingStationChecker, &isChargingStationSmallChecker](uint32_t t1, uint32_t t2)
+  std::stable_sort(begin(), end(), [&checker, &getPriority, &subtypes](uint32_t t1, uint32_t t2)
   {
-    if (isChargingStationChecker(t1) && isChargingStationChecker(t2))
-    {
-      if (isChargingStationSmallChecker(t1) && !isChargingStationSmallChecker(t2))
-        return false;
-      else if (!isChargingStationSmallChecker(t1) && isChargingStationSmallChecker(t2))
-        return true;
-      
-      uint8_t const t1Level = ftype::GetLevel(t1);
-      uint8_t const t2Level = ftype::GetLevel(t2);
-      if (t1Level == 2 && t2Level != 2)
-        return true;
-      else if (t1Level != 2 && t2Level == 2)
-        return false;
-    }
+    std::optional<bool> const comaprisonResultBasedOnTypeRelation = subtypes.ComaprisonResultBasedOnTypeRelation(t1, t2);
+    if (comaprisonResultBasedOnTypeRelation.has_value())
+      return comaprisonResultBasedOnTypeRelation.value();
       
     int const p1 = getPriority(t1);
     int const p2 = getPriority(t2);
