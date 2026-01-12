@@ -34,7 +34,7 @@
 "use_cellular_data" = "Ja";
 
 /* View and button titles for accessibility */
-"zoom_to_country" = "Weergeven op de kaart";
+"zoom_to_country" = "Weergeven op kaart";
 
 /* Button text for the button at the center of the screen when the country is not downloaded and the size should not be shown */
 "country_status_download_without_size" = "Download kaart";
@@ -43,7 +43,7 @@
 "country_status_download_failed" = "Downloaden is mislukt";
 
 /* Text in About screen */
-"about_headline" = "Open project, gemaakt door de community";
+"about_headline" = "Open project gedreven door de community";
 
 /* Text in About screen */
 "about_proposition_1" = "Offline, snel en gebruiksvriendelijk";
@@ -60,7 +60,7 @@
 "continue_button" = "Doorgaan";
 
 /* "Add new bookmark list" dialog title */
-"add_new_set" = "Nieuwe groep toevoegen";
+"add_new_set" = "Nieuwe lijst toevoegen";
 
 /* Add Bookmark list dialog - hint when the list name is empty */
 "bookmark_set_name" = "Naam van bladwijzergroep";
@@ -84,7 +84,7 @@
 "settings" = "Instellingen";
 
 /* Measurement units title in settings activity */
-"measurement_units" = "Afstandseenheid";
+"measurement_units" = "Eenheid van afstand";
 
 /* Search category for cafes, bars, restaurants; any changes should be duplicated in categories.txt @category_eat! */
 "category_eat" = "Waar iets gaan eten";
@@ -153,7 +153,7 @@
 "category_water" = "Water";
 
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
-"category_rv" = "Caravanfaciliteiten";
+"category_rv" = "Camperfaciliteiten";
 "share_bookmarks_email_body" = "Hallo!\n\nBijgesloten zijn mijn bladwijzers uit de CoMaps app. Open ze als je CoMaps geïnstalleerd hebt. Of, als je dat niet hebt, download de app voor je iOS- of Android-apparaat door deze link te volgen: https://www.comaps.app/download/\n\nGeniet van het reizen met CoMaps!";
 
 /* message title of loading file */

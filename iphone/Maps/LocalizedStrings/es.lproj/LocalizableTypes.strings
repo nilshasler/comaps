@@ -17,7 +17,7 @@
 "type.aeroway.runway" = "Pista de despegue";
 "type.aeroway.taxiway" = "Pista de rodaje";
 "type.aeroway.terminal" = "Terminal";
-"type.amenity" = "Instalación";
+"type.amenity" = "Establecimiento";
 "type.amenity.arts_centre" = "Centro de arte";
 "type.amenity.atm" = "Cajero automático";
 "type.amenity.bank" = "Banco";
@@ -34,7 +34,7 @@
 "type.amenity.cafe" = "Café";
 "type.amenity.car_rental" = "Alquiler de coches";
 "type.amenity.motorcycle_rental" = "Alquiler de motocicletas";
-"type.amenity.car_sharing" = "Car Sharing";
+"type.amenity.car_sharing" = "Estación de uso temporal de vehículos";
 "type.amenity.car_wash" = "Lavado de coches";
 "type.amenity.casino" = "Casino";
 "type.amenity.gambling" = "Apuestas";
@@ -165,8 +165,8 @@
 "type.amenity.taxi" = "Parada de taxis";
 "type.amenity.telephone" = "Teléfono";
 "type.amenity.theatre" = "Teatro";
-"type.amenity.toilets" = "WC";
-"type.toilets.yes" = "WC";
+"type.amenity.toilets" = "Baño";
+"type.toilets.yes" = "Baños";
 "type.amenity.townhall" = "Ayuntamiento";
 "type.amenity.university" = "Universidad";
 "type.amenity.vending_machine" = "Máquina expendedora";
@@ -202,9 +202,9 @@
 "type.natural.water.wastewater" = "Aguas residuales";
 "type.barrier.entrance" = "Entrada";
 "type.barrier.fence" = "Valla";
-"type.barrier.gate" = "Verja";
+"type.barrier.gate" = "Portón";
 "type.barrier.hedge" = "Seto";
-"type.barrier.kissing_gate" = "Puerta peatonal";
+"type.barrier.kissing_gate" = "Tranquera";
 "type.barrier.lift_gate" = "Barrera levadiza";
 "type.barrier.retaining_wall" = "Muro de contención";
 "type.barrier.stile" = "Escalón";
@@ -616,8 +616,8 @@
 "type.historic.castle.manor" = "Casa solariega";
 "type.historic.castle.palace" = "Palacio";
 "type.historic.castle.shiro" = "Castillo japonés";
-"type.historic.castle.stately" = "Castillo";
-"type.historic.city_gate" = "Portón de la ciudad";
+"type.historic.castle.stately" = "Castillo señorial";
+"type.historic.city_gate" = "Puerta de ciudad";
 "type.historic.citywalls" = "Muralla";
 "type.historic.fort" = "Fuerte";
 "type.historic.gallows" = "Horca";
@@ -661,7 +661,7 @@
 /* In most (European) countries, сemeteries are usually independent of places of worship (e.g. military cemeteries), while grave yards are usually the yard of a place of worship. */
 "type.landuse.cemetery.christian" = "Cementerio cristiano";
 "type.landuse.religious" = "Terrenos religiosos";
-"type.landuse.commercial" = "Zona comercial";
+"type.landuse.commercial" = "Área de servicios comerciales";
 "type.landuse.construction" = "Construcción";
 "type.landuse.education" = "Instalaciones educativas";
 "type.landuse.farmland" = "Tierras agrícolas";
@@ -686,15 +686,15 @@
 "type.landuse.recreation_ground" = "Área recreativa";
 "type.landuse.reservoir" = "Embalse";
 "type.landuse.residential" = "Zona residencial";
-"type.landuse.retail" = "Zona comercial";
+"type.landuse.retail" = "Área de tiendas comerciales";
 "type.landuse.salt_pond" = "Salina";
-"type.landuse.village_green" = "Espacio verde";
+"type.landuse.village_green" = "Espacio verde común";
 "type.landuse.vineyard" = "Viñedo";
 "type.leisure" = "Ocio";
-"type.leisure.common" = "Zona pública";
+"type.leisure.common" = "Terreno comunal";
 "type.leisure.dog_park" = "Parque canino";
 "type.leisure.fitness_centre" = "Centro de fitnes";
-"type.leisure.fitness_station" = "Parque de fitnes";
+"type.leisure.fitness_station" = "Parque de gimnasia";
 "type.leisure.dance" = "Salón de baile";
 "type.leisure.garden" = "Jardín";
 "type.leisure.garden.residential" = "Jardín residencial";
@@ -702,7 +702,7 @@
 "type.leisure.miniature_golf" = "Minigolf";
 "type.leisure.hackerspace" = "Espacio para hackers";
 "type.leisure.ice_rink" = "Pisa de patinaje";
-"type.leisure.marina" = "Puerto o amarradero";
+"type.leisure.marina" = "Marina";
 "type.leisure.nature_reserve" = "Reserva natural";
 "type.leisure.outdoor_seating" = "Asientos al aire libre";
 "type.leisure.park" = "Parque";
@@ -711,7 +711,7 @@
 "type.leisure.park.private" = "Parque privado";
 "type.leisure.picnic_table" = "Mesa de picnic";
 "type.leisure.pitch" = "Cancha";
-"type.leisure.playground" = "Patio de recreo";
+"type.leisure.playground" = "Parque infantil";
 "type.leisure.recreation_ground" = "Zona recreativa";
 "type.leisure.sauna" = "Sauna";
 "type.leisure.slipway" = "Rampa de barcos";
@@ -736,7 +736,7 @@
 "type.man_made.mast" = "Mástil";
 "type.man_made.pier" = "Muelle";
 "type.man_made.pipeline" = "Ducto";
-"type.man_made.pipeline.overground" = "Ducto a cielo abierto";
+"type.man_made.pipeline.overground" = "Ducto exterior";
 "type.man_made.silo" = "Silo";
 "type.man_made.storage_tank" = "Cisterna";
 "type.man_made.surveillance" = "Cámara de vigilancia";
@@ -763,11 +763,11 @@
 "type.man_made.works" = "Fábrica";
 "type.military" = "Militar";
 "type.military.bunker" = "Búnker";
-"type.mountain_pass" = "Puerto de montaña";
+"type.mountain_pass" = "Paso de montaña";
 "type.natural" = "Naturaleza";
 
 /* A rocky land cover. */
-"type.natural.bare_rock" = "Roca desnuda";
+"type.natural.bare_rock" = "Lecho rocoso";
 
 /* A land cover consisting of rounded rock fragments (pebbles) on a beach or riverbed. */
 "type.natural.shingle" = "Guijarros";
@@ -781,7 +781,7 @@
 "type.natural.cape" = "Cabo";
 "type.natural.cave_entrance" = "Entrada de cueva";
 "type.natural.cliff" = "Acantilado";
-"type.natural.earth_bank" = "Talud de tierra";
+"type.natural.earth_bank" = "Talud de tierra escarpado";
 "type.man_made.embankment" = "Terraplén";
 "type.natural.coastline" = "Costa";
 "type.natural.desert" = "Desierto";
@@ -866,7 +866,7 @@
 "type.power.generator" = "Generador";
 "type.power.generator.solar" = "Generador solar";
 "type.power.generator.wind" = "Aerogenerador";
-"type.power.generator.gas" = "Planta termoeléctrica de gas";
+"type.power.generator.gas" = "Planta termoeléctrica a gas";
 "type.power.generator.hydro" = "Planta hidroeléctrica";
 "type.power.line" = "Línea eléctrica";
 "type.power.line.underground" = "Línea eléctrica subterránea";
@@ -1225,7 +1225,7 @@
 "type.shop.florist" = "Floristería";
 "type.shop.funeral_directors" = "Funeraria";
 "type.shop.furniture" = "Tienda de muebles";
-"type.shop.garden_centre" = "Vivero";
+"type.shop.garden_centre" = "Centro de jardinería";
 "type.shop.gas" = "Tienda de gas";
 "type.shop.gift" = "Tienda de regalos";
 "type.shop.greengrocer" = "Frutería";
@@ -1283,15 +1283,15 @@
 
 /* maybe change to Art Gallery for en-US when supported */
 "type.shop.art" = "Tienda de arte";
-"type.shop.baby_goods" = "Tienda de niños";
+"type.shop.baby_goods" = "Tienda de artículos para bebés";
 "type.shop.bag" = "Tienda de bolsos";
 "type.shop.bed" = "Tienda de camas";
 "type.shop.boutique" = "Boutique";
 "type.shop.charity" = "Tienda de caridad";
 "type.shop.cheese" = "Tienda de quesos";
-"type.shop.craft" = "Artes y manualidades";
+"type.shop.craft" = "Tienda de materiales para manualidades";
 "type.shop.dairy" = "Productos lácteos";
-"type.shop.electrical" = "Tienda de electricidad";
+"type.shop.electrical" = "Tienda de suministros eléctricos";
 "type.shop.fishing" = "Tienda de pesca";
 "type.shop.interior_decoration" = "Decoración de interiores";
 "type.shop.lottery" = "Boletos de lotería";
@@ -1363,18 +1363,18 @@
 "type.attraction.roller_coaster" = "Montaña rusa";
 "type.attraction.water_slide" = "Tobogán acuático";
 "type.tourism.attraction.specified" = "Atracción turística";
-"type.tourism.camp_site" = "Paraje de campamento";
+"type.tourism.camp_site" = "Paraje de acampada";
 "type.tourism.caravan_site" = "Zona de autocaravanas";
 
 /* A rentable countryside vacation house. */
-"type.tourism.chalet" = "Casa de vacaciones";
+"type.tourism.chalet" = "Cabaña vacacional";
 "type.tourism.gallery" = "Galería";
 "type.tourism.guest_house" = "Casa de huéspedes";
 "type.tourism.hostel" = "Albergue juvenil";
 "type.tourism.hotel" = "Hotel";
 "type.tourism.information" = "Información turística";
 "type.tourism.information.board" = "Tablón de información";
-"type.tourism.information.guidepost" = "Poste indicador";
+"type.tourism.information.guidepost" = "Poste guía";
 "type.tourism.information.map" = "Mapa turístico";
 "type.tourism.information.office" = "Oficina de turismo";
 "type.tourism.information.visitor_centre" = "Centro de visitantes";
@@ -1386,7 +1386,7 @@
 "type.tourism.viewpoint" = "Mirador";
 
 /* Typically more basic, not staffed and free (compared to alpine_hut). */
-"type.tourism.wilderness_hut" = "Cabaña";
+"type.tourism.wilderness_hut" = "Refugio de paraje natural";
 "type.tourism.zoo" = "Zoológico";
 "type.tourism.zoo.petting" = "Zoológico interactivo";
 "type.traffic_calming" = "Pacificación del tráfico";
@@ -1397,13 +1397,13 @@
 "type.waterway.canal.tunnel" = "Túnel de canal";
 "type.waterway.fish_pass" = "Escalera de peces";
 "type.waterway.dam" = "Presa";
-"type.barrier.ditch" = "Zanja";
+"type.barrier.ditch" = "Acequia";
 "type.natural.water.ditch" = "Zanja de drenaje";
-"type.waterway.ditch.tunnel" = "Obra de drenaje";
-"type.waterway.dock" = "Muelle";
+"type.waterway.ditch.tunnel" = "Alcantarilla";
+"type.waterway.dock" = "Dique seco";
 "type.waterway.drain" = "Desagüe";
 "type.natural.water.drain" = "Desagüe";
-"type.waterway.drain.tunnel" = "Obra de drenaje";
+"type.waterway.drain.tunnel" = "Alcantarilla";
 "type.waterway.lock_gate" = "Compuerta";
 "type.waterway.river" = "Río";
 "type.waterway.river.tunnel" = "Río";
@@ -1420,21 +1420,21 @@
 "type.aerialway.j.bar" = "Telesilla barra en J";
 "type.aerialway.magic_carpet" = "Alfombra mágica";
 "type.aerialway.platter" = "Telesilla de disco";
-"type.aerialway.rope_tow" = "Telesilla de cuerda";
-"type.aerialway.t.bar" = "Telesilla barra en T";
+"type.aerialway.rope_tow" = "Remolque de cuerda";
+"type.aerialway.t.bar" = "Ascensor de barra en T";
 "type.piste_type.downhill" = "Pista de esquí alpino";
 "type.piste_type.downhill.area" = "Pista de esquí alpino";
-"type.piste_type.downhill.advanced" = "Pista de esquí alpino";
-"type.piste_type.downhill.advanced.area" = "Pista de esquí alpino";
-"type.piste_type.downhill.easy" = "Pista de esquí alpino";
-"type.piste_type.downhill.easy.area" = "Pista de esquí alpino";
-"type.piste_type.downhill.expert" = "Pista de esquí alpino";
-"type.piste_type.downhill.expert.area" = "Pista de esquí alpino";
-"type.piste_type.downhill.freeride" = "Pista de esquí alpino";
-"type.piste_type.downhill.intermediate" = "Pista de esquí alpino";
-"type.piste_type.downhill.intermediate.area" = "Pista de esquí alpino";
-"type.piste_type.downhill.novice" = "Pista de esquí alpino";
-"type.piste_type.downhill.novice.area" = "Pista de esquí alpino";
+"type.piste_type.downhill.advanced" = "Pista de esquí alpino nivel avanzado";
+"type.piste_type.downhill.advanced.area" = "Pista de esquí alpino nivel avanzado";
+"type.piste_type.downhill.easy" = "Pista de esquí alpino nivel fácil";
+"type.piste_type.downhill.easy.area" = "Pista de esquí alpino nivel fácil";
+"type.piste_type.downhill.expert" = "Pista de esquí alpino nivel experto";
+"type.piste_type.downhill.expert.area" = "Pista de esquí alpino nivel experto";
+"type.piste_type.downhill.freeride" = "Zona de esquí alpino fuera de pista";
+"type.piste_type.downhill.intermediate" = "Pista de esquí alpino nivel intermedio";
+"type.piste_type.downhill.intermediate.area" = "Pista de esquí alpino nivel intermedio";
+"type.piste_type.downhill.novice" = "Pista de esquí alpino nivel principiante";
+"type.piste_type.downhill.novice.area" = "Pista de esquí alpino nivel principiante";
 "type.piste_type.nordic" = "Pista de esquí nórdico";
 "type.piste_type.sled" = "Pista para trineos";
 "type.piste_type.sled.area" = "Pista para trineos";
@@ -1470,9 +1470,9 @@
 "type.sport.diving" = "Salto de trampolín";
 "type.man_made.crane" = "Grúa";
 "type.natural.wetland.fen" = "Tollo";
-"type.natural.wetland.saltmarsh.tidal" = "Marisma Salina de Marea";
+"type.natural.wetland.saltmarsh.tidal" = "Marisma salina mareal";
 "type.natural.wetland.reedbed" = "Juncal";
-"type.natural.wetland.tidalflat" = "Llanura de marea";
+"type.natural.wetland.tidalflat" = "Llanura mareal";
 "type.natural.wetland.swamp" = "Pantano";
 "type.natural.wetland.saltmarsh" = "Marisma salina";
 "type.natural.wetland.mangrove" = "Manglares";
@@ -1540,7 +1540,7 @@
 "type.emergency.access_point" = "Punto de rescate de emergencia";
 "type.amenity.food_sharing" = "Alimentos compartidos";
 "type.social_facility.soup_kitchen" = "Comedor social";
-"type.amenity.give_box" = "Give Box";
+"type.amenity.give_box" = "Caja libre";
 "type.leisure.indoor_play" = "Centro de actividades en interior";
 "type.natural.sand" = "Arena";
 "type.amenity.sailing_school" = "Escuela de vela";

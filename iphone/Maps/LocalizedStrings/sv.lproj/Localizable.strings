@@ -247,7 +247,7 @@
 "pref_tts_language_title" = "Röstspråk";
 
 /* Settings «Route» category: «Test Voice Directions» title */
-"pref_tts_test_voice_title" = "Testa röstinstruktioner (TTS, Text-To-Speech)";
+"pref_tts_test_voice_title" = "Testa röstinstruktioner";
 
 /* Title for "Other" section in TTS settings. */
 "pref_tts_other_section_title" = "Övrigt";

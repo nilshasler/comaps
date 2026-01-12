@@ -104,7 +104,7 @@
 "mobile_data_description" = "Mobile internet is required for map update notifications and uploading edits.";
 "mobile_data_option_today" = "Samo danas";
 "sharing_call_action_look" = "Check out";
-"accept" = "Accept";
+"accept" = "Prihvati";
 "ok" = "OK";
 "parkings" = "Parkiralište";
 "bookmark_lists" = "Liste";
@@ -120,7 +120,7 @@
 "osm_profile_promt" = "Create an OpenStreetMap account or log in to publish your map edits to the world.";
 "osm_profile" = "OpenStreetMap profile";
 "add_opening_hours" = "Add opening hours";
-"closed" = "Closed";
+"closed" = "Zatvoreno";
 "osm_more_about_url" = "https://wiki.openstreetmap.org/wiki/About_OpenStreetMap";
 "osm_mapdata_explanation %@" = "Community-created map data as of *%@*. Learn more about how to edit and update the map at [OpenStreetMap.org](https://openstreetmap.org).";
 "speedcams_alert_title_carplay_1" = "Speedсams";
@@ -130,7 +130,7 @@
 "recover" = "Recover";
 "recover_all" = "Recover All";
 "dialog_routing_location_turn_on" = "Omogući usluge lokacije";
-"day_off" = "Closed";
+"day_off" = "Zatvoreno";
 "editor_reset_edits_button" = "Odbacite promjene";
 "export_file" = "Izvezi kao KMZ";
 "money" = "Novac";
@@ -164,7 +164,7 @@
 "dialog_routing_disclaimer_priority" = "— Uvjeti na cestama, prometni propisi i prometni znakovi uvijek imaju prednost pred navigacijskim savjetima;";
 "pref_tts_speedcams_always" = "Uvijek upozori";
 "hide_from_map" = "Hide from map";
-"core_entrance" = "Ulaz";
+"core_entrance" = "Glavni Ulaz";
 "operator" = "Operator: %@";
 "opens_in" = "Opens in %@";
 "dialog_routing_check_gps" = "Provjerite GPS signal";
@@ -177,7 +177,7 @@
 "downloader_status_maps" = "Maps";
 "avoid_tolls" = "Izbjegni cestarine";
 "enable_logging" = "Omogući zapisivanje";
-"category_post" = "Post";
+"category_post" = "Poštanski ured";
 "downloader_retry" = "Retry";
 "editor_time_title" = "Radno vrijeme";
 "editor_other_info" = "Napomena za volontere OpenStreetMapa (nije obavezno)";
@@ -205,10 +205,10 @@
 "food_places" = "Hrana";
 "editor_detailed_description" = "Your suggested map changes will be sent to the OpenStreetMap community. Please describe any additional details that cannot be edited in CoMaps.";
 "bookmarks_convert_error_title" = "Error";
-"select_cuisine" = "Select cuisine";
+"select_cuisine" = "Odaberite kuhinju";
 "editor_share_to_all_dialog_message_2" = "Urednici OpenStreetMapa će provjeriti promjene i kontaktirati vas ako imaju bilo kakvih pitanja.";
 "terms_of_use" = "Uvjeti korištenja";
-"about_headline" = "Open project powered by the community";
+"about_headline" = "Otvoreni projekt kojeg pokreće zajednica";
 "downloader_delete_map_dialog" = "All of your map edits will be deleted with the map.";
 "app_tip_03" = "Ako poznajete programera softvera, možete ga zamoliti da implementira značajku koja vam je potrebna.";
 "downloader_search_results" = "Found";
@@ -225,7 +225,7 @@
 "core_exit" = "Izlaz";
 "dialog_routing_error_location_not_found" = "Nije moguće izraditi rutu. Trenutne GPS koordinate nije moguće odrediti.";
 "location_services_disabled_2" = "2. Tap Location";
-"clear" = "Clear";
+"clear" = "Očisti";
 "bookmarks_import" = "Uvoz Oznaka i Ruta";
 "opens_tomorrow_at" = "Opens tomorrow at %@";
 "closes_in" = "Closes in %@";
@@ -235,7 +235,7 @@
 "pink" = "Pink";
 "app_tip_09" = "Naš glavni cilj je izrada brzih, na privatnost usmjerenih i jednostavnih karata koje ćete obožavati.";
 "app_tip_08" = "Podatke karte možete jednostavno popraviti i poboljšati.";
-"stop_without_saving" = "Stop Without Saving";
+"stop_without_saving" = "Zaustavi bez spremanja";
 "dialog_routing_change_intermediate" = "Unable to locate the intermediate point.";
 "downloader_status_outdated" = "Update";
 "button_layer_subway" = "Subway";
@@ -252,7 +252,7 @@
 "routing_download_maps_along" = "Preuzmite sve karte duž svoje rute";
 "dialog_routing_check_gps_carplay" = "No GPS signal. Please move to an open area";
 "routing_planning_error" = "Route Planning Failed";
-"drive_through" = "Drive-through";
+"drive_through" = "Prolaz za automobile";
 "restore" = "Vratiti";
 "moremonth_ago_sorttype" = "Prije više od mjesec dana";
 "downloader_applying" = "Applying %@…";
@@ -276,7 +276,7 @@
 "download_over_mobile_message" = "This could be considerably expensive with some plans or if roaming.";
 "ferry_crossing" = "Trajektna linija";
 "email_error_title" = "Error sending email";
-"add_language" = "Add a language";
+"add_language" = "Dodaj jezik";
 "others_sorttype" = "Ostali";
 "common_check_internet_connection_dialog" = "Please make sure your device is connected to the Internet.";
 "car_used_on_the_car_screen" = "Sada koristite CoMaps na zaslonu automobila";
@@ -285,7 +285,7 @@
 "current_location_unknown_error_title" = "Current location is unknown.";
 "app_tip_07" = "Našu aplikaciju razvili su nekoliko entuzijasta i zajednica.";
 "editor_time_advanced" = "Napredni način rada";
-"add_street" = "Add a street";
+"add_street" = "Dodaj ulicu";
 "share_with_friends" = "Share with friends";
 "dialog_routing_download_files_carplay" = "To create a route, download missing maps on your device";
 "last_upload" = "Last upload";
@@ -321,7 +321,7 @@
 "please_note" = "Please note";
 "bookmarks_detect_title" = "New files detected";
 "migration_download_error_dialog" = "Download error";
-"choose_street" = "Choose a street";
+"choose_street" = "Odaberite ulicu";
 "category_food" = "Namirnice";
 "p2p_to_here" = "Ruta do";
 "bookmark_share_email_subject" = "Hej, pogledaj moju oznaku u CoMapsu!";
@@ -355,11 +355,11 @@
 "network" = "Network: %@";
 "elevation_profile_diff_level_easy" = "Easy";
 "editor_share_to_all_dialog_title" = "Želite li to poslati svim korisnicima?";
-"daily" = "Daily";
+"daily" = "Dnevno";
 "elevation_profile_diff_level" = "Difficulty level";
 "downloader_update_maps" = "Ažurirajte karte";
 "dialog_routing_end_not_determined" = "Ruta nije izrađena. Odredište nije moguće pronaći.";
-"closed_now" = "Closed now";
+"closed_now" = "Zatvoreno sada";
 "dialog_routing_download_and_update_all" = "Download or update all maps along the projected path to calculate a route.";
 "miles" = "Miles";
 "deep_purple" = "Tamno ljubičasta";
@@ -369,14 +369,14 @@
 "orange" = "Orange";
 "error_enter_correct_web" = "Unesite valjanu web-adresu";
 "bookmark" = "bookmark";
-"editor_edit_place_title" = "Editing";
+"editor_edit_place_title" = "Uređivanje";
 "category_wifi" = "WiFi";
 "editor_place_doesnt_exist" = "Mjesto ne postoji";
 "subway_data_unavailable" = "Karta podzemne željeznice nije dostupna";
 "near_me_sorttype" = "U mojoj blizini";
 "green" = "Green";
 "pref_tts_speedcams_auto" = "Upozori na prekoračenje brzine";
-"details" = "Details";
+"details" = "Detalji";
 "yellow" = "Yellow";
 "privacy_policy" = "Privacy policy";
 "editor_default_language_hint" = "Kao što je napisano na lokalnom jeziku";
@@ -407,12 +407,12 @@
 "cancel" = "Odustani";
 "switch_to_phone_bookmarks_carplay" = "Switch to the phone to see all bookmarks";
 "lime" = "Limeta";
-"website_menu" = "Menu Link";
+"website_menu" = "Poveznica na Jelovnik";
 "app_tip_02" = "Sviđa li vam se naša aplikacija? Donirajte kako biste podržali razvoj! Još vam se ne sviđa? Javite nam zašto i mi ćemo to popraviti!";
 "pick_destination" = "Destination";
 "cyan" = "Cijan";
 "teal" = "Tirkizna";
-"level" = "Floor";
+"level" = "Kat";
 "refresh" = "Update";
 "use_cellular_data" = "Yes";
 "capacity" = "Capacity: %@";
@@ -426,7 +426,7 @@
 "whats_new_auto_update_message" = "Updating maps keeps the information about objects up to date";
 "editor_time_close" = "Zatvoreno";
 "editor_time_add" = "Dodaj Raspored";
-"editor_edit_place_category_title" = "Category";
+"editor_edit_place_category_title" = "Kategorija";
 "bookmarks_error_title_list_name_already_taken" = "Taj naziv je već zauzet";
 "category_entertainment" = "Zabava";
 "placepage_add_stop" = "Dodaj zaustavljanje";
@@ -467,11 +467,11 @@
 "dialog_routing_unable_locate_route" = "Nije moguće pronaći rutu";
 "bookmarks_error_title_list_name_too_long" = "This name is too long";
 "sort_type" = "Sort by type";
-"cuisine" = "Cuisine";
+"cuisine" = "Kuhinja";
 "country_status_download_without_size" = "Download Map";
 "pref_tts_speedcams_never" = "Nikad ne upozoravaj";
 "twentyfour_seven" = "24/7";
-"outdoor_seating" = "Outdoor seating";
+"outdoor_seating" = "Vanjski prostor za sjedenje";
 "place_description_title" = "Opis mjesta";
 "editor_add_select_category_popular_subtitle" = "Popular";
 "editor_time_add_closed" = "Dodajte izvan radno vrijeme";
@@ -488,7 +488,7 @@
 "editor_comment_hint" = "Comment…";
 "editor_share_to_all_dialog_message_1" = "Provjerite da niste unijeli privatne ili osobne podatke.";
 "location_services_disabled_message" = "Enable access to geolocation in the device settings";
-"edit_place" = "Edit Place";
+"edit_place" = "Uredi mjesto";
 "dialog_pedestrian_route_is_long_message" = "Molimo odaberite početnu ili završnu točku bliže stanici podzemne željeznice";
 "settings" = "Settings";
 "editor_category_unsuitable_title" = "Ne možete pronaći odgovarajuću kategoriju?";
@@ -503,7 +503,7 @@
 "km" = "km";
 "search_history_title" = "Povijest pretraživanja";
 "placepage_delete_track_button" = "Delete Track";
-"house_number" = "Building number";
+"house_number" = "Broj zgrade";
 "show" = "Show";
 "dialog_routing_location_unknown_turn_on" = "Nije moguće pronaći trenutne GPS koordinate. Omogućite usluge lokacije za izračun rute.";
 "dialog_routing_disclaimer_title" = "Prilikom praćenja rute, imajte na umu:";
@@ -523,7 +523,7 @@
 "book_button" = "Book";
 "error_enter_correct_house_number" = "Unesite važeći broj zgrade";
 "toll_road" = "Cesta s naplatom cestarine";
-"choose_language" = "Choose a language";
+"choose_language" = "Odaberite jezik";
 "editor_edit_place_name_hint" = "Naziv mjesta";
 "not_all_shown_bookmarks_carplay" = "Not all bookmarks are shown";
 "icloud_synchronization_error_connection_error" = "Error: Failed to synchronize due to connection error";
@@ -534,7 +534,7 @@
 "editor_reset_edits_message" = "Odbaciti sve lokalne promjene?";
 "sort_distance" = "Sort by distance";
 "traffic_update_app_message" = "To display traffic data, the application must be updated.";
-"category_fuel" = "Benzinske stanice";
+"category_fuel" = "Benzin";
 "editor_add_place_title" = "Dodavanje";
 "bookmark_set_name" = "Označi naziv Liste";
 "moreyear_ago_sorttype" = "Prije više od godinu dana";
@@ -551,7 +551,7 @@
 "button_plan" = "Plan";
 "purple" = "Purple";
 "change_color" = "Change Color";
-"continue_recording" = "Continue Recording";
+"continue_recording" = "Nastavi snimanje";
 "bookmarks_error_message_share_general" = "Nije moguće podijeliti zbog greške u aplikaciji";
 "map" = "Map";
 "bookmarks" = "Oznake";
@@ -581,7 +581,7 @@
 "bookmark_sets" = "Bookmark Lists";
 "leave_a_review" = "Leave a Review";
 "dialog_routing_intermediate_not_determined" = "Please adjust your intermediate point.";
-"open_in_app" = "Open in Another App";
+"open_in_app" = "Otvori u drugoj aplikaciji";
 "pref_mapappearance_title" = "Map Appearance";
 "pref_maplanguage_title" = "Map Language";
 "transliteration_title_disabled_summary" = "Disabled when always using the local language for the map";
@@ -592,3 +592,5 @@
 "avoid_steps" = "Izbjegavaj stepenice";
 "avoid_paved" = "Izbjegavaj asfaltirane ceste";
 "pref_map_3d_buildings_disabled_summary" = "3D zgrade su onemogućene u načinu rada za uštedu energije";
+"offline_explanation_title" = "Izvanmrežne karte";
+"offline_explanation_text" = "Za prikaz i navigaciju područjem potrebno je preuzeti kartu.\nPreuzmite karte za područja u koja želite putovati.";

@@ -153,7 +153,7 @@
     <!-- message title of loading file -->
     <string name="load_kmz_title">Favoriten laden</string>
     <!-- Kmz file successful loading -->
-    <string name="load_kmz_successful">Lesezeichen erfolgreich geladen! Du kannst dieses nun auf deiner Karte oder im Lesezeichen-Manager anzeigen lassen.</string>
+    <string name="load_kmz_successful">Lesezeichen erfolgreich geladen! Du kannst diese auf deiner Karte oder im Lesezeichen-Manager anzeigen lassen.</string>
     <!-- Kml file loading failed -->
     <string name="load_kmz_failed">Laden der Lesezeichen fehlgeschlagen. Die Datei könnte beschädigt oder defekt sein.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
@@ -258,7 +258,7 @@
     <!-- Update all button text -->
     <string name="downloader_update_all_button">Alle Karten aktualisieren</string>
     <!-- Cancel all button text -->
-    <string name="downloader_cancel_all">Alle abbrechen</string>
+    <string name="downloader_cancel_all">Alles abbrechen</string>
     <!-- Downloaded maps list header -->
     <string name="downloader_downloaded_subtitle">Heruntergeladen</string>
     <!-- Country queued for download -->
@@ -281,7 +281,7 @@
     <!-- Item in context menu. -->
     <string name="downloader_update_map">Karte aktualisieren</string>
     <!-- Preference title -->
-    <string name="google_play_services">Google Fused-Standortdienste</string>
+    <string name="google_play_services">Google-Standortverknüpfungsdienst</string>
     <!-- Preference text -->
     <string name="pref_use_google_play">Ein proprietärer Dienst, der GPS, Wi-Fi, Mobilfunknetzwerke etc. kombiniert, um den Standort genauer zu bestimmen. Er kann sich mit Google-Servern verbinden.</string>
     <!-- Preference title -->
@@ -370,13 +370,13 @@
     <!-- The message when user did not find anything in the search. -->
     <string name="search_not_found_query">Lade die Region herunter, in der du suchst, oder füge den Namen einer nahe gelegenen Stadt oder eines Dorfes hinzu.</string>
     <string name="search_history_title">Suchverlauf</string>
-    <string name="search_history_text">Ihre letzten Suchanfragen anzeigen</string>
+    <string name="search_history_text">Deine letzten Suchanfragen anzeigen</string>
     <string name="clear_search">Suchverlauf löschen</string>
     <string name="p2p_your_location">Dein Standort</string>
     <string name="p2p_start">Start</string>
     <string name="p2p_from_here">Route von</string>
     <string name="p2p_to_here">Route nach</string>
-    <string name="p2p_only_from_current">Die Navigation ist nur von Ihrem aktuellen Standort aus möglich</string>
+    <string name="p2p_only_from_current">Die Navigation ist nur von deinem aktuellen Standort aus möglich</string>
     <string name="p2p_reroute_from_current">Soll eine Route von deinem aktuellen Standort aus berechnet werden?</string>
     <!-- Edit open hours/set time and minutes dialog -->
     <string name="next_button">Weiter</string>
@@ -417,14 +417,14 @@
     <string name="edit_opening_hours">Öffnungszeiten bearbeiten</string>
     <string name="no_osm_account">Kein Konto bei OpenStreetMap?</string>
     <string name="register_at_openstreetmap">Bei OpenStreetMap registrieren</string>
-    <string name="login">Bei OpenStreetMap anmelden</string>
+    <string name="login">Anmelden</string>
     <!-- Status message indicating that user did not login to OSM profile yet. -->
     <string name="not_signed_in">Nicht angemeldet</string>
     <string name="login_osm">Bei OpenStreetMap anmelden</string>
     <string name="logout">Abmelden</string>
     <string name="edit_place">Eintrag bearbeiten</string>
     <string name="add_language">Eine Sprache hinzufügen</string>
-    <string name="street">Straße</string>
+    <string name="street">Innerortsstraße</string>
     <!-- Editable House Number text field (in address block). -->
     <string name="house_number">Hausnummer</string>
     <string name="details">Einzelheiten</string>
@@ -505,7 +505,7 @@
     <string name="editor_reset_edits_button">Änderungen verwerfen</string>
     <string name="editor_remove_place_message">Hinzugefügtes Objekt löschen?</string>
     <string name="editor_remove_place_button">Löschen</string>
-    <string name="editor_place_doesnt_exist">Dieser Ort existiert nicht</string>
+    <string name="editor_place_doesnt_exist">Ort existiert nicht</string>
     <!-- Error message for "Place doesn't exist" dialog when comment is empty -->
     <string name="delete_place_empty_comment_error">Gebe bitte den Grund für die Löschung an</string>
     <!-- Phone number error message -->
@@ -844,7 +844,7 @@
     <string name="pref_backup_summary">Backup automatisch in einem Ordner auf deinem Gerät erstellen</string>
     <string name="pref_backup_now_summary">Backup sofort erstellen</string>
     <string name="pref_backup_now_summary_ok">Backup erfolgreich abgeschlossen</string>
-    <string name="pref_backup_now_summary_empty_lists">Keine Orte und Tracks zum Sichern</string>
+    <string name="pref_backup_now_summary_empty_lists">Keine Orte und Tracks für ein Backup vorhanden</string>
     <string name="pref_backup_now_summary_failed">Backup fehlgeschlagen</string>
     <string name="pref_backup_now_summary_folder_unavailable">Der Backup-Ordner ist nicht verfügbar</string>
     <string name="pref_backup_location_summary_initial">Bitte wähle zuerst einen Ordner und erteile die Berechtigung</string>

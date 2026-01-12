@@ -41,8 +41,8 @@
     <string name="type.leisure.adult_gaming_centre">Centre de jeux pour adultes</string>
     <string name="type.leisure.amusement_arcade">Salle de jeux d’arcade</string>
     <string name="type.amenity.charging_station">Borne de recharge</string>
-    <string name="type.amenity.charging_station.bicycle">Borne de recharge pour vélo</string>
-    <string name="type.amenity.charging_station.motorcar">Borne de recharge pour voiture</string>
+    <string name="type.amenity.charging_station.bicycle">Vélos</string>
+    <string name="type.amenity.charging_station.motorcar">Voitures</string>
     <string name="type.amenity.childcare">Garderie</string>
     <string name="type.amenity.cinema">Cinéma</string>
     <string name="type.leisure.bowling_alley">Salle de bowling</string>
@@ -1498,4 +1498,13 @@
     <string name="type.natural.sand">Sable</string>
     <string name="type.man_made.mast.communication">Antenne de télécommunications</string>
     <string name="type.shop.beauty.nails">Salon de manucure</string>
+    <string name="type.amenity.charging_station.motorcycle">Motos</string>
+    <string name="type.amenity.charging_station.small">Capacité limitée</string>
+    <string name="type.railway.disused.bridge">Pont de chemin de fer désaffecté</string>
+    <string name="type.railway.disused.tunnel">Tunnel de chemin de fer désaffecté</string>
+    <string name="type.railway.miniature.bridge">Pont de chemin de fer miniature</string>
+    <string name="type.railway.miniature.tunnel">Tunnel de chemin de fer miniature</string>
+    <string name="type.tourism.information.tactile_map">Carte tactile</string>
+    <string name="type.railway.miniature">Chemin de fer miniature</string>
+    <string name="type.railway.turntable">Rotonde de chemin de fer</string>
 </resources>

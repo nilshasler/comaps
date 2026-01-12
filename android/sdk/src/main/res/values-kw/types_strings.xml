@@ -873,8 +873,8 @@
     <string name="type.amenity.gambling">Hapwaryans</string>
     <string name="type.leisure.adult_gaming_centre">Kres Gwariow Tevesik</string>
     <string name="type.amenity.charging_station">Poyntys-karga</string>
-    <string name="type.amenity.charging_station.bicycle">Poyntys-karga Diwros</string>
-    <string name="type.amenity.charging_station.motorcar">Poyntys-karga Karr</string>
+    <string name="type.amenity.charging_station.bicycle">Diwrosow</string>
+    <string name="type.amenity.charging_station.motorcar">Kerri</string>
     <string name="type.leisure.bowling_alley">Kres Gwari Pelyow</string>
     <string name="type.amenity.compressed_air">Ayr Strooth</string>
     <string name="type.amenity.driving_school">Skol Lewya</string>
@@ -1409,4 +1409,8 @@
     <string name="type.railway.miniature.tunnel">Kowfordh Hyns Horn Munys</string>
     <string name="type.railway.turntable">Tabel-Tro Hyns Horn</string>
     <string name="type.tourism.information.tactile_map">Mappa rag Toch</string>
+    <string name="type.amenity.charging_station.motorcycle">Jynnys Diwros</string>
+    <string name="type.amenity.charging_station.small">Dalghuster Strothys</string>
+    <string name="type.railway.disused.bridge">Pons Hyns Horn Andevnydhys</string>
+    <string name="type.railway.disused.tunnel">Kowfordh Hyns Horn Andevnydhys</string>
 </resources>

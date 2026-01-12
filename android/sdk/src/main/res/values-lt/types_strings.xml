@@ -1431,4 +1431,6 @@
     <string name="type.railway.miniature.tunnel">Mažojo geležinkelio tunelis</string>
     <string name="type.railway.turntable">Grįžratis</string>
     <string name="type.tourism.information.tactile_map">Taktilinis žemėlapis</string>
+    <string name="type.railway.disused.bridge">Apleistas geležinkelio tiltas</string>
+    <string name="type.railway.disused.tunnel">Apleistas geležinkelio tunelis</string>
 </resources>

@@ -44,8 +44,8 @@
     <string name="type.leisure.adult_gaming_centre">Centro de jogos para adultos</string>
     <string name="type.leisure.amusement_arcade">Salão de jogos</string>
     <string name="type.amenity.charging_station">Posto de carregamento elétrico</string>
-    <string name="type.amenity.charging_station.bicycle">Estação de carregamento de bicicletas</string>
-    <string name="type.amenity.charging_station.motorcar">Posto de carregamento de veículo elétrico</string>
+    <string name="type.amenity.charging_station.bicycle">Bicicletas</string>
+    <string name="type.amenity.charging_station.motorcar">Automóveis</string>
     <string name="type.amenity.childcare">Creche</string>
     <string name="type.amenity.cinema">Cinema</string>
     <string name="type.leisure.bowling_alley">Pista de bowling</string>
@@ -1499,4 +1499,13 @@
     <string name="type.shop.beauty.nails">Salão de Unhas</string>
     <string name="type.xmas.tree">Árvore de Natal</string>
     <string name="type.amenity.hydrant">Boca de Rega</string>
+    <string name="type.amenity.charging_station.motorcycle">Motociclos</string>
+    <string name="type.amenity.charging_station.small">Capacidade Limitada</string>
+    <string name="type.railway.disused.bridge">Ponte Ferroviária Desativada</string>
+    <string name="type.railway.disused.tunnel">Túnel Ferroviário Desativada</string>
+    <string name="type.railway.miniature">Ferrovia em Miniatura</string>
+    <string name="type.railway.miniature.bridge">Ponte Ferroviária em Miniatura</string>
+    <string name="type.railway.miniature.tunnel">Túnel Ferroviário em Miniatura</string>
+    <string name="type.railway.turntable">Plataforma Giratória Ferroviária</string>
+    <string name="type.tourism.information.tactile_map">Mapa tátil</string>
 </resources>

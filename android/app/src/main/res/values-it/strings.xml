@@ -72,7 +72,7 @@
     <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
     <string name="bookmarks">Luoghi preferiti</string>
     <!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
-    <string name="bookmarks_and_tracks">Luoghi preferiti e tracce</string>
+    <string name="bookmarks_and_tracks">Preferiti</string>
     <!-- Add bookmark dialog - bookmark name -->
     <string name="name">Nome</string>
     <!-- Editor title above street and house number, duplicates [type.building.address] in types_strings.txt -->
@@ -144,7 +144,7 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Informazioni</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Questi sono i miei luoghi preferiti su CoMaps</string>
+    <string name="share_bookmarks_email_subject">I miei luoghi preferiti su CoMaps</string>
     <string name="share_bookmarks_email_body">Ciao!\n\nIn allegato ci sono i miei luoghi preferiti. Aprili se hai installato CoMaps. Oppure, se non ce l\'hai, scarica l\'app per iOS o Android seguendo questo link: https://www.comaps.app/\n\nDivertiti a viaggiare con CoMaps!</string>
     <!-- message title of loading file -->
     <string name="load_kmz_title">Caricamento luoghi preferiti</string>
@@ -803,7 +803,7 @@
     <!-- Title for the "Stop Without Saving" action for the alert when saving a track recording. -->
     <string name="continue_recording">Continua a registrare</string>
     <!-- Title for the alert when saving a track recording. -->
-    <string name="track_recording_alert_title">Salvare in Luoghi preferiti e tracce?</string>
+    <string name="track_recording_alert_title">Salvare in Preferiti?</string>
     <!-- Message for the toast when saving the track recording is finished but nothing to save. -->
     <string name="track_recording_toast_nothing_to_save">La traccia è vuota - non c\'è nulla da salvare</string>
     <!-- Error message when there are no File Manager apps installed to select a folder when importing Bookmarks and Tracks -->

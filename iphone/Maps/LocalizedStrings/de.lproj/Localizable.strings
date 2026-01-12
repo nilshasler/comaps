@@ -688,7 +688,7 @@
 "editor_reset_edits_button" = "Änderungen verwerfen";
 "editor_remove_place_message" = "Hinzugefügtes Objekt löschen?";
 "editor_remove_place_button" = "Löschen";
-"editor_place_doesnt_exist" = "Dieser Ort existiert nicht";
+"editor_place_doesnt_exist" = "Ort existiert nicht";
 "text_more_button" = "…Mehr";
 
 /* Phone number error message */

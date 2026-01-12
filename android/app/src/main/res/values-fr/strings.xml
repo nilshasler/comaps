@@ -70,7 +70,7 @@
     <!-- Add Bookmark list dialog - hint when the list name is empty -->
     <string name="bookmark_set_name">Nom du groupe de signets</string>
     <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
-    <string name="bookmarks">Signets</string>
+    <string name="bookmarks">Lieux</string>
     <!-- "Bookmarks and Tracks" dialog title, also sync it with iphone/plist.txt -->
     <string name="bookmarks_and_tracks">Signets et traces</string>
     <!-- Add bookmark dialog - bookmark name -->
@@ -148,14 +148,14 @@
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notes</string>
     <!-- Email Subject when sharing bookmark list -->
-    <string name="share_bookmarks_email_subject">Signets CoMaps partagés avec vous</string>
-    <string name="share_bookmarks_email_body">Bonjour !\n \nVous trouverez ci-joint mes signets de l’appli CoMaps, à ouvrir dans l’application CoMaps. Si vous ne l’avez pas, téléchargez-la en suivant ce lien : https://www.comaps.app/download/ \n \nBon voyage avec CoMaps !</string>
+    <string name="share_bookmarks_email_subject">Mes favoris CoMaps.</string>
+    <string name="share_bookmarks_email_body">Bonjour,\n \nVous trouverez ci-joint mes favoris, veuillez les ouvrir dans l’application CoMaps. Si vous ne l’avez pas encore installée, téléchargez l\'application depuis : https://www.comaps.app/download/ \n \nBon voyage avec CoMaps !</string>
     <!-- message title of loading file -->
-    <string name="load_kmz_title">Chargement des signets</string>
+    <string name="load_kmz_title">Chargement des Favoris</string>
     <!-- Kmz file successful loading -->
-    <string name="load_kmz_successful">Les signets ont été chargés avec succès ! Vous pouvez les trouver sur la carte ou sur l’écran du Gestionnaire de signets.</string>
+    <string name="load_kmz_successful">Les favoris ont été chargés avec succès ! Vous pouvez les trouver sur la carte ou sur l’écran du Gestionnaire des Favoris.</string>
     <!-- Kml file loading failed -->
-    <string name="load_kmz_failed">Échec lors du chargement des signets. Le fichier pourrait être corrompu ou défectueux.</string>
+    <string name="load_kmz_failed">Erreur lors du chargement des Favoris. Le fichier pourrait être corrompu ou défectueux.</string>
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Le type de fichier n’est pas reconnu par l’appli :\n%1$s</string>
     <!-- Failed to open a bookmarks or tracks file in CoMaps. -->
@@ -567,7 +567,7 @@
     <string name="dialog_error_storage_message">Le stockage externe n’est pas disponible. La carte SD a probablement été enlevée, endommagée ou le système est en lecture seule. Veuillez vérifier votre carte SD ou nous contacter via support@comaps.app</string>
     <string name="setting_emulate_bad_storage">Émuler le mauvais stockage</string>
     <string name="error_enter_correct_name">Veuillez saisir un nom correct</string>
-    <string name="bookmark_lists">Listes</string>
+    <string name="bookmark_lists">Listes de favoris</string>
     <!-- Do not display all bookmark lists on the map -->
     <string name="bookmark_lists_hide_all">Tout masquer</string>
     <string name="bookmark_lists_show_all">Tout afficher</string>
@@ -843,7 +843,7 @@
     <string name="pedestrian">À pied</string>
     <string name="bicycle">À vélo</string>
     <string name="ruler">Règle</string>
-    <string name="bookmark_color">Couleur du marque-page</string>
+    <string name="bookmark_color">Couleur des Favoris</string>
     <string name="panoramax">Image Panoramax</string>
     <string name="pref_backup_now_title">Enregistrer maintenant</string>
     <string name="backup_interval_every_day">Quotidien</string>
@@ -926,4 +926,5 @@
     <string name="download_resources_custom_url_title">Serveur de cartes personnalisé</string>
     <string name="download_resources_custom_url_error_scheme">Veuillez saisir une URL complète commençant par http:// ou https://</string>
     <string name="download_resources_custom_url_message">Serveur pour télécharger les cartes. Laissez vide pour utiliser le serveur par défaut CoMaps.</string>
+    <string name="pref_maplanguage_local">Langue locale</string>
 </resources>

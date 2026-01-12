@@ -467,13 +467,13 @@
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.footway.tunnel" = "Fußgängertunnel";
 "type.highway.ford" = "Furt";
-"type.highway.living_street" = "Spielstraße";
+"type.highway.living_street" = "Verkehrsberuhigter Bereich";
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.living_street.bridge" = "Brücke";
 
 /* These translations are used for all type.highway.*.tunnel. */
-"type.highway.living_street.tunnel" = "Spielstraßentunnel";
+"type.highway.living_street.tunnel" = "Tunnel";
 "type.highway.motorway" = "Autobahn";
 
 /* These translations are used for all type.highway.*.bridge. */
@@ -538,7 +538,7 @@
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.residential.tunnel" = "Wohnstraßentunnel";
 "type.highway.rest_area" = "Rastplatz";
-"type.highway.road" = "Straße";
+"type.highway.road" = "Landstraße";
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.road.bridge" = "Brücke";
@@ -548,20 +548,20 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.road.tunnel" = "Tunnel";
-"type.highway.secondary" = "Straße";
+"type.highway.secondary" = "Überregionale Verbindungsstraße";
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.secondary.bridge" = "Brücke";
 
 /* These translations are used for all type.highway.*.tunnel. */
-"type.highway.secondary.tunnel" = "Straßentunnel";
-"type.highway.secondary_link" = "Straße";
+"type.highway.secondary.tunnel" = "Tunnel";
+"type.highway.secondary_link" = "Überregionale Verbindungsstraßenauffahrt";
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.secondary_link.bridge" = "Brücke";
 
 /* These translations are used for all type.highway.*.tunnel. */
-"type.highway.secondary_link.tunnel" = "Straßentunnel";
+"type.highway.secondary_link.tunnel" = "Tunnel";
 "type.highway.service" = "Zufahrtsweg";
 "type.highway.service.area" = "Zufahrtsweg";
 
@@ -581,14 +581,14 @@
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.steps.tunnel" = "Tunnel";
-"type.highway.tertiary" = "Straße";
+"type.highway.tertiary" = "Verbindungsstraße";
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.tertiary.bridge" = "Brücke";
 
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.tertiary.tunnel" = "Straßentunnel";
-"type.highway.tertiary_link" = "Straße";
+"type.highway.tertiary_link" = "Verbindungsstraßenauffahrt";
 
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.tertiary_link.bridge" = "Brücke";
@@ -630,15 +630,15 @@
 "type.highway.unclassified.tunnel" = "Straßentunnel";
 "type.area_highway.cycleway" = "Radweg";
 "type.area_highway.footway" = "Fußweg";
-"type.area_highway.living_street" = "Spielstraße";
+"type.area_highway.living_street" = "Verkehrsberuhigter Bereich";
 "type.area_highway.motorway" = "Autobahn";
 "type.area_highway.path" = "Pfad";
 "type.area_highway.pedestrian" = "Fußgängerzone";
 "type.area_highway.primary" = "Hauptstraße";
 "type.area_highway.residential" = "Wohnstraße";
-"type.area_highway.secondary" = "Straße";
+"type.area_highway.secondary" = "Landstraße";
 "type.area_highway.service" = "Zufahrtsweg";
-"type.area_highway.tertiary" = "Straße";
+"type.area_highway.tertiary" = "Verbindungsstraße";
 "type.area_highway.steps" = "Treppe";
 "type.area_highway.track" = "Forst-/Feldweg";
 "type.area_highway.trunk" = "Schnellstraße";

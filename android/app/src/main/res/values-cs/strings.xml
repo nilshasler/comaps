@@ -892,7 +892,7 @@
     <string name="avoid_paved">Vyhnout se zpevněným cestám</string>
     <string name="opens_at">Otevírá v %s</string>
     <string name="closes_at">Zavírá v %s</string>
-    <string name="opens_day_at">Otevírá %1$s v %2$s</string>
+    <string name="opens_day_at">Otevírá v %1$s v %2$s</string>
     <string name="closes_day_at">Zavírá %1$s v %2$s</string>
     <string name="editor_business_vacant_button">Podnik je volný</string>
     <string name="editor_mark_business_vacant_title">Označit podnik jako volný</string>

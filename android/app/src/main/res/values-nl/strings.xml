@@ -21,30 +21,30 @@
     <!-- View and button titles for accessibility, please also edit it in iphone/plist.txt -->
     <string name="search">Zoeken</string>
     <!-- Search box placeholder text; Used when searching on the map itself, not when searching for a map -->
-    <string name="search_map">Zoeken op de kaart</string>
+    <string name="search_map">Zoeken op kaart</string>
     <!-- Location services are disabled by user alert - message -->
-    <string name="location_is_disabled_long_text">U heeft momenteel alle locatieservices voor dit apparaat of deze app uitgeschakeld. Schakel ze in bij Instellingen.</string>
+    <string name="location_is_disabled_long_text">U heeft momenteel alle locatiediensten voor dit apparaat of deze app uitgeschakeld. Schakel ze in bij Instellingen.</string>
     <!-- A dialog title, that warns a user that Precise Location is disabled and suggests to turn it on -->
     <string name="limited_accuracy">Beperkte nauwkeurigheid</string>
     <!-- A dialog text, that warns a user that Precise Location is disabled and suggests to turn it on -->
-    <string name="precise_location_is_disabled_long_text">Voor nauwkeurige navigatie moet Nauwkeurige Locatie worden ingesteld bij Instellingen</string>
+    <string name="precise_location_is_disabled_long_text">Voor nauwkeurige navigatie moet Nauwkeurige Locatie worden ingesteld in de instellingen</string>
     <!-- View and button titles for accessibility -->
-    <string name="zoom_to_country">Weergeven op de kaart</string>
+    <string name="zoom_to_country">Weergeven op kaart</string>
     <!-- Message to display at the center of the screen when the country download has failed -->
     <string name="country_status_download_failed">Downloaden is mislukt</string>
     <!-- Button text for the button under the country_status_download_failed message -->
     <string name="try_again">Opnieuw proberen</string>
     <string name="about_menu_title">Over CoMaps</string>
     <!-- Text in About screen -->
-    <string name="about_headline">Open project, gemaakt door de community</string>
+    <string name="about_headline">Open project gedreven door de community</string>
     <!-- Text in About screen -->
-    <string name="about_proposition_1">• Gebruiksvriendelijk en gestroomlijnd</string>
+    <string name="about_proposition_1">• Gebruiksvriendelijk en afgewerkt</string>
     <!-- Text in About screen -->
     <string name="about_proposition_2">• Privacygericht en vrij van advertenties</string>
     <!-- Text in About screen -->
     <string name="about_proposition_3">• Offline, snel en compact</string>
     <!-- Text in About screen -->
-    <string name="about_developed_by_enthusiasts">Volledig open source, non-profit, transparante besluitvorming en financiering.</string>
+    <string name="about_developed_by_enthusiasts">Volledige open source, non-profit, transparante besluitvorming en financiering.</string>
     <!-- The button that opens system location settings -->
     <string name="location_settings">Locatie-instellingen</string>
     <string name="close">Sluiten</string>
@@ -55,7 +55,7 @@
     <!-- Used in DownloadResources startup screen -->
     <string name="not_enough_free_space_on_sdcard">Maak eerst ruimte vrij op de SD-kaart/USB-opslag om de app te gebruiken</string>
     <string name="download_resources">Laten we, voor de eerste start, de algemene wereldkaart downloaden. \nDeze gebruikt %s aan opslag.</string>
-    <string name="download_resources_continue">Ga naar de kaart</string>
+    <string name="download_resources_continue">Ga naar kaart</string>
     <string name="downloading_country_can_proceed">%1$s (%2$s) downloaden. U kunt nu \ndoorgaan naar de kaart.</string>
     <string name="download_country_ask">%1$s downloaden? (%2$s)</string>
     <string name="update_country_ask">%1$s bijwerken? (%2$s)</string>
@@ -66,7 +66,7 @@
     <!-- Show popup notification on top of the map when country download has failed. -->
     <string name="download_country_failed">%s download is mislukt</string>
     <!-- "Add new bookmark list" dialog title -->
-    <string name="add_new_set">Nieuwe groep toevoegen</string>
+    <string name="add_new_set">Nieuwe lijst toevoegen</string>
     <!-- Add Bookmark list dialog - hint when the list name is empty -->
     <string name="bookmark_set_name">Naam van lijst</string>
     <!-- Should be used in the bookmarks-only context, see bookmarks_and_tracks if tracks are also implied. -->
@@ -96,7 +96,7 @@
     <!-- Ask user to wait several minutes (some long process in modal dialog). -->
     <string name="wait_several_minutes">Dit kan enkele minuten duren. \nEven geduld…</string>
     <!-- Measurement units title in settings activity -->
-    <string name="measurement_units">Afstandseenheid</string>
+    <string name="measurement_units">Eenheid van afstand</string>
     <!-- Detailed description of Measurement Units settings button -->
     <string name="measurement_units_summary">Kies tussen mijlen en kilometers</string>
     <!-- SECTION: Search categories -->
@@ -143,7 +143,7 @@
     <!-- Search category for water; any changes should be duplicated in categories.txt @category_water! also used to sort bookmarks by type -->
     <string name="category_water">Water</string>
     <!-- Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! -->
-    <string name="category_rv">Caravanfaciliteiten</string>
+    <string name="category_rv">Camperfaciliteiten</string>
     <!-- SECTION: Other translations -->
     <!-- Notes field in Bookmarks view -->
     <string name="description">Notities</string>
@@ -159,7 +159,7 @@
     <!-- Failed to recognize the format of a bookmarks or tracks file. -->
     <string name="unknown_file_type">Het bestandstype wordt niet herkend door de app: \n%1$s</string>
     <!-- Failed to open a bookmarks or tracks file in CoMaps. -->
-    <string name="failed_to_open_file">Bestand openen mislukt %1$s \n \n%2$s</string>
+    <string name="failed_to_open_file">Bestand openen is mislukt %1$s \n \n%2$s</string>
     <!-- resource for context menu -->
     <string name="edit">Bewerken</string>
     <!-- Warning message when doing search around current position -->
@@ -841,21 +841,21 @@
     <string name="bookmark_color">Kleur voor favoriet</string>
     <string name="backup_interval_every_day">Dagelijks</string>
     <string name="backup_interval_manual_only">Uit (alleen handmatig)</string>
-    <string name="pref_backup_title">Back-up van favorieten</string>
+    <string name="pref_backup_title">Back-up maken van favorieten</string>
     <string name="pref_backup_summary">Automatisch back-up maken naar een map op je apparaat</string>
-    <string name="pref_backup_now_title">Nu back-uppen</string>
-    <string name="pref_backup_now_summary">Maak onmiddellijk een back-up</string>
-    <string name="pref_backup_now_summary_progress">Bezig met het maken van back-up…</string>
-    <string name="pref_backup_now_summary_ok">Back-up succesvol voltooid</string>
+    <string name="pref_backup_now_title">Nu back-up maken</string>
+    <string name="pref_backup_now_summary">Onmiddellijk een back-up maken</string>
+    <string name="pref_backup_now_summary_progress">Bezig met back-up maken…</string>
+    <string name="pref_backup_now_summary_ok">Back-up met succes voltooid</string>
     <string name="pref_backup_now_summary_empty_lists">Geen plaatsen en sporen voor een back-up</string>
     <string name="pref_backup_status_summary_success">Laatste succesvolle back-up</string>
     <string name="pref_backup_interval_title">Automatische back-up</string>
-    <string name="pref_backup_location_title">Back-up locatie</string>
-    <string name="pref_backup_now_summary_failed">Backup mislukt</string>
+    <string name="pref_backup_location_title">Back-uplocatie</string>
+    <string name="pref_backup_now_summary_failed">Backup is mislukt</string>
     <string name="pref_backup_history_title">Aantal back-ups om te bewaren</string>
     <string name="dialog_report_error_missing_folder">De geselecteerde back-uplocatie is niet beschikbaar of niet beschrijfbaar. Kies een andere locatie.</string>
     <string name="backup_interval_every_week">Wekelijks</string>
-    <string name="pref_backup_now_summary_folder_unavailable">De back-up map is niet beschikbaar</string>
+    <string name="pref_backup_now_summary_folder_unavailable">De back-upmap is niet beschikbaar</string>
     <string name="panoramax">Panoramax-afbeelding</string>
     <string name="pref_backup_location_summary_initial">Selecteer eerst een map en geef toestemming</string>
     <string name="pref_left_button_title">Linkerknop configuratie</string>

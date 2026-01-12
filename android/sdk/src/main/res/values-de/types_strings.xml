@@ -433,11 +433,11 @@
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.footway.tunnel">Fußgängertunnel</string>
     <string name="type.highway.ford">Furt</string>
-    <string name="type.highway.living_street">Spielstraße</string>
+    <string name="type.highway.living_street">Verkehrsberuhigter Bereich</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.living_street.bridge">Brücke</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
-    <string name="type.highway.living_street.tunnel">Spielstraßentunnel</string>
+    <string name="type.highway.living_street.tunnel">Tunnel</string>
     <string name="type.highway.motorway">Autobahn</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.motorway.bridge">Autobahnbrücke</string>
@@ -486,23 +486,23 @@
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.residential.tunnel">Wohnstraßentunnel</string>
     <string name="type.highway.rest_area">Rastplatz</string>
-    <string name="type.highway.road">Straße</string>
+    <string name="type.highway.road">Landstraße</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.road.bridge">Brücke</string>
     <!-- A bridge structure outline. -->
     <string name="type.man_made.bridge">Brücke</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.road.tunnel">Tunnel</string>
-    <string name="type.highway.secondary">Straße</string>
+    <string name="type.highway.secondary">Überregionale Verbindungsstraße</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.secondary.bridge">Brücke</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
-    <string name="type.highway.secondary.tunnel">Straßentunnel</string>
-    <string name="type.highway.secondary_link">Straße</string>
+    <string name="type.highway.secondary.tunnel">Tunnel</string>
+    <string name="type.highway.secondary_link">Überregionale Verbindungsstraßenauffahrt</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.secondary_link.bridge">Brücke</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
-    <string name="type.highway.secondary_link.tunnel">Straßentunnel</string>
+    <string name="type.highway.secondary_link.tunnel">Tunnel</string>
     <string name="type.highway.service">Zufahrtsweg</string>
     <string name="type.highway.service.area">Zufahrtsweg</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
@@ -518,12 +518,12 @@
     <string name="type.highway.steps.bridge">Brücke</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.steps.tunnel">Tunnel</string>
-    <string name="type.highway.tertiary">Straße</string>
+    <string name="type.highway.tertiary">Verbindungsstraße</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.tertiary.bridge">Brücke</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
     <string name="type.highway.tertiary.tunnel">Straßentunnel</string>
-    <string name="type.highway.tertiary_link">Straße</string>
+    <string name="type.highway.tertiary_link">Verbindungsstraßenauffahrt</string>
     <!-- These translations are used for all type.highway.*.bridge. -->
     <string name="type.highway.tertiary_link.bridge">Brücke</string>
     <!-- These translations are used for all type.highway.*.tunnel. -->
@@ -555,15 +555,15 @@
     <string name="type.highway.unclassified.tunnel">Straßentunnel</string>
     <string name="type.area_highway.cycleway">Radweg</string>
     <string name="type.area_highway.footway">Fußweg</string>
-    <string name="type.area_highway.living_street">Spielstraße</string>
+    <string name="type.area_highway.living_street">Verkehrsberuhigter Bereich</string>
     <string name="type.area_highway.motorway">Autobahn</string>
     <string name="type.area_highway.path">Pfad</string>
     <string name="type.area_highway.pedestrian">Fußgängerzone</string>
     <string name="type.area_highway.primary">Hauptstraße</string>
     <string name="type.area_highway.residential">Wohnstraße</string>
-    <string name="type.area_highway.secondary">Straße</string>
+    <string name="type.area_highway.secondary">Landstraße</string>
     <string name="type.area_highway.service">Zufahrtsweg</string>
-    <string name="type.area_highway.tertiary">Straße</string>
+    <string name="type.area_highway.tertiary">Verbindungsstraße</string>
     <string name="type.area_highway.steps">Treppe</string>
     <string name="type.area_highway.track">Forst-/Feldweg</string>
     <string name="type.area_highway.trunk">Schnellstraße</string>

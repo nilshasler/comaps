@@ -96,7 +96,7 @@
 "category_transport" = "Transporte";
 
 /* Search category for fuel stations; any changes should be duplicated in categories.txt @category_fuel! */
-"category_fuel" = "Estación de Servicio";
+"category_fuel" = "Estación de servicio";
 
 /* Search category for parking lots; any changes should be duplicated in categories.txt @category_parking! */
 "category_parking" = "Aparcamiento";
@@ -700,7 +700,7 @@
 "editor_share_to_all_dialog_title" = "¿Quieres enviarlo a todos los usuarios?";
 
 /* Dialog before publishing the modifications to the public map. */
-"editor_share_to_all_dialog_message_1" = "Asegúrate de que no has introducido ningún dato privado o personal";
+"editor_share_to_all_dialog_message_1" = "Asegúrate de que no has introducido ningún dato privado o personal.";
 "editor_share_to_all_dialog_message_2" = "Los editores de OpenStreetMap comprobarán los cambios y se pondrán en contacto contigo si tienen alguna pregunta.";
 "navigation_stop_button" = "Detener";
 
