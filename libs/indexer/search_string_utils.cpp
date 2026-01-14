@@ -127,6 +127,7 @@ static std::pair<UniString, UniString> const kPreprocessReplacements[] = {
     {MakeUniString("пр-д"), MakeUniString("проезд")},
     {MakeUniString("пр-т"), MakeUniString("проспект")},
     {MakeUniString("р-н"), MakeUniString("район")},
+    {MakeUniString("ж.к."), MakeUniString("жк")},
     {MakeUniString("আ/এ"), MakeUniString("আবাসিক এলাকা")},
 };
 

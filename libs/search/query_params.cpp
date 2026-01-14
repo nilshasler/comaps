@@ -622,7 +622,7 @@ unordered_map<string, vector<string>> const kSynonyms = {
     {"hse", {"house"}},
     {"hs", {"haus", "high school"}},
     {"hst", {"haltestelle"}},
-    {"ht", {"heights", "hinteres", "hinterer", "hinter…", "hintere"}},
+    {"ht", {"heights", "hinteres", "hinterer", "hinter", "hintere"}},
     {"htl", {"höhere technische lehranstalt"}},
     {"hts", {"heights"}},
     {"htt", {"hütte"}},
@@ -680,12 +680,12 @@ unordered_map<string, vector<string>> const kSynonyms = {
     {"kel", {"kelurahan"}},
     {"kga", {"kleingartenanlage"}},
     {"kgg", {"kagalang-galang"}},
-    {"kg", {"katastralgemeinde", "…kogel", "kampong", "kogel"}},
+    {"kg", {"katastralgemeinde", "kampong", "kogel"}},
     {"kgv", {"kleingartenverein"}},
     {"kh", {"krankenhaus"}},
     {"kj", {"kuja"}},
-    {"k", {"kalea", "katu", "koło", "kolo", "kort(e)"}},
-    {"kl", {"konzentrationslager", "klein…", "kleines", "kleiner", "kleine", "kylä"}},
+    {"k", {"kalea", "katu", "koło", "kolo", "kort", "korte"}},
+    {"kl", {"konzentrationslager", "klein", "kleines", "kleiner", "kleine", "kylä"}},
     {"knm", {"khu nghỉ mát"}},
     {"kol", {"kolonel", "kolonia"}},
     {"kon", {"koning", "koningin"}},
@@ -1507,12 +1507,11 @@ void QueryParams::ClearStreetIndices()
     AdditionalCommonTokens()
     {
       char const * arr[] = {
-          "a",  "and", "s",   "the",                       // English
-          "am", "an",  "auf", "der", "im",  "und", "zum",  // German
-          "as", "d", "da", "das", "de", "del", "di", "do",
-          "dos", "du", "e", "el", "et", "la",  "las", "le",
-          "les", "los", "o",   "os", "y",                  // French, Italian, Portuguese, Spanish
-          "в",  "и",   "на",  "я"                                     // Cyrillic
+          "a",  "and", "s",   "the",                      // English
+          "am", "an",  "auf", "der", "im", "und", "zum",  // German
+          "as", "d",   "da",  "das", "de", "del", "di",  "do", "dos", "du", "e",
+          "el", "et",  "la",  "las", "le", "les", "los", "o",  "os",  "y",  // French, Italian, Portuguese, Spanish
+          "в",  "и",   "за",  "к",   "на", "я"                              // Cyrillic
       };
       for (char const * s : arr)
         m_strings.insert(NormalizeAndSimplifyString(s));
