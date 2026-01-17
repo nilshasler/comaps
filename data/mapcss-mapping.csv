@@ -15,10 +15,11 @@
 # a "forbidden" selector like [!oneway] matches [oneway=no] only or absence of this tag.
 # If first 2 (1 for short types like "building") components of pre-matched types are the same,
 # then leave only the longest types (there could be a few of them). Equal arity types are kept.
+# Types added to data/subtypes.csv are always kept, too.
 # - highway-primary-bridge is left while highway-primary is removed;
 # - building-garages is left while building is removed;
 # - amenity-parking-underground-fee is left while amenity-parking and amenity-parking-fee are removed;
-# - both amenity-charging_station-motorcar and amenity-charging_station-bicycle are left;
+# - both highway-primary-bridge and highway-primary-tunnel are left;
 #
 # A shorter format for the above example:
 #   highway|bus_stop;22;
