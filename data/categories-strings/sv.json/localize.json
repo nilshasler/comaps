@@ -161,7 +161,7 @@
 "amenity-vehicle_inspection": "Fordonsinspektion",
 "amenity-waste_disposal": "4Avfallscontainer|Soptunna|skräp|avfall",
 "amenity-recycling-centre|@category_recycling": "Återvinningscentral",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Behållare för återvinningsbart avfall",
+"amenity-recycling-container|@category_recycling": "Behållare för återvinningsbart avfall",
 "recycling-batteries|@category_recycling": "Batterier",
 "recycling-clothes|@category_recycling": "Gamla kläder|Överlämna onödiga saker",
 "recycling-glass_bottles|@category_recycling": "Returglas",

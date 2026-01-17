@@ -201,16 +201,6 @@ vector<string> MapObject::GetLocalizedCuisines() const
   return feature::GetLocalizedCuisines(m_types);
 }
 
-vector<string> MapObject::GetRecyclingTypes() const
-{
-  return feature::GetRecyclingTypes(m_types);
-}
-
-vector<string> MapObject::GetLocalizedRecyclingTypes() const
-{
-  return feature::GetLocalizedRecyclingTypes(m_types);
-}
-
 string MapObject::GetLocalizedFeeType() const
 {
   return feature::GetLocalizedFeeType(m_types);

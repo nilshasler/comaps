@@ -197,7 +197,8 @@ landuse|cemetery;105;
 sport|soccer;106;
 moved:boundary|administrative|4:05.2024;[boundary=administrative][admin_level=4];x;;;107;boundary|administrative|4
 amenity|cafe;108;
-amenity|recycling|container;[amenity=recycling][recycling_type=container];;name;int_name;109;
+# Treat default type also as a container, see https://taginfo.openstreetmap.org/keys/recycling_type#values
+amenity|recycling|container;[amenity=recycling][recycling_type=container],[amenity=recycling][!recycling_type];;name;int_name;109;
 leisure|garden;110;
 landuse|commercial;111;
 moved:railway|station:05.2024;112;railway|station
@@ -341,7 +342,7 @@ amenity|parking|permissive;[amenity=parking][access=permissive];;name;int_name;2
 deprecated:boundary|administrative|5:04.2024;[boundary=administrative][admin_level=5];x;name;int_name;234;
 highway|unclassified|tunnel;[highway=unclassified][tunnel?];;name;int_name;235;
 amenity|recycling|centre;[amenity=recycling][recycling_type=centre];;name;int_name;236;
-amenity|recycling;237;
+deprecated:amenity|recycling:01.2026;237;amenity|recycling|container
 highway|residential|tunnel;[highway=residential][tunnel?];;name;int_name;238;
 aeroway|helipad;239;
 deprecated:highway|path|permissive:12.2023;[highway=path][access=permissive];x;name;int_name;240;highway|path

@@ -110,7 +110,6 @@
     <string name="type.amenity.public_bookcase">Biblioteca livre</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Centro de reciclagem</string>
-    <string name="type.amenity.recycling">Contêiner de reciclagem</string>
     <string name="type.amenity.recycling.container">Contêiner de reciclagem</string>
     <string name="type.recycling.batteries">Baterias</string>
     <string name="type.recycling.clothes">Roupas velhas</string>

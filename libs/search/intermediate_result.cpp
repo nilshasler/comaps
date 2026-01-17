@@ -290,9 +290,6 @@ void FillDetails(FeatureType & ft, std::string const & name, Result::Details & d
   auto const cuisines = feature::GetLocalizedCuisines(typesHolder);
   auto const cuisine = strings::JoinStrings(cuisines, feature::kFieldsSeparator);
 
-  auto const recycling =
-      strings::JoinStrings(feature::GetLocalizedRecyclingTypes(typesHolder), feature::kFieldsSeparator);
-
   auto const roadShields = ftypes::GetRoadShieldsNames(ft);
   auto const roadShield = strings::JoinStrings(roadShields, feature::kFieldsSeparator);
 
@@ -317,7 +314,6 @@ void FillDetails(FeatureType & ft, std::string const & name, Result::Details & d
   append(brand);
   append(elevation);
   append(cuisine);
-  append(recycling);
   append(fee);
 
   details.m_description = std::move(description);

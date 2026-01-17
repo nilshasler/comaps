@@ -129,7 +129,6 @@
     <string name="type.amenity.public_bookcase">Liburu trukea</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Birziklapen zentroa</string>
-    <string name="type.amenity.recycling">Birziklatzeko edukiontzia</string>
     <string name="type.amenity.recycling.container">Birziklatzeko edukiontzia</string>
     <string name="type.recycling.batteries">Bateriak</string>
     <string name="type.recycling.clothes">Arropa</string>

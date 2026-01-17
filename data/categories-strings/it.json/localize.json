@@ -159,7 +159,7 @@
 "amenity-vehicle_inspection": "Ispezione del veicolo",
 "amenity-waste_disposal": "Spazzatura",
 "amenity-recycling-centre|@category_recycling": "Centro di riciclaggio",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Contenitore per materiali riciclabili",
+"amenity-recycling-container|@category_recycling": "Contenitore per materiali riciclabili",
 "recycling-batteries|@category_recycling": "Batterie",
 "recycling-clothes|@category_recycling": "Vestiti usati|Riciclare vestiti usati|Raccolta indumenti",
 "recycling-glass_bottles|@category_recycling": "Contenitori in vetro",

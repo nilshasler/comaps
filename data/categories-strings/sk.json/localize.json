@@ -159,7 +159,7 @@
 "amenity-vehicle_inspection": "Kontrola vozidla",
 "amenity-waste_disposal": "Odpadky|kôš",
 "amenity-recycling-centre|@category_recycling": "Zberné suroviny",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Recyklačný odpad|Recyklačný kontajner",
+"amenity-recycling-container|@category_recycling": "Recyklačný odpad|Recyklačný kontajner",
 "recycling-batteries|@category_recycling": "Batérie",
 "recycling-clothes|@category_recycling": "Staré oblečenie|Recyklácia starých šiat",
 "recycling-glass_bottles|@category_recycling": "Sklenené fľaše",

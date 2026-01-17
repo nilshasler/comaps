@@ -169,7 +169,7 @@
 "amenity-vehicle_inspection": "Inspección de vehículos|inspección vehicular|ITV",
 "amenity-waste_disposal": "Basura|Basurero|Cubo de basura|Contenedor de basura",
 "amenity-recycling-centre|@category_recycling": "Centro de reciclaje|punto limpio|punto verde|5Punto de reciclaje|ecoparque",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Contenedor de reciclaje",
+"amenity-recycling-container|@category_recycling": "Contenedor de reciclaje",
 "recycling-batteries|@category_recycling": "Baterías|Pilas|Reciclaje de baterías|10Reciclaje de pilas",
 "recycling-clothes|@category_recycling": "10Reciclaje de ropa|Reciclaje textil",
 "recycling-glass_bottles|@category_recycling": "Cascos de botellas|10Reciclaje de vidrio|Vidrio",

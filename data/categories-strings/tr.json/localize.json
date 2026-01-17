@@ -168,7 +168,7 @@
 "amenity-vehicle_inspection": "Araç muayenesi",
 "amenity-waste_disposal": "Çöplük|Çöp kutusu|çöp",
 "amenity-recycling-centre|@category_recycling": "4Geri dönüşüm merkezi",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "4Geri Dönüşüm Kutusu|Atık Toplama Merkezi",
+"amenity-recycling-container|@category_recycling": "4Geri Dönüşüm Kutusu|Atık Toplama Merkezi",
 "recycling-batteries|@category_recycling": "3Piller|Atık Pil Toplama|Atık pil kutusu",
 "recycling-clothes|@category_recycling": "4Eski kıyafetler|Eski kıyafetler geri dönüşümü|Kıyafet toplama kutusu|giysi toplama kutusu|Kıyafet",
 "recycling-glass_bottles|@category_recycling": "4Cam şişeler Geri Dönüşümü",

@@ -137,7 +137,7 @@
 "amenity-post_office|post_office-post_partner|@category_post": "3Correios",
 "amenity-waste_disposal": "Depósito de lixo|lixo",
 "amenity-recycling-centre|@category_recycling": "Reciclagem|descarte seletivo",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Recipiente de reciclagem",
+"amenity-recycling-container|@category_recycling": "Recipiente de reciclagem",
 "recycling-batteries|@category_recycling": "Baterias",
 "recycling-clothes|@category_recycling": "Roupas velhas|Reciclar roupas velhas",
 "recycling-glass_bottles|@category_recycling": "Garrafas de vidro",

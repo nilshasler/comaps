@@ -159,7 +159,7 @@
 "amenity-vehicle_inspection": "Ibilgailuen Ikuskapena",
 "amenity-waste_disposal": "Zaborrontzia",
 "amenity-recycling-centre|@category_recycling": "Birziklatze zentroa|garbigune|Birziklapen zentroa",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Birziklatzeko edukiontzia",
+"amenity-recycling-container|@category_recycling": "Birziklatzeko edukiontzia",
 "recycling-batteries|@category_recycling": "Bateriak",
 "recycling-clothes|@category_recycling": "Arropa zaharra|Alferrikako gauzak birziklatzea|Arropa",
 "recycling-glass_bottles|@category_recycling": "Botila kaskoak",

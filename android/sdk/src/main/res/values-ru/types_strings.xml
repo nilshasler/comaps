@@ -131,7 +131,6 @@
     <string name="type.amenity.public_bookcase">Книгообмен</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Приём вторсырья</string>
-    <string name="type.amenity.recycling">Контейнер для вторсырья</string>
     <string name="type.amenity.recycling.container">Контейнер для вторсырья</string>
     <string name="type.recycling.batteries">Батарейки</string>
     <string name="type.recycling.clothes">Одежда</string>

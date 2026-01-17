@@ -219,28 +219,11 @@ IsOperatorOthersPoiChecker::IsOperatorOthersPoiChecker()
     m_types.push_back(c.GetTypeByPath({"amenity", val}));
 }
 
-IsRecyclingCentreChecker::IsRecyclingCentreChecker() : BaseChecker(3 /* level */)
+IsRecyclingChecker::IsRecyclingChecker() : BaseChecker(3 /* level */)
 {
   Classificator const & c = classif();
   m_types.push_back(c.GetTypeByPath({"amenity", "recycling", "centre"}));
-}
-
-uint32_t IsRecyclingCentreChecker::GetType() const
-{
-  return m_types[0];
-}
-
-IsRecyclingContainerChecker::IsRecyclingContainerChecker() : BaseChecker(3 /* level */)
-{
-  Classificator const & c = classif();
   m_types.push_back(c.GetTypeByPath({"amenity", "recycling", "container"}));
-  // Treat default type also as a container, see https://taginfo.openstreetmap.org/keys/recycling_type#values
-  m_types.push_back(c.GetTypeByPath({"amenity", "recycling"}));
-}
-
-uint32_t IsRecyclingContainerChecker::GetType() const
-{
-  return m_types[0];
 }
 
 IsRailwayStationChecker::IsRailwayStationChecker()
@@ -709,12 +692,6 @@ IsCuisineChecker::IsCuisineChecker() : BaseChecker(1 /* level */)
 {
   Classificator const & c = classif();
   m_types.push_back(c.GetTypeByPath({"cuisine"}));
-}
-
-IsRecyclingTypeChecker::IsRecyclingTypeChecker() : BaseChecker(1 /* level */)
-{
-  Classificator const & c = classif();
-  m_types.push_back(c.GetTypeByPath({"recycling"}));
 }
 
 IsFeeTypeChecker::IsFeeTypeChecker() : BaseChecker(1 /* level */)

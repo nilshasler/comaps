@@ -131,7 +131,6 @@
     <string name="type.amenity.public_bookcase">Avalik raamaturiiul</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Jäätmejaam</string>
-    <string name="type.amenity.recycling">Taaskasutuskonteiner</string>
     <string name="type.amenity.recycling.container">Taaskasutuskonteiner</string>
     <string name="type.recycling.batteries">Patareid</string>
     <string name="type.recycling.clothes">Rõivad</string>

@@ -166,7 +166,7 @@
 "amenity-vehicle_inspection": "Kontrola pojazdu",
 "amenity-waste_disposal": "Wysypisko|Śmieci|ponowne odtworzenie|odpady",
 "amenity-recycling-centre|@category_recycling": "Przetwarzanie odpadów|Centrum przetwórstwa odpadów",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Pojemnik do recyklingu",
+"amenity-recycling-container|@category_recycling": "Pojemnik do recyklingu",
 "recycling-batteries|@category_recycling": "Baterie",
 "recycling-clothes|@category_recycling": "Stare ubrania|Przekaż niepotrzebne rzeczy",
 "recycling-glass_bottles|@category_recycling": "Szkło",

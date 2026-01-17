@@ -130,7 +130,6 @@
     <string name="type.amenity.public_bookcase">Boekenkast</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Milieustraat</string>
-    <string name="type.amenity.recycling">Recycling container</string>
     <string name="type.amenity.recycling.container">Recycling container</string>
     <string name="type.recycling.batteries">Batterijen</string>
     <string name="type.recycling.clothes">Oude kleding</string>

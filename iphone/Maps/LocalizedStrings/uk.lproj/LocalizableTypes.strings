@@ -129,7 +129,6 @@
 "type.amenity.pub" = "Паб";
 "type.amenity.public_bookcase" = "Книгообмін";
 "type.amenity.recycling.centre" = "Прийом вторсировини";
-"type.amenity.recycling" = "Контейнер для вторсировини";
 "type.amenity.recycling.container" = "Контейнер для вторсировини";
 "type.recycling.batteries" = "Батарейки";
 "type.recycling.clothes" = "Одяг";

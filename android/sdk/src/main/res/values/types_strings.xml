@@ -154,8 +154,7 @@
     <string name="type.amenity.pub">Pub</string>
     <string name="type.amenity.public_bookcase">Book Exchange</string>
     <!-- SECTION: Types: Recycling -->
-    <string name="type.amenity.recycling.centre">Recycling Center</string>
-    <string name="type.amenity.recycling">Recycling Container</string>
+    <string name="type.amenity.recycling.centre">Recycling Centre</string>
     <string name="type.amenity.recycling.container">Recycling Container</string>
     <string name="type.recycling.batteries">Batteries</string>
     <string name="type.recycling.clothes">Clothes</string>

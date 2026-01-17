@@ -160,7 +160,7 @@
 "amenity-vehicle_inspection": "Έλεγχος οχήματος",
 "amenity-waste_disposal": "Διαχείριση απορριμμάτων|σκουπίδια",
 "amenity-recycling-centre|@category_recycling": "Κέντρο ανακύκλωσης",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Κάδος ανακύκλωσης",
+"amenity-recycling-container|@category_recycling": "Κάδος ανακύκλωσης",
 "recycling-batteries|@category_recycling": "Μπαταρίες",
 "recycling-clothes|@category_recycling": "Παλιά ρούχα|Ανακύκλωση παλαιών ρούχων",
 "recycling-glass_bottles|@category_recycling": "Γυάλινα μπουκάλια",

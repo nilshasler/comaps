@@ -135,7 +135,7 @@
 "amenity-post_office|post_office-post_partner|@category_post": "3डाकघर",
 "amenity-waste_disposal": "3कचरे के डिब्बे",
 "amenity-recycling-centre|@category_recycling": "4रीसाइक्लिंग सेंटर",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "रीसाइक्लिंग कंटेनर",
+"amenity-recycling-container|@category_recycling": "रीसाइक्लिंग कंटेनर",
 "amenity-school": "4विदयालय|विद्यालय",
 "amenity-shelter": "4आश्रय",
 "amenity-shelter-basic_hut": "द्विवार्षिक झोपड़ी",

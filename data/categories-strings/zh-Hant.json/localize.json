@@ -162,7 +162,7 @@
 "amenity-vehicle_inspection": "車輛檢驗",
 "amenity-waste_disposal": "垃圾|回收|回收場",
 "amenity-recycling-centre|@category_recycling": "回收中心|回收站",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "回收箱",
+"amenity-recycling-container|@category_recycling": "回收箱",
 "recycling-batteries|@category_recycling": "電池",
 "recycling-clothes|@category_recycling": "舊衣物|回收舊衣物|衣服",
 "recycling-glass_bottles|@category_recycling": "玻璃瓶",

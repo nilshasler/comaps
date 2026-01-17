@@ -129,7 +129,6 @@
 "type.amenity.pub" = "Taverna";
 "type.amenity.public_bookcase" = "Biblioteca di strada";
 "type.amenity.recycling.centre" = "Centro di riciclaggio";
-"type.amenity.recycling" = "Contenitore per materiali riciclabili";
 "type.amenity.recycling.container" = "Contenitore per materiali riciclabili";
 "type.recycling.batteries" = "Batterie";
 "type.recycling.clothes" = "Vestiti usati";

@@ -162,7 +162,7 @@
 "amenity-vehicle_inspection": "車検",
 "amenity-waste_disposal": "ゴミ|ごみ|リサイクル|再利用|ダストボックス",
 "amenity-recycling-centre|@category_recycling": "リサクルセンター",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "リサイクルボックス",
+"amenity-recycling-container|@category_recycling": "リサイクルボックス",
 "recycling-batteries|@category_recycling": "バッテリー",
 "recycling-clothes|@category_recycling": "古着|古着のリサイクル",
 "recycling-glass_bottles|@category_recycling": "ガラス瓶",

@@ -166,7 +166,7 @@
 "amenity-vehicle_inspection": "Sõiduki ülevaatus",
 "amenity-waste_disposal": "Prügikast",
 "amenity-recycling-centre|@category_recycling": "Taaskasutuskeskus|Jäätmejaam",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Prügikonteiner",
+"amenity-recycling-container|@category_recycling": "Prügikonteiner",
 "recycling-batteries|@category_recycling": "Patareid",
 "recycling-clothes|@category_recycling": "Rõivaste taaskasutus|Rõivad",
 "recycling-glass_bottles|@category_recycling": "Taarapunkt",

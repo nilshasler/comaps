@@ -90,24 +90,12 @@ public:
   DECLARE_CHECKER_INSTANCE(IsOperatorOthersPoiChecker);
 };
 
-class IsRecyclingCentreChecker : public BaseChecker
+class IsRecyclingChecker : public BaseChecker
 {
-  IsRecyclingCentreChecker();
+  IsRecyclingChecker();
 
 public:
-  DECLARE_CHECKER_INSTANCE(IsRecyclingCentreChecker);
-
-  uint32_t GetType() const;
-};
-
-class IsRecyclingContainerChecker : public BaseChecker
-{
-  IsRecyclingContainerChecker();
-
-public:
-  DECLARE_CHECKER_INSTANCE(IsRecyclingContainerChecker);
-
-  uint32_t GetType() const;
+  DECLARE_CHECKER_INSTANCE(IsRecyclingChecker);
 };
 
 class IsRailwayStationChecker : public BaseChecker
@@ -469,14 +457,6 @@ class IsCuisineChecker : public BaseChecker
 
 public:
   DECLARE_CHECKER_INSTANCE(IsCuisineChecker);
-};
-
-class IsRecyclingTypeChecker : public BaseChecker
-{
-  IsRecyclingTypeChecker();
-
-public:
-  DECLARE_CHECKER_INSTANCE(IsRecyclingTypeChecker);
 };
 
 class IsFeeTypeChecker : public BaseChecker

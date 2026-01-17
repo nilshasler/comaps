@@ -167,7 +167,7 @@
 "amenity-vehicle_inspection": "Inspection de véhicule|Contrôle technique",
 "amenity-waste_disposal": "Déchets|poubelle|déchet",
 "amenity-recycling-centre|@category_recycling": "Centre de recyclage|Déchetterie|Déchèterie",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Conteneur de recyclage|PAVE|Point d'apport volontaire",
+"amenity-recycling-container|@category_recycling": "Conteneur de recyclage|PAVE|Point d'apport volontaire",
 "recycling-batteries|@category_recycling": "Batteries",
 "recycling-clothes|@category_recycling": "Vêtements usagés",
 "recycling-glass_bottles|@category_recycling": "Verre|bouteille|bocaux",

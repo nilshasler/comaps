@@ -7,3 +7,4 @@ buoy|cardinal|east,spherical_buoy|cardinal|east,beacon|cardinal|east;cardinal|ea
 buoy|cardinal|west,spherical_buoy|cardinal|west,beacon|cardinal|west;cardinal|west
 buoy|cardinal|south,spherical_buoy|cardinal|south,beacon|cardinal|south;cardinal|south
 buoy|cardinal|north,spherical_buoy|cardinal|north,beacon|cardinal|north;cardinal|north
+amenity|recycling|centre,amenity|recycling|container;recycling|clothes,recycling|shoes,recycling|small_appliances,recycling|batteries,recycling|scrap_metal,recycling|green_waste,recycling|glass_bottles,recycling|plastic_bottles,recycling|cans,recycling|cartons,recycling|cardboard,recycling|paper,recycling|plastic

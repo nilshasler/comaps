@@ -129,7 +129,6 @@
 "type.amenity.pub" = "Pub";
 "type.amenity.public_bookcase" = "Microbibliothèque";
 "type.amenity.recycling.centre" = "Centre de recyclage";
-"type.amenity.recycling" = "Conteneur de recyclage";
 "type.amenity.recycling.container" = "Conteneur de recyclage";
 "type.recycling.batteries" = "Batteries";
 "type.recycling.clothes" = "Vêtements usagés";

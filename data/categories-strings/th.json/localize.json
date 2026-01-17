@@ -158,7 +158,7 @@
 "amenity-vehicle_inspection": "การตรวจสอบยานพาหนะ",
 "amenity-waste_disposal": "ขยะ|ถังขยะ",
 "amenity-recycling-centre|@category_recycling": "ศูนย์รีไซเคิล",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "บรรจุภัณฑ์รีไซเคิล",
+"amenity-recycling-container|@category_recycling": "บรรจุภัณฑ์รีไซเคิล",
 "recycling-batteries|@category_recycling": "แบตเตอรี่",
 "recycling-clothes|@category_recycling": "เสื้อผ้าเก่า|รีไซเคิลเสื้อผ้าเก่า",
 "recycling-glass_bottles|@category_recycling": "ขวดแก้ว",

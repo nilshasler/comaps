@@ -159,7 +159,7 @@
 "amenity-vehicle_inspection": "Bilsyn",
 "amenity-waste_disposal": "Bortskaffelse af affald|skraldespand|skrald",
 "amenity-recycling-centre|@category_recycling": "Genbrugsplads",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Genbrugscontainer",
+"amenity-recycling-container|@category_recycling": "Genbrugscontainer",
 "recycling-batteries|@category_recycling": "Batterier",
 "recycling-clothes|@category_recycling": "Gammelt tøj|Genbrug gammelt tøj|Tekstil",
 "recycling-glass_bottles|@category_recycling": "Glasflasker",

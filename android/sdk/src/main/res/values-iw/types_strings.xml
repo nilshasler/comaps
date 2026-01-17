@@ -129,7 +129,6 @@
     <string name="type.amenity.public_bookcase">כוננית ספרים ציבורית</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">מרכז מיחזור</string>
-    <string name="type.amenity.recycling">מיכל מיחזור</string>
     <string name="type.amenity.recycling.container">מיכל מיחזור</string>
     <string name="type.recycling.batteries">סוללות</string>
     <string name="type.recycling.clothes">בגדים</string>

@@ -115,7 +115,6 @@
     <string name="type.amenity.pub">میکده</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">مرکز بازیافت</string>
-    <string name="type.amenity.recycling">ظرف بازیافت</string>
     <string name="type.amenity.recycling.container">ظرف بازیافت</string>
     <string name="type.recycling.batteries">ﺎﻫ ﯼﺮﺗﺎﺑ</string>
     <string name="type.recycling.clothes">لباسهای قدیمی</string>

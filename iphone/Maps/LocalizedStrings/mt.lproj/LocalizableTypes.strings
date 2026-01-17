@@ -129,7 +129,6 @@
 "type.amenity.pub" = "Pub";
 "type.amenity.public_bookcase" = "Book Exchange";
 "type.amenity.recycling.centre" = "Recycling Center";
-"type.amenity.recycling" = "Recycling Container";
 "type.amenity.recycling.container" = "Recycling Container";
 "type.recycling.batteries" = "Batteries";
 "type.recycling.clothes" = "Clothes";

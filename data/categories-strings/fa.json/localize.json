@@ -160,7 +160,7 @@
 "amenity-vehicle_inspection": "بازرسی وسایل نقلیه",
 "amenity-waste_disposal": "زباله دانی",
 "amenity-recycling-centre|@category_recycling": "مرکز بازیافت",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "ظرف بازیافت",
+"amenity-recycling-container|@category_recycling": "ظرف بازیافت",
 "recycling-batteries|@category_recycling": "ﺎﻫ ﯼﺮﺗﺎﺑ",
 "recycling-clothes|@category_recycling": "بازیافت لباسهای قدیمی|لباسهای قدیمی",
 "recycling-glass_bottles|@category_recycling": "بطریهای شیشهای",

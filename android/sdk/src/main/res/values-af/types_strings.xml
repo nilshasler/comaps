@@ -117,7 +117,6 @@
     <string name="type.amenity.public_bookcase">Boekekas</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Herwinningsentrum</string>
-    <string name="type.amenity.recycling">Herwinningshouer</string>
     <string name="type.amenity.recycling.container">Herwinningshouer</string>
     <string name="type.recycling.batteries">Batterye</string>
     <string name="type.recycling.clothes">Klere</string>

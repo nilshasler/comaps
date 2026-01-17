@@ -114,7 +114,6 @@
     <string name="type.amenity.public_bookcase">Bogbytteskab</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Genbrugsplads</string>
-    <string name="type.amenity.recycling">Genbrugscontainer</string>
     <string name="type.amenity.recycling.container">Genbrugscontainer</string>
     <string name="type.recycling.batteries">Batterier</string>
     <string name="type.recycling.clothes">Tekstil</string>

@@ -131,7 +131,6 @@
     <string name="type.amenity.public_bookcase">Intercanvi de llibres</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Centre de reciclatge</string>
-    <string name="type.amenity.recycling">Contenidor de reciclatge</string>
     <string name="type.amenity.recycling.container">Contenidor de reciclatge</string>
     <string name="type.recycling.batteries">Bateries</string>
     <string name="type.recycling.clothes">Roba</string>

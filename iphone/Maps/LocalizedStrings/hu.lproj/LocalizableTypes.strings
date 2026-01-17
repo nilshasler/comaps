@@ -127,7 +127,6 @@
 "type.amenity.pub" = "Kocsma";
 "type.amenity.public_bookcase" = "Nyilvános könyvespolc";
 "type.amenity.recycling.centre" = "Hulladékudvar";
-"type.amenity.recycling" = "Szelektív hulladékgyűjtés";
 "type.amenity.recycling.container" = "Szelektív hulladékgyűjtő konténer";
 "type.recycling.batteries" = "Elem, akkumulátor";
 "type.recycling.clothes" = "Ruha";

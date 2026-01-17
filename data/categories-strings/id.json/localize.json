@@ -154,7 +154,7 @@
 "amenity-vehicle_inspection": "Pemeriksaan kendaraan",
 "amenity-waste_disposal": "Sampah",
 "amenity-recycling-centre|@category_recycling": "TPA",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Wadah daur ulang",
+"amenity-recycling-container|@category_recycling": "Wadah daur ulang",
 "recycling-batteries|@category_recycling": "Baterai",
 "recycling-clothes|@category_recycling": "Pakaian lama|Mendaur ulang pakaian lama",
 "recycling-glass_bottles|@category_recycling": "Botol kaca",

@@ -162,7 +162,7 @@
 "amenity-vehicle_inspection": "فحص المركبة",
 "amenity-waste_disposal": "قمامة|مهملات|سلة مهملات|صندوق قمامة",
 "amenity-recycling-centre|@category_recycling": "مركز إعادة تدوير",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "حاوية لإعادة التدوير",
+"amenity-recycling-container|@category_recycling": "حاوية لإعادة التدوير",
 "recycling-batteries|@category_recycling": "ﺕﺎﻳﺭﺎﻄﺑ|بطاريات",
 "recycling-clothes|@category_recycling": "إعادة تدوير الملابس القديم|ملابس قديمة|ملابس",
 "recycling-glass_bottles|@category_recycling": "زجاجات زجاجية",

@@ -115,7 +115,6 @@
     <string name="type.amenity.public_bookcase">Výměna knih</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Recyklační středisko</string>
-    <string name="type.amenity.recycling">Recyklační nádoba</string>
     <string name="type.amenity.recycling.container">Recyklační nádoba</string>
     <string name="type.recycling.batteries">Baterie</string>
     <string name="type.recycling.clothes">Staré oblečení</string>

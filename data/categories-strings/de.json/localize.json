@@ -172,7 +172,7 @@
 "amenity-vehicle_inspection": "Fahrzeuginspektion",
 "amenity-waste_disposal": "4Müllcontainer|Mülltonne|Abfälle|Müll|Müllentsorgung",
 "amenity-recycling-centre|@category_recycling": "3Recyclinghof|3Recyclingzentrum|3Wertstoffhof|U+1F6AE|U+267B",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "3Wertstoffcontainer|3Recyclingbehälter|3Container|U+1F6AE|U+267B",
+"amenity-recycling-container|@category_recycling": "3Wertstoffcontainer|3Recyclingbehälter|3Container|U+1F6AE|U+267B",
 "recycling-batteries|@category_recycling": "Batterien",
 "recycling-clothes|@category_recycling": "3Altkleider|3Alte Kleidung|3Kleiderspende|3Altkleidercontainer",
 "recycling-glass_bottles|@category_recycling": "4Glas-Container|3Glasflaschen|3Altglas",

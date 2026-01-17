@@ -160,8 +160,7 @@
 
 /********** Types: Recycling **********/
 
-"type.amenity.recycling.centre" = "Recycling Center";
-"type.amenity.recycling" = "Recycling Container";
+"type.amenity.recycling.centre" = "Recycling Centre";
 "type.amenity.recycling.container" = "Recycling Container";
 "type.recycling.batteries" = "Batteries";
 "type.recycling.clothes" = "Clothes";

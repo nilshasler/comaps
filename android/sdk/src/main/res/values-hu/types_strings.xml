@@ -117,7 +117,6 @@
     <string name="type.amenity.public_bookcase">Nyilvános könyvespolc</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Hulladékudvar</string>
-    <string name="type.amenity.recycling">Szelektív hulladékgyűjtés</string>
     <string name="type.amenity.recycling.container">Szelektív hulladékgyűjtő konténer</string>
     <string name="type.recycling.batteries">Elem, akkumulátor</string>
     <string name="type.recycling.clothes">Ruha</string>

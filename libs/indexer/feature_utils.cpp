@@ -452,18 +452,6 @@ vector<string> GetLocalizedCuisines(TypesHolder const & types)
   return GetLocalizedTypes(isCuisine, types);
 }
 
-vector<string> GetRecyclingTypes(TypesHolder const & types)
-{
-  auto const & isRecyclingType = ftypes::IsRecyclingTypeChecker::Instance();
-  return GetRawTypeSecond(isRecyclingType, types);
-}
-
-vector<string> GetLocalizedRecyclingTypes(TypesHolder const & types)
-{
-  auto const & isRecyclingType = ftypes::IsRecyclingTypeChecker::Instance();
-  return GetLocalizedTypes(isRecyclingType, types);
-}
-
 string GetLocalizedFeeType(TypesHolder const & types)
 {
   auto const & isFeeType = ftypes::IsFeeTypeChecker::Instance();

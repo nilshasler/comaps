@@ -159,7 +159,7 @@
 "amenity-vehicle_inspection": "Kontrola vozidla",
 "amenity-waste_disposal": "Odpadky|koš|popelnice|uložiště odpadu",
 "amenity-recycling-centre|@category_recycling": "Recyklační středisko",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Recyklační nádoba",
+"amenity-recycling-container|@category_recycling": "Recyklační nádoba",
 "recycling-batteries|@category_recycling": "Baterie",
 "recycling-clothes|@category_recycling": "Staré oblečení|Recyklujte staré oblečení",
 "recycling-glass_bottles|@category_recycling": "Skleněné lahve",

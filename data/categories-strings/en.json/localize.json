@@ -182,7 +182,7 @@
 "amenity-vehicle_inspection": "Vehicle Inspection",
 "amenity-waste_disposal": "4Dumpster|4Trash bin|4garbage bin|waste disposal|U+1F6AE",
 "amenity-recycling-centre|@category_recycling": "4Recycling Centre|Tip|Dump|U+1F6AE|U+267B",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "4Recycling Container|U+1F6AE|U+267B",
+"amenity-recycling-container|@category_recycling": "4Recycling Container|U+1F6AE|U+267B",
 "recycling-batteries|@category_recycling": "4Recycling of Batteries|Household Batteries Disposal|Household Battery Disposal|4Batteries Disposal|Battery Disposal|Batteries Recycling|Battery Recycling|Batteries",
 "recycling-clothes|@category_recycling": "4Recycling of Clothes|Clothes Recycling|Textile Recycling|Donate Clothes|Clothes Collection Bin|Clothes",
 "recycling-glass_bottles|@category_recycling": "4Recycling of Glass Bottles|4Glass Bottles Recycling|Glass Waste",

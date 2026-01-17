@@ -131,7 +131,6 @@
     <string name="type.amenity.pub">Beiz</string>
     <string name="type.amenity.public_bookcase">Büecherschrank</string>
     <string name="type.amenity.recycling.centre">Recyclinghof</string>
-    <string name="type.amenity.recycling">Recyclingcontainer</string>
     <string name="type.amenity.recycling.container">Recyclingcontainer</string>
     <string name="type.recycling.batteries">Batterie</string>
     <string name="type.recycling.clothes">Altchleider</string>

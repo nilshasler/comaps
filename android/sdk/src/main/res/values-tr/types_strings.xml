@@ -131,7 +131,6 @@
     <string name="type.amenity.public_bookcase">Kitap Değişimi</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Geri Dönüşüm Merkezi</string>
-    <string name="type.amenity.recycling">Atık Toplama Merkezi</string>
     <string name="type.amenity.recycling.container">Atık Toplama Merkezi</string>
     <string name="type.recycling.batteries">Piller</string>
     <string name="type.recycling.clothes">Kıyafet</string>

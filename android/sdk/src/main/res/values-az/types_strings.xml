@@ -131,7 +131,6 @@
     <string name="type.amenity.public_bookcase">Kitab mübadiləsi</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Təkrar Emal Mərkəzi</string>
-    <string name="type.amenity.recycling">Təkrar emal konteyneri</string>
     <string name="type.amenity.recycling.container">Təkrar emal konteyneri</string>
     <string name="type.recycling.batteries">Batareyalar</string>
     <string name="type.recycling.clothes">Geyim</string>

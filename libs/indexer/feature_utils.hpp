@@ -155,12 +155,6 @@ std::vector<std::string> GetCuisines(TypesHolder const & types);
 // Returns vector of cuisines names localized by platform.
 std::vector<std::string> GetLocalizedCuisines(TypesHolder const & types);
 
-// Returns vector of recycling types readable names from classificator.
-std::vector<std::string> GetRecyclingTypes(TypesHolder const & types);
-
-// Returns vector of recycling types localized by platform.
-std::vector<std::string> GetLocalizedRecyclingTypes(TypesHolder const & types);
-
 // Returns fee type localized by platform.
 std::string GetLocalizedFeeType(TypesHolder const & types);
 

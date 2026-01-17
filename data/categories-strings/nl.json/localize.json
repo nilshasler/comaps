@@ -164,7 +164,7 @@
 "amenity-vehicle_inspection": "Voertuiginspectie",
 "amenity-waste_disposal": "4Afvalcontainer|afval|prullenbak|vuilnis",
 "amenity-recycling-centre|@category_recycling": "Milieustraat|recycling centrum|milieupark|gemeentewerf",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Recycling container",
+"amenity-recycling-container|@category_recycling": "Recycling container",
 "recycling-batteries|@category_recycling": "Batterijen",
 "recycling-clothes|@category_recycling": "Oude kleding|Oude kleding recyclen",
 "recycling-glass_bottles|@category_recycling": "4Recycling van glasflessen|4Glasrecycling|Glasafval|Glascontainer|Glasbak",

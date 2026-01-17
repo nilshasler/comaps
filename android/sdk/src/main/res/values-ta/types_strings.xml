@@ -146,7 +146,6 @@
     <string name="type.amenity.pub">பப்</string>
     <string name="type.amenity.public_bookcase">புத்தக பரிமாற்றம்</string>
     <string name="type.amenity.recycling.centre">மறுசுழற்சி நடுவண்</string>
-    <string name="type.amenity.recycling">மறுசுழற்சி கொள்கலன்</string>
     <string name="type.amenity.recycling.container">மறுசுழற்சி கொள்கலன்</string>
     <string name="type.recycling.batteries">பேட்டரிகள்</string>
     <string name="type.recycling.clothes">ஆடைகள்</string>

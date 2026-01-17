@@ -130,7 +130,6 @@
     <string name="type.amenity.public_bookcase">Размена књига</string>
     <!-- SECTION: Types: Recycling -->
     <string name="type.amenity.recycling.centre">Центар за рециклажу</string>
-    <string name="type.amenity.recycling">Контејнер за рециклажу</string>
     <string name="type.amenity.recycling.container">Контејнер за рециклажу</string>
     <string name="type.recycling.batteries">Бетерије</string>
     <string name="type.recycling.clothes">Стара одећа</string>

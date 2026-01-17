@@ -164,7 +164,7 @@
 "amenity-vehicle_inspection": "Техогляд автомобіля",
 "amenity-waste_disposal": "4Сміттєвий контейнер|сміття|смітник",
 "amenity-recycling-centre|@category_recycling": "5Пункт прийому вторинної сировини",
-"amenity-recycling-container|amenity-recycling|@category_recycling": "Контейнер для вторсировини",
+"amenity-recycling-container|@category_recycling": "Контейнер для вторсировини",
 "recycling-batteries|@category_recycling": "5Прийом батарейок|Утилізація батарей|5Переробка батарей|5Здати батареї|4Збір батарейок|5Батарейки",
 "recycling-clothes|@category_recycling": "5Прийом одягу|Старий одяг|Здати непотрібні речі|Здати речі|5Здати одяг|Одяг",
 "recycling-glass_bottles|@category_recycling": "5Прийом склотари|Прийом скла|5Переробка скла|5Здати склотару|Здати пляшки|4Збір склотари|5Склотара|Склобой|Скляні пляшки",
