@@ -980,4 +980,5 @@
     <string name="location_privacy_info">Apps receive location data from your OS location service, which may share your location with Google and/or your device vendor. Use a privacy-preserving Android OS to avoid this.</string>
     <string name="location_privacy">Location Privacy</string>
     <string name="pref_speedlimit_title">Show speed limits</string>
+    <string name="rooms">%s rooms</string>
 </resources>
