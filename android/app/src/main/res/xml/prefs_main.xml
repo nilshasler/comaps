@@ -207,10 +207,10 @@
     android:order="5">
     <Preference
         android:persistent="false"
-        android:title="@string/fused_location_service"
+        android:title="@string/location_privacy"
         app:singleLineTitle="false"
         app:icon="@drawable/ic_wifi_find"
-        android:summary="@string/fused_location_info"
+        android:summary="@string/location_privacy_info"
         android:order="1"/>
     <SwitchPreferenceCompat
       android:key="@string/pref_search_history"

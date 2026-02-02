@@ -973,6 +973,6 @@
     <string name="download_resources_custom_url_error_scheme">Please enter a URL starting with http:// or https://</string>
     <!-- string name different as needs to match iOS -->
     <string name="limit_map_language_alternatives_to_local">Only use other system languages in their region</string>
-    <string name="fused_location_info">CoMaps relies on the system\'s Fused Location provider (typically Google Play Services), which may share your location with Google. Use a privacy-preserving Android OS to avoid this.</string>
-    <string name="fused_location_service">Fused Location Service</string>
+    <string name="location_privacy_info">Apps receive location data from your OS location service, which may share your location with Google and/or your device vendor. Use a privacy-preserving Android OS to avoid this.</string>
+    <string name="location_privacy">Location Privacy</string>
 </resources>
