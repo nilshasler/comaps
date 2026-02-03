@@ -74,6 +74,8 @@ on:
 
 env:
   RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+  COUNTRIES_PUB_KEY: ${{ secrets.COUNTRIES_PUB_KEY }}
+  COUNTRIES_SECRET_KEY: ${{ secrets.COUNTRIES_SECRET_KEY }}
   WIKIMEDIA_USERNAME: ${{ secrets.WIKIMEDIA_USERNAME }}
   WIKIMEDIA_PASSWORD: ${{ secrets.WIKIMEDIA_PASSWORD }}
   ZULIP_BOT_EMAIL: ${{ secrets.ZULIP_BOT_EMAIL }}
@@ -490,7 +492,6 @@ jobs:
       volumes:
         - /mnt/4tbexternal/:/mnt/4tbexternal/
         - /mnt/4tbexternal/osm-planet:/home/planet
-        - /root/keys:/root/keys
       options: --ulimit nofile=262144:262144
     concurrency:
       group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
@@ -523,6 +524,11 @@ jobs:
         shell: bash
         run: |
           shopt -s nullglob
+          mkdir -p ~/keys
+
+          echo "$COUNTRIES_PUB_KEY" > ~/keys/countries_ed25519_pk.pem
+          echo "$COUNTRIES_SECRET_KEY" > ~/keys/countries_ed25519_sk.pem
+      
           buildfolder=$(find /mnt/4tbexternal/osm-maps/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f5)
           builddate=$(find /mnt/4tbexternal/osm-maps/*/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f6)
           cd /mnt/4tbexternal/osm-maps/$buildfolder/$builddate
