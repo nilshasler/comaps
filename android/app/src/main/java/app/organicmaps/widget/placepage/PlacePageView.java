@@ -661,7 +661,7 @@ public class PlacePageView extends Fragment
     refreshMetadataOrHide(!TextUtils.isEmpty(cap) ? getString(R.string.capacity, cap) : "", mCapacity, mTvCapacity);
 
     final String rooms = mMapObject.getMetadata(Metadata.MetadataType.FMD_ROOMS);
-    refreshMetadataOrHide(!TextUtils.isEmpty(cap) ? getString(R.string.rooms, rooms) : "", mRooms, mTvRooms);
+    refreshMetadataOrHide(!TextUtils.isEmpty(rooms) ? getString(R.string.rooms, rooms) : "", mRooms, mTvRooms);
 
     refreshMetadataOrHide(mMapObject.hasAtm() ? getString(app.organicmaps.sdk.R.string.type_amenity_atm) : "", mAtm,
                           mTvAtm);
