@@ -526,7 +526,7 @@ jobs:
         run: |
           buildfolder=$(find /mnt/4tbexternal/osm-maps/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f5)
           builddate=$(find /mnt/4tbexternal/osm-maps/*/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f6)
-          cd /var/www/maps
+          cd /var/www/html/maps
           ln -s /mnt/4tbexternal/osm-maps/$buildfolder/$builddate $builddate
       - name: Sign countries.txt and copy to latest
         shell: bash
@@ -546,7 +546,7 @@ jobs:
           mkdir -p latest
           cp -p /mnt/4tbexternal/osm-maps/$buildfolder/$builddate/countries* latest
 
-          cd /var/www/maps
+          cd /var/www/html/maps
           # remove old symlink to old build's latest
           rm -r latest
           ln -s /mnt/4tbexternal/osm-maps/$buildfolder/latest latest
