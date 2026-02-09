@@ -87,8 +87,8 @@ public class PlacePageWikipediaFragment extends Fragment implements Observer<Map
 
   private void updateViews()
   {
-    // There are two sources of wiki info in OrganicMaps:
-    // wiki links from OpenStreetMaps, and wiki pages explicitly parsed into OrganicMaps.
+    // There are two sources of wiki info in CoMaps:
+    // wiki links from OpenStreetMaps, and wiki pages explicitly parsed into CoMaps.
     // This part hides the DescriptionView if the wiki page has not been parsed.
     if (TextUtils.isEmpty(mMapObject.getDescription()))
       UiUtils.hide(mPlaceDescriptionViewContainer);
