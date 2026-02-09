@@ -53,6 +53,7 @@
 "type.amenity.clinic" = "Klinik";
 "type.amenity.college" = "Bildungseinrichtung";
 "type.amenity.community_centre" = "Gemeinschaftszentrum";
+"type.amenity.community_centre.youth_centre" = "Jugendzentrum";
 "type.amenity.compressed_air" = "Druckluft";
 "type.amenity.conference_centre" = "Konferenzzentrum";
 "type.amenity.courthouse" = "Gericht";

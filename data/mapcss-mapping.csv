@@ -563,7 +563,7 @@ amenity|parking|street_side|fee;[amenity=parking][parking=street_side][fee];;nam
 deprecated:highway|path|difficult_alpine_hiking:04.2024;[highway=path][sac_scale=difficult_alpine_hiking];x;name;int_name;444;highway|path|expert
 earthquake:damage|spontaneous_camp;445;
 natural|water|drain;[natural=water][water=drain];;name;int_name;446;
-deprecated:railway|yard:06.2023;447;x
+amenity|community_centre|youth_centre;[amenity=community_centre][community_centre=youth_centre];;name;int_name;447;
 natural|water|ditch;[natural=water][water=ditch];;name;int_name;448;
 natural|water|moat;[natural=water][water=moat];;name;int_name;449;
 natural|water|wastewater;[natural=water][water=wastewater];;name;int_name;450;

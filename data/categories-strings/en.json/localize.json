@@ -373,6 +373,7 @@
 "tourism-information-office|amenity-ranger_station|@category_tourism": "4Tourist Office|Tourism office|6Ranger station|Information",
 "tourism-information-visitor_centre|amenity-ranger_station|@category_tourism": "3Visitor centre|6Ranger station|Information",
 "amenity-community_centre": "4Community centre",
+"amenity-community_centre-youth_centre": "4Youth centre",
 "amenity-compressed_air": "6Compressed air",
 "amenity-courthouse": "4Courthouse",
 "amenity-vending_machine": "Vending Machine",

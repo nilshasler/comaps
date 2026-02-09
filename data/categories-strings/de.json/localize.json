@@ -348,6 +348,7 @@
 "tourism-information-office|amenity-ranger_station|@category_tourism": "4Fremdenverkehrsamt|4Fremdenbüro|4Touriinfo|4Touri-Info|4Touristeninfo|4Touristeninformationszentrum|4Infopoint|U+2139",
 "tourism-information-visitor_centre|amenity-ranger_station|@category_tourism": "4Besucherzentrum|4Besucherinfo|4Fremdenverkehrsamt|4Fremdenbüro|4Touriinfo|4Touri-Info|4Touristeninfo|4Touristeninformationszentrum|4Infopoint|U+2139",
 "amenity-community_centre": "4Gemeinschaftszentrum|3Bürgerhaus|3Bürgerzentrum|4Gemeindesaal|4Bürgersaal|4Gemeinschaftshaus|5Dorfgemeinschaftshaus|4Gemeindezentrum|U+1F3DB",
+"amenity-community_centre-youth_centre": "3Jugendzentrum",
 "amenity-compressed_air": "3Druckluft|5Pressluft|4Kompressor|U+1F32C",
 "amenity-courthouse": "Justizgebäude|Gerichtsgebäude",
 "amenity-vending_machine": "Verkaufsautomat|Automat",

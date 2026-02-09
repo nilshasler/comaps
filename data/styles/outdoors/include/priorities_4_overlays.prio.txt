@@ -367,6 +367,7 @@ tourism-information-visitor_centre                  # icon z13- (also has captio
 === 4400
 
 amenity-community_centre                            # icon z15- (also has caption(optional) z15-)
+amenity-community_centre-youth_centre               # icon z15- (also has caption(optional) z15-)
 amenity-conference_centre                           # icon z16- (also has caption(optional) z16-)
 amenity-events_venue                                # icon z16- (also has caption(optional) z16-)
 amenity-exhibition_centre                           # icon z16- (also has caption(optional) z16-)
@@ -1647,6 +1648,7 @@ leisure-swimming_pool-private                       # icon z17- (also has captio
 # === -5600
 
 # amenity-community_centre                          # caption(optional) z15- (also has icon z15-)
+# amenity-community_centre-youth_centre             # caption(optional) z15- (also has icon z15-)
 # amenity-conference_centre                         # caption(optional) z16- (also has icon z16-)
 # amenity-events_venue                              # caption(optional) z16- (also has icon z16-)
 # amenity-exhibition_centre                         # caption(optional) z16- (also has icon z16-)
