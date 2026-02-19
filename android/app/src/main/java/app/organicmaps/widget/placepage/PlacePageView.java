@@ -140,6 +140,8 @@ public class PlacePageView extends Fragment
   private MaterialTextView mTvCapacity;
   private View mRooms;
   private MaterialTextView mTvRooms;
+  private View mCharge;
+  private MaterialTextView mTvCharge;
   private View mWheelchair;
   private MaterialTextView mTvWheelchair;
   private View mDriveThrough;
@@ -315,6 +317,8 @@ public class PlacePageView extends Fragment
     mTvCapacity = mFrame.findViewById(R.id.tv__place_capacity);
     mRooms = mFrame.findViewById(R.id.ll__place_rooms);
     mTvRooms = mFrame.findViewById(R.id.tv__place_rooms);
+    mCharge = mFrame.findViewById(R.id.ll__place_charge);
+    mTvCharge = mFrame.findViewById(R.id.tv__place_charge);
     mWheelchair = mFrame.findViewById(R.id.ll__place_wheelchair);
     mTvWheelchair = mFrame.findViewById(R.id.tv__place_wheelchair);
     mDriveThrough = mFrame.findViewById(R.id.ll__place_drive_through);
@@ -338,6 +342,7 @@ public class PlacePageView extends Fragment
     mAtm.setOnLongClickListener(this);
     mCapacity.setOnLongClickListener(this);
     mRooms.setOnLongClickListener(this);
+    mCharge.setOnLongClickListener(this);
     mWheelchair.setOnLongClickListener(this);
     mDriveThrough.setOnLongClickListener(this);
     mSelfService.setOnLongClickListener(this);
@@ -678,6 +683,9 @@ public class PlacePageView extends Fragment
 
     final String rooms = mMapObject.getMetadata(Metadata.MetadataType.FMD_ROOMS);
     refreshMetadataOrHide(!TextUtils.isEmpty(rooms) ? getString(R.string.rooms, rooms) : "", mRooms, mTvRooms);
+
+    final String charge = mMapObject.getMetadata(Metadata.MetadataType.FMD_CHARGE);
+    refreshMetadataOrHide(charge, mCharge, mTvCharge);
 
     refreshMetadataOrHide(mMapObject.hasAtm() ? getString(app.organicmaps.sdk.R.string.type_amenity_atm) : "", mAtm,
                           mTvAtm);
@@ -1080,6 +1088,8 @@ public class PlacePageView extends Fragment
       items.add(mTvCapacity.getText().toString());
     else if (id == R.id.ll__place_rooms)
       items.add(mTvRooms.getText().toString());
+    else if (id == R.id.ll__place_charge)
+      items.add(mTvCharge.getText().toString());
     else if (id == R.id.ll__place_wheelchair)
       items.add(mTvWheelchair.getText().toString());
     else if (id == R.id.ll__place_drive_through)
