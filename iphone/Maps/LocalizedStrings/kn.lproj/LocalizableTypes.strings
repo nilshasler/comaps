@@ -1,0 +1,13 @@
+"type.addr_interpolation" = "ವಿಳಾಸ/ಬ್ಲಾಕ್";
+"type.addr_interpolation.even" = "ವಿಳಾಸ/ಬ್ಲಾಕ್";
+"type.addr_interpolation.odd" = "ವಿಳಾಸ/ಬ್ಲಾಕ್";
+"type.aerialway" = "ವೈಮಾನಿಕ ಮಾರ್ಗ";
+"type.aerialway.cable_car" = "ಕೇಬಲ್ ಕಾರ್";
+"type.aerialway.chair_lift" = "ಕುರ್ಚಿ ಲಿಫ್ಟ್";
+"type.aerialway.mixed_lift" = "ಬಗೆಬಗೆಯ ಲಿಫ್ಟ್";
+"type.aeroway" = "ವಾಯುಪ್ರದೇಶದ ಮೂಲಸೌಕರ್ಯ";
+"type.aeroway.aerodrome" = "ವಿಮಾನ ನಿಲ್ದಾಣ";
+"type.aeroway.aerodrome.international" = "ಅಂತರರಾಷ್ಟ್ರೀಯ ವಿಮಾನ ನಿಲ್ದಾಣ";
+"type.aeroway.helipad" = "ಹೆಲಿಪ್ಯಾಡ್";
+"type.aeroway.runway" = "ರನ್‌ವೇ";
+"type.aeroway.taxiway" = "ಟ್ಯಾಕ್ಸಿವೇ";
