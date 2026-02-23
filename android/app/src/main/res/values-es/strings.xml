@@ -941,4 +941,10 @@
     <string name="location_privacy_info">Las aplicaciones reciben datos de ubicación del servicio de ubicación de tu sistema operativo, que podría compartir tu ubicación con Google y/o el proveedor de tu dispositivo. Para evitar esto, usa un sistema operativo Android que proteja tu privacidad.</string>
     <string name="location_privacy">Privacidad de ubicación</string>
     <string name="invalid_route">Menú de navegación: Cadenas del estado de la ruta</string>
+    <string name="pref_alt_map_lang_handling_ignore_alternatives">No usar alternativas</string>
+    <string name="pref_alt_map_lang_handling">Idiomas del mapa alternativos</string>
+    <string name="pref_alt_map_lang_handling_system_order">Usar según el orden del sistema</string>
+    <string name="pref_alt_map_lang_handling_local_only">Preferir y solo usar cuando nativo</string>
+    <string name="pref_openexternallinks_title">Abir enlaces de terceros automáticamente</string>
+    <string name="pref_openexternallinks_summary">Abir enlaces de terceros en CoMaps por defecto</string>
 </resources>

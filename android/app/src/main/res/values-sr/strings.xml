@@ -933,4 +933,10 @@
     <string name="not_following_route">Не пратите руту</string>
     <string name="rebuilding_route">Прерачунаванје руте…</string>
     <string name="mb_downloaded">%1$d МБ / %2$d МБ</string>
+    <string name="pref_alt_map_lang_handling">Алтернативни језици мапе</string>
+    <string name="pref_alt_map_lang_handling_ignore_alternatives">Не користите алтернативе</string>
+    <string name="pref_alt_map_lang_handling_system_order">Користите системски редослед</string>
+    <string name="pref_alt_map_lang_handling_local_only">Преферирају и користе само тамо где матерњи</string>
+    <string name="pref_openexternallinks_title">Аутоматски отворите линкове независних произвођача</string>
+    <string name="pref_openexternallinks_summary">Отворите линкове независних произвођача у CoMaps-у по дефаулту</string>
 </resources>
