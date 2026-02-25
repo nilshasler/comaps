@@ -19,7 +19,7 @@ on:
 env:
   HTML_DIR: "/mnt/4tbexternal/osm-planet/subway/validator"
   SPREADSHEET_ID: "1SEW1-NiNOnA2qDwievcxYV1FOaQl1mb1fdeyqAxHu3k"
-  DEBIAN_FRONTEND: nonnteractive
+  DEBIAN_FRONTEND: noninteractive
   TZ: Etc/UTC
   ZULIP_BOT_EMAIL: ${{ secrets.ZULIP_BOT_EMAIL }}
   ZULIP_API_KEY: ${{ secrets.ZULIP_API_KEY }}

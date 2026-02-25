@@ -19,7 +19,7 @@ on:
         type: boolean
 
 env:
-  DEBIAN_FRONTEND: nonnteractive
+  DEBIAN_FRONTEND: noninteractive
   TZ: Etc/UTC
   WIKIMEDIA_USERNAME: ${{ secrets.WIKIMEDIA_USERNAME }}
   WIKIMEDIA_PASSWORD: ${{ secrets.WIKIMEDIA_PASSWORD }}
