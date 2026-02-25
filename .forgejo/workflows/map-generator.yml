@@ -12,11 +12,6 @@ on:
         required: false
         default: true
         type: boolean
-      run-tiger:
-        description: 'Update TIGER address data?'
-        required: false
-        default: true
-        type: boolean
       run-planet-o5m:
         description: 'Update O5M planet (for mapgen)?'
         required: false
@@ -115,42 +110,6 @@ jobs:
 
           fi
 
-  update-tiger:
-    if: inputs.run-tiger
-    name: Update TIGER
-    runs-on: mapfilemaker
-    needs:
-      - clone-repos
-    container:
-      image: codeberg.org/comaps/maps_generator:f6d53d54f794
-      volumes:
-        - /mnt/4tbexternal/:/mnt/4tbexternal/
-        - /mnt/4tbexternal/osm-planet:/home/planet
-    concurrency:
-      group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
-      cancel-in-progress: true
-    steps:
-      - uses: actions/cache@v4
-        with:
-          path: "~"
-          key: cache-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Build address_parser
-        shell: bash
-        run: |
-          cd ~/comaps
-          #rm -rf ~/omim-build-relwithdebinfo/CMakeCache.txt
-          #rm -rf ~/omim-build-relwithdebinfo/CMakeFiles
-          ./tools/unix/build_omim.sh -p ~ -R address_parser_tool
-      - name: Update TIGER from Nominatim
-        shell: bash
-        # TODO: use curl instead of wget2
-        run: |
-          # TODO: maybe remove old osm-planet/tiger first?
-          cd /home/planet/
-          mkdir -p tiger
-          wget2 https://nominatim.org/data/tiger-nominatim-preprocessed-latest.csv.tar.gz
-          cd ~/comaps
-          tar -xOzf /home/planet/tiger-nominatim-preprocessed-latest.csv.tar.gz | ~/omim-build-relwithdebinfo/address_parser_tool --output_path=/home/planet/tiger
 
   update-planet-o5m:
     if: inputs.run-planet-o5m

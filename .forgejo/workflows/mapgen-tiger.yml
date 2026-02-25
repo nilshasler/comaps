@@ -1,0 +1,52 @@
+name: mapgen-tiger
+on:
+  workflow_dispatch: # Manual trigger
+
+env:
+  DEBIAN_FRONTEND: noninteractive
+  TZ: Etc/UTC
+  ZULIP_BOT_EMAIL: ${{ secrets.ZULIP_BOT_EMAIL }}
+  ZULIP_API_KEY: ${{ secrets.ZULIP_API_KEY }}
+
+jobs:
+  update-tiger:
+    name: Update TIGER data
+    runs-on: mapfilemaker
+    container:
+      image: codeberg.org/comaps/maps_generator:f6d53d54f794
+      volumes:
+        - /mnt/4tbexternal/:/mnt/4tbexternal/
+        - /mnt/4tbexternal/osm-planet:/home/planet
+    concurrency:
+      group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
+      cancel-in-progress: true
+    steps:
+      - name: Checkout main repo
+        shell: bash
+        run: |
+          echo "Cloning $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY branch $FORGEJO_REF_NAME"
+          cd ~
+          git clone --depth 1 --recurse-submodules --shallow-submodules -b $FORGEJO_REF_NAME --single-branch $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY.git comaps
+      - name: Build address parser tool
+        shell: bash
+        run: |
+          cd ~/comaps
+          ./tools/unix/build_omim.sh -p ~ -R address_parser_tool
+      - name: Update TIGER from Nominatim
+        shell: bash
+        # TODO: use curl instead of wget2
+        run: |
+          # TODO: maybe remove old osm-planet/tiger first?
+          cd /home/planet/
+          mkdir -p tiger
+          wget2 https://nominatim.org/data/tiger-nominatim-preprocessed-latest.csv.tar.gz
+          cd ~/comaps
+          tar -xOzf /home/planet/tiger-nominatim-preprocessed-latest.csv.tar.gz | ~/omim-build-relwithdebinfo/address_parser_tool --output_path=/home/planet/tiger
+      - name: Notify Zulip
+        run: |
+          curl -X POST https://comaps.zulipchat.com/api/v1/messages \
+            -u $ZULIP_BOT_EMAIL:$ZULIP_API_KEY \
+            --data-urlencode type=stream \
+            --data-urlencode 'to="DevOps"' \
+            --data-urlencode topic=codeberg-bot \
+            --data-urlencode 'content=TIGER data is updated!'
