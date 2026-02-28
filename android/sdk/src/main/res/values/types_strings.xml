@@ -1330,6 +1330,7 @@
     <string name="type.shop.agrarian">Agricultural Shop</string>
     <string name="type.shop.antiques">Antiques Shop</string>
     <string name="type.shop.appliance">Appliance Shop</string>
+    <string name="type.shop.water">Water Shop</string>
     <!-- maybe change to Art Gallery for en-US when supported -->
     <string name="type.shop.art">Artwork Shop</string>
     <string name="type.shop.baby_goods">Baby Goods Shop</string>

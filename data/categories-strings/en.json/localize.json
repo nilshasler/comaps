@@ -32,6 +32,7 @@
 "shop-convenience|@category_food|@shop": "4Convenience|mini-mart|mini-market|superette",
 "shop-deli|@category_food|@shop": "4Delicatessen",
 "shop-farm|@category_food|@shop": "Farm food",
+"shop-water|@category_water|@category_food|@shop": "4Drinking Water|3Potable Water|4Bottled Water",
 "shop-garden_centre|@shop": "4Garden Centre|U+1F3E1",
 "shop-grocery|@category_food|@shop": "Grocery",
 "shop-health_food|@category_food|@shop": "7Health food|7Healthy food|healthfood|organic",

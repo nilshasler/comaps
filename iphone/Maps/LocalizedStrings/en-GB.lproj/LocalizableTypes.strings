@@ -1377,7 +1377,7 @@
 "type.shop.agrarian" = "Agricultural Shop";
 "type.shop.antiques" = "Antiques Shop";
 "type.shop.appliance" = "Appliance Shop";
-
+"type.shop.water" = "Water Shop";
 /* maybe change to Art Gallery for en-US when supported */
 "type.shop.art" = "Artwork Shop";
 "type.shop.baby_goods" = "Baby Goods Shop";

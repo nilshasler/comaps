@@ -814,6 +814,7 @@ shop-confectionery                                  # icon z16- (also has captio
 shop-pasta                                          # icon z16- (also has caption(optional) z16-)
 shop-pastry                                         # icon z16- (also has caption(optional) z16-)
 shop-seafood                                        # icon z16- (also has caption(optional) z16-)
+shop-water                                          # icon z16- (also has caption(optional) z16-)
 === 2550
 
 aeroway-helipad                                     # icon z16- (also has caption(optional) z16-)
@@ -1921,6 +1922,7 @@ natural-tree                                        # icon z17- (also has captio
 # shop-pasta                                        # caption(optional) z16- (also has icon z16-)
 # shop-pastry                                       # caption(optional) z16- (also has icon z16-)
 # shop-seafood                                      # caption(optional) z16- (also has icon z16-)
+# shop-water                                        # caption(optional) z16- (also has icon z16-)
 # === -7450
 
 # aeroway-helipad                                   # caption(optional) z16- (also has icon z16-)

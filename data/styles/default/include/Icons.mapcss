@@ -1931,6 +1931,7 @@ node|z16-[shop=convenience],
 node|z16-[shop=deli],
 node|z16-[shop=farm],
 node|z16-[shop=grocery],
+node|z16-[shop=water],
 node|z16-[shop=health_food],
 node|z16-[shop=copyshop],
 node|z16-[shop=photo],
@@ -2076,6 +2077,8 @@ node|z16[shop=farm],
 node|z16[shop=grocery],
 node|z16[shop=health_food],
 {icon-image: convenience-m.svg;}
+node|z16-[shop=water],
+{icon-image: shop-water-m.svg;}
 node|z16[shop=copyshop],
 {icon-image: copyshop-m.svg;}
 node|z16[shop=camera],

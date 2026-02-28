@@ -1234,7 +1234,7 @@ traffic_calming|hump;1103;
 shop|car_parts;1104;
 attraction;[attraction];;name;int_name;1105;
 deprecated|deprecated;1106;x
-deprecated|deprecated;1107;x
+shop|water;1107;
 amenity|hydrant;1108;
 amenity|public_bookcase;1109;
 tourism|apartment;1110;
