@@ -873,8 +873,9 @@
     <string name="type.office.lawyer">Lawyer</string>
     <string name="type.office.ngo">Non-Governmental Organization</string>
     <string name="type.office.telecommunication">Telecom Company</string>
-    <string name="type.organic.only">Organic</string>
-    <string name="type.organic.yes">Organic</string>
+    <string name="type.organic.only">Organic only</string>
+    <string name="type.organic.yes">Organic options</string>
+    <string name="type.organic.no">No organic options</string>
     <string name="type.place.city">City</string>
     <string name="type.place.city.capital">Capital</string>
     <string name="type.place.city.capital.10">City</string>
