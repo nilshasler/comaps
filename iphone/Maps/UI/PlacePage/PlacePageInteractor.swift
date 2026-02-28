@@ -295,7 +295,7 @@ extension PlacePageInteractor: ActionBarViewControllerDelegate {
       }
     case .notSaveTrackRecording:
       TrackRecordingManager.shared.stop() { [weak self] result in
-          self?.presenter?.closeAnimated()
+          self?.presenter?.close()
       }
     @unknown default:
       fatalError()
