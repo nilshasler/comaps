@@ -56,6 +56,8 @@ jobs:
             echo "<$(date +%T)> Found second level: $(ls -alt /mnt/4tbexternal/osm-maps/$buildfolder/*)"
           fi
 
+          # TODO: /latest is not needed as per last indep updates iteration and also gets counted as a maps folder and older maps get deleted
+          exit 0
           # the /latest folder is newly created each build, but it may not have succeeded...
           buildpath=/mnt/4tbexternal/osm-maps/$buildfolder/latest
           countriesfiles=( $buildpath/countries* )
