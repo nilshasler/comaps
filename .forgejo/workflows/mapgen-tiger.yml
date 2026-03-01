@@ -1,8 +1,15 @@
 name: mapgen-tiger
 on:
   workflow_dispatch: # Manual trigger
+    inputs:
+      tiger-download:
+        description: 'Download updated TIGER data?'
+        required: true
+        default: true
+        type: boolean
 
 env:
+  TIGER_FILENAME: "tiger-nominatim-preprocessed-latest.csv.tar.gz"
   DEBIAN_FRONTEND: noninteractive
   TZ: Etc/UTC
   ZULIP_BOT_EMAIL: ${{ secrets.ZULIP_BOT_EMAIL }}
@@ -21,6 +28,27 @@ jobs:
       group: ${{ github.workflow }}-map-generator-${{ github.event.pull_request.number || github.ref }}
       cancel-in-progress: true
     steps:
+      - name: Download updated TIGER data from Nominatim
+        if: inputs.tiger-download
+        shell: bash
+        # TODO: use curl instead of wget2
+        run: |
+          shopt -s nullglob
+          cd /home/planet/
+          echo "Current TIGER data file:"
+          ls -lah $TIGER_FILENAME* || true
+          mv -f $TIGER_FILENAME{,.bak}
+          echo "Downloading ..."
+          wget2 https://nominatim.org/data/$TIGER_FILENAME
+          echo "Updated TIGER data file:"
+          ls -lah $TIGER_FILENAME*
+          echo "DONE"
+          curl -X POST https://comaps.zulipchat.com/api/v1/messages \
+            -u $ZULIP_BOT_EMAIL:$ZULIP_API_KEY \
+            --data-urlencode type=stream \
+            --data-urlencode 'to="DevOps"' \
+            --data-urlencode topic=codeberg-bot \
+            --data-urlencode 'content=Updated TIGER data is downloaded.'
       - name: Checkout main repo
         shell: bash
         run: |
@@ -32,18 +60,19 @@ jobs:
         run: |
           cd ~/comaps
           ./tools/unix/build_omim.sh -p ~ -R address_parser_tool
-      - name: Update TIGER from Nominatim
+      - name: Process TIGER data
         shell: bash
-        # TODO: use curl instead of wget2
         run: |
-          # TODO: maybe remove old osm-planet/tiger first?
-          cd /home/planet/
-          mkdir -p tiger
-          wget2 https://nominatim.org/data/tiger-nominatim-preprocessed-latest.csv.tar.gz
+          echo "Backing up previous version to tiger-bak/"
+          cd /home/planet
+          rm -rf tiger-bak
+          mv -fT tiger{,-bak}
+          echo "Processing ..."
+          ls -lah $TIGER_FILENAME
+          mkdir tiger
           cd ~/comaps
-          tar -xOzf /home/planet/tiger-nominatim-preprocessed-latest.csv.tar.gz | ~/omim-build-relwithdebinfo/address_parser_tool --output_path=/home/planet/tiger
-      - name: Notify Zulip
-        run: |
+          tar -xOzf /home/planet/$TIGER_FILENAME | ~/omim-build-relwithdebinfo/address_parser_tool --output_path=/home/planet/tiger
+          echo "DONE"
           curl -X POST https://comaps.zulipchat.com/api/v1/messages \
             -u $ZULIP_BOT_EMAIL:$ZULIP_API_KEY \
             --data-urlencode type=stream \
