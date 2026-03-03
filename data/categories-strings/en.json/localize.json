@@ -615,7 +615,7 @@
 "cuisine-brazilian": "9Brazilian Food|11Brazilian Cuisine",
 "cuisine-bavarian": "8Bavarian Food|10Bavarian Cuisine",
 "cuisine-balkan": "6Balkan Food|8Balkan Cuisine",
-"cuisine-asian": "",
+"cuisine-asian|@cuisine_all_asian": "",
 "cuisine-austrian": "8Austrian Food|10Austrian Cuisine",
 "cuisine-argentinian": "11Argentinian Food|13Argentinian Cuisine",
 "cuisine-arab": "4Arab Food|6Arab Cuisine",
