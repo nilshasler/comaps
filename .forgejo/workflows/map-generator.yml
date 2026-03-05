@@ -150,12 +150,28 @@ jobs:
           echo "Cloning $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY branch $FORGEJO_REF_NAME"
           cd ~
           git clone --depth 1 --recurse-submodules --shallow-submodules -b $FORGEJO_REF_NAME --single-branch $FORGEJO_SERVER_URL/$FORGEJO_REPOSITORY.git comaps
-      - name: Bootstrap boost C++ lib
+      - name: Compile and prepare tools
         shell: bash
         run: |
+          echo "Bootstrapping boost C++ library..."
           cd ~/comaps/3party/boost/
           ./bootstrap.sh
           ./b2 headers
+          echo "Compiling binaries..."
+          cd ~/comaps
+          ./tools/unix/build_omim.sh -p ~ -R generator_tool
+          ./tools/unix/build_omim.sh -p ~ -R world_roads_builder_tool
+          ./tools/unix/build_omim.sh -p ~ -R mwm_diff_tool
+          echo "Preparing python venv..."
+          cd tools/python/maps_generator
+          python3 -m venv /tmp/venv
+          /tmp/venv/bin/pip3 install -r requirements_dev.txt
+      - name: Generate drules and search categories (configure the repo)
+        shell: bash
+        run: |
+          cd ~/comaps
+          export SKIP_MAP_DOWNLOAD=1 SKIP_GENERATE_SYMBOLS=1 SKIP_GENERATE_STRINGS=1
+          ./configure.sh
       - name: Generate maps
         shell: bash
         run: |

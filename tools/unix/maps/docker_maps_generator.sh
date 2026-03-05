@@ -14,21 +14,8 @@ mkdir -p /home/planet/postcodes/us-postcodes/
 mkdir -p /home/planet/SRTM-patched-europe/
 mkdir -p /home/planet/subway
 
-echo "<$(date +%T)> Running ./configure.sh ..."
-cd ~/comaps
-export SKIP_MAP_DOWNLOAD=1 SKIP_GENERATE_SYMBOLS=1
-./configure.sh
-
-echo "<$(date +%T)> Compiling tools..."
-cd ~/comaps
-./tools/unix/build_omim.sh -p ~ -R generator_tool
-./tools/unix/build_omim.sh -p ~ -R world_roads_builder_tool
-./tools/unix/build_omim.sh -p ~ -R mwm_diff_tool
-cd tools/python/maps_generator
-python3 -m venv /tmp/venv
-/tmp/venv/bin/pip3 install -r requirements_dev.txt
-
 echo "<$(date +%T)> Copying map generator INI..."
+cd ~/comaps/tools/python/maps_generator
 cp var/etc/map_generator.ini.prod var/etc/map_generator.ini
 
 GENARGS=""
