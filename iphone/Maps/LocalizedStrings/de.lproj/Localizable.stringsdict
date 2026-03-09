@@ -70,5 +70,21 @@
 			<string>%lld Einwohner</string>
 		</dict>
 	</dict>
+	<key>rooms</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@value@</string>
+		<key>value</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>lld</string>
+			<key>other</key>
+			<string>%lld Zimmer</string>
+			<key>one</key>
+			<string>%lld Zimmer</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
