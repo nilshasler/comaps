@@ -925,4 +925,5 @@
     <string name="destination">Bestemmelsessted</string>
     <string name="bookmark_share_email_subject">Følg denne lenken %1$s eller lim inn disse koordinatene %2$s i kart-appen din for å se denne posisjonen.</string>
     <string name="my_position_share_email">Følg denne lenken %1$s eller lim inn disse koordinatene %2$s i kart-appen din for å se posisjonen min.</string>
+    <string name="population">Folketall: %s</string>
 </resources>

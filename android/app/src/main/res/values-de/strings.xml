@@ -888,8 +888,8 @@
     <string name="opens_day_at">Öffnet am %1$s um %2$s</string>
     <string name="closes_day_at">Schließt am %1$s um %2$s</string>
     <plurals name="minutes_short">
-        <item quantity="one">(%d min)</item>
-        <item quantity="other">(%d min)</item>
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
     </plurals>
     <string name="editor_business_vacant_button">Geschäft steht leer</string>
     <string name="editor_mark_business_vacant_title">Geschäft auf leerstehend setzen</string>
@@ -932,7 +932,7 @@
     <string name="bookmark_share_email_subject">Klick einfach auf diesen Link %1$s oder kopiere die Koordinaten %2$s in deine Karten-App, um den Standort zu sehen.</string>
     <string name="my_position_share_email">Klick einfach auf diesen Link %1$s oder kopiere diese Koordinaten %2$s in deine Karten-App, um meinen Standort zu sehen.</string>
     <string name="destination">Ziel</string>
-    <string name="stop">Beenden</string>
+    <string name="stop">Stopp</string>
     <string name="route_recalculating">Neuberechnung der Route…</string>
     <string name="charge_socket_type1_combo">Typ 1 Combo</string>
     <string name="population">Einwohner: %s</string>

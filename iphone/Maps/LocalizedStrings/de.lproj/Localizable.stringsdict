@@ -13,9 +13,9 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
 			<key>zero</key>
-			<string>%lld Orte</string>
+			<string>Keine Orte</string>
 			<key>one</key>
-			<string>%lld Orte</string>
+			<string>%lld Ort</string>
 			<key>other</key>
 			<string>%lld Orte</string>
 		</dict>
@@ -49,7 +49,7 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
 			<key>zero</key>
-			<string>%lld Routen</string>
+			<string>Keine Routen</string>
 			<key>one</key>
 			<string>%lld Route</string>
 			<key>other</key>
@@ -66,6 +66,8 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
+			<key>zero</key>
+			<string>Keine Einwohner</string>
 			<key>one</key>
 			<string>%lld Einwohner</string>
 			<key>other</key>
@@ -82,6 +84,8 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
+			<key>zero</key>
+			<string>Keine Zimmer</string>
 			<key>one</key>
 			<string>%lld Zimmer</string>
 			<key>other</key>

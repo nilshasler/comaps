@@ -49,7 +49,7 @@
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
 			<key>zero</key>
-			<string>Nul</string>
+			<string>%lld tracks</string>
 			<key>one</key>
 			<string>%lld track</string>
 			<key>other</key>

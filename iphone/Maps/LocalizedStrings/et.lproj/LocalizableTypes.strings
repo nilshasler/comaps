@@ -1398,7 +1398,7 @@
 "type.tourism.artwork.sculpture" = "Skulptuur";
 "type.tourism.artwork.statue" = "Kuju";
 "type.tourism.attraction" = "Turismiatraktsioon";
-"type.attraction" = "Attraction";
+"type.attraction" = "Lõbustus";
 "type.attraction.amusement_ride" = "Lõbusõidu atraktsioon";
 "type.attraction.animal" = "Loomade aedik";
 "type.attraction.bumper_car" = "Autodroom";

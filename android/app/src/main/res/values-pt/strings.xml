@@ -881,8 +881,8 @@
     <string name="closes_day_at">Fecha %1$s às %2$s</string>
     <plurals name="minutes_short">
         <item quantity="one">%d min</item>
-        <item quantity="many">%d min</item>
-        <item quantity="other">%d min</item>
+        <item quantity="many">%d mins</item>
+        <item quantity="other">%d mins</item>
     </plurals>
     <string name="editor_business_vacant_button">O negócio está vago</string>
     <string name="editor_mark_business_vacant_title">Marcar negócio como vago</string>
