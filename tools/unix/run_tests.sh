@@ -97,7 +97,7 @@ do
     die "Can't find test $testBin"
   fi
 
-  ((TOTAL_TESTS++))
+  TOTAL_TESTS=$((TOTAL_TESTS + 1))
 
   log "Running $testBin..."
   if [ -z "${FILTER+undefined}" ]
