@@ -28,6 +28,7 @@ from maps_generator.generator.env import Env
 from maps_generator.generator.env import PathProvider
 from maps_generator.generator.env import WORLD_COASTS_NAME
 from maps_generator.generator.env import WORLD_NAME
+from maps_generator.generator.env import create_if_not_exist_path
 from maps_generator.generator.exceptions import BadExitStatusError
 from maps_generator.generator.gen_tool import run_gen_tool
 from maps_generator.generator.stages import InternalDependency as D
@@ -43,6 +44,7 @@ from maps_generator.generator.stages import test_stage
 from maps_generator.generator.statistics import get_stages_info
 from maps_generator.utils.file import download_files
 from maps_generator.utils.file import is_verified
+from maps_generator.utils.file import make_symlink
 from post_generation.hierarchy_to_countries import hierarchy_to_countries
 from post_generation.inject_promo_ids import inject_promo_ids
 
@@ -196,6 +198,19 @@ class StageMwm(Stage):
         tmp_mwm_names = env.get_tmp_mwm_names()
         if len(tmp_mwm_names):
             logger.info(f'Number of feature data .mwm.tmp country files to process: {len(tmp_mwm_names)}')
+
+            if env.publish_path:
+                # TODO: remove old structure compat-publishing when migration is finished
+                symlink_path = os.path.join(env.publish_path, env.mwm_version)
+                make_symlink(env.paths.mwm_path, symlink_path)
+                logger.info(f'Compat-publishing generated maps to: {symlink_path}')
+                if env.min_compat_app_v:
+                    symlink_path = os.path.join(env.publish_path, env.min_compat_app_v)
+                    create_if_not_exist_path(symlink_path)
+                    symlink_path = os.path.join(symlink_path, env.mwm_version)
+                    make_symlink(env.paths.mwm_path, symlink_path)
+                    logger.info(f'Publishing generated maps to: {symlink_path}')
+
             with ThreadPoolExecutor(settings.THREADS_COUNT) as pool:
                 pool.map(
                     lambda c: StageMwm.make_mwm(c, env),

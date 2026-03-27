@@ -18,6 +18,7 @@ from typing import Union
 
 from maps_generator.generator import settings
 from maps_generator.generator import status
+from maps_generator.generator.exceptions import MapsGeneratorError
 from maps_generator.generator.osmtools import build_osmtools
 from maps_generator.generator.stages import Stage
 from maps_generator.utils.file import find_executable
@@ -41,14 +42,14 @@ def get_all_countries_list(borders_path: AnyStr) -> List[AnyStr]:
     ] + list(WORLDS_NAMES)
 
 
-def create_if_not_exist_path(path: AnyStr) -> bool:
-    """Creates directory if it doesn't exist."""
-    try:
-        os.makedirs(path)
-        logger.info(f"Create {path} ...")
-        return True
-    except FileExistsError:
-        return False
+def create_if_not_exist_path(path: AnyStr):
+    """Creates directory if it doesn't exist and logs; throws exception on error"""
+    if not os.path.exists(path):
+        try:
+            os.makedirs(path)
+            logger.info(f"Created {path}")
+        except FileExistsError:
+            pass
 
 
 def create_if_not_exist(func: Callable[..., AnyStr]) -> Callable[..., AnyStr]:
@@ -413,6 +414,11 @@ class Env:
         if WORLD_NAME in self.countries:
             self.world_roads_builder_tool = self.setup_world_roads_builder_tool()
         self.diff_tool = self.setup_mwm_diff_tool()
+
+        self.publish_path = settings.PUBLISH_PATH
+        if self.publish_path:
+            create_if_not_exist_path(self.publish_path)
+            logger.info(f"Enabled publishing to: {self.publish_path}")
 
         logger.info(f"Build name is {self.build_name}.")
         logger.info(f"Build path is {self.build_path}.")

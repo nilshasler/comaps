@@ -133,6 +133,7 @@ jobs:
           cd tools/python/maps_generator
           python3 -m venv /tmp/venv
           /tmp/venv/bin/pip3 install -r requirements_dev.txt
+          echo "Done."
       - name: Generate drules and search categories (configure the repo)
         shell: bash
         run: |
@@ -149,11 +150,11 @@ jobs:
               ls -al /home/planet/planet/
               exit 1
             fi
-          echo "Converting planet-latest.osm.pbf to planet.o5m"
-          cd /home/planet/planet/
-          osmconvert -v --drop-author --drop-version --hash-memory=4000 planet-latest.osm.pbf -o=planet.o5m
-          echo "Conversion is done."
+            echo "Converting planet-latest.osm.pbf to planet.o5m"
+            cd /home/planet/planet/
+            osmconvert -v --drop-author --drop-version --hash-memory=4000 planet-latest.osm.pbf -o=planet.o5m
           fi
+          echo "Done."
       - name: Update O5M planet
         if: inputs.run-planet-o5m
         run: |
@@ -186,15 +187,6 @@ jobs:
           mkdir -p /mnt/4tbexternal/osm-maps
           cd ~/comaps
           bash ./tools/unix/maps/docker_maps_generator.sh
-      - name: Publish (symlink) new maps to mapgen server
-        shell: bash
-        run: |
-          buildfolder=$(find /mnt/4tbexternal/osm-maps/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f5)
-          builddate=$(find /mnt/4tbexternal/osm-maps/*/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f6)
-          cd /var/www/html/maps
-          ln -s /mnt/4tbexternal/osm-maps/$buildfolder/$builddate $builddate
-          echo "All published maps versions:"
-          ls -lah ./
       - name: Sign countries.txt and copy to latest
         shell: bash
         run: |
@@ -207,7 +199,9 @@ jobs:
           buildfolder=$(find /mnt/4tbexternal/osm-maps/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f5)
           builddate=$(find /mnt/4tbexternal/osm-maps/*/ -mindepth 1 -maxdepth 1 -iname "2*" -type d | sort -n -r | head -1 | cut -d/ -f6)
           cd /mnt/4tbexternal/osm-maps/$buildfolder/$builddate
+          echo "Signing..."
           openssl pkeyutl -sign -inkey ~/keys/countries_ed25519_sk.pem -rawin -in countries.txt -out countries.txt.sig
+          echo "Verifying..."
           openssl pkeyutl -verify -pubin -inkey ~/keys/countries_ed25519_pk.pem -rawin -in countries.txt -sigfile countries.txt.sig
           cd ..
           mkdir -p latest
@@ -217,6 +211,7 @@ jobs:
           # remove old symlink to old build's latest
           rm -r latest
           ln -s /mnt/4tbexternal/osm-maps/$buildfolder/latest latest
+          echo "Done."
       - name: Notify Zulip
         run: |
           curl -X POST https://comaps.zulipchat.com/api/v1/messages \
