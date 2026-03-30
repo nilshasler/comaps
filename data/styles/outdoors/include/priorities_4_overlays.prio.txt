@@ -1415,7 +1415,7 @@ leisure-park-private                                # icon z14- (also has captio
 leisure-swimming_pool-private                       # icon z17- (also has caption(optional) z17-, area z13-)
 === 100
 
-natural-tree                                        # icon z16- (also has caption(optional) z16-)
+natural-tree                                        # icon z15- (also has caption(optional) z16-)
 === 6
 
 #
@@ -2491,7 +2491,7 @@ emergency-life_ring                                 # icon z19- (also has captio
 power-substation                                    # icon z17- (also has caption(optional) z18-, area z13-)
 === -9990
 
-# natural-tree                                      # caption(optional) z16- (also has icon z16-)
+# natural-tree                                      # caption(optional) z16- (also has icon z15-)
 # === -9994
 
 # amenity-bench                                     # caption(optional) z19- (also has icon z18-)
