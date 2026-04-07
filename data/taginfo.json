@@ -1,7 +1,7 @@
 {
     "data_format": 1,
     "data_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/taginfo.json",
-    "data_updated": "20260323T134459Z",
+    "data_updated": "20260407T161304Z",
     "project": {
         "name": "CoMaps",
         "description": "CoMaps is a community-focused privacy navigation iOS & Android app for travelers - drivers, hikers, and cyclists.",
@@ -2568,6 +2568,18 @@
             "icon_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/styles/default/light/symbols/pelota-centre-m.svg"
         },
         {
+            "description": "leisure=sports_centre + sport=pickleball",
+            "key": "leisure",
+            "value": "sports_centre",
+            "icon_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/styles/default/light/symbols/pickleball-centre-m.svg"
+        },
+        {
+            "description": "leisure=sports_centre + sport=pickleball",
+            "key": "sport",
+            "value": "pickleball",
+            "icon_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/styles/default/light/symbols/pickleball-centre-m.svg"
+        },
+        {
             "description": "leisure=sports_centre + sport=scuba_diving",
             "key": "leisure",
             "value": "sports_centre",
@@ -3015,11 +3027,6 @@
             "key": "natural",
             "value": "tree",
             "icon_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/styles/default/light/symbols/tree-special-m.svg"
-        },
-        {
-            "description": "natural=tree_row",
-            "key": "natural",
-            "value": "tree_row"
         },
         {
             "description": "natural=volcano",
@@ -4772,6 +4779,12 @@
             "key": "sport",
             "value": "pelota",
             "icon_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/styles/default/light/symbols/pelota-m.svg"
+        },
+        {
+            "description": "sport=pickleball",
+            "key": "sport",
+            "value": "pickleball",
+            "icon_url": "https://codeberg.org/comaps/comaps/raw/branch/main/data/styles/default/light/symbols/pickleball-m.svg"
         },
         {
             "description": "sport=scuba_diving",
