@@ -54,7 +54,7 @@ jobs:
         shell: bash
         run: echo value=`git submodule status | sha256sum | head -c64` >> $FORGEJO_OUTPUT
 
-      - uses: actions/cache@v4
+      - uses: actions/cache/restore@v4
         with:
           path: ${{ env.SUBMODULE_CACHE_PATHS }}
           key: submodules-${{ steps.submodules_cache_key.outputs.value }}
@@ -66,6 +66,11 @@ jobs:
         run: |
           git submodule sync --recursive
           git submodule update --depth 1 --init --recursive
+
+      - uses: actions/cache/save@v4
+        with:
+          path: ${{ env.SUBMODULE_CACHE_PATHS }}
+          key: submodules-${{ steps.submodules_cache_key.outputs.value }}
 
       - name: Configure ccache
         uses: https://github.com/hendrikmuhs/ccache-action@v1.2
