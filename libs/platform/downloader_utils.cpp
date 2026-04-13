@@ -10,6 +10,7 @@
 
 #include "std/target_os.hpp"
 
+#include "defines.hpp"
 #include "private.h"
 
 namespace
