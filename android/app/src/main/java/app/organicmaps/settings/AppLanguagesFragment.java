@@ -3,22 +3,22 @@ package app.organicmaps.settings;
 import android.content.res.XmlResourceParser;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.os.LocaleListCompat;
-import androidx.fragment.app.Fragment;
-
-import app.organicmaps.R;
-import app.organicmaps.base.BaseMwmRecyclerFragment;
-import app.organicmaps.editor.LanguagesAdapter;
-import app.organicmaps.sdk.editor.data.Language;
 
 import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+
+import app.organicmaps.R;
+import app.organicmaps.base.BaseMwmRecyclerFragment;
+import app.organicmaps.editor.LanguagesAdapter;
+import app.organicmaps.sdk.editor.data.Language;
 
 /**
  * Fragment for selecting app UI language from available translations.
@@ -29,23 +29,27 @@ public class AppLanguagesFragment extends BaseMwmRecyclerFragment<LanguagesAdapt
 {
   public interface Listener
   {
-    void onAppLanguageSelected(Language language);
+    void onAppLanguageSelected();
   }
 
   private Listener mListener;
+  private Map<Language, Locale> mLocaleLanguageMap;
 
   @NonNull
   @Override
   protected LanguagesAdapter createAdapter()
   {
-    List<String> supportedLocaleTags = parseSupportedLocales();
+    List<Locale> supportedLocales = parseSupportedLocales();
 
+    mLocaleLanguageMap = new HashMap<>();
     List<Language> languages = new ArrayList<>();
-    for (String localeTag : supportedLocaleTags)
+    for (Locale locale : supportedLocales)
     {
-      Locale locale = Locale.forLanguageTag(localeTag);
+      String localeTag = locale.toLanguageTag();
       String displayName = locale.getDisplayName(locale);
-      languages.add(new Language(localeTag, displayName));
+      Language language = new Language(localeTag, displayName);
+      mLocaleLanguageMap.put(language, locale);
+      languages.add(language);
     }
 
     languages.sort(Comparator.comparing(lhs -> lhs.name));
@@ -55,11 +59,12 @@ public class AppLanguagesFragment extends BaseMwmRecyclerFragment<LanguagesAdapt
     return new LanguagesAdapter(this, languages.toArray(new Language[0]), currentLanguage);
   }
 
-  private Language createSystemDefault() {
+  private Language createSystemDefault()
+  {
     return new Language(Language.DEFAULT_LANG_CODE, getString(R.string.setting_value_system_default));
   }
 
-  @Nullable
+  @NonNull
   private Language getCurrentAppLanguage()
   {
     LocaleListCompat appLocales = AppCompatDelegate.getApplicationLocales();
@@ -76,9 +81,9 @@ public class AppLanguagesFragment extends BaseMwmRecyclerFragment<LanguagesAdapt
   /**
    * Parse supported locales from res/xml/locales_config.xml.
    */
-  private List<String> parseSupportedLocales()
+  private List<Locale> parseSupportedLocales()
   {
-    List<String> locales = new ArrayList<>();
+    List<Locale> locales = new ArrayList<>();
     try (XmlResourceParser parser = getResources().getXml(R.xml.locales_config))
     {
       int eventType = parser.getEventType();
@@ -89,7 +94,7 @@ public class AppLanguagesFragment extends BaseMwmRecyclerFragment<LanguagesAdapt
           String localeName = parser.getAttributeValue(
               "http://schemas.android.com/apk/res/android", "name");
           if (localeName != null && !localeName.isEmpty())
-            locales.add(localeName);
+            locales.add(Locale.forLanguageTag(localeName));
         }
         eventType = parser.next();
       }
@@ -109,10 +114,13 @@ public class AppLanguagesFragment extends BaseMwmRecyclerFragment<LanguagesAdapt
   @Override
   public void onLanguageSelected(Language language)
   {
-    Fragment parent = getParentFragment();
-    if (parent instanceof Listener)
-      ((Listener) parent).onAppLanguageSelected(language);
-    if (mListener != null)
-      mListener.onAppLanguageSelected(language);
+    LocaleListCompat localeList;
+    if (language.code.equals(Language.DEFAULT_LANG_CODE))
+      localeList = LocaleListCompat.getEmptyLocaleList();
+    else
+      localeList = LocaleListCompat.create(mLocaleLanguageMap.get(language));
+
+    AppCompatDelegate.setApplicationLocales(localeList);
+    if (mListener != null) mListener.onAppLanguageSelected();
   }
 }

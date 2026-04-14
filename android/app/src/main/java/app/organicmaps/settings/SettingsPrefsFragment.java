@@ -660,18 +660,9 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
   }
 
   @Override
-  public void onAppLanguageSelected(Language language)
+  public void onAppLanguageSelected()
   {
     getSettingsActivity().onBackPressed();
-    LocaleListCompat appLocale;
-    if (language.code.equals(DEFAULT_LANG_CODE)) {
-      // if code == DEFAULT_LANG_CODE, this means it's a synthetic object that represents
-      // system default app language — we should set app locales to empty list.
-      appLocale = LocaleListCompat.getEmptyLocaleList();
-    } else {
-      appLocale = LocaleListCompat.forLanguageTags(language.code);
-    }
-    AppCompatDelegate.setApplicationLocales(appLocale);
   }
 
   enum ThemeMode
