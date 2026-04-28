@@ -405,8 +405,10 @@ std::string MetadataTagProcessorImpl::ValidateAndFormat_local_ref(std::string co
 std::string MetadataTagProcessorImpl::ValidateAndFormat_drive_through(std::string v)
 {
   strings::AsciiToLower(v);
-  if (v == "yes" || v == "no")
-    return v;
+  if (v == "yes" || v == "sidewalk" || v == "terrace" || v == "pedestrian_zone" || v == "patio" || v == "only" || v == "veranda" || v == "garden" || v == "parklet" || v == "street" || v == "balcony" || v == "beach" || v == "roof")
+	  return "yes";
+  else if (v == "no")
+	  return v;
   return {};
 }
 
