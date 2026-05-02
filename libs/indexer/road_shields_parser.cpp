@@ -598,14 +598,6 @@ public:
   {}
 };
 
-class LativaRoadShieldParser : public SimpleRoadShieldParser
-{
-public:
-  explicit LativaRoadShieldParser(std::string const & baseRoadNumber)
-    : SimpleRoadShieldParser(baseRoadNumber, {{"A", RoadShieldType::Generic_Red}, {"P", RoadShieldType::Generic_Blue}})
-  {}
-};
-
 class MoldovaRoadShieldParser : public SimpleRoadShieldParser
 {
 public:
@@ -968,8 +960,6 @@ RoadShieldsSetT GetRoadShields(std::string const & mwmName, std::string const & 
     return TurkeyRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Hungary")
     return HungaryRoadShieldParser(roadNumber).GetRoadShields();
-  if (mwmName == "Lativa")
-    return LativaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Moldova")
     return MoldovaRoadShieldParser(roadNumber).GetRoadShields();
   if (mwmName == "Portugal")
