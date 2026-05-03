@@ -22,6 +22,8 @@
 #include "geometry/mercator.hpp"
 #include "indexer/scales.hpp"
 
+#include "coding/url.hpp"
+
 #include "drape_frontend/visual_params.hpp"
 
 #include "base/logging.hpp"

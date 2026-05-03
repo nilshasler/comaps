@@ -7,8 +7,6 @@
 #include "geometry/mercator.hpp"
 
 #include "base/assert.hpp"
-#include "base/math.hpp"
-#include "base/string_utils.hpp"
 
 #include <algorithm>
 #include <sstream>
