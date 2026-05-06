@@ -182,6 +182,8 @@ set(SRC
   restriction_generator.hpp
   restriction_writer.cpp
   restriction_writer.hpp
+  reviews_section_builder.cpp
+  reviews_section_builder.hpp
   road_access_generator.cpp
   road_access_generator.hpp
   road_penalty_generator.cpp
@@ -252,6 +254,7 @@ target_link_libraries(${PROJECT_NAME}
     i18n
     indexer
     platform
+    reviews
     routing
     routing_common
     search
