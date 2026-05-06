@@ -108,6 +108,7 @@ target_link_libraries(${PROJECT_NAME}
     cppjansson
     descriptions
     ge0
+    reviews
 )
 
 target_link_libraries(${PROJECT_NAME}
