@@ -322,6 +322,7 @@ Framework::Framework(FrameworkParams const & params, bool loadMaps)
                      m_routingManager.RoutingSession())
   , m_lastReportedCountry(kInvalidCountryId)
   , m_popularityLoader(m_featuresFetcher.GetDataSource(), POPULARITY_RANKS_FILE_TAG)
+  , m_reviewsLoader(std::make_unique<reviews::Loader>(m_featuresFetcher.GetDataSource()))
   , m_descriptionsLoader(std::make_unique<descriptions::Loader>(m_featuresFetcher.GetDataSource()))
 {
   // Editor should be initialized from the main thread to set its ThreadChecker.
@@ -759,6 +760,7 @@ void Framework::FillInfoFromFeatureType(FeatureType & ft, place_page::Info & inf
 
   info.SetFromFeatureType(ft);
 
+  FillReviews(ft, info);
   FillDescriptions(ft, info);
 
   auto const mwmInfo = ft.GetID().m_mwmId.GetInfo();
@@ -3310,6 +3312,16 @@ void Framework::SetPlacePageLocation(place_page::Info & info)
     GetStorage().GetTopmostNodesFor(info.GetCountryId(), countries);
     info.SetTopmostCountryIds(std::move(countries));
   }
+}
+
+void Framework::FillReviews(FeatureType const & ft, place_page::Info & info) const
+{
+  if (!ft.GetID().m_mwmId.IsAlive())
+    return;
+
+  std::optional<reviews::FeatureReviews> reviews = m_reviewsLoader->GetReviews(ft.GetID());
+  if (reviews.has_value())
+    info.SetReviews(std::move(reviews.value()));
 }
 
 void Framework::FillDescriptions(FeatureType & ft, place_page::Info & info) const

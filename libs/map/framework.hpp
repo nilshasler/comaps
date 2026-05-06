@@ -39,6 +39,8 @@
 #include "indexer/map_style.hpp"
 #include "indexer/mwm_set.hpp"
 
+#include "reviews/loader.hpp"
+
 #include "search/reverse_geocoder.hpp"
 
 #include "storage/downloading_policy.hpp"
@@ -496,6 +498,7 @@ private:
 
   CachingRankTableLoader m_popularityLoader;
 
+  std::unique_ptr<reviews::Loader> m_reviewsLoader;
   std::unique_ptr<descriptions::Loader> m_descriptionsLoader;
 
 public:
@@ -653,6 +656,7 @@ private:
   void FillBookmarkInfo(Bookmark const & bmk, place_page::Info & info) const;
   void FillTrackInfo(Track const & track, m2::PointD const & trackPoint, place_page::Info & info) const;
   void SetPlacePageLocation(place_page::Info & info);
+  void FillReviews(FeatureType const & ft, place_page::Info & info) const;
   void FillDescriptions(FeatureType & ft, place_page::Info & info) const;
 
 public:
