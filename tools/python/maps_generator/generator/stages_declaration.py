@@ -244,6 +244,7 @@ class StageMwm(Stage):
             StageUgc,
             StageSrtm,
             StageIsolinesInfo,
+            StageReviews,
             StageDescriptions,
             # call after descriptions
             StagePopularity,
@@ -328,6 +329,11 @@ class StageSrtm(Stage):
 class StageIsolinesInfo(Stage):
     def apply(self, env: Env, country, **kwargs):
         steps.step_isolines_info(env, country, **kwargs)
+
+@country_stage
+class StageReviews(Stage):
+    def apply(self, env: Env, country, **kwargs):
+        steps.step_reviews(env, country, **kwargs)
 
 
 @country_stage
