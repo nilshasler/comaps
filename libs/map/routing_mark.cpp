@@ -1,9 +1,11 @@
 #include "map/routing_mark.hpp"
 
 #include "drape_frontend/color_constants.hpp"
+#include "drape_frontend/user_marks_provider.hpp"
 #include "drape_frontend/visual_params.hpp"
 
-#include "platform/localization.hpp"
+#include "base/assert.hpp"
+#include "base/localisation_translation.hpp"
 
 #include <algorithm>
 

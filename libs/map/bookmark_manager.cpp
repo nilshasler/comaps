@@ -2,7 +2,6 @@
 #include "map/gps_tracker.hpp"
 #include "map/search_api.hpp"
 #include "map/track_mark.hpp"
-#include "map/user_mark.hpp"
 #include "map/user_mark_id_storage.hpp"
 
 #include "drape_frontend/drape_engine.hpp"
@@ -10,23 +9,28 @@
 #include "drape_frontend/visual_params.hpp"
 
 #include "platform/localization.hpp"
+#include "platform/location.hpp"
 #include "platform/platform.hpp"
 #include "platform/settings.hpp"
 
-#include "indexer/classificator.hpp"
-
 #include "geometry/mercator.hpp"
+#include "geometry/point_with_altitude.hpp"
 
 #include "coding/file_reader.hpp"
 #include "coding/file_writer.hpp"
 #include "coding/internal/file_data.hpp"
 #include "coding/serdes_json.hpp"
+#include "coding/writer.hpp"
 #include "coding/zip_creator.hpp"
 
 #include "base/file_name_utils.hpp"
-#include "base/macros.hpp"
+#include "base/localisation_translation.hpp"
+#include "base/logging.hpp"
+#include "base/math.hpp"
+#include "base/scope_guard.hpp"
 #include "base/stl_helpers.hpp"
 #include "base/string_utils.hpp"
+#include "base/timer.hpp"
 
 #include <algorithm>
 #include <chrono>

@@ -1,10 +1,13 @@
 #include "map/track_statistics.hpp"
 
-#include "base/logging.hpp"
 #include "geometry/mercator.hpp"
+#include "geometry/point2d.hpp"
 
 #include "platform/distance.hpp"
 #include "platform/duration.hpp"
+#include "platform/location.hpp"
+
+#include "base/assert.hpp"
 
 namespace
 {

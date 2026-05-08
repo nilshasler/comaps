@@ -1,17 +1,21 @@
 #include "map/search_api.hpp"
 
+#include "map/bookmark_helpers.hpp"
 #include "map/bookmarks_search_params.hpp"
 #include "map/everywhere_search_params.hpp"
 
+#include "search/bookmarks/types.hpp"
 #include "search/geometry_utils.hpp"
-#include "search/utils.hpp"
 
 #include "storage/downloader_search_params.hpp"
+
+#include "indexer/categories_holder.hpp"
 
 #include "platform/preferred_languages.hpp"
 
 #include "geometry/mercator.hpp"
 
+#include "base/assert.hpp"
 #include "base/checked_cast.hpp"
 
 #include <algorithm>

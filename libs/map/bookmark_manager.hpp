@@ -2,19 +2,30 @@
 
 #include "map/bookmark.hpp"
 #include "map/bookmark_helpers.hpp"
-#include "map/elevation_info.hpp"
 #include "map/track.hpp"
+#include "map/user_mark.hpp"
 #include "map/user_mark_layer.hpp"
 
 #include "search/region_address_getter.hpp"
+#include "search/reverse_geocoder.hpp"
 
 #include "drape_frontend/drape_engine_safe_ptr.hpp"
+#include "drape_frontend/user_marks_provider.hpp"
+
+#include "drape/color.hpp"
+#include "drape/pointers.hpp"
+
+#include "kml/type_utils.hpp"
+#include "kml/types.hpp"
 
 #include "platform/safe_callback.hpp"
 
 #include "geometry/any_rect2d.hpp"
+#include "geometry/point2d.hpp"
+#include "geometry/rect2d.hpp"
 #include "geometry/screenbase.hpp"
 
+#include "base/assert.hpp"
 #include "base/macros.hpp"
 #include "base/strings_bundle.hpp"
 #include "base/thread_checker.hpp"
@@ -28,6 +39,11 @@
 #include <mutex>
 #include <string>
 #include <vector>
+
+namespace df
+{
+class DrapeEngine;
+}  // namespace df
 
 namespace storage
 {

@@ -1,27 +1,36 @@
 #pragma once
 
-#include "map/bookmark_manager.hpp"
 #include "map/extrapolation/extrapolator.hpp"
 #include "map/routing_mark.hpp"
 #include "map/transit/transit_display.hpp"
-#include "map/transit/transit_reader.hpp"
 
-#include "routing/following_info.hpp"
 #include "routing/route.hpp"
 #include "routing/router.hpp"
+#include "routing/router_delegate.hpp"
 #include "routing/routing_callbacks.hpp"
+#include "routing/routing_options.hpp"
 #include "routing/routing_session.hpp"
-#include "routing/speed_camera_manager.hpp"
+#include "routing/turns.hpp"
 
 #include "storage/storage_defines.hpp"
 
 #include "drape_frontend/drape_engine_safe_ptr.hpp"
 
+#include "drape/drape_global.hpp"
 #include "drape/pointers.hpp"
+
+#include "kml/type_utils.hpp"
+
+#include "indexer/feature_decl.hpp"
+#include "indexer/mwm_set.hpp"
 
 #include "geometry/point2d.hpp"
 #include "geometry/point_with_altitude.hpp"
+#include "geometry/rect2d.hpp"
 
+#include "platform/safe_callback.hpp"
+
+#include "base/assert.hpp"
 #include "base/thread_checker.hpp"
 
 #include <chrono>
@@ -32,6 +41,19 @@
 #include <string>
 #include <vector>
 
+class StringsBundle;
+
+namespace df
+{
+class DrapeEngine;
+}  // namespace df
+
+namespace location
+{
+class GpsInfo;
+class RouteMatchingInfo;
+}  // namespace location
+
 namespace storage
 {
 class CountryInfoGetter;
@@ -40,6 +62,7 @@ class CountryInfoGetter;
 namespace routing
 {
 class NumMwmIds;
+using NumMwmId = std::uint16_t;
 RouterType GetLastUsedRouter();
 }  // namespace routing
 
@@ -115,6 +138,7 @@ public:
   using RouteRecommendCallback = std::function<void(Recommendation)>;
 
   RoutingManager(Callbacks && callbacks, Delegate & delegate);
+  ~RoutingManager();
 
   void SetBookmarkManager(BookmarkManager * bmManager);
   void SetTransitManager(TransitReadManager * transitManager);

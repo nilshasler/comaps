@@ -9,24 +9,30 @@
 
 #include "indexer/classificator.hpp"
 #include "indexer/feature_data.hpp"
+#include "indexer/feature_meta.hpp"
 
-#include "platform/localization.hpp"
 #include "platform/platform.hpp"
-#include "platform/preferred_languages.hpp"
 
 #include "coding/file_reader.hpp"
 #include "coding/file_writer.hpp"
 #include "coding/internal/file_data.hpp"
+#include "coding/point_coding.hpp"
+#include "coding/reader.hpp"
+#include "coding/writer.hpp"
 #include "coding/zip_reader.hpp"
 
+#include "base/exception.hpp"
 #include "base/file_name_utils.hpp"
 #include "base/localisation.hpp"
 #include "base/localisation_translation.hpp"
+#include "base/logging.hpp"
 #include "base/string_utils.hpp"
 
 #include <algorithm>
 #include <map>
 #include <sstream>
+
+#include <utf8/unchecked.h>
 
 namespace
 {

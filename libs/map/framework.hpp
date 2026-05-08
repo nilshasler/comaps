@@ -1,14 +1,12 @@
 #pragma once
 
 #include "map/api_mark_point.hpp"
-#include "map/bookmark.hpp"
 #include "map/bookmark_manager.hpp"
 #include "map/features_fetcher.hpp"
 #include "map/isolines_manager.hpp"
 #include "map/mwm_url.hpp"
 #include "map/place_page_info.hpp"
 #include "map/position_provider.hpp"
-#include "map/power_management/power_management_schemas.hpp"
 #include "map/power_management/power_manager.hpp"
 #include "map/routing_manager.hpp"
 #include "map/routing_mark.hpp"
@@ -19,13 +17,15 @@
 #include "map/traffic_manager.hpp"
 #include "map/transit/transit_reader.hpp"
 
+#include "drape_frontend/base_renderer.hpp"
 #include "drape_frontend/drape_api.hpp"
 #include "drape_frontend/drape_engine.hpp"
+#include "drape_frontend/drape_hints.hpp"
 #include "drape_frontend/gui/skin.hpp"
-#include "drape_frontend/user_event_stream.hpp"
 
 #include "drape/drape_global.hpp"
 #include "drape/graphics_context_factory.hpp"
+#include "drape/pointers.hpp"
 
 #include "kml/type_utils.hpp"
 
@@ -33,28 +33,31 @@
 #include "editor/osm_editor.hpp"
 
 #include "indexer/caching_rank_table_loader.hpp"
-#include "indexer/data_source.hpp"
 #include "indexer/data_source_helpers.hpp"
+#include "indexer/feature_decl.hpp"
 #include "indexer/map_object.hpp"
 #include "indexer/map_style.hpp"
+#include "indexer/mwm_set.hpp"
 
-#include "search/displayed_categories.hpp"
-#include "search/result.hpp"
 #include "search/reverse_geocoder.hpp"
 
 #include "storage/downloading_policy.hpp"
 #include "storage/storage.hpp"
+#include "storage/storage_defines.hpp"
 
-#include "platform/distance.hpp"
 #include "platform/location.hpp"
 #include "platform/platform.hpp"
+#include "platform/safe_callback.hpp"
+#include "platform/settings.hpp"
 
-#include "routing/router.hpp"
-
+#include "geometry/any_rect2d.hpp"
+#include "geometry/latlon.hpp"
+#include "geometry/point2d.hpp"
 #include "geometry/rect2d.hpp"
 #include "geometry/screenbase.hpp"
+#include "geometry/triangle2d.hpp"
 
-#include "base/localisation_translation.hpp"
+#include "base/localisation.hpp"
 #include "base/macros.hpp"
 #include "base/strings_bundle.hpp"
 
@@ -65,6 +68,8 @@
 #include <string>
 #include <vector>
 
+class FeatureType;
+
 namespace osm
 {
 class EditableMapObject;
@@ -72,6 +77,7 @@ class EditableMapObject;
 
 namespace search
 {
+class DisplayedCategories;
 struct EverywhereSearchParams;
 struct ViewportSearchParams;
 }  // namespace search

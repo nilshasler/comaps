@@ -1,41 +1,56 @@
 #include "routing_manager.hpp"
 
+#include "map/bookmark_manager.hpp"
 #include "map/chart_generator.hpp"
 #include "map/routing_mark.hpp"
+#include "map/transit/transit_reader.hpp"
+#include "map/user_mark.hpp"
 
 #include "routing/absent_regions_finder.hpp"
 #include "routing/checkpoint_predictor.hpp"
+#include "routing/checkpoints.hpp"
 #include "routing/index_router.hpp"
 #include "routing/route.hpp"
 #include "routing/routing_callbacks.hpp"
-#include "routing/routing_helpers.hpp"
+#include "routing/routing_settings.hpp"
 #include "routing/ruler_router.hpp"
+#include "routing/segment.hpp"
 #include "routing/speed_camera.hpp"
+#include "routing/vehicle_mask.hpp"
 
 #include "storage/country_info_getter.hpp"
 #include "storage/routing_helpers.hpp"
 
 #include "drape_frontend/drape_engine.hpp"
 #include "drape_frontend/route_renderer.hpp"
+#include "drape_frontend/route_shape.hpp"
 
 #include "routing_common/num_mwm_id.hpp"
 
+#include "indexer/data_source.hpp"
 #include "indexer/map_style_reader.hpp"
 #include "indexer/feature_algo.hpp"
 
 #include "platform/country_file.hpp"
-#include "indexer/classificator.hpp"
+#include "platform/distance.hpp"
+#include "platform/location.hpp"
+#include "platform/measurement_utils.hpp"
 #include "platform/platform.hpp"
-#include "platform/socket.hpp"
+#include "platform/settings.hpp"
 
 #include "geometry/mercator.hpp"  // kPointEqualityEps
+#include "geometry/polyline2d.hpp"
 #include "geometry/simplification.hpp"
 
-#include "coding/file_reader.hpp"
-#include "geometry/parametrized_segment.hpp"
 #include "coding/file_writer.hpp"
+#include "coding/point_coding.hpp"
+#include "coding/reader.hpp"
 
+#include "base/exception.hpp"
+#include "base/logging.hpp"
+#include "base/math.hpp"
 #include "base/scope_guard.hpp"
+#include "base/stl_helpers.hpp"
 #include "base/string_utils.hpp"
 
 #include <ios>
@@ -390,6 +405,8 @@ RoutingManager::RoutingManager(Callbacks && callbacks, Delegate & delegate)
     });
   });
 }
+
+RoutingManager::~RoutingManager() = default;
 
 void RoutingManager::SetBookmarkManager(BookmarkManager * bmManager)
 {

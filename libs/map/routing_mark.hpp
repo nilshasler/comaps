@@ -1,6 +1,17 @@
 #pragma once
 
 #include "map/bookmark_manager.hpp"
+#include "map/user_mark.hpp"
+
+#include "drape_frontend/render_state_extension.hpp"
+#include "drape_frontend/shape_view_params.hpp"
+
+#include "drape/drape_global.hpp"
+#include "drape/pointers.hpp"
+
+#include "indexer/feature_decl.hpp"
+
+#include "geometry/point2d.hpp"
 
 #include <functional>
 #include <string>

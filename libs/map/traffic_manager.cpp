@@ -1,16 +1,15 @@
 #include "map/traffic_manager.hpp"
 
-#include "routing/routing_helpers.hpp"
-
 #include "drape_frontend/drape_engine.hpp"
+#include "drape_frontend/traffic_generator.hpp"
 #include "drape_frontend/visual_params.hpp"
-
-#include "indexer/ftypes_matcher.hpp"
-#include "indexer/scales.hpp"
 
 #include "geometry/mercator.hpp"
 
 #include "platform/platform.hpp"
+
+#include "base/assert.hpp"
+#include "base/logging.hpp"
 
 using namespace std::chrono;
 

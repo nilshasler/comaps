@@ -7,16 +7,21 @@
 #include "drape_frontend/frontend_renderer.hpp"
 #include "drape_frontend/selection_shape.hpp"
 
+#include "kml/type_utils.hpp"
 #include "kml/types.hpp"
 
 #include "indexer/feature_data.hpp"
+#include "indexer/feature_decl.hpp"
 #include "indexer/feature_source.hpp"
+#include "indexer/feature_utils.hpp"
 #include "indexer/map_object.hpp"
 
 #include "geometry/point2d.hpp"
 
 #include <string>
 #include <vector>
+
+class Track;
 
 namespace place_page
 {
