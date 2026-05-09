@@ -1,6 +1,6 @@
 #include "storage/map_files_downloader.hpp"
 
-#include "storage/queued_country.hpp"
+#include "storage/downloading_policy.hpp"
 
 #include "platform/downloader_utils.hpp"
 #include "platform/http_client.hpp"
@@ -12,7 +12,7 @@
 #include "coding/url.hpp"
 
 #include "base/assert.hpp"
-#include "base/string_utils.hpp"
+#include "base/logging.hpp"
 
 namespace storage
 {

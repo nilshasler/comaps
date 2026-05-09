@@ -1,10 +1,8 @@
 #pragma once
 
 #include "storage/downloader_queue_universal.hpp"
-#include "storage/downloading_policy.hpp"
-#include "storage/queued_country.hpp"
+#include "storage/storage_defines.hpp"
 
-#include "platform/downloader_defines.hpp"
 #include "platform/http_request.hpp"
 #include "platform/safe_callback.hpp"
 
@@ -16,6 +14,8 @@
 #include <vector>
 
 #include "platform/servers_list.hpp"
+
+class DownloadingPolicy;
 
 namespace storage
 {

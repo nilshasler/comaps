@@ -1,6 +1,5 @@
 #include "storage/storage.hpp"
 
-#include "private.h"
 #include "storage/country_tree_helpers.hpp"
 #include "storage/diff_scheme/apply_diff.hpp"
 // #include "storage/diff_scheme/diff_scheme_loader.hpp"
@@ -30,6 +29,7 @@
 #include "base/timer.hpp"
 
 #include "defines.hpp"
+#include "private.h"
 
 #include "cppjansson/cppjansson.hpp"
 

@@ -1,9 +1,8 @@
 #pragma once
 
 #include "storage/downloader_queue_universal.hpp"
-#include "storage/map_files_downloader_with_ping.hpp"
-
-#include "platform/http_request.hpp"
+#include "storage/map_files_downloader.hpp"
+#include "storage/storage_defines.hpp"
 
 #include "base/thread_checker.hpp"
 

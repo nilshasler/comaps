@@ -14,6 +14,7 @@
 
 #include "storage/country_parent_getter.hpp"
 #include "storage/routing_helpers.hpp"
+#include "storage/storage.hpp"
 
 #include "indexer/data_source.hpp"
 

@@ -5,18 +5,25 @@
 #include "storage/country.hpp"
 #include "storage/country_name_getter.hpp"
 #include "storage/country_tree.hpp"
+#include "storage/diff_scheme/diff_types.hpp"
 #include "storage/diff_scheme/diffs_data_source.hpp"
+#include "storage/downloader_queue_interface.hpp"
 #include "storage/downloading_policy.hpp"
 #include "storage/map_files_downloader.hpp"
 #include "storage/queued_country.hpp"
 #include "storage/storage_defines.hpp"
 
+#include "platform/country_defines.hpp"
+#include "platform/country_file.hpp"
 #include "platform/downloader_defines.hpp"
 #include "platform/local_country_file.hpp"
 
+#include "base/assert.hpp"
 #include "base/cancellable.hpp"
+#include "base/geo_object_id.hpp"
 #include "base/thread_checker.hpp"
-#include "base/thread_pool_delayed.hpp"
+
+#include "defines.hpp"
 
 #include <functional>
 #include <list>

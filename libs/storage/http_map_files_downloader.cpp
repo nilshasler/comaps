@@ -1,12 +1,10 @@
 #include "storage/http_map_files_downloader.hpp"
 
 #include "storage/downloader.hpp"
+#include "storage/queued_country.hpp"
 
 #include "platform/downloader_defines.hpp"
-#include "platform/servers_list.hpp"
-
-#include "base/assert.hpp"
-#include "base/string_utils.hpp"
+#include "platform/http_request.hpp"
 
 #include <algorithm>
 #include <functional>

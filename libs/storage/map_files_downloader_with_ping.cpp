@@ -2,7 +2,7 @@
 
 #include "storage/pinger.hpp"
 
-#include "platform/platform.hpp"
+#include "platform/servers_list.hpp"
 
 #include "base/assert.hpp"
 

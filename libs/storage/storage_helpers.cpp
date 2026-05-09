@@ -1,9 +1,13 @@
 #include "storage/storage_helpers.hpp"
 
 #include "storage/country_info_getter.hpp"
+#include "storage/diff_scheme/diffs_data_source.hpp"
 #include "storage/storage.hpp"
 
+#include "platform/country_file.hpp"
 #include "platform/platform.hpp"
+
+#include "base/assert.hpp"
 
 #include "std/target_os.hpp"
 
