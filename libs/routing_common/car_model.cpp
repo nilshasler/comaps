@@ -3,6 +3,8 @@
 
 #include "indexer/classificator.hpp"
 
+#include "base/assert.hpp"
+
 namespace car_model
 {
 using namespace routing;

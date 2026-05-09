@@ -4,6 +4,8 @@
 
 #include "indexer/feature_data.hpp"
 
+#include "base/assert.hpp"
+
 #include <boost/container_hash/hash.hpp>
 
 #include <functional>

@@ -1,9 +1,8 @@
 #include "routing_common/vehicle_model.hpp"
 
 #include "indexer/classificator.hpp"
+#include "indexer/feature_decl.hpp"
 #include "indexer/ftypes_matcher.hpp"
-
-#include "base/assert.hpp"
 
 #include <algorithm>
 #include <sstream>
