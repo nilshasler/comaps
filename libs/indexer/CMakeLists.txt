@@ -162,11 +162,21 @@ file(COPY ${OTHER_FILES} DESTINATION ${CMAKE_BINARY_DIR})
 omim_add_library(${PROJECT_NAME} ${SRC})
 
 target_link_libraries(${PROJECT_NAME}
-  search  # search::DummyRankTable in CachingRankTableLoader
-  platform
-  geometry
-  protobuf
-  coding
+  PUBLIC
+    base
+    coding
+    cppjansson
+    drape
+    geometry
+    platform
+    storage
+  PRIVATE
+    search  # search::DummyRankTable in CachingRankTableLoader
+)
+
+target_link_libraries(${PROJECT_NAME}
+  PUBLIC
+    protobuf
 )
 
 omim_add_test_subdirectory(indexer_tests)

@@ -5,7 +5,17 @@ set(SRC samples_generation_tool.cpp)
 omim_add_executable(${PROJECT_NAME} ${SRC})
 
 target_link_libraries(${PROJECT_NAME}
-  search_quality
-  search_tests_support
-  gflags::gflags
+  PRIVATE
+    base
+    geometry
+    indexer
+    platform
+    platform_tests_support
+    search
+    search_quality
+)
+
+target_link_libraries(${PROJECT_NAME}
+  PRIVATE
+    gflags::gflags
 )

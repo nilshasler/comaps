@@ -68,15 +68,32 @@ omim_add_executable(${PROJECT_NAME} MACOSX_BUNDLE ${RES_SOURCES} ${SRC})
 set_target_properties(${PROJECT_NAME} PROPERTIES AUTOMOC ON)
 
 target_link_libraries(${PROJECT_NAME}
-  generator  # For borders::LoadBorders
-  qt_common
-  map
-  gflags::gflags
-  location_service
+  PUBLIC
+    base
+    drape_frontend
+    geometry
+    indexer
+    kml
+    location_service
+    map
+    platform
+    qt_common
+    routing
+    search
+    storage
+  PRIVATE
+    coding
+    editor
+    generator  # For borders::LoadBorders
+)
+
+target_link_libraries(${PROJECT_NAME}
+  PRIVATE
+    gflags::gflags
 )
 
 if (BUILD_DESIGNER)
-  target_link_libraries(${PROJECT_NAME} generator)
+  target_link_libraries(${PROJECT_NAME} PRIVATE generator)
   set(BUNDLE_NAME "CoMaps-Designer")
   set(BUNDLE_DISPLAY_NAME "CoMaps Designer")
   set(BUNDLE_ICON designer.icns)

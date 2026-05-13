@@ -243,16 +243,28 @@ set(SRC
 omim_add_library(${PROJECT_NAME} ${SRC})
 
 target_link_libraries(${PROJECT_NAME}
-  transit
-  search
-  routing
-  storage
-  descriptions
-  indexer
-  cppjansson
-  expat::expat
-  tess2
-  $<$<BOOL:CMAKE_DL_LIBS>:${CMAKE_DL_LIBS}>  # dladdr from boost::stacktrace
+  PUBLIC
+    base
+    coding
+    cppjansson
+    descriptions
+    geometry
+    indexer
+    platform
+    routing
+    routing_common
+    search
+    storage
+    transit
+  PRIVATE
+    traffic
+)
+
+target_link_libraries(${PROJECT_NAME}
+  PUBLIC
+    expat::expat
+    tess2
+    $<$<BOOL:CMAKE_DL_LIBS>:${CMAKE_DL_LIBS}>  # dladdr from boost::stacktrace
 )
 
 # Disable unity build to avoid boost::geometry macro linker errors.

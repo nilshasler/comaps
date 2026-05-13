@@ -23,7 +23,17 @@ set(SRC
 omim_add_test(${PROJECT_NAME} ${SRC} REQUIRE_QT REQUIRE_SERVER)
 
 target_link_libraries(${PROJECT_NAME}
-  search_tests_support
-  generator_tests_support
-  map
+  PRIVATE
+    base
+    coding
+    drape_frontend
+    generator_tests_support
+    geometry
+    indexer
+    kml
+    map
+    platform
+    search
+    search_tests_support
+    storage
 )

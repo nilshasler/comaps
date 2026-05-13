@@ -211,12 +211,20 @@ set(SRC
 omim_add_library(${PROJECT_NAME} ${SRC})
 
 target_link_libraries(${PROJECT_NAME}
-  editor
-  drape
-  indexer
-  traffic
-  transit
-  shaders
+  PUBLIC
+    base
+    coding
+    drape
+    geometry
+    indexer
+    kml
+    platform
+    shaders
+    traffic
+    transit
+  PRIVATE
+    cppjansson
+    editor
 )
 
 omim_add_test_subdirectory(drape_frontend_tests)

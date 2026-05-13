@@ -171,10 +171,21 @@ set(SRC
 omim_add_library(${PROJECT_NAME} ${SRC})
 
 target_link_libraries(${PROJECT_NAME}
-  editor
-  storage
-  ge0
-  openlocationcode
+  PUBLIC
+    base
+    coding
+    editor
+    ge0
+    geometry
+    indexer
+    kml
+    platform
+    storage
+)
+
+target_link_libraries(${PROJECT_NAME}
+  PUBLIC
+    openlocationcode
 )
 
 if(NOT (SKIP_TOOLS AND SKIP_TESTS))
