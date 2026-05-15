@@ -664,17 +664,23 @@ public:
     if (rawText.size() > kMaxRoadShieldBytesSize)
       return RoadShield();
 
-    if (rawText.starts_with("A"))
+    // "avtoceste" (motorways)
+    if (m_highwayClass == HighwayClass::Motorway && rawText.starts_with("A"))
       return RoadShield(RoadShieldType::Highway_Hexagon_Green, rawText);
 
-    if (rawText.starts_with("H"))
+    // "hitre ceste" (trunk roads)
+    if (m_highwayClass == HighwayClass::Trunk && rawText.starts_with("H"))
       return RoadShield(RoadShieldType::Generic_Blue_Bordered, rawText);
 
+    // show junction sections of motorway and trunk roads as pill-shaped
     if (m_highwayClass == HighwayClass::Motorway)
       return RoadShield(RoadShieldType::Generic_Pill_Green_Bordered, rawText);
     if (m_highwayClass == HighwayClass::Trunk)
       return RoadShield(RoadShieldType::Generic_Pill_Blue_Bordered, rawText);
-    if (m_highwayClass == HighwayClass::Secondary || m_highwayClass == HighwayClass::Tertiary)
+
+    // "glavne ceste" (main roads: 1-11, 101-114) and regionalne ceste (regional roads: 201-941)
+    if (m_highwayClass == HighwayClass::Primary || m_highwayClass == HighwayClass::Secondary
+      || m_highwayClass == HighwayClass::Tertiary)
       return RoadShield(RoadShieldType::Generic_Orange_Bordered, rawText);
 
     return RoadShield(RoadShieldType::Generic_White_Bordered, rawText);
