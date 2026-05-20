@@ -148,26 +148,32 @@ struct Notification
   /// if m_useAtEndOfRoadPrefix == true, "At the end of the road" replaces the distance
   /// for T-junction turn announcements.
   bool m_useAtEndOfRoadPrefix = false;
+  /// if m_useAtRoundaboutPrefix == true, "At the roundabout," precedes the "take the Nth exit"
+  /// instruction (advance notification) or the chained exit announcement.
+  bool m_useAtRoundaboutPrefix = false;
   CarDirection m_turnDir = CarDirection::None;
   PedestrianDirection m_turnDirPedestrian = PedestrianDirection::None;
   measurement_utils::Units m_lengthUnits;
   RouteSegment::RoadNameInfo m_nextStreetInfo;
 
   Notification(uint32_t distanceUnits, uint8_t exitNum, bool useThenInsteadOfDistance, CarDirection turnDir,
-               measurement_utils::Units lengthUnits, RouteSegment::RoadNameInfo const & nextStreetInfo)
+               measurement_utils::Units lengthUnits, RouteSegment::RoadNameInfo const & nextStreetInfo,
+               bool useAtRoundaboutPrefix = false)
     : m_distanceUnits(distanceUnits)
     , m_exitNum(exitNum)
     , m_useThenInsteadOfDistance(useThenInsteadOfDistance)
+    , m_useAtRoundaboutPrefix(useAtRoundaboutPrefix)
     , m_turnDir(turnDir)
     , m_lengthUnits(lengthUnits)
     , m_nextStreetInfo(nextStreetInfo)
   {}
 
   Notification(uint32_t distanceUnits, uint8_t exitNum, bool useThenInsteadOfDistance, CarDirection turnDir,
-               measurement_utils::Units lengthUnits)
+               measurement_utils::Units lengthUnits, bool useAtRoundaboutPrefix = false)
     : m_distanceUnits(distanceUnits)
     , m_exitNum(exitNum)
     , m_useThenInsteadOfDistance(useThenInsteadOfDistance)
+    , m_useAtRoundaboutPrefix(useAtRoundaboutPrefix)
     , m_turnDir(turnDir)
     , m_lengthUnits(lengthUnits)
   {}
@@ -176,7 +182,8 @@ struct Notification
   {
     return m_distanceUnits == rhv.m_distanceUnits && m_exitNum == rhv.m_exitNum &&
            m_useThenInsteadOfDistance == rhv.m_useThenInsteadOfDistance &&
-           m_useAtEndOfRoadPrefix == rhv.m_useAtEndOfRoadPrefix && m_turnDir == rhv.m_turnDir &&
+           m_useAtEndOfRoadPrefix == rhv.m_useAtEndOfRoadPrefix &&
+           m_useAtRoundaboutPrefix == rhv.m_useAtRoundaboutPrefix && m_turnDir == rhv.m_turnDir &&
            m_turnDirPedestrian == rhv.m_turnDirPedestrian && m_lengthUnits == rhv.m_lengthUnits &&
            m_nextStreetInfo == rhv.m_nextStreetInfo;
   }

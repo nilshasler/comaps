@@ -74,11 +74,13 @@ NotificationManager NotificationManager::CreateNotificationManagerForTesting(
 
 std::string NotificationManager::GenerateTurnText(uint32_t distanceUnits, uint8_t exitNum,
                                                   bool useThenInsteadOfDistance, TurnItem const & turn,
-                                                  RouteSegment::RoadNameInfo const & nextStreetInfo) const
+                                                  RouteSegment::RoadNameInfo const & nextStreetInfo,
+                                                  bool useAtRoundaboutPrefix) const
 {
   auto const lengthUnits = m_settings.GetLengthUnits();
 
   Notification notif{distanceUnits, exitNum, useThenInsteadOfDistance, turn.m_turn, lengthUnits};
+  notif.m_useAtRoundaboutPrefix = useAtRoundaboutPrefix;
   if (turn.m_turn == CarDirection::None)
     notif.m_turnDirPedestrian = turn.m_pedestrianTurn;
 
@@ -103,6 +105,80 @@ std::string NotificationManager::GenerateSpeedCameraText() const
   return m_getTtsText.GetSpeedCameraNotification();
 }
 
+std::string NotificationManager::GenerateRoundaboutNotification(TurnItemDist const & entranceTurn,
+                                                                TurnItemDist const & exitTurn,
+                                                                RouteSegment::RoadNameInfo const & nextStreetInfo)
+{
+  if (m_nextTurnIndex != entranceTurn.m_turnItem.m_index)
+  {
+    m_nextTurnNotificationProgress = PronouncedNotification::Nothing;
+    m_nextTurnIndex = entranceTurn.m_turnItem.m_index;
+  }
+
+  auto const lengthUnits = m_settings.GetLengthUnits();
+  uint32_t const distanceToPronounceNotificationM =
+      m_settings.ComputeDistToPronounceDistM(m_speedMetersPerSecond, false /* pedestrian */);
+
+  if (m_nextTurnNotificationProgress == PronouncedNotification::Nothing)
+  {
+    if (!m_settings.TooCloseForFisrtNotification(entranceTurn.m_distMeters))
+    {
+      uint32_t const startPronounceDistMeters =
+          m_settings.ComputeTurnDistanceM(m_speedMetersPerSecond) + distanceToPronounceNotificationM;
+      if (entranceTurn.m_distMeters < startPronounceDistMeters)
+      {
+        if (m_turnNotificationWithThen)
+        {
+          FastForwardFirstTurnNotification();
+        }
+        else
+        {
+          double const distToPronounceMeters = entranceTurn.m_distMeters - distanceToPronounceNotificationM;
+          if (distToPronounceMeters < 0)
+          {
+            FastForwardFirstTurnNotification();
+            return {};
+          }
+
+          // First (advance) notification: "In X meters, at the roundabout, take the Nth exit [onto Street]".
+          double const distToPronounceUnits = m_settings.ConvertMetersToUnits(distToPronounceMeters);
+          uint32_t const roundedDistToPronounceUnits = m_settings.RoundByPresetSoundedDistancesUnits(distToPronounceUnits);
+          m_nextTurnNotificationProgress = PronouncedNotification::First;
+          // Tell the upcoming LeaveRoundAbout turn (when it becomes the first turn) to skip its
+          // own first notification — we've already announced the exit instruction here.
+          m_turnNotificationWithThen = true;
+          return m_getTtsText.GetTurnNotification(
+              {roundedDistToPronounceUnits, static_cast<uint8_t>(exitTurn.m_turnItem.m_exitNum),
+               false /* useThenInsteadOfDistance */, CarDirection::LeaveRoundAbout, lengthUnits, nextStreetInfo,
+               true /* useAtRoundaboutPrefix */});
+        }
+      }
+    }
+    else
+    {
+      m_nextTurnNotificationProgress = PronouncedNotification::First;
+      FastForwardFirstTurnNotification();
+    }
+    return {};
+  }
+
+  if (m_nextTurnNotificationProgress == PronouncedNotification::First &&
+      entranceTurn.m_distMeters < distanceToPronounceNotificationM)
+  {
+    m_nextTurnNotificationProgress = PronouncedNotification::Second;
+    FastForwardFirstTurnNotification();
+    m_turnNotificationWithThen = true;
+    // Reminder at entrance: "Take the Nth exit [onto Street]". useThenInsteadOfDistance routes
+    // GetRoundaboutTextId to the "take_the_N_exit" key; the "Then" word itself is suppressed for
+    // this specific case (LeaveRoundAbout + distance 0 + no roundabout prefix) inside GetTurnNotification.
+    return m_getTtsText.GetTurnNotification(
+        {0 /* distanceUnits */, static_cast<uint8_t>(exitTurn.m_turnItem.m_exitNum),
+         true /* useThenInsteadOfDistance */, CarDirection::LeaveRoundAbout, lengthUnits, nextStreetInfo,
+         false /* useAtRoundaboutPrefix */});
+  }
+  return {};
+}
+
 void NotificationManager::GenerateTurnNotifications(std::vector<TurnItemDist> const & turns,
                                                     std::vector<std::string> & turnNotifications)
 {
@@ -121,6 +197,21 @@ void NotificationManager::GenerateTurnNotifications(std::vector<TurnItemDist> co
 
   TurnItemDist const & firstTurn = turns.front();
 
+  // Classic roundabout pattern: announce "In X meters, at the roundabout, take the Nth exit
+  // [onto Street]" as a single combined notification, instead of separately announcing the
+  // entrance ("Enter the roundabout") followed by the exit ("Then take the Nth exit").
+  bool const isClassicRoundabout = turns.size() >= 2 && IsClassicEntranceToRoundabout(firstTurn, turns[1]);
+  if (isClassicRoundabout)
+  {
+    TurnItemDist const & exitTurn = turns[1];
+    std::string notification = GenerateRoundaboutNotification(firstTurn, exitTurn, nextStreetInfo);
+    if (m_nextTurnNotificationProgress == PronouncedNotification::Nothing)
+      return;
+    if (!notification.empty())
+      turnNotifications.emplace_back(std::move(notification));
+    return;
+  }
+
   std::string firstNotification = GenerateFirstTurnSound(firstTurn.m_turnItem, firstTurn.m_distMeters, nextStreetInfo);
   if (m_nextTurnNotificationProgress == PronouncedNotification::Nothing)
     return;
@@ -136,12 +227,10 @@ void NotificationManager::GenerateTurnNotifications(std::vector<TurnItemDist> co
 
   double distBetweenTurnsMeters = secondTurn.m_distMeters - firstTurn.m_distMeters;
   ASSERT_GREATER_OR_EQUAL(distBetweenTurnsMeters, 0, ());
-  bool const isRoundabout = IsClassicEntranceToRoundabout(firstTurn, secondTurn);
-  if (!isRoundabout && distBetweenTurnsMeters > kSecondTurnThresholdDistM)
+  if (distBetweenTurnsMeters > kSecondTurnThresholdDistM)
     return;
 
-  if (distBetweenTurnsMeters < kDistanceNotifyThresholdM ||
-      (isRoundabout && distBetweenTurnsMeters < kSecondTurnThresholdDistM))
+  if (distBetweenTurnsMeters < kDistanceNotifyThresholdM)
   {
     // Don't pronounce distance because of immediate "Then".
     distBetweenTurnsMeters = 0;
