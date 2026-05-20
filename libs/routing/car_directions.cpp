@@ -530,6 +530,31 @@ void GetTurnDirectionBasic(IRoutingResult const & result, size_t const outgoingS
                                            numMwmIds))
     return;
 
+  // If the route stays on the same named road (same name, ref, class, not link, not roundabout)
+  // and no candidate goes roughly straight, the apparent turn is just the road bending — drop it.
+  // If a straight-ahead candidate exists, keep the turn so we can tell the user which way the
+  // named road actually goes.
+  if (!turnInfo.m_ingoing->m_roadNameInfo.m_name.empty() &&
+      turnInfo.m_ingoing->m_roadNameInfo.m_name == turnInfo.m_outgoing->m_roadNameInfo.m_name &&
+      turnInfo.m_ingoing->m_roadNameInfo.m_ref == turnInfo.m_outgoing->m_roadNameInfo.m_ref &&
+      turnInfo.m_ingoing->m_highwayClass == turnInfo.m_outgoing->m_highwayClass &&
+      !turnInfo.m_ingoing->m_isLink && !turnInfo.m_outgoing->m_isLink &&
+      !turnInfo.m_ingoing->m_onRoundabout && !turnInfo.m_outgoing->m_onRoundabout)
+  {
+    double constexpr kSameRoadStraightAngle = 20.0;
+    bool hasStraightAheadOption = false;
+    for (auto const & candidate : nodes.candidates)
+    {
+      if (abs(candidate.m_angle) <= kSameRoadStraightAngle)
+      {
+        hasStraightAheadOption = true;
+        break;
+      }
+    }
+    if (!hasStraightAheadOption)
+      return;
+  }
+
   turn.m_turn = intermediateDirection;
 
   if (turnCandidates.size() >= 2 && nodes.isCandidatesAngleValid)
