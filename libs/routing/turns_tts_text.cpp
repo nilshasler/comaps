@@ -110,7 +110,7 @@ std::string GetTtsText::GetTurnNotification(Notification const & notification) c
   std::string dirStr = GetTextByIdTrimmed(dirKey);
 
   if (notification.m_distanceUnits == 0 && !notification.m_useThenInsteadOfDistance &&
-      notification.m_nextStreetInfo.empty())
+      !notification.m_useAtRoundaboutPrefix && notification.m_nextStreetInfo.empty())
     return dirStr;
 
   if (notification.IsPedestrianNotification())
@@ -125,13 +125,21 @@ std::string GetTtsText::GetTurnNotification(Notification const & notification) c
   if (dirStr.empty())
     return {};
 
-  std::string thenStr;
+  std::string prefixStr;
+  // Add "Then" prefix if useThenInsteadOfDistance is set, except for the roundabout-entrance
+  // reminder case (LeaveRoundAbout at distance 0 without the roundabout prefix) — that's the
+  // "take the Nth exit" reminder issued right at the entrance, where "Then" would be wrong.
   if (notification.m_useThenInsteadOfDistance)
   {
-    // add "then" and space only if needed, for appropriate languages
-    thenStr = GetTextByIdTrimmed("then");
-    if (localeKey != "ja")
-      thenStr.push_back(' ');
+    bool const isRoundaboutEntranceReminder = notification.m_turnDir == CarDirection::LeaveRoundAbout &&
+                                               notification.m_distanceUnits == 0 &&
+                                               !notification.m_useAtRoundaboutPrefix;
+    if (!isRoundaboutEntranceReminder)
+    {
+      prefixStr = GetTextByIdTrimmed("then");
+      if (localeKey != "ja")
+        prefixStr.push_back(' ');
+    }
   }
 
   std::string distStr;
@@ -144,6 +152,26 @@ std::string GetTtsText::GetTurnNotification(Notification const & notification) c
     std::string endOfRoadStr = GetTextByIdTrimmed("at_the_end_of_the_road");
     if (!endOfRoadStr.empty())
       distStr = std::move(endOfRoadStr);
+  }
+
+  // "At the roundabout, take the Nth exit" — distance moves into the prefix so it reads
+  // naturally as "In 500 meters, at the roundabout, take the Nth exit".
+  if (notification.m_useAtRoundaboutPrefix)
+  {
+    if (!distStr.empty())
+    {
+      prefixStr += distStr;
+      if (localeKey != "ja")
+        prefixStr.push_back(' ');
+      distStr.clear();
+    }
+    std::string atRoundaboutStr = GetTextByIdTrimmed("enter_the_roundabout");
+    if (!atRoundaboutStr.empty())
+    {
+      if (localeKey != "ja")
+        atRoundaboutStr.push_back(' ');
+      prefixStr += atRoundaboutStr;
+    }
   }
 
   // Get a string like 245; CA 123; Highway 99; San Francisco
@@ -244,7 +272,7 @@ std::string GetTtsText::GetTurnNotification(Notification const & notification) c
     // trim leading spaces
     strings::Trim(cleanOut);
 
-    return thenStr + cleanOut;
+    return prefixStr + cleanOut;
   }
 
   std::string out;
@@ -252,13 +280,13 @@ std::string GetTtsText::GetTurnNotification(Notification const & notification) c
   {
     // add distance and/or space only if needed, for appropriate languages
     if (localeKey != "ja")
-      out = thenStr + distStr + " " + dirStr;
+      out = prefixStr + distStr + " " + dirStr;
     else
-      out = thenStr + distStr + dirStr;
+      out = prefixStr + distStr + dirStr;
   }
   else
   {
-    out = thenStr + dirStr;
+    out = prefixStr + dirStr;
   }
 
   return out;
@@ -327,7 +355,11 @@ std::string GetRoundaboutTextId(Notification const & notification)
     ASSERT(false, ());
     return {};
   }
-  if (!notification.m_useThenInsteadOfDistance)
+
+  // "Take the Nth exit" is used either as a chained "Then. Take the third exit." instruction
+  // (m_useThenInsteadOfDistance) or as an advance "In 500 meters, at the roundabout, take the
+  // third exit." instruction (m_useAtRoundaboutPrefix).
+  if (!notification.m_useThenInsteadOfDistance && !notification.m_useAtRoundaboutPrefix)
     return "leave_the_roundabout";  // Notification just before leaving a roundabout.
 
   static constexpr uint8_t kMaxSoundedExit = 11;
