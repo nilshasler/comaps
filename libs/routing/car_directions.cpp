@@ -126,6 +126,13 @@ size_t CarDirectionsEngine::GetTurnDirection(IRoutingResult const & result, size
 
   size_t skipTurnSegments = CheckUTurnOnRoute(result, outgoingSegmentIndex, numMwmIds, vehicleSettings, turnItem);
 
+  // Defensive: clamp skipTurnSegments if it would overshoot the segment list (e.g. U-turn detected at end of route).
+  if (outgoingSegmentIndex + skipTurnSegments >= result.GetSegments().size())
+  {
+    LOG(LWARNING, ("skipTurnSegments overshoots route end; clamping.", outgoingSegmentIndex, skipTurnSegments));
+    skipTurnSegments = result.GetSegments().size() - outgoingSegmentIndex - 1;
+  }
+
   if (turnItem.m_turn == CarDirection::None)
     GetTurnDirectionBasic(result, outgoingSegmentIndex, numMwmIds, vehicleSettings, turnItem);
 
@@ -536,6 +543,10 @@ size_t CheckUTurnOnRoute(IRoutingResult const & result, size_t const outgoingSeg
   double constexpr kUTurnHeadingSensitivity = math::pi / 10.0;
   auto const & segments = result.GetSegments();
 
+  // Do not detect a U-turn one segment before the destination.
+  if (outgoingSegmentIndex + 1 >= segments.size())
+    return 0;
+
   // In this function we process the turn between the previous and the current
   // segments. So we need a shift to get the previous segment.
   ASSERT_GREATER(segments.size(), 1, ());
@@ -569,6 +580,30 @@ size_t CheckUTurnOnRoute(IRoutingResult const & result, size_t const outgoingSeg
         // Warning! We can not determine UTurn direction in single edge case. So we use UTurnLeft.
         // We decided to add driving rules (left-right sided driving) to mwm header.
         if (pointBeforeTurn == pointAfterTurn && turnPoint != pointBeforeTurn)
+        {
+          turn.m_turn = CarDirection::UTurnLeft;
+          return 1;
+        }
+
+        // Same-road wide U-turn (e.g. round a traffic island): the route stays on
+        // the same named/classed road but the overall heading reverses. Compare
+        // ingoing/outgoing legs (not just the immediate segment vectors) to catch this.
+        m2::PointD const junctionPoint = masterSegment.m_path.back().GetPoint();
+        m2::PointD const ingoingPoint =
+            GetPointForTurn(result, outgoingSegmentIndex, numMwmIds, vehicleSettings.m_maxIngoingPointsCount,
+                            vehicleSettings.m_minIngoingDistMeters, false /* forward */);
+        m2::PointD const outgoingPoint =
+            GetPointForTurn(result, outgoingSegmentIndex, numMwmIds, vehicleSettings.m_maxOutgoingPointsCount,
+                            vehicleSettings.m_minOutgoingDistMeters, true /* forward */);
+        double const anglePathChangeDeg =
+            math::RadToDeg(PiMinusTwoVectorsAngle(junctionPoint, ingoingPoint, outgoingPoint));
+        double constexpr kWideUTurnAngleDeg = 140.0;
+        if (anglePathChangeDeg >= kWideUTurnAngleDeg)
+        {
+          turn.m_turn = CarDirection::UTurnRight;
+          return 1;
+        }
+        if (anglePathChangeDeg <= -kWideUTurnAngleDeg)
         {
           turn.m_turn = CarDirection::UTurnLeft;
           return 1;
