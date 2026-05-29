@@ -527,6 +527,14 @@ public:
   DECLARE_CHECKER_INSTANCE(IsTaxiChecker);
 };
 
+class IsOrganicChecker : public BaseChecker
+{
+  IsOrganicChecker();
+
+public:
+  DECLARE_CHECKER_INSTANCE(IsOrganicChecker);
+};
+
 class IsChristmasChecker : public BaseChecker
 {
   IsChristmasChecker();

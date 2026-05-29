@@ -270,6 +270,18 @@ std::string MapObject::GetPopulation() const
   return std::string(m_metadata.Get(MetadataID::FMD_POPULATION));
 }
 
+std::string MapObject::GetOrganic() const
+{
+  auto const & isOrganic = ftypes::IsOrganicChecker::Instance();
+
+  for (auto const type : m_types) {
+    if (isOrganic(type))
+      return localisation::TranslatedFeatureType(classif().GetReadableObjectName(type));
+  }
+  
+  return {};
+}
+
 bool MapObject::IsPointType() const
 {
   return m_geomType == feature::GeomType::Point;
