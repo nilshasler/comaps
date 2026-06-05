@@ -608,10 +608,10 @@
     <string name="type.office.estate_agent">Corretor imobiliário</string>
     <string name="type.office.government">Gabinete governamental</string>
     <string name="type.office.insurance">Seguradora</string>
-    <string name="type.office.lawyer">Escritório de advogado</string>
+    <string name="type.office.lawyer">Escritório de advocacia</string>
     <string name="type.office.ngo">Escritório de ONG</string>
     <string name="type.office.telecommunication">Operadora de telecomunicações</string>
-    <string name="type.organic.only">Só orgânico</string>
+    <string name="type.organic.only">Somente orgânico</string>
     <string name="type.organic.yes">Opções orgânicas</string>
     <string name="type.place.farm">Fazenda</string>
     <string name="type.place.hamlet">Lugarejo</string>
@@ -1025,7 +1025,7 @@
     <string name="type.sport">Esporte</string>
     <string name="type.sport.american_football">Futebol americano</string>
     <string name="type.sport.archery">Tiro com arco</string>
-    <string name="type.sport.athletics">Atlético</string>
+    <string name="type.sport.athletics">Atletismo</string>
     <string name="type.sport.australian_football">Futebol australiano</string>
     <string name="type.sport.baseball">Beisebol</string>
     <string name="type.sport.basketball">Basquetebol</string>

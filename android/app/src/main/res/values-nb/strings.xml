@@ -945,4 +945,6 @@
     <string name="pref_aa_support_summary_yes">Appen er installert fra Google Play, og du kan bruke den i bilen din.</string>
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="oh_unknown">Åpningstider ukjent</string>
+    <string name="editor_add_select_category_all_subtitle">Alle kategorier</string>
+    <string name="editor_add_select_category_recent_subtitle">Nylig brukt</string>
 </resources>

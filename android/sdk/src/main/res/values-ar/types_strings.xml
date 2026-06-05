@@ -1308,8 +1308,8 @@
     <string name="type.emergency.access_point.address">عنوان الإنقاذ في حالات الطوارئ</string>
     <string name="type.emergency.disaster_help_point">نقطة مساعدة الطوارئ في حالات الكوارث</string>
     <string name="type.amenity.hydrant">صنبور ري</string>
-    <string name="type.beacon.cardinal.east">منارة كاردينال</string>
-    <string name="type.beacon.cardinal.north">منارة كاردينال</string>
+    <string name="type.beacon.cardinal.east">منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية</string>
+    <string name="type.beacon.cardinal.north">منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية</string>
     <string name="type.beacon.isolated_danger">منارة خطر معزولة</string>
     <string name="type.beacon.lateral.port">منارة جانبية</string>
     <string name="type.beacon.lateral.starboard">منارة جانبية</string>
@@ -1437,4 +1437,7 @@
     <string name="type.natural.wetland.mangrove">غابات المانغروف</string>
     <string name="type.social_facility.food_bank">بنك طعام</string>
     <string name="type.cuisine.heuriger">هويريجر|هويريغر|حانة نبيذ نمساوية|بار نبيذ نمساوي|مطعم نمساوي تقليدي|مطعم نبيذ نمساوي|حانة نمساوية|مطعم نمساوي ريفي</string>
+    <string name="type.emergency.life_ring">طوق نجاة|عوامة نجاة|حلقة نجاة|طوق إنقاذ|عوامة إنقاذ|حلقة إنقاذ|طوق نجات|عوامة نجات|طوق نجاة بحري|حلقة نجاة بحرية</string>
+    <string name="type.beacon.cardinal.south">منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية</string>
+    <string name="type.beacon.cardinal.west">منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية</string>
 </resources>

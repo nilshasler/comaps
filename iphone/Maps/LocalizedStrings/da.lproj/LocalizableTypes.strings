@@ -101,7 +101,7 @@
 "type.amenity.lounger" = "Solseng";
 "type.amenity.luggage_locker" = "Bagageskab";
 "type.amenity.marketplace" = "Markedsplads";
-"type.amenity.mobile_money_agent" = "Mobile Money Agent";
+"type.amenity.mobile_money_agent" = "Mobilpengeagent";
 "type.amenity.motorcycle_parking" = "Motorcykelparkering";
 "type.amenity.nightclub" = "Natklub";
 "type.amenity.nursing_home" = "Plejehjem";
@@ -1515,3 +1515,4 @@
 "type.leisure.sports_centre.sport.boules" = "Idrætscenter";
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Idrætscenter";
+"type.organic.no" = "No organic options";

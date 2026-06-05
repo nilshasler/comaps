@@ -12,10 +12,12 @@
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
 			<string>lld</string>
+			<key>zero</key>
+			<string>Μηδέν μέρη</string>
 			<key>one</key>
-			<string>%lld σελιδοδείκτης</string>
+			<string>%lld μέρος</string>
 			<key>other</key>
-			<string>%lld σελιδοδείκτες</string>
+			<string>%lld μέρη</string>
 		</dict>
 	</dict>
 	<key>bookmarks_detect_message</key>
@@ -63,6 +65,8 @@
 			<key>other</key>
 			<string>%lld κάτοικοι</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
 	</dict>
 	<key>rooms</key>
 	<dict>
@@ -77,6 +81,8 @@
 			<key>other</key>
 			<string>%lld δωμάτια</string>
 		</dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@nevertranslate@</string>
 	</dict>
 </dict>
 </plist>

@@ -809,7 +809,7 @@
     <string name="type.office.ngo">Nichtregierungsorganisation</string>
     <string name="type.office.telecommunication">Mobilfunkbetreiber</string>
     <string name="type.organic.only">Nur Bio</string>
-    <string name="type.organic.yes">Bio-Produkte</string>
+    <string name="type.organic.yes">Bio-Produkte vorhanden</string>
     <string name="type.place.city">Großstadt</string>
     <string name="type.place.city.capital">Hauptstadt</string>
     <string name="type.place.city.capital.10">Großstadt</string>

@@ -546,14 +546,14 @@
     <string name="dialog_error_storage_message">Екстерна меморија није доступна. SD картица је можда уклоњена, оштећена, или је фајл систем само за читање. Молим Вас, проверите Вашу SD картицу или нас контактирајте на support@comaps.app</string>
     <string name="setting_emulate_bad_storage">Симулирај неисправну меморију</string>
     <string name="error_enter_correct_name">Молим Вас да унесете исправан назив</string>
-    <string name="bookmark_lists">Листе фаворита</string>
+    <string name="bookmark_lists">Листе маркера</string>
     <!-- Do not display all bookmark lists on the map -->
     <string name="bookmark_lists_hide_all">Сакриј све</string>
     <string name="bookmark_lists_show_all">Прикажи све</string>
     <plurals name="bookmarks_places">
-        <item quantity="one">%d фаворит</item>
-        <item quantity="few">%d фаворита</item>
-        <item quantity="other">%d фаворита</item>
+        <item quantity="one">%d маркер</item>
+        <item quantity="few">%d маркера</item>
+        <item quantity="other">%d маркера</item>
     </plurals>
     <string name="bookmarks_create_new_group">Креирај нову листу</string>
     <!-- Bookmark categories screen, button that opens folder selection dialog to import KML/KMZ/GPX/KMB files -->
@@ -953,4 +953,7 @@
     <string name="pref_aa_support_summary_yes">Апликација је инсталирана преко Google Play продавнице, можете је користити у аутомобилу.</string>
     <string name="pref_aa_support_summary_no">Апликација није инсталирана преко Google Play продавнице, не можете је користити у аутомобилу. Додирните подешавања да бисте сазнали више детаља у нашим ЧПП.</string>
     <string name="editor_add_select_category_recent_subtitle">Недавно коришћено</string>
+    <string name="sort_categories">Сортирање листи</string>
+    <string name="by_recently_used">По последњем коришћењу</string>
+    <string name="by_custom">По жељеном редоследу</string>
 </resources>

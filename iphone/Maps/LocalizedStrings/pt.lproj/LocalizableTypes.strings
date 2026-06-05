@@ -864,8 +864,8 @@
 "type.office.lawyer" = "Advogado";
 "type.office.ngo" = "Escritório de ONG";
 "type.office.telecommunication" = "Operadora de telecomunicações";
-"type.organic.only" = "Orgânico";
-"type.organic.yes" = "Orgânico";
+"type.organic.only" = "Orgânico apenas";
+"type.organic.yes" = "Opções Orgânicas";
 "type.place.city" = "Cidade";
 "type.place.city.capital" = "Capital";
 "type.place.city.capital.10" = "Cidade";
@@ -1515,3 +1515,4 @@
 "type.leisure.sports_centre.sport.boules" = "Centro Desportivo";
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Centro Desportivo";
+"type.organic.no" = "Sem opções orgânicas";

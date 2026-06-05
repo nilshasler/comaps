@@ -1514,3 +1514,4 @@
 "type.amenity.studio" = "Studio Media";
 "type.amenity.luggage_locker" = "Loker Bagasi";
 "type.post_office.post_partner" = "Mitra Pos";
+"type.organic.no" = "No organic options";

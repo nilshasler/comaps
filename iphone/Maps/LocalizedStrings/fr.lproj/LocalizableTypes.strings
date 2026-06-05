@@ -864,8 +864,8 @@
 "type.office.lawyer" = "Cabinet d’avocat";
 "type.office.ngo" = "Bureau d’ONG";
 "type.office.telecommunication" = "Opérateur mobile";
-"type.organic.only" = "Biologique";
-"type.organic.yes" = "Biologique";
+"type.organic.only" = "Uniquement bio";
+"type.organic.yes" = "Produits bio";
 "type.place.city" = "Ville";
 "type.place.city.capital" = "Capitale";
 "type.place.city.capital.10" = "Ville";
@@ -1515,3 +1515,4 @@
 "type.leisure.sports_centre.sport.boules" = "Centre Sportif";
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Centre Sportif";
+"type.organic.no" = "Pas d'options bio";

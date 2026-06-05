@@ -847,7 +847,7 @@
     <string name="pref_backup_summary">Automatycznie twórz kopię zapasową do folderu na urządzeniu</string>
     <string name="pref_backup_now_summary">Utwórz kopię zapasową natychmiast</string>
     <string name="pref_backup_now_summary_ok">Kopia zapasowa została pomyślnie utworzona</string>
-    <string name="pref_backup_now_summary_empty_lists">Brak zapisanych miejsc i tras do wykonania kopii zapasowej</string>
+    <string name="pref_backup_now_summary_empty_lists">Brak ulubionych do wykonania kopii zapasowej</string>
     <string name="pref_backup_now_summary_folder_unavailable">Folder kopii zapasowej jest niedostępny</string>
     <string name="pref_backup_status_summary_success">Ostatnia pomyślna kopia zapasowa</string>
     <string name="pref_backup_location_title">Lokalizacja kopii zapasowej</string>
@@ -955,4 +955,12 @@
     <string name="downloader_check_updates_error">Sprawdzanie dostępności aktualizacji nie powiodło się</string>
     <string name="pref_keyboard_typing_history_title">Tryb incognito klawiatury</string>
     <string name="pref_keyboard_typing_history_summary">Poproś klawiaturę systemową, aby nie zapisywała historii wpisywania</string>
+    <string name="tts_toggle_enable">Włącz wskazówki głosowe</string>
+    <string name="tts_toggle_disable">Wyłącz wskazówki głosowe</string>
+    <string name="oh_unknown">Nieznane godziny otwarcia</string>
+    <string name="editor_add_select_category_all_subtitle">Wszystkie kategorie</string>
+    <string name="pref_aa_support_title">Android Auto</string>
+    <string name="pref_aa_support_summary_yes">Aplikacja zainstalowana przez Google Play - możesz jej użyć w swoim samochodzie.</string>
+    <string name="pref_aa_support_summary_no">Aplikacja nie została zainstalowana przez Google Play - nie możesz jej użyć w swoim samochodzie. Kliknij w opcję, by znaleźć więcej szczegółów w FAQ.</string>
+    <string name="editor_add_select_category_recent_subtitle">Ostatnio używane</string>
 </resources>

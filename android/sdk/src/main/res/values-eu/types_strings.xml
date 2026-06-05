@@ -15,7 +15,7 @@
     <string name="type.aeroway.aerodrome">Aireportua</string>
     <string name="type.aeroway.aerodrome.international">Nazioarteko aireportua</string>
     <string name="type.aeroway.apron">Plataforma</string>
-    <string name="type.aeroway.gate">Ontziratzeko atea</string>
+    <string name="type.aeroway.gate">Atea</string>
     <string name="type.aeroway.helipad">Heliportua</string>
     <string name="type.aeroway.runway">Pista</string>
     <string name="type.aeroway.taxiway">Errodaje-bidea</string>
@@ -1387,7 +1387,7 @@
     <string name="type.amenity.prep_school">Tutoretza-eskola</string>
     <string name="type.power.portal">Goi-tentsioko dorrea</string>
     <string name="type.amenity.lounger">Tunbona</string>
-    <string name="type.amenity.mobile_money_agent">Eskudiru mugikorreko agentzia</string>
+    <string name="type.amenity.mobile_money_agent">Mugikorreko diru agentea</string>
     <string name="type.amenity.payment_centre">Ordainketa gunea</string>
     <string name="type.post_office.post_partner">Posta-bazkidea</string>
     <string name="type.barrier.wicket_gate">Ataka</string>
@@ -1400,4 +1400,9 @@
     <string name="type.beacon.lateral.starboard">Alboko marka</string>
     <string name="type.beacon.safe_water">Ur nabigagarrien marka</string>
     <string name="type.beacon.special_purpose">Marka berezia</string>
+    <string name="type.lateral.port">Portua</string>
+    <string name="type.lateral.starboard">Estribor</string>
+    <string name="type.entrance.house">Etxeko sarrera</string>
+    <string name="type.entrance.garage">Garaje sarrera</string>
+    <string name="type.entrance.service">Zerbitzu sarrera</string>
 </resources>

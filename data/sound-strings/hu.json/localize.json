@@ -24,7 +24,7 @@
 "make_a_u_turn_street_verb":"NULL",
 "go_straight":"Haladjon tovább egyenesen.",
 "exit":"Hajtson ki.",
-"onto":"a",
+"onto":"felé",
 "take_exit_number":"Hajtson ki a",
 "take_exit_number_street_verb":"NULL",
 "route_recalculating":"Az útvonal újraszámítása",
@@ -48,7 +48,7 @@
 "in_2_5_kilometers":"Két és fél kilométer után",
 "in_3_kilometers":"Három kilométer után",
 "then":"Majd",
-"dist_direction_onto_street":"%1$s %2$s %3$s %4$s-re",
+"dist_direction_onto_street":"%1$s %2$s %4$s %3$s",
 "take_the_1_exit":"Hajtson ki az első kijáratnál.",
 "take_the_1_exit_street":"NULL",
 "take_the_1_exit_street_verb":"NULL",
@@ -104,5 +104,5 @@
 "in_1_mile":"Egy mérföld után",
 "in_1_5_miles":"Másfél mérföld után",
 "in_2_miles":"Két mérföld után",
-"unknown_camera":"Kamera következik"
+"unknown_camera":"Sebességkamera következik"
 }

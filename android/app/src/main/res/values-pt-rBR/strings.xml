@@ -398,7 +398,7 @@
     <string name="editor_login_error_dialog">Erro ao iniciar sessão</string>
     <string name="editor_profile_changes">Alterações verificadas</string>
     <string name="editor_edit_place_title">Edição</string>
-    <string name="editor_add_place_title">Adicionando</string>
+    <string name="editor_add_place_title">Adicionar</string>
     <string name="editor_edit_place_name_hint">Nome do local</string>
     <string name="editor_edit_place_category_title">Categoria</string>
     <string name="detailed_problem_description">Descrição detalhada do problema</string>
@@ -556,7 +556,7 @@
     <string name="avoid_unpaved">Evitar não pavimentadas</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
     <string name="avoid_ferry">Evitar balsas</string>
-    <string name="avoid_motorways">Evitar rodovias</string>
+    <string name="avoid_motorways">Evitar autoestradas</string>
     <string name="unable_to_calc_alert_title">Incapaz de calcular rota</string>
     <string name="unable_to_calc_alert_subtitle">Infelizmente, não conseguimos encontrar uma rota, provavelmente por causa das opções escolhidas ou dados do OpenStreetMap em falta. Por favor, altere as configurações e tente novamente.</string>
     <string name="define_to_avoid_btn">Definir as estradas a serem evitadas</string>
@@ -794,7 +794,7 @@
     <string name="error_enter_correct_vk_page">Digite um nome de usuário ou endereço da web válido do VK</string>
     <string name="error_enter_correct_fediverse_page">Digite um nome de usuário ou endereço da web válido do Mastodon</string>
     <string name="error_enter_correct_bluesky_page">Digite um nome de usuário ou endereço da web válido do Bluesky</string>
-    <string name="prefs_languages_information_off">Para alguns idiomas, você precisará instalar um sintetizador de voz ou um pacote de idiomas adicional a partir de uma loja de aplicativos (Google Play, Galaxy Store, App Gallery, FDroid).\nAbra as configurações do seu dispositivo → Idioma e entrada → Fala → Saída de texto para fala.\nAqui, você pode gerenciar as configurações de síntese de voz (por exemplo, baixar o pacote de idiomas para uso offline) e selecionar diferentes mecanismo de conversão de texto para fala.</string>
+    <string name="prefs_languages_information_off">Para alguns idiomas, você precisará instalar um sintetizador de voz ou um pacote de idiomas adicional a partir de uma loja de aplicativos (Google Play, Galaxy Store, App Gallery, FDroid).\nAbra as configurações do seu dispositivo → Idioma e entrada → Fala → Saída de texto para fala.\nAqui, você pode gerenciar as configurações de síntese de voz (por exemplo, baixar o pacote de idiomas para uso offline) e selecionar outro mecanismo de conversão de texto para fala.</string>
     <string name="instagram_url">https://www.instagram.com/comaps.app/</string>
     <string name="editor_building_levels">Andares (incl. térreo, excl. sótão)</string>
     <string name="error_enter_correct_level">Digite um número de andares válido</string>
@@ -920,8 +920,8 @@
     <string name="downloader_check_updates_checking">Buscando atualizações...</string>
     <string name="downloader_check_updates_updated">Atualizações do mapa disponíveis!</string>
     <string name="downloader_check_updates_no_updates">Nenhuma atualização disponível</string>
-    <string name="downloader_check_updates_eol">Não haverá mais atualizações de mapas para esta versão do aplicativo. Atualize o aplicativo!</string>
-    <string name="downloader_check_updates_error">Erro ao verificar atualizações</string>
+    <string name="downloader_check_updates_eol">Não haverá mais atualizações de mapas para esta versão do aplicativo. Por favor, atualize o aplicativo!</string>
+    <string name="downloader_check_updates_error">Erro ao buscar atualizações</string>
     <string name="pref_keyboard_typing_history_title">Modo anônimo do teclado</string>
     <string name="pref_keyboard_typing_history_summary">Solicite ao teclado do sistema que não registre o histórico de digitação</string>
     <string name="oh_unknown">Horário de funcionamento desconhecido</string>
@@ -930,4 +930,6 @@
     <string name="pref_aa_support_title">Android Auto</string>
     <string name="pref_aa_support_summary_yes">O aplicativo foi instalado a partir do Google Play e você pode usá-lo no seu carro.</string>
     <string name="pref_aa_support_summary_no">O aplicativo não foi instalado a partir do Google Play, portanto, você não pode usá-lo no seu carro. Vá para as configurações para obter mais detalhes em nossas perguntas frequentes.</string>
+    <string name="editor_add_select_category_all_subtitle">Todas as categorias</string>
+    <string name="editor_add_select_category_recent_subtitle">Recentemente usadas</string>
 </resources>

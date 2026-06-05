@@ -886,4 +886,22 @@
     <string name="share_track">Partekatu Track hau</string>
     <string name="hours_confirmed_time_ago">%s baieztatuta</string>
     <string name="existence_confirmed_time_ago">%s baieztatutako existentzia</string>
+    <string name="tts_toggle_enable">Gaitu ahots-argibideak</string>
+    <string name="tts_toggle_disable">Ezgaitu ahots-argibideak</string>
+    <string name="downloader_check_updates_button">Bilatu eguneratzeak</string>
+    <string name="downloader_check_updates_checking">Eguneratzeak bilatzen...</string>
+    <string name="downloader_check_updates_updated">Mapen eguneraketak eskuragarri!</string>
+    <string name="downloader_check_updates_no_updates">Ez dago eguneratzerik</string>
+    <string name="downloader_check_updates_eol">Ez dago mapa eguneratze gehiago aplikazio honen bertsiorako. Eguneratu aplikazioa!</string>
+    <string name="downloader_check_updates_error">Ezin izan dira eguneratzeak bilatu</string>
+    <plurals name="minutes_short">
+        <item quantity="one">%d min</item>
+        <item quantity="other">%d min</item>
+    </plurals>
+    <string name="oh_unknown">Ordutegi ezezaguna</string>
+    <string name="editor_business_vacant_button">Negozioa hutsik dago</string>
+    <string name="editor_mark_business_vacant_title">Markatu negozioa hutsik bezala</string>
+    <string name="editor_submit">Bidali</string>
+    <string name="avoid_steps">Saihestu eskailerak</string>
+    <string name="avoid_paved">Saihestu asfaltatutako errepideak</string>
 </resources>

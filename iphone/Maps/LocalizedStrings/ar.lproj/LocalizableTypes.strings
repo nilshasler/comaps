@@ -374,17 +374,17 @@
 "type.emergency.access_point.address" = "عنوان الإنقاذ في حالات الطوارئ";
 "type.emergency.assembly_point" = "نقطة التجمع في حالات الطوارئ";
 "type.emergency.disaster_help_point" = "نقطة مساعدة الطوارئ في حالات الكوارث";
-"type.emergency.life_ring" = "Lifebuoy";
+"type.emergency.life_ring" = "طوق نجاة|عوامة نجاة|حلقة نجاة|طوق إنقاذ|عوامة إنقاذ|حلقة إنقاذ|طوق نجات|عوامة نجات|طوق نجاة بحري|حلقة نجاة بحرية";
 "type.emergency.defibrillator" = "مزيل الرجفان";
 "type.emergency.fire_hydrant" = "صنبور الإطفاء";
 "type.amenity.hydrant" = "صنبور ري";
 "type.emergency.phone" = "هاتف الطوارئ";
 /* A place where a lifeguard is on duty. */
 "type.emergency.lifeguard" = "منقذ";
-"type.beacon.cardinal.east" = "منارة كاردينال";
-"type.beacon.cardinal.north" = "منارة كاردينال";
-"type.beacon.cardinal.south" = "Cardinal Beacon";
-"type.beacon.cardinal.west" = "Cardinal Beacon";
+"type.beacon.cardinal.east" = "منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية";
+"type.beacon.cardinal.north" = "منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية";
+"type.beacon.cardinal.south" = "منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية";
+"type.beacon.cardinal.west" = "منارة أساسية|علامة أساسية|عوامة أساسية|إشارة أساسية|علامة ملاحية أساسية";
 "type.beacon.isolated_danger" = "منارة خطر معزولة";
 "type.beacon.lateral.port" = "منارة جانبية";
 "type.beacon.lateral.starboard" = "منارة جانبية";
@@ -1515,3 +1515,4 @@
 "type.leisure.sports_centre.sport.boules" = "مركز رياضي";
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "مركز رياضي";
+"type.organic.no" = "No organic options";

@@ -459,7 +459,7 @@
 "editor_focus_map_on_location" = "Arrossegueu el mapa per col·locar la creu a la ubicació del lloc o de l'empresa.";
 "editor_add_select_category" = "Trieu una categoria";
 "editor_add_select_category_popular_subtitle" = "Popular";
-"editor_add_select_category_all_subtitle" = "Totes les categories";
+"editor_add_select_category_all_subtitle" = "Totes les Categories";
 "editor_edit_place_title" = "Edició";
 "editor_add_place_title" = "Addició";
 "editor_edit_place_name_hint" = "Nom del lloc";
@@ -876,5 +876,5 @@
 "downloader_check_updates_no_updates" = "Cap actualització disponible";
 "downloader_check_updates_eol" = "No hi ha més actualitzacions per a mapes en aquesta versió. Per favor, actualitza l'app!";
 "downloader_check_updates_error" = "No s'han pogut comprovar les actualitzacions";
-"editor_add_select_category_recent_subtitle" = "Recently Used";
+"editor_add_select_category_recent_subtitle" = "Usades Recentment";
 "oh_unknown" = "Opening hours unknown";

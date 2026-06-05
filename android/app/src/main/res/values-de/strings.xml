@@ -939,11 +939,19 @@
     <string name="setting_value_system_default">Systemstandard</string>
     <string name="change_app_locale">App-Sprache</string>
     <string name="downloader_check_updates_button">Auf Updates überprüfen</string>
-    <string name="downloader_check_updates_checking">Suche nach Updates...</string>
-    <string name="downloader_check_updates_updated">Karten-Updates verfügbar!</string>
-    <string name="downloader_check_updates_no_updates">Keine Updates verfügbar</string>
-    <string name="downloader_check_updates_eol">Keine Karten-Updates mehr für diese App-Version. Bitte mach ein App-Update!</string>
-    <string name="downloader_check_updates_error">Fehler beim Prüfen auf Updates</string>
+    <string name="downloader_check_updates_checking">Suche nach Aktualisierungen …</string>
+    <string name="downloader_check_updates_updated">Karten-Aktualisierungen verfügbar!</string>
+    <string name="downloader_check_updates_no_updates">Keine Aktualisierungen verfügbar</string>
+    <string name="downloader_check_updates_eol">Kartenaktualisierungen wurden für diese App-Version eingestellt. Bitte aktualisiere die App!</string>
+    <string name="downloader_check_updates_error">Fehler beim Prüfen auf Aktualisierungen</string>
     <string name="pref_keyboard_typing_history_title">Tastatur-Privatsphärenmodus</string>
     <string name="pref_keyboard_typing_history_summary">Das System dazu auffordern, den Tastatur-Eingabeverlauf nicht mitzuzeichnen</string>
+    <string name="tts_toggle_enable">Sprachführung aktivieren</string>
+    <string name="tts_toggle_disable">Sprachführung deaktvieren</string>
+    <string name="oh_unknown">Unbekannte Öffnungszeiten</string>
+    <string name="editor_add_select_category_all_subtitle">Alle Kategorien</string>
+    <string name="pref_aa_support_summary_yes">Die App wurde über Google Play installiert, du kannst sie in deinem Auto nutzen.</string>
+    <string name="pref_aa_support_summary_no">Die App wurde nicht über Google Play installiert, du kannst sie nicht in deinem Auto nutzen. Gehe zu den Einstellungen um mehr Details aus unserem FAQ zu erfahren.</string>
+    <string name="editor_add_select_category_recent_subtitle">Kürzlich verwendet</string>
+    <string name="pref_aa_support_title">Android Auto</string>
 </resources>

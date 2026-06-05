@@ -861,11 +861,11 @@
 "type.office.estate_agent" = "Corretor imobiliário";
 "type.office.government" = "Gabinete governamental";
 "type.office.insurance" = "Seguradora";
-"type.office.lawyer" = "Escritório de advogado";
+"type.office.lawyer" = "Escritório de advocacia";
 "type.office.ngo" = "Escritório de ONG";
 "type.office.telecommunication" = "Operadora de telecomunicações";
-"type.organic.only" = "Orgânico";
-"type.organic.yes" = "Orgânico";
+"type.organic.only" = "Somente orgânico";
+"type.organic.yes" = "Opções orgânicas";
 "type.place.city" = "Cidade";
 "type.place.city.capital" = "Capital";
 "type.place.city.capital.10" = "Cidade";
@@ -1356,7 +1356,7 @@
 "type.sport.10pin" = "Boliche";
 "type.sport.american_football" = "Futebol americano";
 "type.sport.archery" = "Tiro com arco";
-"type.sport.athletics" = "Atlético";
+"type.sport.athletics" = "Atletismo";
 "type.sport.australian_football" = "Futebol australiano";
 "type.sport.badminton" = "Badmínton";
 "type.sport.baseball" = "Beisebol";
@@ -1515,3 +1515,4 @@
 "type.leisure.sports_centre.sport.boules" = "Centro esportivo";
 "type.sport.pickleball" = "Pickleball";
 "type.leisure.sports_centre.sport.pickleball" = "Centro de esportes";
+"type.organic.no" = "Sem opções orgânicas";

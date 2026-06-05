@@ -1,7 +1,7 @@
 /* Button text (should be short) */
 "cancel" = "Abbrechen";
 /* Button which interrupts country download */
-"cancel_download" = "Download abbrechen";
+"cancel_download" = "Herunterladen abbrechen";
 /* Button which deletes downloaded country */
 "delete" = "Löschen";
 "download_maps" = "Karten herunterladen";
@@ -871,10 +871,10 @@
 "contribute_to_osm_update_map" = "Karte updaten, um Beizutragen";
 "contribute_to_osm_update_map_description" = "Du musst die %@ Karte auf die letzte Version aktualisieren, bevor du etwas zu den OpenStreetMap-Daten beitragen kannst";
 "downloader_check_updates_button" = "Auf Updates überprüfen";
-"downloader_check_updates_checking" = "Suche nach Updates...";
-"downloader_check_updates_updated" = "Karten-Updates verfügbar!";
-"downloader_check_updates_no_updates" = "Keine Updates verfügbar";
-"downloader_check_updates_eol" = "Kartenaktualisierungen wurden für diese App-Version eingestellt. Bitte die App aktualisieren!";
-"downloader_check_updates_error" = "Fehler beim Prüfen auf Updates";
-"editor_add_select_category_recent_subtitle" = "Recently Used";
-"oh_unknown" = "Opening hours unknown";
+"downloader_check_updates_checking" = "Suche nach Aktualisierungen …";
+"downloader_check_updates_updated" = "Karten-Aktualisierungen verfügbar!";
+"downloader_check_updates_no_updates" = "Keine Aktualisierungen verfügbar";
+"downloader_check_updates_eol" = "Kartenaktualisierungen wurden für diese App-Version eingestellt. Bitte aktualisiere die App!";
+"downloader_check_updates_error" = "Fehler beim Prüfen auf Aktualisierungen";
+"editor_add_select_category_recent_subtitle" = "Kürzlich verwendet";
+"oh_unknown" = "Unbekannte Öffnungszeiten";

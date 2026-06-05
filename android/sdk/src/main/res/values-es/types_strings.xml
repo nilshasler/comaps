@@ -749,7 +749,7 @@
     <string name="type.office.ngo">Organización no gubernamental</string>
     <string name="type.office.telecommunication">Operadora de telefonía</string>
     <string name="type.organic.only">Solo orgánico</string>
-    <string name="type.organic.yes">Opciones orgánicas</string>
+    <string name="type.organic.yes">Opciones orgánicas o ecológicas</string>
     <string name="type.place.city">Ciudad</string>
     <string name="type.place.city.capital">Capital</string>
     <string name="type.place.city.capital.10">Ciudad</string>
@@ -1518,5 +1518,5 @@
     <string name="type.sport.four_square">Four Square</string>
     <string name="type.leisure.sports_centre.sport.pickleball">Centro deportivo</string>
     <string name="type.sport.pickleball">Pickleball</string>
-    <string name="type.organic.no">Sin opciones orgánicas</string>
+    <string name="type.organic.no">Cultivo convencional no orgánico</string>
 </resources>

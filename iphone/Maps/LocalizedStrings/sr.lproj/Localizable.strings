@@ -107,7 +107,7 @@
 "category_water" = "Вода";
 /* Search category for RV facilities; any changes should be duplicated in categories.txt @category_rv! */
 "category_rv" = "За кампер возила";
-"share_bookmarks_email_body" = "Здраво! \n \nУ прилогу су моји фаворити; молим те да их отвориш у CoMaps-у. Ако га немаш већ инсталираног, можеш да га преузмеш одавде: https://www.comaps.app/download/ \n \nУживај у путовању са CoMaps-ом!";
+"share_bookmarks_email_body" = "Здраво! \n \nУ прилогу су моји маркери; молим те да их отвориш у CoMaps-у. Ако га немаш већ инсталираног, можеш да га преузмеш одавде: https://www.comaps.app/download/ \n \nУживај у путовању са CoMaps-ом!";
 /* message title of loading file */
 "load_kmz_title" = "Учитавање маркера";
 /* Kmz file successful loading */

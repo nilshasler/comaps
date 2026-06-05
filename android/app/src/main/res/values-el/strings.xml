@@ -924,4 +924,8 @@
     <string name="downloader_check_updates_updated">Διαθέσιμες ενημερώσεις χάρτη!</string>
     <string name="downloader_check_updates_no_updates">Δεν υπάρχουν διαθέσιμες ενημερώσεις</string>
     <string name="downloader_check_updates_checking">Γίνεται έλεγχος για ενημερώσεις...</string>
+    <string name="downloader_check_updates_eol">Δεν υπάρχουν άλλες ενημερώσεις χαρτών για αυτήν την έκδοση της εφαρμογής. Παρακαλούμε ενημερώστε την εφαρμογή!</string>
+    <string name="downloader_check_updates_error">Σφάλμα κατά τον έλεγχο για ενημερώσεις</string>
+    <string name="oh_unknown">Άγνωστο ωράριο λειτουργίας</string>
+    <string name="editor_add_select_category_recent_subtitle">Πρόσφατα χρησιμοποιημένα</string>
 </resources>

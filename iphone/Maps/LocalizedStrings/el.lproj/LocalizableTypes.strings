@@ -32,28 +32,28 @@
 "type.amenity.bicycle_repair_station" = "Σταθμός επισκευής ποδηλάτων";
 "type.amenity.biergarten" = "Μπυραρία";
 "type.amenity.brothel" = "Πορνείο";
-"type.amenity.love_hotel" = "Ερωτικό Ξενοδοχείο";
+"type.amenity.love_hotel" = "Ξενοδοχείο ημιδιαμονής";
 "type.amenity.bureau_de_change" = "Συνάλλαγμα";
 "type.amenity.bus_station" = "Σταθμός λεωφορείων";
 "type.amenity.cafe" = "Καφετέρια";
 "type.amenity.car_rental" = "Ενοικίαση αυτοκινήτου";
 "type.amenity.motorcycle_rental" = "Ενοικίαση μοτοσικλέτας";
-"type.amenity.car_sharing" = "Παραχώρηση αυτοκινήτου";
-"type.amenity.car_wash" = "Πλύσιμο αυτοκινήτου";
+"type.amenity.car_sharing" = "Μίσθωση Αυτοκινήτου";
+"type.amenity.car_wash" = "Πλυντήριο Αυτοκινήτου";
 "type.man_made.telescope" = "Τηλεσκόπιο";
 "type.man_made.telescope.optical" = "Οπτικό τηλεσκόπιο";
 "type.man_made.telescope.radio" = "Ραδιοτηλεσκόπιο";
 "type.man_made.telescope.gamma" = "Τηλεσκόπιο ακτίνων γάμμα";
-"type.man_made.observatory" = "Αστεροσκοπείο";
+"type.man_made.observatory" = "Παρατηρητήριο";
 "type.amenity.casino" = "Καζίνο";
 "type.amenity.gambling" = "Τυχερά παιχνίδια";
 "type.amenity.studio" = "Στούντιο Πολυμέσων";
 "type.leisure.adult_gaming_centre" = "Κέντρο παιχνιδιών ενηλίκων";
 "type.leisure.amusement_arcade" = "Ηλεκτρονικά παιχνίδια";
 "type.amenity.charging_station" = "Σταθμός φόρτισης";
-"type.amenity.charging_station.motorcar" = "Σταθμός φόρτισης αυτοκινήτων";
+"type.amenity.charging_station.motorcar" = "Αυτοκίνητα";
 "type.amenity.charging_station.motorcycle" = "Μοτοσυκλέτες";
-"type.amenity.charging_station.bicycle" = "Σταθμός φόρτισης ποδηλάτων";
+"type.amenity.charging_station.bicycle" = "Ποδήλατα";
 "type.amenity.charging_station.small" = "Περιορισμένη χωρητικότητα";
 "type.amenity.childcare" = "Βρεφικός σταθμός";
 "type.amenity.cinema" = "Κινηματογράφος";
@@ -130,24 +130,24 @@
 "type.amenity.parking_space.private" = "Χώρος στάθμευσης";
 "type.amenity.parking_space.underground" = "Χώρος στάθμευσης";
 "type.amenity.parking_space.disabled" = "Χώρος στάθμευσης για ΑΜΕΑ";
-"type.amenity.car_pooling" = "Car Pooling";
+"type.amenity.car_pooling" = "Συνεπιβατισμός";
 "type.amenity.payment_terminal" = "Τερματικό πληρωμών";
-"type.amenity.payment_centre" = "Payment Centre";
+"type.amenity.payment_centre" = "Κέντρο Πληρωμών";
 "type.amenity.pharmacy" = "Φαρμακείο";
 "type.amenity.place_of_worship" = "Χώρος λατρείας";
-"type.amenity.place_of_worship.buddhist" = "Ναός";
+"type.amenity.place_of_worship.buddhist" = "Βουδιστικός Ναός";
 "type.amenity.place_of_worship.christian" = "Εκκλησία";
 "type.amenity.place_of_worship.christian.mormon" = "Εκκλησία του Ιησού Χριστού των Αγίων των Τελευταίων Ημερών";
 "type.amenity.place_of_worship.christian.jehovahs_witness" = "Αίθουσα Βασιλείας των Μαρτύρων του Ιεχωβά";
-"type.amenity.place_of_worship.hindu" = "Ναός";
+"type.amenity.place_of_worship.hindu" = "Ινδουιστικός Ναός";
 "type.amenity.place_of_worship.jewish" = "Συναγωγή";
 "type.amenity.place_of_worship.muslim" = "Τζαμί";
-"type.amenity.place_of_worship.shinto" = "Ιερό";
-"type.amenity.place_of_worship.taoist" = "Ναός";
+"type.amenity.place_of_worship.shinto" = "Σιντοϊστικό Ιερό";
+"type.amenity.place_of_worship.taoist" = "Ταοϊστικός Ναός";
 "type.amenity.police" = "Αστυνομία";
 "type.amenity.post_box" = "Ταχυδρομική θυρίδα";
 "type.amenity.post_office" = "Ταχυδρομείο";
-"type.post_office.post_partner" = "Post Partner";
+"type.post_office.post_partner" = "Ταχυδρομικός Συνεργάτης";
 "type.amenity.prison" = "Φυλακή";
 "type.amenity.pub" = "Παμπ";
 "type.amenity.public_bookcase" = "Ανταλλαγή βιβλίων";
@@ -160,7 +160,7 @@
 "type.recycling.plastic" = "Πλαστικό";
 "type.recycling.plastic_bottles" = "Πλαστικά μπουκάλια";
 "type.recycling.scrap_metal" = "Παλιοσίδερα";
-"type.recycling.small_appliances" = "Ηλεκτρονικά απορρίμματα";
+"type.recycling.small_appliances" = "Ηλεκτρονικά Απόβλητα";
 "type.recycling.cardboard" = "Χαρτόνι";
 "type.recycling.cans" = "Κονσερβοκούτια";
 "type.recycling.shoes" = "Παπούτσια";
@@ -174,13 +174,13 @@
 /* A weather shelter by the public transport stop. */
 "type.amenity.shelter.public_transport" = "Καταφύγιο";
 /* Compared to wilderness_hut its smaller and simpler, without a fireplace. */
-"type.amenity.shelter.basic_hut" = "καταφύγιο bivouac";
+"type.amenity.shelter.basic_hut" = "Μπιβουάκ";
 /* A traditional 3-walled shelter (one side open), suitable for overnight camping. */
-"type.amenity.shelter.lean_to" = "Στεγασμένο καταφύγιο";
+"type.amenity.shelter.lean_to" = "Στέγαστρο Ύπνου";
 "type.amenity.public_bath" = "Δημόσιο Λουτρό";
 "type.amenity.shower" = "Ντους";
 "type.amenity.stripclub" = "Στριπτιζάδικο";
-"type.amenity.taxi" = "Ταξί";
+"type.amenity.taxi" = "Πιάτσα Ταξί";
 "type.amenity.telephone" = "Τηλέφωνο";
 "type.amenity.theatre" = "Θέατρο";
 "type.amenity.toilets" = "Τουαλέτα";
@@ -194,8 +194,8 @@
 "type.amenity.vending_machine.drinks" = "Αυτόματος πωλητής ποτών";
 "type.amenity.vending_machine.food" = "Διανεμητής τροφίμων";
 "type.amenity.vending_machine.newspapers" = "Διανεμητής εφημερίδων";
-"type.amenity.vending_machine.parking_tickets" = "Εισιτήρια στάθμευσης";
-"type.amenity.vending_machine.public_transport_tickets" = "Μηχάνημα αυτόματης πώλησης εισιτηρίων για τα μέσα μαζικής μεταφοράς";
+"type.amenity.vending_machine.parking_tickets" = "Παρκόμετρο";
+"type.amenity.vending_machine.public_transport_tickets" = "Μηχάνημα Εισιτηρίων για Δημόσια Συγκοινωνία";
 "type.amenity.vending_machine.sweets" = "Διανεμητής γλυκών";
 "type.amenity.vending_machine.excrement_bags" = "Διανεμητής σακουλών περιττωμάτων";
 "type.amenity.parcel_locker" = "Θυρίδα δεμάτων";
@@ -210,8 +210,8 @@
 "type.amenity.water_point.drinking_water_no" = "Παροχή νερού";
 "type.barrier" = "Εμπόδιο";
 "type.barrier.yes" = "Εμπόδιο";
-"type.barrier.block" = "Εμπόδιο";
-"type.barrier.bollard" = "Πυλώνας";
+"type.barrier.block" = "Στηθαίο";
+"type.barrier.bollard" = "Κολωνάκι";
 "type.barrier.border_control" = "Έλεγχος συνόρων";
 "type.barrier.chain" = "Αλυσίδα";
 "type.barrier.city_wall" = "Τείχος της πόλης";
@@ -224,13 +224,13 @@
 "type.barrier.guard_rail" = "Στηθαίο ασφαλείας";
 "type.barrier.gate" = "Πύλη";
 "type.barrier.hedge" = "Αντιστάθμιση";
-"type.barrier.kissing_gate" = "Πύλη";
+"type.barrier.kissing_gate" = "Περιστροφική Πύλη Πεζών";
 "type.barrier.lift_gate" = "Ανυψούμενη μπάρα";
 "type.barrier.retaining_wall" = "Τοίχος αντιστήριξης";
-"type.barrier.stile" = "Τουρνικέ";
-"type.barrier.turnstile" = "Πεζοδρόμιο";
-"type.barrier.wicket_gate" = "Wicket gate";
-"type.barrier.swing_gate" = "Ανυψούμενη μπάρα";
+"type.barrier.stile" = "Σκάλα Διέλευσης Φράχτη";
+"type.barrier.turnstile" = "Περιστροφική Πύλη";
+"type.barrier.wicket_gate" = "Πεζόπορτα";
+"type.barrier.swing_gate" = "Ανοιγόμενη Πύλη";
 "type.barrier.toll_booth" = "Σταθμός διοδίων";
 "type.barrier.wall" = "Τοίχος";
 "type.boundary" = "Όρια";
@@ -281,7 +281,7 @@
 "type.shop.camera" = "Κατάστημα φωτογραφικών μηχανών";
 "type.craft.plumber" = "Υδραυλικός";
 "type.craft.sawmill" = "Πριστήριο";
-"type.craft.shoemaker" = "Υποδηματοποιός";
+"type.craft.shoemaker" = "Τσαγκάρης";
 "type.craft.winery" = "Οινοποιείο";
 "type.craft.tailor" = "Ράφτης";
 "type.cuisine.african" = "Αφρικανική";
@@ -290,16 +290,16 @@
 "type.cuisine.argentinian" = "Αργεντίνικη";
 "type.cuisine.asian" = "Ασιάτικη";
 "type.cuisine.austrian" = "Αυστριακή";
-"type.cuisine.bagel" = "Κουλούρι";
-"type.cuisine.balkan" = "Βαλκανίων";
+"type.cuisine.bagel" = "Mπέιγκελ";
+"type.cuisine.balkan" = "Βαλκανική";
 "type.cuisine.barbecue" = "Μπάρμπεκιου";
 "type.cuisine.bavarian" = "Βαυαρική";
-"type.cuisine.beef_bowl" = "Σούπα με βοδινό";
+"type.cuisine.beef_bowl" = "Μπολ με Βοδινό";
 "type.cuisine.brazilian" = "Βραζιλιάνικη";
 "type.cuisine.breakfast" = "Πρωινό";
 "type.cuisine.bubble_tea" = "Τσάι με φυσαλίδες";
 "type.cuisine.burger" = "Μπιφτέκι";
-"type.cuisine.buschenschank" = "Μπούσενσανκ (αυστριακή ταβέρνα)";
+"type.cuisine.buschenschank" = "Μπούσενσανκ";
 "type.cuisine.cake" = "Κέικ";
 "type.cuisine.caribbean" = "Καραϊβική";
 "type.cuisine.chicken" = "Κοτόπουλο";
@@ -308,12 +308,12 @@
 "type.cuisine.crepe" = "Κρέπα";
 "type.cuisine.croatian" = "Κροατική";
 "type.cuisine.curry" = "Κάρι";
-"type.cuisine.deli" = "Εκλεκτά τρόφιμα";
-"type.cuisine.diner" = "Μικροεστιατόριο";
+"type.cuisine.deli" = "Nτελικατέσεν";
+"type.cuisine.diner" = "Ντάινερ Εστιατόριο";
 "type.cuisine.donut" = "Ντόνατ";
 "type.cuisine.ethiopian" = "Αιθιοπίας";
 "type.cuisine.filipino" = "Φιλιππινέζικη";
-"type.cuisine.fine_dining" = "Εκλεκτά εστιατόρια";
+"type.cuisine.fine_dining" = "Υψηλής Γαστρονομίας";
 "type.cuisine.fish" = "Ψάρια";
 "type.cuisine.fish_and_chips" = "Ψάρια και πατάτες";
 "type.cuisine.french" = "Γαλλική";
@@ -342,9 +342,9 @@
 "type.cuisine.mediterranean" = "Μεσογειακή";
 "type.cuisine.mexican" = "Μεξικάνικη";
 "type.cuisine.moroccan" = "Μαροκινή";
-"type.cuisine.noodles" = "Χυλοπίτες";
+"type.cuisine.noodles" = "Νούντλς";
 "type.cuisine.oriental" = "Άπω Ανατολής";
-"type.cuisine.pancake" = "Τηγανίτα";
+"type.cuisine.pancake" = "Πανκέικ";
 "type.cuisine.pasta" = "Ζυμαρικά";
 "type.cuisine.persian" = "Περσική";
 "type.cuisine.peruvian" = "Περουβιανή";
@@ -358,7 +358,7 @@
 "type.cuisine.sausage" = "Λουκάνικο";
 "type.cuisine.savory_pancakes" = "Αλμυρές τηγανίτες";
 "type.cuisine.seafood" = "Θαλασσινά";
-"type.cuisine.soba" = "Σόμπα (λεπτά μακαρόνια)";
+"type.cuisine.soba" = "Σόμπα";
 "type.cuisine.spanish" = "Ισπανική";
 "type.cuisine.steak_house" = "Μπριζολάδικο";
 "type.cuisine.sushi" = "Σούσι";
@@ -366,56 +366,56 @@
 "type.cuisine.tea" = "Τσάι";
 "type.cuisine.thai" = "Ταϊλανδική";
 "type.cuisine.turkish" = "Τουρκική";
-"type.cuisine.vegan" = "Για χορτοφάγους";
+"type.cuisine.vegan" = "Βίγκαν";
 "type.cuisine.vegetarian" = "Χορτοφαγική";
 "type.cuisine.vietnamese" = "Βιετναμέζικη";
 "type.emergency" = "Έκτακτη ανάγκη";
-"type.emergency.access_point" = "Emergency Rescue Point";
-"type.emergency.access_point.address" = "Emergency Rescue Address";
-"type.emergency.assembly_point" = "Σημείο συναρμολόγησης έκτακτης ανάγκης";
-"type.emergency.disaster_help_point" = "Emergency Disaster Help Point";
-"type.emergency.life_ring" = "Lifebuoy";
-"type.emergency.defibrillator" = "Πρώτες βοήθειες";
-"type.emergency.fire_hydrant" = "Πυροσβεστικός κρουνός";
-"type.amenity.hydrant" = "Irrigation Hydrant";
-"type.emergency.phone" = "Τηλέφωνο έκτακτης ανάγκης";
+"type.emergency.access_point" = "Σημείο Έκτακτης Ανάγκης";
+"type.emergency.access_point.address" = "Διεύθυνση Έκτακτης Ανάγκης";
+"type.emergency.assembly_point" = "Σημείο Συγκέντρωσης Έκτακτης Ανάγκης";
+"type.emergency.disaster_help_point" = "Σημείο Βοήθειας σε Καταστροφή";
+"type.emergency.life_ring" = "Κυκλικό Σωσίβιο";
+"type.emergency.defibrillator" = "Απινιδωτής";
+"type.emergency.fire_hydrant" = "Πυροσβεστικός Κρουνός";
+"type.amenity.hydrant" = "Διαφραγματική Υδροληψία Άρδευσης";
+"type.emergency.phone" = "Τηλέφωνο Έκτακτης Ανάγκης";
 /* A place where a lifeguard is on duty. */
 "type.emergency.lifeguard" = "Ναυαγοσώστης";
-"type.beacon.cardinal.east" = "Cardinal Beacon";
-"type.beacon.cardinal.north" = "Cardinal Beacon";
-"type.beacon.cardinal.south" = "Cardinal Beacon";
-"type.beacon.cardinal.west" = "Cardinal Beacon";
-"type.beacon.isolated_danger" = "Isolated Danger Beacon";
-"type.beacon.lateral.port" = "Lateral Beacon";
-"type.beacon.lateral.starboard" = "Lateral Beacon";
-"type.beacon.safe_water" = "Safe Water Beacon";
-"type.beacon.special_purpose" = "Special Purpose Beacon";
-"type.buoy.cardinal.east" = "Cardinal Buoy";
-"type.buoy.cardinal.north" = "Cardinal Buoy";
-"type.buoy.cardinal.south" = "Cardinal Buoy";
-"type.buoy.cardinal.west" = "Cardinal Buoy";
-"type.buoy.isolated_danger" = "Isolated Danger Buoy";
-"type.buoy.lateral.port" = "Lateral Buoy";
-"type.buoy.lateral.starboard" = "Lateral Buoy";
-"type.buoy.safe_water" = "Safe Water Buoy";
-"type.buoy.special_purpose" = "Special Purpose Buoy";
-"type.spherical_buoy.cardinal.east" = "Spherical Cardinal Buoy";
-"type.spherical_buoy.cardinal.north" = "Spherical Cardinal Buoy";
-"type.spherical_buoy.cardinal.south" = "Spherical Cardinal Buoy";
-"type.spherical_buoy.cardinal.west" = "Spherical Cardinal Buoy";
-"type.spherical_buoy.isolated_danger" = "Spherical Isolated Danger Buoy";
-"type.spherical_buoy.lateral.port" = "Spherical Lateral Buoy";
-"type.spherical_buoy.lateral.starboard" = "Spherical Lateral Buoy";
-"type.spherical_buoy.safe_water" = "Spherical Safe Water Buoy";
-"type.spherical_buoy.special_purpose" = "Spherical Special Purpose Buoy";
-"type.lateral.port" = "Port";
-"type.lateral.starboard" = "Starboard";
+"type.beacon.cardinal.east" = "Φάρος Κατεύθυνσης";
+"type.beacon.cardinal.north" = "Φάρος Κατεύθυνσης";
+"type.beacon.cardinal.south" = "Φάρος Κατεύθυνσης";
+"type.beacon.cardinal.west" = "Φάρος Κατεύθυνσης";
+"type.beacon.isolated_danger" = "Φάρος Μονωμένου Κινδύνου";
+"type.beacon.lateral.port" = "Πλευρικός Φάρος";
+"type.beacon.lateral.starboard" = "Πλευρικός Φάρος";
+"type.beacon.safe_water" = "Φάρος Ασφαλούς Διάπλου";
+"type.beacon.special_purpose" = "Φάρος Ειδικού Σκοπού";
+"type.buoy.cardinal.east" = "Καρδιναλική Βοηθητική Σήμανση";
+"type.buoy.cardinal.north" = "Καρδιναλική Βοηθητική Σήμανση";
+"type.buoy.cardinal.south" = "Καρδιναλική Βοηθητική Σήμανση";
+"type.buoy.cardinal.west" = "Καρδιναλική Βοηθητική Σήμανση";
+"type.buoy.isolated_danger" = "Πλωτός Φάρος Μεμονωμένου Κινδύνου";
+"type.buoy.lateral.port" = "Πλευρικός Βοηθός";
+"type.buoy.lateral.starboard" = "Πλευρικός Βοηθός";
+"type.buoy.safe_water" = "Βοηθός Ασφαλών Υδάτων";
+"type.buoy.special_purpose" = "Πλωτός Σήμανσης Ειδικού Σκοπού";
+"type.spherical_buoy.cardinal.east" = "Σφαιρικός Καρδιναλικός Βοηθός";
+"type.spherical_buoy.cardinal.north" = "Σφαιρικός Καρδιναλικός Βοηθός";
+"type.spherical_buoy.cardinal.south" = "Σφαιρικός Καρδιναλικός Βοηθός";
+"type.spherical_buoy.cardinal.west" = "Σφαιρικός Καρδιναλικός Βοηθός";
+"type.spherical_buoy.isolated_danger" = "Σφαιρικός Καρδιναλικός Βοηθός Μεμονωμένου Κινδύνου";
+"type.spherical_buoy.lateral.port" = "Σφαιρικός Πλευρικός Βοηθός";
+"type.spherical_buoy.lateral.starboard" = "Σφαιρικός Πλευρικός Βοηθός";
+"type.spherical_buoy.safe_water" = "Σφαιρικός Βοηθός Ασφαλούς Διάπλου";
+"type.spherical_buoy.special_purpose" = "Σφαιρικός Βοηθός Ειδικού Σκοπού";
+"type.lateral.port" = "Λιμάνι";
+"type.lateral.starboard" = "Δεξιά";
 "type.cardinal.east" = "Ανατολή";
 "type.cardinal.north" = "Βορράς";
 "type.cardinal.south" = "Νότος";
 "type.cardinal.west" = "Δύση";
 /* A mountain rescue base for search and rescue activities. */
-"type.emergency.mountain_rescue" = "Σταθμός ορεινής διάσωσης";
+"type.emergency.mountain_rescue" = "Σταθμός Ορεινής Διάσωσης";
 /* This is for secondary entrances, for main entrances see type.entrance.main */
 "type.entrance" = "Είσοδος";
 /* This is for main/primary entrances, for secondary entrances see type.entrance */
@@ -438,14 +438,14 @@
 "type.healthcare.psychotherapist" = "Ψυχοθεραπεία";
 "type.healthcare.sample_collection" = "Δειγματοληψία";
 "type.healthcare.speech_therapist" = "Λογοθεραπεία";
-"type.highway" = "Αυτοκινητόδρομος";
-"type.highway.bridleway" = "Μονοπάτι με χαλινάρι";
+"type.highway" = "Εθνική Οδός";
+"type.highway.bridleway" = "Μονοπάτι για άλογα";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.bridleway.bridge" = "Γέφυρα";
 "type.highway.bridleway.permissive" = "Μονοπάτι με χαλινάρι";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.bridleway.tunnel" = "Σήραγγα";
-"type.highway.busway" = "Αφιερωμένος δρόμος λεωφορείων";
+"type.highway.busway" = "Λεωφορειόδρομος";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.busway.bridge" = "Γέφυρα";
 /* These translations are used for all type.highway.*.tunnel. */
@@ -459,27 +459,27 @@
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.cycleway.tunnel" = "Σήραγγα";
 "type.highway.elevator" = "Ανελκυστήρας";
-"type.highway.footway" = "Διαδρομή";
+"type.highway.footway" = "Μονοπάτι Πεζών";
 "type.highway.footway.sidewalk" = "Πεζοδρόμιο";
 "type.highway.footway.crossing" = "Διάβαση πεζών";
-"type.highway.footway.area" = "Διαδρομή";
+"type.highway.footway.area" = "Πεζοδρομημένη Περιοχή";
 /* These translations are used for all type.highway.*.bridge. */
-"type.highway.footway.bridge" = "Γέφυρα";
+"type.highway.footway.bridge" = "Πεζογέφυρα";
 /* These translations are used for all type.highway.*.tunnel. */
-"type.highway.footway.tunnel" = "Σήραγγα";
+"type.highway.footway.tunnel" = "Υπόγεια Διάβαση Πεζών";
 "type.highway.ford" = "Πέρασμα";
-"type.highway.living_street" = "Οδός";
+"type.highway.living_street" = "Οδός Ήπιας Κυκλοφορίας";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.living_street.bridge" = "Γέφυρα";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.living_street.tunnel" = "Σήραγγα";
-"type.highway.motorway" = "Οδός";
+"type.highway.motorway" = "Αυτοκινητόδρομος";
 /* These translations are used for all type.highway.*.bridge. */
-"type.highway.motorway.bridge" = "Γέφυρα";
+"type.highway.motorway.bridge" = "Γέφυρα Αυτοκινητοδρόμου";
 /* These translations are used for all type.highway.*.tunnel. */
-"type.highway.motorway.tunnel" = "Σήραγγα";
+"type.highway.motorway.tunnel" = "Σήραγγα Αυτοκινητοδρόμου";
 "type.highway.motorway_junction" = "Έξοδος";
-"type.highway.motorway_link" = "Οδός";
+"type.highway.motorway_link" = "Ράμπα Αυτοκινητόδρομου";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.motorway_link.bridge" = "Γέφυρα";
 /* These translations are used for all type.highway.*.tunnel. */
@@ -489,20 +489,20 @@
 "type.highway.path.difficult" = "Δύσκολη ή ελάχιστα ορατή διαδρομή";
 /* Hiking trail tagged as sac_scale=alpine_hiking (4+ of 6) or trail_visibility=horrible or more extreme. */
 "type.highway.path.expert" = "Πολύ δύσκολο ή δυσδιάκριτο μονοπάτι";
-"type.highway.path.bicycle" = "Διαδρομή";
-"type.highway.footway.bicycle" = "Διαδρομή";
+"type.highway.path.bicycle" = "Πεζόδρομος & Ποδηλατόδρομος";
+"type.highway.footway.bicycle" = "Πεζόδρομος & Ποδηλατόδρομος";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.path.bridge" = "Γέφυρα";
-"type.highway.path.horse" = "Διαδρομή";
+"type.highway.path.horse" = "Μονοπάτι για άλογα";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.path.tunnel" = "Σήραγγα";
 "type.highway.pedestrian" = "Πεζόδρομος";
-"type.highway.pedestrian.area" = "Οδός";
+"type.highway.pedestrian.area" = "Πεζοδρομημένη Περιοχή";
 /* These translations are used for all type.highway.*.bridge. */
-"type.highway.pedestrian.bridge" = "Γέφυρα";
+"type.highway.pedestrian.bridge" = "Πεζογέφυρα";
 "type.highway.pedestrian.square" = "Πλατεία";
 /* These translations are used for all type.highway.*.tunnel. */
-"type.highway.pedestrian.tunnel" = "Σήραγγα";
+"type.highway.pedestrian.tunnel" = "Σήραγγα Πεζών";
 "type.highway.primary" = "Πρωτεύων δρόμος";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.primary.bridge" = "Γέφυρα";
@@ -542,7 +542,7 @@
 "type.highway.service.area" = "Δρόμος υπηρεσίας";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.service.bridge" = "Γέφυρα";
-"type.highway.service.driveway" = "Οδός";
+"type.highway.service.driveway" = "Ιδιωτική Οδός";
 "type.highway.service.parking_aisle" = "Διάδρομος πάρκινγκ";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.service.tunnel" = "Σήραγγα";
@@ -564,16 +564,16 @@
 "type.highway.tertiary_link.bridge" = "Γέφυρα";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.tertiary_link.tunnel" = "Σήραγγα";
-"type.highway.track" = "Οδός";
-"type.highway.track.area" = "Οδός";
+"type.highway.track" = "Αγροτικός δρόμος";
+"type.highway.track.area" = "Αγροτικός δρόμος";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.track.bridge" = "Γέφυρα";
-"type.highway.track.grade1" = "Οδός";
-"type.highway.track.no.access" = "Οδός";
+"type.highway.track.grade1" = "Αγροτικός δρόμος";
+"type.highway.track.no.access" = "Αγροτικός δρόμος";
 /* These translations are used for all type.highway.*.tunnel. */
 "type.highway.track.tunnel" = "Σήραγγα";
 "type.highway.traffic_signals" = "Φανάρια κυκλοφορίας";
-"type.highway.trunk" = "Οδός";
+"type.highway.trunk" = "Κύριος Οδικός Άξονας";
 /* These translations are used for all type.highway.*.bridge. */
 "type.highway.trunk.bridge" = "Γέφυρα";
 /* These translations are used for all type.highway.*.tunnel. */
@@ -862,10 +862,10 @@
 "type.office.government" = "Κυβερνητικό γραφείο";
 "type.office.insurance" = "Ασφαλιστικό γραφείο";
 "type.office.lawyer" = "Δικηγόρος";
-"type.office.ngo" = "Γραφείο ΜΚΟ";
+"type.office.ngo" = "Μη Κυβερνητική Οργάνωση";
 "type.office.telecommunication" = "Εταιρεία κινητής τηλεφωνίας";
-"type.organic.only" = "Οργανικό";
-"type.organic.yes" = "Οργανικό";
+"type.organic.only" = "Οργανικά μόνο";
+"type.organic.yes" = "Οργανικές επιλογές";
 "type.place.city" = "Πόλη";
 "type.place.city.capital" = "Πρωτεύουσα";
 "type.place.city.capital.10" = "Πόλη";
@@ -1509,9 +1509,10 @@
 /* https://wiki.openstreetmap.org/wiki/Tag:leisure=sports_hall */
 "type.leisure.sports_hall" = "Αθλητική αίθουσα";
 "type.xmas.tree" = "Χριστουγεννιάτικο δέντρο";
-"type.leisure.sports_centre.sport.four_square" = "Sports Centre";
+"type.leisure.sports_centre.sport.four_square" = "Αθλητικό κέντρο";
 "type.sport.four_square" = "Four Square";
 "type.sport.boules" = "Boules";
-"type.leisure.sports_centre.sport.boules" = "Sports Centre";
+"type.leisure.sports_centre.sport.boules" = "Αθλητικό κέντρο";
 "type.sport.pickleball" = "Pickleball";
-"type.leisure.sports_centre.sport.pickleball" = "Sports Centre";
+"type.leisure.sports_centre.sport.pickleball" = "Αθλητικό κέντρο";
+"type.organic.no" = "Χωρίς οργανικές επιλογές";

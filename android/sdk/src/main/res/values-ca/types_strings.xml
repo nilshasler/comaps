@@ -1280,4 +1280,10 @@
     <string name="type.leisure.sports_centre.sport.tennis">Centre esportiu</string>
     <string name="type.place.village">Poble</string>
     <string name="type.place.hamlet">Aldea</string>
+    <string name="type.leisure.sports_centre.sport.volleyball">Voleibol</string>
+    <string name="type.leisure.sports_centre.sport.yoga">Centre de Yoga</string>
+    <string name="type.leisure.fitness_centre.sport.yoga">Estudi de Yoga</string>
+    <string name="type.man_made.breakwater">Trencaaigües</string>
+    <string name="type.man_made.cairn">Cairn</string>
+    <string name="type.man_made.chimney">Eiximenera</string>
 </resources>

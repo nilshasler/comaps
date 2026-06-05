@@ -151,7 +151,7 @@
     <!-- Weather shelter (including sun shelters and natural rock shelters). -->
     <string name="type.amenity.shelter">Varjualune</string>
     <!-- A weather shelter by the public transport stop. -->
-    <string name="type.amenity.shelter.public_transport">Varjualune</string>
+    <string name="type.amenity.shelter.public_transport">Ühistranspordi varjualune</string>
     <!-- Compared to wilderness_hut its smaller and simpler, without a fireplace. -->
     <string name="type.amenity.shelter.basic_hut">Onn</string>
     <string name="type.amenity.public_bath">Avalik looduslik spaa</string>
@@ -1388,7 +1388,7 @@
     <string name="type.amenity.bicycle_parking.covered">Kaetud jalgrattaparkla</string>
     <string name="type.post_office.post_partner">Postiteenused partneri juures</string>
     <string name="type.amenity.ranger_station">Pargivahi maja</string>
-    <string name="type.amenity.animal_shelter">Loomade varjupaik</string>
+    <string name="type.amenity.animal_shelter">Loomade varjualune</string>
     <string name="type.barrier.wicket_gate">Jalgvärav</string>
     <string name="type.building.guardhouse">Valvuriputka</string>
     <string name="type.power.portal">Õhuliini värava-tüüpi mast</string>
