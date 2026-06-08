@@ -242,6 +242,8 @@ To build and run the app in the emulator or on a hardware device use a "Run > Ru
 
 To build a redistributable APK use a "Build > Build Bundle(s) / APK(s) > Build APK(s)" menu item. Generated APKs are stored in `build/outputs/apk/`.
 
+If the build or run options do not appear in the top centre of Android Studio, force a Gradle Sync by clicking the icon in the top right (looks like an elephant and a down-left pointing arrow).
+
 See also https://developer.android.com/studio/run.
 
 
