@@ -24,7 +24,13 @@ public:
     Steps = 1u << 5,
     Paved = 1u << 6,
 
-    Max = (1u << 6) + 1
+    CyclingDefault = 0u << 7,
+    CyclingRoad = 1u << 7,
+    CyclingGravel = 1u << 7,
+    CyclingMountainBike = 1u << 7,
+    CyclingMask = 1u << 7,
+
+    Max = (1u << 7) + 1
   };
 
   using OptionType = std::underlying_type_t<Option>;
@@ -38,6 +44,9 @@ public:
   void Add(Option type);
   void Remove(Option type);
   bool Has(Option type) const;
+  bool Has(Option type) const;
+  void SetCyclingMode(Option mode);
+  Option GetCyclingMode() const { return (m_options & CyclingMask); }
 
   void setVehicleType(VehicleType vt) { m_vehicle = vt; }
 

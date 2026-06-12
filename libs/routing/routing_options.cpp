@@ -75,6 +75,11 @@ bool RoutingOptions::Has(RoutingOptions::Option type) const
   return (m_options & static_cast<OptionType>(type)) != 0;
 }
 
+void RoutingOptions::SetCyclingMode(Option mode)
+{
+  m_options = (m_options & ~CyclingMask) | (mode & CyclingMask);
+}
+
 // RoutingOptionsClassifier ---------------------------------------------------------------------------
 
 RoutingOptionsClassifier::RoutingOptionsClassifier()
@@ -184,6 +189,15 @@ string DebugPrint(RoutingOptions::Option type)
   case RoutingOptions::Option::Paved: return "paved";
   case RoutingOptions::Option::Usual: return "usual";
   case RoutingOptions::Option::Max: return "max";
+  default:
+    switch (type & RoutingOptions::CyclingMask)
+    {
+    default:
+    case RoutingOptions::CyclingDefault: return "defaultCycling";
+    //case RoutingOptions::CyclingRoad: return "roadCycling";
+    case RoutingOptions::CyclingGravel: return "gravelCycling";
+    //case RoutingOptions::CyclingMountainBike: return "MTBCycling";
+    }
   }
 
   UNREACHABLE();
