@@ -2,22 +2,24 @@
 
 #include "routing_common/vehicle_model.hpp"
 
+#include "routing/routing_options.hpp"
+
 namespace routing
 {
 
 class BicycleModel : public VehicleModel
 {
 public:
-  BicycleModel();
-  explicit BicycleModel(VehicleModel::LimitsInitList const & limits);
-  BicycleModel(VehicleModel::LimitsInitList const & limits, HighwayBasedSpeeds const & speeds);
+  BicycleModel(RoutingOptions::RoadType mode = RoutingOptions::CyclingGravel);
+  explicit BicycleModel(RoutingOptions::RoadType mode, VehicleModel::LimitsInitList const & limits);
+  BicycleModel(RoutingOptions::RoadType mode, VehicleModel::LimitsInitList const & limits, HighwayBasedSpeeds const & speeds);
 
   /// VehicleModelInterface overrides:
   SpeedKMpH GetSpeed(FeatureTypes const & types, SpeedParams const & speedParams) const override;
   bool IsOneWay(FeatureTypes const & types) const override;
   SpeedKMpH const & GetOffroadSpeed() const override;
 
-  static BicycleModel const & AllLimitsInstance();
+  static BicycleModel const & AllLimitsInstance(RoutingOptions::RoadType mode = RoutingOptions::CyclingGravel);
   static SpeedKMpH DismountSpeed();
 
 private:

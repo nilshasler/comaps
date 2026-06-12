@@ -27,6 +27,20 @@ using namespace routing;
 
 HighwayBasedFactors const kDefaultFactors = GetOneFactorsForBicycleAndPedestrianModel();
 
+HighwayBasedFactors const& GetDefaultFactors(RoutingOptions::RoadType mode)
+{
+  switch (mode)
+  {
+  default:
+  case RoutingOptions::CyclingDefault:
+  //case RoutingOptions::CyclingRoad:
+    return kDefaultFactors;
+  case RoutingOptions::CyclingGravel:
+  //case RoutingOptions::CyclingMountainBike:
+    return kDefaultFactors;
+  }
+}
+
 SpeedKMpH constexpr kSpeedOffroadKMpH = {1.5 /* weight */, 3.0 /* eta */};
 SpeedKMpH constexpr kSpeedDismountKMpH = {2.0 /* weight */, 4.0 /* eta */};
 // Applies only to countries where cycling is allowed on footways (by default the above dismount speed is used).
@@ -68,6 +82,56 @@ HighwayBasedSpeeds const kDefaultSpeeds = {
     {HighwayType::RouteFerry, InOutCitySpeedKMpH(SpeedKMpH(9.0, 20.0))},
 };
 
+HighwayBasedSpeeds const kGravelSpeeds = {
+    // {highway class : InOutCitySpeedKMpH(in city(weight, eta), out city(weight eta))}
+    // Note that roads with hwtag=yesbicycle get high speed of 0.9 * Cycleway.
+    /// @see Russia_UseTrunk test for Trunk weights.
+    {HighwayType::HighwayTrunk, InOutCitySpeedKMpH(SpeedKMpH(2.0, 17.0), SpeedKMpH(4.0, 19.0))},
+    // Presence of link roads usually means that connected roads are high traffic.
+    // And complex intersections themselves are not nice for cyclists. We can't
+    // easily extrapolate this to the main roads, but at least penalize the link roads a bit.
+    // https://github.com/organicmaps/organicmaps/pull/9692#discussion_r1851442568
+    {HighwayType::HighwayTrunkLink, InOutCitySpeedKMpH(SpeedKMpH(2.0, 17.0), SpeedKMpH(4.0, 19.0))},
+    {HighwayType::HighwayPrimary, InOutCitySpeedKMpH(SpeedKMpH(3.0, 17.0), SpeedKMpH(5.0, 19.0))},
+    {HighwayType::HighwayPrimaryLink, InOutCitySpeedKMpH(SpeedKMpH(4.0, 17.0), SpeedKMpH(6.0, 19.0))},
+    {HighwayType::HighwaySecondary, InOutCitySpeedKMpH(SpeedKMpH(4.0, 17.0), SpeedKMpH(6.0, 19.0))},
+    {HighwayType::HighwaySecondaryLink, InOutCitySpeedKMpH(SpeedKMpH(4.0, 17.0), SpeedKMpH(6.0, 19.0))},
+    {HighwayType::HighwayTertiary, InOutCitySpeedKMpH(SpeedKMpH(7.0, 17.0), SpeedKMpH(9.0, 19.0))},
+    {HighwayType::HighwayTertiaryLink, InOutCitySpeedKMpH(SpeedKMpH(6.0, 17.0), SpeedKMpH(8.0, 19.0))},
+    {HighwayType::HighwayUnclassified, InOutCitySpeedKMpH(SpeedKMpH(7.0, 17.0), SpeedKMpH(15.0, 19.0))},
+    {HighwayType::HighwayResidential, InOutCitySpeedKMpH(SpeedKMpH(7.0, 14.0), SpeedKMpH(14.0, 17.0))},
+    {HighwayType::HighwayService, InOutCitySpeedKMpH(SpeedKMpH(7.0, 15.0), SpeedKMpH(15.0, 17.0))},
+    {HighwayType::HighwayRoad, InOutCitySpeedKMpH(SpeedKMpH(7.0, 15.0), SpeedKMpH(14.0, 17.0))},
+
+    {HighwayType::HighwayTrack, InOutCitySpeedKMpH(SpeedKMpH(12.0, 12.0), SpeedKMpH(15.0, 14.0))},
+    {HighwayType::HighwayPath, InOutCitySpeedKMpH(SpeedKMpH(10.0, 10.0), SpeedKMpH(12.0, 12.0))},
+    {HighwayType::HighwayBridleway, InOutCitySpeedKMpH(SpeedKMpH(4.0, 10.0), SpeedKMpH(5.0, 12.0))},
+
+    {HighwayType::HighwayCycleway, InOutCitySpeedKMpH(SpeedKMpH(10.0, 18.0), SpeedKMpH(14.0, 20.0))},
+    {HighwayType::HighwayLivingStreet, InOutCitySpeedKMpH(SpeedKMpH(7.0, 10.0), SpeedKMpH(10.0, 12.0))},
+    // Steps have obvious inconvenience of a bike in hands.
+    {HighwayType::HighwaySteps, InOutCitySpeedKMpH(SpeedKMpH(1.0, 1.0))},
+    {HighwayType::HighwayPedestrian, InOutCitySpeedKMpH(kSpeedDismountKMpH)},
+    {HighwayType::HighwayFootway, InOutCitySpeedKMpH(kSpeedDismountKMpH)},
+    {HighwayType::ManMadePier, InOutCitySpeedKMpH(kSpeedOnFootwayKMpH)},
+    /// @todo A car ferry has {10, 10}. Weight = 9 is 60% from reasonable 15 average speed.
+    {HighwayType::RouteFerry, InOutCitySpeedKMpH(SpeedKMpH(6.0, 20.0))},
+};
+
+HighwayBasedSpeeds const& GetDefaultSpeeds(RoutingOptions::RoadType mode)
+{
+  switch (mode)
+  {
+  default:
+  case RoutingOptions::CyclingDefault:
+  //case RoutingOptions::CyclingRoad:
+    return kDefaultSpeeds;
+  case RoutingOptions::CyclingGravel:
+  //case RoutingOptions::CyclingMountainBike:
+    return kGravelSpeeds;
+  }
+}
+
 // Default, no bridleway.
 VehicleModel::LimitsInitList const kDefaultOptions = {
     // {HighwayType, passThroughAllowed}
@@ -107,9 +171,9 @@ VehicleModel::LimitsInitList NoTrunk()
 }
 
 // Same as defaults except pedestrian is allowed
-HighwayBasedSpeeds NormalPedestrianSpeed()
+HighwayBasedSpeeds NormalPedestrianSpeed(RoutingOptions::RoadType mode)
 {
-  HighwayBasedSpeeds res = kDefaultSpeeds;
+  HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
   res[HighwayType::HighwayPedestrian] = InOutCitySpeedKMpH(kSpeedOnFootwayKMpH);
   return res;
 }
@@ -123,25 +187,25 @@ VehicleModel::LimitsInitList AllAllowed()
 }
 
 // Same as defaults except pedestrian and footway are allowed
-HighwayBasedSpeeds NormalPedestrianAndFootwaySpeed()
+HighwayBasedSpeeds NormalPedestrianAndFootwaySpeed(RoutingOptions::RoadType mode)
 {
-  HighwayBasedSpeeds res = kDefaultSpeeds;
+  HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
   InOutCitySpeedKMpH const footSpeed(kSpeedOnFootwayKMpH);
   res[HighwayType::HighwayPedestrian] = footSpeed;
   res[HighwayType::HighwayFootway] = footSpeed;
   return res;
 }
 
-HighwayBasedSpeeds DismountPathSpeed()
+HighwayBasedSpeeds DismountPathSpeed(RoutingOptions::RoadType mode)
 {
-  HighwayBasedSpeeds res = kDefaultSpeeds;
+  HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
   res[HighwayType::HighwayPath] = InOutCitySpeedKMpH(kSpeedDismountKMpH);
   return res;
 }
 
-HighwayBasedSpeeds PreferFootwaysToRoads()
+HighwayBasedSpeeds PreferFootwaysToRoads(RoutingOptions::RoadType mode)
 {
-  HighwayBasedSpeeds res = kDefaultSpeeds;
+  HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
 
   // Decrease secondary/tertiary weight speed (-20% from default).
   InOutCitySpeedKMpH roadSpeed = InOutCitySpeedKMpH(SpeedKMpH(11.0, 17.0), SpeedKMpH(16.0, 19.0));
@@ -168,11 +232,23 @@ VehicleModel::LimitsInitList UkraineOptions()
   return res;
 }
 
-VehicleModel::SurfaceInitList const kBicycleSurface = {
+VehicleModel::SurfaceInitList const kDefaultSurface = {
     // {{surfaceType}, {weightFactor, etaFactor}}
     {{"psurface", "paved_good"}, {1.0, 1.0}},
     {{"psurface", "paved_bad"}, {0.8, 0.8}},
     {{"psurface", "unpaved_good"}, {0.9, 0.9}},
+    {{"psurface", "unpaved_bad"}, {0.5, 0.3}},
+    // No dedicated cycleway doesn't mean that bicycle is not allowed, just lower weight.
+    // If nocycleway is tagged explicitly then there is no cycling infra for sure.
+    // Otherwise there is a small chance cycling infra is present though not mapped?
+    /// @todo(pastk): this heuristic is controversial, maybe remove completely?
+    {{"hwtag", "nocycleway"}, {0.95, 0.95}},
+};
+VehicleModel::SurfaceInitList const kGravelSurface = {
+    // {{surfaceType}, {weightFactor, etaFactor}}
+    {{"psurface", "paved_good"}, {0.7, 1.0}},
+    {{"psurface", "paved_bad"}, {0.7, 0.8}},
+    {{"psurface", "unpaved_good"}, {1.0, 0.9}},
     {{"psurface", "unpaved_bad"}, {0.3, 0.3}},
     // No dedicated cycleway doesn't mean that bicycle is not allowed, just lower weight.
     // If nocycleway is tagged explicitly then there is no cycling infra for sure.
@@ -180,21 +256,37 @@ VehicleModel::SurfaceInitList const kBicycleSurface = {
     /// @todo(pastk): this heuristic is controversial, maybe remove completely?
     {{"hwtag", "nocycleway"}, {0.95, 0.95}},
 };
+
+VehicleModel::SurfaceInitList const& GetDefaultSurface(RoutingOptions::RoadType mode)
+{
+  switch (mode)
+  {
+  default:
+  case RoutingOptions::CyclingDefault:
+  //case RoutingOptions::CyclingRoad:
+    return kDefaultSurface;
+  case RoutingOptions::CyclingGravel:
+  //case RoutingOptions::CyclingMountainBike:
+    return kGravelSurface;
+  }
+}
+
+
 }  // namespace bicycle_model
 
 namespace routing
 {
-BicycleModel::BicycleModel() : BicycleModel(bicycle_model::kDefaultOptions) {}
+BicycleModel::BicycleModel(RoutingOptions::RoadType mode) : BicycleModel(mode, bicycle_model::kDefaultOptions) {}
 
-BicycleModel::BicycleModel(VehicleModel::LimitsInitList const & limits)
-  : BicycleModel(limits, bicycle_model::kDefaultSpeeds)
+BicycleModel::BicycleModel(RoutingOptions::RoadType mode, VehicleModel::LimitsInitList const & limits)
+  : BicycleModel(mode, limits, bicycle_model::GetDefaultSpeeds(mode))
 {}
 
-BicycleModel::BicycleModel(VehicleModel::LimitsInitList const & limits, HighwayBasedSpeeds const & speeds)
-  : VehicleModel(classif(), limits, bicycle_model::kBicycleSurface, {speeds, bicycle_model::kDefaultFactors})
+BicycleModel::BicycleModel(RoutingOptions::RoadType mode, VehicleModel::LimitsInitList const & limits, HighwayBasedSpeeds const & speeds)
+  : VehicleModel(classif(), limits, bicycle_model::GetDefaultSurface(mode), {speeds, bicycle_model::GetDefaultFactors(mode)})
 {
   using namespace bicycle_model;
-
+  
   // No bridleway in default.
   ASSERT_EQUAL(kDefaultOptions.size(), kDefaultSpeeds.size() - 1, ());
 
@@ -251,9 +343,9 @@ SpeedKMpH const & BicycleModel::GetOffroadSpeed() const
 // If one of feature types will be disabled for bicycles, features of this type will be simplified
 // in generator. Look FeatureBuilder1::IsRoad() for more details.
 // static
-BicycleModel const & BicycleModel::AllLimitsInstance()
+BicycleModel const & BicycleModel::AllLimitsInstance(RoutingOptions::RoadType mode)
 {
-  static BicycleModel const instance(bicycle_model::AllAllowed(), bicycle_model::NormalPedestrianAndFootwaySpeed());
+  static BicycleModel const instance(mode, bicycle_model::AllAllowed(), bicycle_model::NormalPedestrianAndFootwaySpeed(mode));
   return instance;
 }
 
@@ -268,38 +360,42 @@ BicycleModelFactory::BicycleModelFactory(CountryParentNameGetterFn const & count
 {
   using namespace bicycle_model;
 
-  // Names must be the same with country names from countries.txt
-  m_models[""] = std::make_shared<BicycleModel>(kDefaultOptions);
+  //RoutingOptions const routingOptions = RoutingOptions::LoadCarOptionsFromSettings();
+  //RoutingOptions::RoadType mode = routingOptions.GetCyclingMode();
+  RoutingOptions::RoadType mode = RoutingOptions::CyclingGravel;
 
-  m_models["Australia"] = std::make_shared<BicycleModel>(AllAllowed(), NormalPedestrianAndFootwaySpeed());
-  m_models["Austria"] = std::make_shared<BicycleModel>(NoTrunk(), DismountPathSpeed());
+  // Names must be the same with country names from countries.txt
+  m_models[""] = std::make_shared<BicycleModel>(mode, kDefaultOptions);
+
+  m_models["Australia"] = std::make_shared<BicycleModel>(mode, AllAllowed(), NormalPedestrianAndFootwaySpeed(mode));
+  m_models["Austria"] = std::make_shared<BicycleModel>(mode, NoTrunk(), DismountPathSpeed(mode));
   // Belarus law demands to use footways for bicycles where possible.
-  m_models["Belarus"] = std::make_shared<BicycleModel>(kDefaultOptions, PreferFootwaysToRoads());
-  m_models["Belgium"] = std::make_shared<BicycleModel>(NoTrunk(), NormalPedestrianSpeed());
-  m_models["Brazil"] = std::make_shared<BicycleModel>(AllAllowed());
-  m_models["Denmark"] = std::make_shared<BicycleModel>(NoTrunk());
-  m_models["France"] = std::make_shared<BicycleModel>(NoTrunk(), NormalPedestrianSpeed());
-  m_models["Finland"] = std::make_shared<BicycleModel>(kDefaultOptions, NormalPedestrianSpeed());
-  m_models["Hungary"] = std::make_shared<BicycleModel>(NoTrunk());
-  m_models["Iceland"] = std::make_shared<BicycleModel>(AllAllowed(), NormalPedestrianAndFootwaySpeed());
-  m_models["Ireland"] = std::make_shared<BicycleModel>(AllAllowed());
-  m_models["Italy"] = std::make_shared<BicycleModel>(kDefaultOptions, NormalPedestrianSpeed());
-  m_models["Netherlands"] = std::make_shared<BicycleModel>(NoTrunk());
-  m_models["Norway"] = std::make_shared<BicycleModel>(AllAllowed(), NormalPedestrianAndFootwaySpeed());
-  m_models["Oman"] = std::make_shared<BicycleModel>(AllAllowed());
-  m_models["Philippines"] = std::make_shared<BicycleModel>(AllAllowed(), NormalPedestrianSpeed());
-  m_models["Poland"] = std::make_shared<BicycleModel>(NoTrunk());
-  m_models["Romania"] = std::make_shared<BicycleModel>(AllAllowed());
+  m_models["Belarus"] = std::make_shared<BicycleModel>(mode, kDefaultOptions, PreferFootwaysToRoads(mode));
+  m_models["Belgium"] = std::make_shared<BicycleModel>(mode, NoTrunk(), NormalPedestrianSpeed(mode));
+  m_models["Brazil"] = std::make_shared<BicycleModel>(mode, AllAllowed());
+  m_models["Denmark"] = std::make_shared<BicycleModel>(mode, NoTrunk());
+  m_models["France"] = std::make_shared<BicycleModel>(mode, NoTrunk(), NormalPedestrianSpeed(mode));
+  m_models["Finland"] = std::make_shared<BicycleModel>(mode, kDefaultOptions, NormalPedestrianSpeed(mode));
+  m_models["Hungary"] = std::make_shared<BicycleModel>(mode, NoTrunk());
+  m_models["Iceland"] = std::make_shared<BicycleModel>(mode, AllAllowed(), NormalPedestrianAndFootwaySpeed(mode));
+  m_models["Ireland"] = std::make_shared<BicycleModel>(mode, AllAllowed());
+  m_models["Italy"] = std::make_shared<BicycleModel>(mode, kDefaultOptions, NormalPedestrianSpeed(mode));
+  m_models["Netherlands"] = std::make_shared<BicycleModel>(mode, NoTrunk());
+  m_models["Norway"] = std::make_shared<BicycleModel>(mode, AllAllowed(), NormalPedestrianAndFootwaySpeed(mode));
+  m_models["Oman"] = std::make_shared<BicycleModel>(mode, AllAllowed());
+  m_models["Philippines"] = std::make_shared<BicycleModel>(mode, AllAllowed(), NormalPedestrianSpeed(mode));
+  m_models["Poland"] = std::make_shared<BicycleModel>(mode, NoTrunk());
+  m_models["Romania"] = std::make_shared<BicycleModel>(mode, AllAllowed());
   // Note. Despite the fact that according to
   // https://wiki.openstreetmap.org/wiki/OSM_tags_for_routing/Access-Restrictions passing through service and
   // living_street with a bicycle is prohibited it's allowed according to Russian traffic rules.
-  m_models["Russian Federation"] = std::make_shared<BicycleModel>(kDefaultOptions, NormalPedestrianAndFootwaySpeed());
-  m_models["Slovakia"] = std::make_shared<BicycleModel>(NoTrunk());
-  m_models["Spain"] = std::make_shared<BicycleModel>(NoTrunk(), NormalPedestrianSpeed());
-  m_models["Sweden"] = std::make_shared<BicycleModel>(kDefaultOptions, NormalPedestrianSpeed());
-  m_models["Switzerland"] = std::make_shared<BicycleModel>(NoTrunk(), NormalPedestrianAndFootwaySpeed());
-  m_models["Ukraine"] = std::make_shared<BicycleModel>(UkraineOptions());
-  m_models["United Kingdom"] = std::make_shared<BicycleModel>(AllAllowed());
-  m_models["United States of America"] = std::make_shared<BicycleModel>(AllAllowed(), NormalPedestrianSpeed());
+  m_models["Russian Federation"] = std::make_shared<BicycleModel>(mode, kDefaultOptions, NormalPedestrianAndFootwaySpeed(mode));
+  m_models["Slovakia"] = std::make_shared<BicycleModel>(mode, NoTrunk());
+  m_models["Spain"] = std::make_shared<BicycleModel>(mode, NoTrunk(), NormalPedestrianSpeed(mode));
+  m_models["Sweden"] = std::make_shared<BicycleModel>(mode, kDefaultOptions, NormalPedestrianSpeed(mode));
+  m_models["Switzerland"] = std::make_shared<BicycleModel>(mode, NoTrunk(), NormalPedestrianAndFootwaySpeed(mode));
+  m_models["Ukraine"] = std::make_shared<BicycleModel>(mode, UkraineOptions());
+  m_models["United Kingdom"] = std::make_shared<BicycleModel>(mode, AllAllowed());
+  m_models["United States of America"] = std::make_shared<BicycleModel>(mode, AllAllowed(), NormalPedestrianSpeed(mode));
 }
 }  // namespace routing

@@ -425,6 +425,11 @@ void MyPositionController::NextMode(ScreenBase const & screen)
       ChangeMode(location::FollowAndRotate, true);
       UpdateViewport(preferredZoomLevel);
     }
+    else
+    {
+      m_desiredInitMode = location::NotFollowNoPosition;
+      ChangeMode(location::NotFollowNoPosition, true);
+    }
     return;
   }
 
@@ -433,8 +438,16 @@ void MyPositionController::NextMode(ScreenBase const & screen)
   {
     if (m_isInRouting && screen.isPerspective())
       preferredZoomLevel = static_cast<int>(GetZoomLevel(ScreenBase::GetStartPerspectiveScale() * 1.1));
-    ChangeMode(location::Follow, true);
-    ChangeModelView(m_position, 0.0, m_visiblePixelRect.Center(), preferredZoomLevel);
+    if (m_isInRouting)
+    {
+      ChangeMode(location::Follow, true);
+      ChangeModelView(m_position, 0.0, m_visiblePixelRect.Center(), preferredZoomLevel);
+    }
+    else
+    {
+      m_desiredInitMode = location::NotFollowNoPosition;
+      ChangeMode(location::NotFollowNoPosition, true);
+    }
   }
 }
 
@@ -549,7 +562,7 @@ void MyPositionController::OnLocationUpdate(location::GpsInfo const & info, bool
       ChangeMode(location::FollowAndRotate, true);
       UpdateViewport(kMaxScaleZoomLevel);
     }
-    else
+    else if (m_desiredInitMode != location::NotFollowNoPosition)
     {
       // Here we silently get the position and go to NotFollow mode.
       ChangeMode(location::NotFollow, true);
