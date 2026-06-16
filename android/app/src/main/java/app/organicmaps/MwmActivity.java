@@ -47,11 +47,11 @@ import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import androidx.preference.PreferenceManager;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.preference.PreferenceManager;
 import app.organicmaps.api.Const;
 import app.organicmaps.backup.PeriodicBackupRunner;
 import app.organicmaps.base.BaseMwmFragmentActivity;
@@ -2541,7 +2541,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
   public void onPlacePageRequestToggleRouteSettings(@NonNull RoadType roadType)
   {
     closePlacePage();
-    RoutingOptions.addOption(roadType);
+    Router routerType = RoutingController.get().getLastRouterType();
+    RoutingOptions.addOption(roadType, routerType);
     rebuildLastRouteInternal();
   }
 

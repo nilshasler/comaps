@@ -1,8 +1,8 @@
 package app.organicmaps.settings;
 
 import static app.organicmaps.leftbutton.LeftButtonsHolder.DISABLE_BUTTON_CODE;
-import static app.organicmaps.sdk.editor.data.Language.DEFAULT_LANG_CODE;
 import static app.organicmaps.sdk.editor.data.Language.AUTO_LANG_CODE;
+import static app.organicmaps.sdk.editor.data.Language.DEFAULT_LANG_CODE;
 import static app.organicmaps.util.Utils.isAndroidAutoSupported;
 
 import android.annotation.SuppressLint;
@@ -31,10 +31,12 @@ import app.organicmaps.editor.ProfileActivity;
 import app.organicmaps.leftbutton.LeftButton;
 import app.organicmaps.leftbutton.LeftButtonsHolder;
 import app.organicmaps.sdk.Framework;
+import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.downloader.MapManager;
 import app.organicmaps.sdk.editor.OsmOAuth;
 import app.organicmaps.sdk.editor.data.Language;
 import app.organicmaps.sdk.location.LocationHelper;
+import app.organicmaps.sdk.routing.RoutingController;
 import app.organicmaps.sdk.routing.RoutingOptions;
 import app.organicmaps.sdk.search.SearchRecents;
 import app.organicmaps.sdk.settings.MapLanguageCode;
@@ -183,7 +185,8 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
   private void updateRoutingSettingsPrefsSummary()
   {
     final Preference pref = getPreference(getString(R.string.prefs_routing));
-    pref.setSummary(RoutingOptions.hasAnyOptions() ? R.string.on : R.string.off);
+    Router routerType = RoutingController.get().getLastRouterType();
+    pref.setSummary(RoutingOptions.hasAnyOptions(routerType) ? R.string.on : R.string.off);
   }
 
   private void updateProfileSettingsPrefsSummary()

@@ -309,7 +309,8 @@ public class RoutingPlanController extends ToolbarController
   {
     mDrivingOptionsBtnContainer.addOnLayoutChangeListener(mDriverOptionsLayoutListener);
     UiUtils.show(mDrivingOptionsBtnContainer);
-    boolean hasAnyOptions = RoutingOptions.hasAnyOptions() && !isRulerType();
+    Router routerType = RoutingController.get().getLastRouterType();
+    boolean hasAnyOptions = !isRulerType() && RoutingOptions.hasAnyOptions(routerType);
     UiUtils.showIf(hasAnyOptions, mDrivingOptionsImage);
     MaterialTextView title = mDrivingOptionsBtnContainer.findViewById(R.id.driving_options_btn_title);
     title.setText(hasAnyOptions ? R.string.change_driving_options_btn : R.string.define_to_avoid_btn);
