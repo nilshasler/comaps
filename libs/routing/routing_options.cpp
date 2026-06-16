@@ -20,6 +20,7 @@ std::string_view constexpr kAvoidRoutingOptionSettingsForCar = "avoid_routing_op
 std::string_view constexpr kAvoidRoutingOptionSettingsForBicycle = "avoid_routing_options_bicycle";
 std::string_view constexpr kAvoidRoutingOptionSettingsForPedestrian = "avoid_routing_options_pedestrian";
 
+// static
 RoutingOptions RoutingOptions::LoadOptionsFromSettings(VehicleType type)
 {
   uint32_t mode = 0;
