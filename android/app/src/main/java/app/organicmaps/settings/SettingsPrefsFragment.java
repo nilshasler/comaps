@@ -35,6 +35,8 @@ import app.organicmaps.sdk.downloader.MapManager;
 import app.organicmaps.sdk.editor.OsmOAuth;
 import app.organicmaps.sdk.editor.data.Language;
 import app.organicmaps.sdk.location.LocationHelper;
+import app.organicmaps.sdk.Router;
+import app.organicmaps.sdk.routing.RoutingController;
 import app.organicmaps.sdk.routing.RoutingOptions;
 import app.organicmaps.sdk.search.SearchRecents;
 import app.organicmaps.sdk.settings.MapLanguageCode;
@@ -183,7 +185,8 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
   private void updateRoutingSettingsPrefsSummary()
   {
     final Preference pref = getPreference(getString(R.string.prefs_routing));
-    pref.setSummary(RoutingOptions.hasAnyOptions() ? R.string.on : R.string.off);
+    Router routerType = RoutingController.get().getLastRouterType();
+    pref.setSummary(RoutingOptions.hasAnyOptions(routerType) ? R.string.on : R.string.off);
   }
 
   private void updateProfileSettingsPrefsSummary()

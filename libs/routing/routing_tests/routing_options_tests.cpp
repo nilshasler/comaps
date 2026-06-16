@@ -14,7 +14,7 @@ using RoadType = RoutingOptions::RoadType;
 class RoutingOptionsTests
 {
 public:
-  RoutingOptionsTests() { m_savedOptions = RoutingOptions::LoadCarOptionsFromSettings(); }
+  RoutingOptionsTests() { m_savedOptions = RoutingOptions::LoadOptionsFromSettings(VehicleType::Car); }
 
   ~RoutingOptionsTests() { RoutingOptions::SaveCarOptionsToSettings(m_savedOptions); }
 
@@ -71,7 +71,7 @@ UNIT_CLASS_TEST(RoutingOptionsTests, GetSetTest)
       CreateOptions({RoutingOptions::Road::Toll, RoutingOptions::Road::Motorway, RoutingOptions::Road::Dirty});
 
   RoutingOptions::SaveCarOptionsToSettings(options);
-  RoutingOptions fromSettings = RoutingOptions::LoadCarOptionsFromSettings();
+  RoutingOptions fromSettings = RoutingOptions::LoadOptionsFromSettings(VehicleType::Car);
 
   TEST_EQUAL(options.GetOptions(), fromSettings.GetOptions(), ());
 }

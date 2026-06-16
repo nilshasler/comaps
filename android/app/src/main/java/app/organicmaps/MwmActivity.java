@@ -103,6 +103,7 @@ import app.organicmaps.sdk.location.TrackRecorder;
 import app.organicmaps.sdk.maplayer.isolines.IsolinesState;
 import app.organicmaps.sdk.routing.RouteMarkType;
 import app.organicmaps.sdk.routing.RoutingController;
+import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.routing.RoutingOptions;
 import app.organicmaps.sdk.search.SearchEngine;
 import app.organicmaps.sdk.settings.RoadType;
@@ -2541,7 +2542,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
   public void onPlacePageRequestToggleRouteSettings(@NonNull RoadType roadType)
   {
     closePlacePage();
-    RoutingOptions.addOption(roadType);
+    Router routerType = RoutingController.get().getLastRouterType();
+    RoutingOptions.addOption(roadType, routerType);
     rebuildLastRouteInternal();
   }
 

@@ -17,21 +17,42 @@ using namespace std;
 // RoutingOptions -------------------------------------------------------------------------------------
 
 std::string_view constexpr kAvoidRoutingOptionSettingsForCar = "avoid_routing_options_car";
+std::string_view constexpr kAvoidRoutingOptionSettingsForBicycle = "avoid_routing_options_bicycle";
+std::string_view constexpr kAvoidRoutingOptionSettingsForPedestrian = "avoid_routing_options_pedestrian";
+std::string_view constexpr kAvoidRoutingOptionSettingsForTransit = "avoid_routing_options_transit";
 
 // static
-RoutingOptions RoutingOptions::LoadCarOptionsFromSettings()
+RoutingOptions RoutingOptions::LoadOptionsFromSettings(VehicleType type)
 {
   uint32_t mode = 0;
-  if (!settings::Get(kAvoidRoutingOptionSettingsForCar, mode))
+  std::string_view settingsName;
+  switch (type)
+  {
+  case VehicleType::Car: settingsName = kAvoidRoutingOptionSettingsForCar; break;
+  case VehicleType::Bicycle: settingsName = kAvoidRoutingOptionSettingsForBicycle; break;
+  case VehicleType::Pedestrian: settingsName = kAvoidRoutingOptionSettingsForPedestrian; break;
+  case VehicleType::Transit: settingsName = kAvoidRoutingOptionSettingsForTransit; break;
+  }
+  
+  if (!settings::Get(settingsName, mode))
     mode = 0;
 
-  return RoutingOptions(base::checked_cast<RoadType>(mode));
+  return RoutingOptions(base::checked_cast<RoadType>(mode), type);
 }
 
 // static
-void RoutingOptions::SaveCarOptionsToSettings(RoutingOptions options)
+void RoutingOptions::SaveOptionsToSettings(RoutingOptions options)
 {
-  settings::Set(kAvoidRoutingOptionSettingsForCar, strings::to_string(static_cast<int32_t>(options.GetOptions())));
+  std::string_view settingsName;
+  switch (options.m_vehicle)
+  {
+  case VehicleType::Car: settingsName = kAvoidRoutingOptionSettingsForCar; break;
+  case VehicleType::Bicycle: settingsName = kAvoidRoutingOptionSettingsForBicycle; break;
+  case VehicleType::Pedestrian: settingsName = kAvoidRoutingOptionSettingsForPedestrian; break;
+  case VehicleType::Transit: settingsName  = kAvoidRoutingOptionSettingsForTransit; break;
+  }
+  
+  settings::Set(settingsName, strings::to_string(static_cast<int32_t>(options.GetOptions())));
 }
 
 void RoutingOptions::Add(RoutingOptions::Road type)
@@ -167,15 +188,15 @@ string DebugPrint(RoutingOptions::Road type)
   UNREACHABLE();
 }
 
-RoutingOptionSetter::RoutingOptionSetter(RoutingOptions::RoadType roadsMask)
+RoutingOptionSetter::RoutingOptionSetter(RoutingOptions::RoadType roadsMask, VehicleType type)
 {
-  m_saved = RoutingOptions::LoadCarOptionsFromSettings();
-  RoutingOptions::SaveCarOptionsToSettings(RoutingOptions(roadsMask));
+  m_saved = RoutingOptions::LoadOptionsFromSettings(type);
+  RoutingOptions::SaveOptionsToSettings(RoutingOptions(roadsMask, type));
 }
 
 RoutingOptionSetter::~RoutingOptionSetter()
 {
-  RoutingOptions::SaveCarOptionsToSettings(m_saved);
+  RoutingOptions::SaveOptionsToSettings(m_saved);
 }
 
 }  // namespace routing

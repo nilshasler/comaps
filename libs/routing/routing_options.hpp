@@ -7,6 +7,7 @@
 
 #include "boost/container_hash/hash.hpp"
 #include "3party/skarupke/flat_hash_map.hpp"
+#include "routing/routing_quality/api/api.hpp"
 
 namespace routing
 {
@@ -29,19 +30,22 @@ public:
   using RoadType = std::underlying_type_t<Road>;
 
   RoutingOptions() = default;
-  explicit RoutingOptions(RoadType mask) : m_options(mask) {}
+  explicit RoutingOptions(RoadType mask, routing::VehicleType type) : m_options(mask), m_vehicle(type) {}
 
-  static RoutingOptions LoadCarOptionsFromSettings();
-  static void SaveCarOptionsToSettings(RoutingOptions options);
+  static RoutingOptions LoadOptionsFromSettings(VehicleType type);
+  static void SaveOptionsToSettings(RoutingOptions options);
 
   void Add(Road type);
   void Remove(Road type);
   bool Has(Road type) const;
 
+  void setVehicleType(VehicleType vt) { m_vehicle = vt; }
+
   RoadType GetOptions() const { return m_options; }
 
 private:
   RoadType m_options = 0;
+  VehicleType m_vehicle = VehicleType::Car;
 };
 
 class RoutingOptionsClassifier
@@ -65,7 +69,7 @@ std::string DebugPrint(RoutingOptions::Road type);
 class RoutingOptionSetter
 {
 public:
-  explicit RoutingOptionSetter(RoutingOptions::RoadType roadsMask);
+  explicit RoutingOptionSetter(RoutingOptions::RoadType roadsMask, VehicleType type);
   ~RoutingOptionSetter();
 
 private:

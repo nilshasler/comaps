@@ -13,7 +13,7 @@
 - (instancetype)init {
   self = [super init];
   if (self) {
-    _options = routing::RoutingOptions::LoadCarOptionsFromSettings();
+    _options = routing::RoutingOptions::LoadOptionsFromSettings(routing::VehicleType::Car);
   }
 
   return self;
@@ -72,7 +72,14 @@
 }
 
 - (void)save {
-  routing::RoutingOptions::SaveCarOptionsToSettings(_options);
+  _options.setVehicleType(routing::VehicleType::Pedestrian);
+  routing::RoutingOptions::SaveOptionsToSettings(_options);
+  _options.setVehicleType(routing::VehicleType::Bicycle);
+  routing::RoutingOptions::SaveOptionsToSettings(_options);
+  _options.setVehicleType(routing::VehicleType::Car);
+  routing::RoutingOptions::SaveOptionsToSettings(_options);
+  _options.setVehicleType(routing::VehicleType::Transit);
+  routing::RoutingOptions::SaveOptionsToSettings(_options);
 }
 
 - (void)setOption:(routing::RoutingOptions::Road)option enabled:(BOOL)enabled {

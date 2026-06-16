@@ -12,6 +12,8 @@ import androidx.car.app.model.OnClickListener;
 import androidx.car.app.model.Row;
 import androidx.car.app.model.Template;
 import androidx.car.app.navigation.model.MapWithContentTemplate;
+import app.organicmaps.sdk.routing.RoutingController;
+import app.organicmaps.sdk.Router;
 import app.organicmaps.R;
 import app.organicmaps.car.renderer.Renderer;
 import app.organicmaps.car.screens.base.BaseMapScreen;
@@ -86,7 +88,16 @@ public class SettingsScreen extends BaseMapScreen
   private Item createRoutingOptionsItem()
   {
     final Row.Builder builder = new Row.Builder();
-    builder.setTitle(getCarContext().getString(R.string.driving_options_title));
+    Router routerType = RoutingController.get().getLastRouterType();
+    int id = R.string.driving_options_title;
+    switch (routerType)
+    {
+    case Router.Vehicle: id = R.string.driving_options_title_vehicle; break;
+    case Router.Bicycle: id = R.string.driving_options_title_bicycle; break;
+    case Router.Pedestrian: id = R.string.driving_options_title_pedestrian; break;
+    case Router.Transit: id = R.string.driving_options_title_transit; break;
+    }
+    builder.setTitle(getCarContext().getString(id));
     builder.setOnClickListener(
         ()
             -> getScreenManager().pushForResult(new DrivingOptionsScreen(getCarContext(), getSurfaceRenderer()),
