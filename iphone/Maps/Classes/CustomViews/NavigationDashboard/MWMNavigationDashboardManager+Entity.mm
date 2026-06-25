@@ -247,6 +247,16 @@ NSArray<MWMLaneInfo *> *buildLanes(routing::turns::lanes::LanesInfo const & info
       else
         entity.roundExitNumber = 0;
       entity.lanes = buildLanes(info.m_lanes);
+
+      NSArray<NSString *> * variants =
+          [MWMNavigationInstructionFormatter instructionVariantsWithRoadName:@(info.m_nextName.c_str())
+                                                                     roadRef:@(info.m_nextRef.c_str())
+                                                                 junctionRef:@(info.m_nextJunctionRef.c_str())
+                                                              destinationRef:@(info.m_nextDestinationRef.c_str())
+                                                                 destination:@(info.m_nextDestination.c_str())
+                                                                      isLink:info.m_nextIsLink];
+      if (variants.firstObject.length != 0)
+        entity.streetName = variants.firstObject;
     }
   }
 

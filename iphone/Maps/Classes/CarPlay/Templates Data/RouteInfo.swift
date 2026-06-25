@@ -140,6 +140,68 @@ final class LaneInfo: NSObject {
   }
 }
 
+/// Instead of the legacy `GetFullRoadName`, build turn instruction strings variants as needed by CarPlay.
+/// Ordered longest first, per Apple guidelines.
+/// Reused by the phone navigation panel
+@objc(MWMNavigationInstructionFormatter)
+final class NavigationInstructionFormatter: NSObject {
+  @objc static func instructionVariants(roadName: String,
+                                        roadRef: String,
+                                        junctionRef: String,
+                                        destinationRef: String,
+                                        destination: String,
+                                        isLink: Bool) -> [String] {
+    func clean(_ s: String) -> String { s.trimmingCharacters(in: .whitespacesAndNewlines) }
+    /// Joins a leading label and a trailing destination with an arrow, tolerating empty sides.
+    func compose(_ lead: String, _ tail: String) -> String {
+      if lead.isEmpty { return tail }
+      if tail.isEmpty { return lead }
+      return "\(lead) → \(tail)"
+    }
+
+    let name = clean(roadName)
+    let ref = clean(roadRef)
+    let junctionRef = clean(junctionRef)
+    let destinationRef = clean(destinationRef)
+    let destination = clean(destination)
+
+    var candidates: [String]
+    let hasExitInfo = !junctionRef.isEmpty || !destinationRef.isEmpty || !destination.isEmpty
+    if isLink || hasExitInfo {
+      let exitLabel = junctionRef.isEmpty ? "" : String(format: L("carplay_highway_exit"), junctionRef)
+      // "Exit 6A: US 101 South"
+      let lead = [exitLabel, destinationRef].filter { !$0.isEmpty }.joined(separator: ": ")
+      // Destinations are "; "-separated; the first one is the primary place.
+      let firstDestination = clean(String(destination.split(separator: ";", maxSplits: 1).first ?? ""))
+      // Switch out ";" with a nicer separator.
+      let destinationList = destination.split(separator: ";").map { clean(String($0)) }.filter { !$0.isEmpty }.joined(separator: " / ")
+      candidates = [
+        compose(lead, destinationList),
+        firstDestination == destination ? "" : compose(lead, firstDestination),
+        lead,
+        exitLabel,
+        // A link with no exit data at all (no junction/destination/ref) would produce nothing,
+        // fall back to its plain road name/ref.
+        [ref, name].filter { !$0.isEmpty }.joined(separator: " "),
+        name,
+      ]
+    } else {
+      candidates = [
+        [ref, name].filter { !$0.isEmpty }.joined(separator: " "),
+        name,
+        ref,
+      ]
+    }
+
+    // Drop empties, dedupe as variants may be equal, then enforce descending length.
+    var seen = Set<String>()
+    return candidates
+      .map(clean)
+      .filter { !$0.isEmpty && seen.insert($0).inserted }
+      .sorted { $0.count > $1.count }
+  }
+}
+
 @objc(MWMRouteInfo)
 class RouteInfo: NSObject {
   let timeToTarget: TimeInterval
