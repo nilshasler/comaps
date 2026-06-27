@@ -5,15 +5,15 @@
 
 static routing::RoutingOptions::Option makeValue(jint option)
 {
-  auto const opt = static_cast<uint8_t>(1u << static_cast<int>(option));
-  CHECK_LESS(opt, static_cast<uint8_t>(routing::RoutingOptions::Option::Max), ("invalid option", option));
+  auto const opt = static_cast<uint16_t>(1u << static_cast<int>(option));
+  CHECK_LESS(opt, static_cast<uint16_t>(routing::RoutingOptions::Option::Max), ("invalid option", option));
   return static_cast<routing::RoutingOptions::Option>(opt);
 }
 
 static routing::VehicleType makeVehicle(jint vehicle)
 {
-  auto const v = static_cast<uint8_t>(vehicle);
-  CHECK_LESS(v, static_cast<uint8_t>(routing::VehicleType::Count), ("invalid vehicle type", vehicle));
+  auto const v = static_cast<uint16_t>(vehicle);
+  CHECK_LESS(v, static_cast<uint16_t>(routing::VehicleType::Count), ("invalid vehicle type", vehicle));
   switch (v)  // this is super-ugly but java and C++ define constants differently: c.f. Router.java vehicle_mask.hpp
   {
   default:

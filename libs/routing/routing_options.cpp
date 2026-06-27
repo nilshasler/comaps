@@ -160,11 +160,38 @@ string DebugPrint(RoutingOptions const & routingOptions)
   append(RoutingOptions::Option::AvoidMotorway);
   append(RoutingOptions::Option::AvoidFerry);
   append(RoutingOptions::Option::AvoidDirty);
-  append(RoutingOptions::Option::Steps);
+  append(RoutingOptions::Option::AvoidSteps);
   append(RoutingOptions::Option::AvoidPaved);
+  append(RoutingOptions::Option::AvoidHills);
+  append(RoutingOptions::Option::AvoidRailroadXing);
+  append(RoutingOptions::Option::AvoidFord);
+  append(RoutingOptions::Option::Ebike);
 
   if (wasAppended)
     ss << " | ";
+    
+  switch (m_vehicle)
+  case VehicleType::Car: ss << "car "; break;
+  case VehicleType::Bicycle:
+    switch (getCyclingMode())
+    {
+    case CyclingDefault: ss << "cycling "; break;
+    case CyclingRoad: ss << "road cycling "; break;
+    case CyclingGravel: ss << "gravel cycling "; break;
+    case CyclingMountainBike: ss << "MTB cycling "; break;
+    }
+    break;
+  case VehicleType::Pedestrian:
+    switch (getWalkingMode())
+    {
+    case WalkingDefault: ss << "walking "; break;
+    case WalkingHiking: ss << "hiking "; break;
+    case WalkingHardHiking: ss << "hard hiking "; break;
+    case WalkingStrolling: ss << "strolling "; break;
+    }
+    break;
+  case VehicleType::Transit: ss << "transit " break;
+  }
 
   ss << "}";
 
@@ -175,13 +202,17 @@ string DebugPrint(RoutingOptions::Option type)
 {
   switch (type)
   {
+  case RoutingOptions::Option::Usual: return "usual";
   case RoutingOptions::Option::AvoidToll: return "toll";
   case RoutingOptions::Option::AvoidMotorway: return "motorway";
   case RoutingOptions::Option::AvoidFerry: return "ferry";
   case RoutingOptions::Option::AvoidDirty: return "dirty";
-  case RoutingOptions::Option::Steps: return "steps";
+  case RoutingOptions::Option::AvoidSteps: return "steps";
   case RoutingOptions::Option::AvoidPaved: return "paved";
-  case RoutingOptions::Option::Usual: return "usual";
+  case RoutingOptions::Option::AvoidFord: return "ford";
+  case RoutingOptions::Option::AvoidRailroadXing: return "X-ing";
+  case RoutingOptions::Option::AvoidHills: return "hills";
+  case RoutingOptions::Option::Ebike: return "ebike";
   case RoutingOptions::Option::Max: return "max";
   }
 
