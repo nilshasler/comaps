@@ -195,7 +195,7 @@ void RoadGeometry::Load(VehicleModelInterface const & vehicleModel, FeatureType 
   {
     if (auto const it = optionsClassfier.Get(type))
     {
-      if (*it == RoutingOptions::Option::Dirty && m_routingOptions.Has(RoutingOptions::Option::Paved))
+      if (*it == RoutingOptions::Option::AvoidDirty && m_routingOptions.Has(RoutingOptions::Option::AvoidPaved))
         continue;
 
       m_routingOptions.Add(*it);
@@ -229,7 +229,7 @@ void RoadGeometry::Load(VehicleModelInterface const & vehicleModel, FeatureType 
   }
   m_distances.resize(count - 1, -1);
 
-  bool const isFerry = m_routingOptions.Has(RoutingOptions::Option::Ferry);
+  bool const isFerry = m_routingOptions.Has(RoutingOptions::Option::AvoidFerry);
   /// @todo Add RouteShuttleTrain into RoutingOptions?
   if (isFerry || (m_highwayType && *m_highwayType == HighwayType::RouteShuttleTrain))
   {
