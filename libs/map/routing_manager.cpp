@@ -685,7 +685,7 @@ void RoutingManager::CollectRoadWarnings(vector<routing::RouteSegment> const & s
   RoutingOptions::Option lastType = RoutingOptions::Option::Usual;
   for (size_t i = 0; i < segments.size(); ++i)
   {
-    auto const currentType = ChooseMainRoutingOptionRoad(segments[i].GetRoadTypes(), isCarRouter);
+    auto const currentType = ChooseMainRoutingOption(segments[i].GetRoadTypes(), isCarRouter);
     if (currentType != lastType)
     {
       if (isWarnedType(lastType))
