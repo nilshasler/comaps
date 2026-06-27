@@ -1083,7 +1083,7 @@ unique_ptr<WorldGraph> IndexRouter::MakeWorldGraph()
   RoutingOptions const routingOptions = RoutingOptions::LoadOptionsFromSettings(m_vehicleType);
   /// @DebugNote
   // Add avoid roads here for debug purpose.
-  // routingOptions.Add(RoutingOptions::Road::Motorway);
+  // routingOptions.Add(RoutingOptions::Option::Motorway);
   LOG(LINFO, ("Avoid next roads:", routingOptions));
 
   auto crossMwmGraph = make_unique<CrossMwmGraph>(

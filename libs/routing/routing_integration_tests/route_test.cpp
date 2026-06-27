@@ -428,7 +428,7 @@ UNIT_TEST(EnglandLondonStartNearMwmBorderTest)
                                    FromLatLon(51.606785, 0.264055), 416.8);
 }
 
-// Test that toll road is not crossed by a fake edge if RouingOptions are set to Road::Toll.
+// Test that toll road is not crossed by a fake edge if RouingOptions are set to Option::Toll.
 // Test on necessity calling RectCoversPolyline() after DataSource::ForEachInRect() while looking for fake edges.
 UNIT_TEST(RussiaMoscowNotCrossingTollRoadTest)
 {
