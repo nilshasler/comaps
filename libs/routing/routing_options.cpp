@@ -74,11 +74,6 @@ bool RoutingOptions::Has(RoutingOptions::Option type) const
   return (m_options & static_cast<OptionType>(type)) != 0;
 }
 
-void RoutingOptions::SetCyclingMode(OptionType mode)
-{
-  m_options = (m_options & ~CyclingMask) | (mode & CyclingMask);
-}
-
 // RoutingOptionsClassifier ---------------------------------------------------------------------------
 
 RoutingOptionsClassifier::RoutingOptionsClassifier()
