@@ -27,7 +27,7 @@ using namespace routing;
 
 HighwayBasedFactors const kDefaultFactors = GetOneFactorsForBicycleAndPedestrianModel();
 
-HighwayBasedFactors const& GetDefaultFactors(RoutingOptions::RoadType mode)
+HighwayBasedFactors const& GetDefaultFactors(RoutingOptions::OptionType mode)
 {
   switch (mode)
   {
@@ -118,7 +118,7 @@ HighwayBasedSpeeds const kGravelSpeeds = {
     {HighwayType::RouteFerry, InOutCitySpeedKMpH(SpeedKMpH(6.0, 20.0))},
 };
 
-HighwayBasedSpeeds const& GetDefaultSpeeds(RoutingOptions::RoadType mode)
+HighwayBasedSpeeds const& GetDefaultSpeeds(RoutingOptions::OptionType mode)
 {
   switch (mode)
   {
@@ -171,7 +171,7 @@ VehicleModel::LimitsInitList NoTrunk()
 }
 
 // Same as defaults except pedestrian is allowed
-HighwayBasedSpeeds NormalPedestrianSpeed(RoutingOptions::RoadType mode)
+HighwayBasedSpeeds NormalPedestrianSpeed(RoutingOptions::OptionType mode)
 {
   HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
   res[HighwayType::HighwayPedestrian] = InOutCitySpeedKMpH(kSpeedOnFootwayKMpH);
@@ -187,7 +187,7 @@ VehicleModel::LimitsInitList AllAllowed()
 }
 
 // Same as defaults except pedestrian and footway are allowed
-HighwayBasedSpeeds NormalPedestrianAndFootwaySpeed(RoutingOptions::RoadType mode)
+HighwayBasedSpeeds NormalPedestrianAndFootwaySpeed(RoutingOptions::OptionType mode)
 {
   HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
   InOutCitySpeedKMpH const footSpeed(kSpeedOnFootwayKMpH);
@@ -196,14 +196,14 @@ HighwayBasedSpeeds NormalPedestrianAndFootwaySpeed(RoutingOptions::RoadType mode
   return res;
 }
 
-HighwayBasedSpeeds DismountPathSpeed(RoutingOptions::RoadType mode)
+HighwayBasedSpeeds DismountPathSpeed(RoutingOptions::OptionType mode)
 {
   HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
   res[HighwayType::HighwayPath] = InOutCitySpeedKMpH(kSpeedDismountKMpH);
   return res;
 }
 
-HighwayBasedSpeeds PreferFootwaysToRoads(RoutingOptions::RoadType mode)
+HighwayBasedSpeeds PreferFootwaysToRoads(RoutingOptions::OptionType mode)
 {
   HighwayBasedSpeeds res = bicycle_model::GetDefaultSpeeds(mode);
 
@@ -257,7 +257,7 @@ VehicleModel::SurfaceInitList const kGravelSurface = {
     {{"hwtag", "nocycleway"}, {0.95, 0.95}},
 };
 
-VehicleModel::SurfaceInitList const& GetDefaultSurface(RoutingOptions::RoadType mode)
+VehicleModel::SurfaceInitList const& GetDefaultSurface(RoutingOptions::OptionType mode)
 {
   switch (mode)
   {
@@ -276,13 +276,13 @@ VehicleModel::SurfaceInitList const& GetDefaultSurface(RoutingOptions::RoadType 
 
 namespace routing
 {
-BicycleModel::BicycleModel(RoutingOptions::RoadType mode) : BicycleModel(mode, bicycle_model::kDefaultOptions) {}
+BicycleModel::BicycleModel(RoutingOptions::OptionType mode) : BicycleModel(mode, bicycle_model::kDefaultOptions) {}
 
-BicycleModel::BicycleModel(RoutingOptions::RoadType mode, VehicleModel::LimitsInitList const & limits)
+BicycleModel::BicycleModel(RoutingOptions::OptionType mode, VehicleModel::LimitsInitList const & limits)
   : BicycleModel(mode, limits, bicycle_model::GetDefaultSpeeds(mode))
 {}
 
-BicycleModel::BicycleModel(RoutingOptions::RoadType mode, VehicleModel::LimitsInitList const & limits, HighwayBasedSpeeds const & speeds)
+BicycleModel::BicycleModel(RoutingOptions::OptionType mode, VehicleModel::LimitsInitList const & limits, HighwayBasedSpeeds const & speeds)
   : VehicleModel(classif(), limits, bicycle_model::GetDefaultSurface(mode), {speeds, bicycle_model::GetDefaultFactors(mode)})
 {
   using namespace bicycle_model;
@@ -343,7 +343,7 @@ SpeedKMpH const & BicycleModel::GetOffroadSpeed() const
 // If one of feature types will be disabled for bicycles, features of this type will be simplified
 // in generator. Look FeatureBuilder1::IsRoad() for more details.
 // static
-BicycleModel const & BicycleModel::AllLimitsInstance(RoutingOptions::RoadType mode)
+BicycleModel const & BicycleModel::AllLimitsInstance(RoutingOptions::OptionType mode)
 {
   static BicycleModel const instance(mode, bicycle_model::AllAllowed(), bicycle_model::NormalPedestrianAndFootwaySpeed(mode));
   return instance;
@@ -361,8 +361,8 @@ BicycleModelFactory::BicycleModelFactory(CountryParentNameGetterFn const & count
   using namespace bicycle_model;
 
   //RoutingOptions const routingOptions = RoutingOptions::LoadCarOptionsFromSettings();
-  //RoutingOptions::RoadType mode = routingOptions.GetCyclingMode();
-  RoutingOptions::RoadType mode = RoutingOptions::CyclingGravel;
+  //RoutingOptions::OptionType mode = routingOptions.GetCyclingMode();
+  RoutingOptions::OptionType mode = RoutingOptions::CyclingGravel;
 
   // Names must be the same with country names from countries.txt
   m_models[""] = std::make_shared<BicycleModel>(mode, kDefaultOptions);
