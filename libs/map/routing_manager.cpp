@@ -226,11 +226,11 @@ VehicleType GetVehicleType(RouterType routerType)
 
 RoadWarningMarkType GetRoadType(RoutingOptions::Option road)
 {
-  if (road == RoutingOptions::Option::Toll)
+  if (road == RoutingOptions::Option::AvoidToll)
     return RoadWarningMarkType::Toll;
-  if (road == RoutingOptions::Option::Ferry)
+  if (road == RoutingOptions::Option::AvoidFerry)
     return RoadWarningMarkType::Ferry;
-  if (road == RoutingOptions::Option::Dirty)
+  if (road == RoutingOptions::Option::AvoidDirty)
     return RoadWarningMarkType::Dirty;
 
   CHECK(false, ("Invalid road type to avoid:", road));
@@ -674,8 +674,8 @@ void RoutingManager::CollectRoadWarnings(vector<routing::RouteSegment> const & s
 {
   auto const isWarnedType = [](RoutingOptions::Option roadType)
   {
-    return (roadType == RoutingOptions::Option::Toll || roadType == RoutingOptions::Option::Ferry ||
-            roadType == RoutingOptions::Option::Dirty);
+    return (roadType == RoutingOptions::Option::AvoidToll || roadType == RoutingOptions::Option::AvoidFerry ||
+            roadType == RoutingOptions::Option::AvoidDirty);
   };
 
   bool const isCarRouter = (m_currentRouterType == RouterType::Vehicle);

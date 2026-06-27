@@ -14,23 +14,33 @@ namespace routing
 class RoutingOptions
 {
 public:
-  enum Option : uint8_t
+  enum Option : uint16_t
   {
     Usual = 1u << 0,
-    Toll = 1u << 1,
-    Motorway = 1u << 2,
-    Ferry = 1u << 3,
-    Dirty = 1u << 4,
-    Steps = 1u << 5,
-    Paved = 1u << 6,
+    AvoidToll = 1u << 1,
+    AvoidMotorway = 1u << 2,
+    AvoidFerry = 1u << 3,
+    AvoidDirty = 1u << 4,
+    AvoidSteps = 1u << 5,
+    AvoidPaved = 1u << 6,
+    AvoidFord = 1u << 7,
+    AvoidRailroadXing = 1u << 8,
+    AvoidHills = 1u << 9,
+    Ebike = 1u << 10,
 
-    CyclingDefault = 0u << 7,
-    CyclingRoad = 1u << 7,
-    CyclingGravel = 1u << 7,
-    CyclingMountainBike = 1u << 7,
-    CyclingMask = 1u << 7,
+    SubModeMask = 3u << 11,
+    CyclingDefault = 0u << 11,
+    CyclingRoad = 1u << 11,
+    CyclingGravel = 2u << 11,
+    CyclingMountainBike = 3u << 11,
+    
+    WalkingDefault = 0u << 11,
+    WalkingHiking = 1u << 11,
+    WalkingHardHiking = 2u << 11,
+    WalkingStrolling = 3u << 11,
+    
 
-    Max = (1u << 7) + 1
+    Max = (1u << 12) + 1
   };
 
   using OptionType = std::underlying_type_t<Option>;
@@ -46,7 +56,9 @@ public:
   bool Has(Option type) const;
 
   void SetCyclingMode(OptionType mode);
-  OptionType GetCyclingMode() const { return (m_options & CyclingMask); }
+  OptionType GetCyclingMode() const { return (m_options & SubModeMask); }
+  void SetWalkingMode(OptionType mode);
+  OptionType GetWalkingMode() const { return (m_options & SubModeMask); }
 
   void setVehicleType(VehicleType vt) { m_vehicle = vt; }
 

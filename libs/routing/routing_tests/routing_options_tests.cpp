@@ -54,21 +54,21 @@ void Checker(std::vector<RoutingOptions::Option> const & include)
 
 UNIT_TEST(RoutingOptionTest)
 {
-  Checker({RoutingOptions::Option::Toll, RoutingOptions::Option::Motorway, RoutingOptions::Option::Dirty});
-  Checker({RoutingOptions::Option::Toll, RoutingOptions::Option::Dirty});
+  Checker({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidMotorway, RoutingOptions::Option::AvoidDirty});
+  Checker({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidDirty});
 
-  Checker({RoutingOptions::Option::Toll, RoutingOptions::Option::Ferry, RoutingOptions::Option::Dirty});
+  Checker({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidFerry, RoutingOptions::Option::AvoidDirty});
 
-  Checker({RoutingOptions::Option::Dirty});
-  Checker({RoutingOptions::Option::Toll});
-  Checker({RoutingOptions::Option::Dirty, RoutingOptions::Option::Motorway});
+  Checker({RoutingOptions::Option::AvoidDirty});
+  Checker({RoutingOptions::Option::AvoidToll});
+  Checker({RoutingOptions::Option::AvoidDirty, RoutingOptions::Option::AvoidMotorway});
   Checker({});
 }
 
 UNIT_CLASS_TEST(RoutingOptionsTests, GetSetTest)
 {
   RoutingOptions options =
-      CreateOptions({RoutingOptions::Option::Toll, RoutingOptions::Option::Motorway, RoutingOptions::Option::Dirty});
+      CreateOptions({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidMotorway, RoutingOptions::Option::AvoidDirty});
 
   RoutingOptions::SaveCarOptionsToSettings(options);
   RoutingOptions fromSettings = RoutingOptions::LoadOptionsFromSettings(VehicleType::Car);

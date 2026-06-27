@@ -17,9 +17,9 @@ using namespace std;
 // RoutingOptions -------------------------------------------------------------------------------------
 
 std::string_view constexpr kAvoidRoutingOptionSettingsForCar = "avoid_routing_options_car";
-std::string_view constexpr kAvoidRoutingOptionSettingsForBicycle = "avoid_routing_options_car";
-std::string_view constexpr kAvoidRoutingOptionSettingsForPedestrian = "avoid_routing_options_car";
-std::string_view constexpr kAvoidRoutingOptionSettingsForTransit = "avoid_routing_options_car";
+std::string_view constexpr kAvoidRoutingOptionSettingsForBicycle = "avoid_routing_options_bicycle";
+std::string_view constexpr kAvoidRoutingOptionSettingsForPedestrian = "avoid_routing_options_pedestrian";
+std::string_view constexpr kAvoidRoutingOptionSettingsForTransit = "avoid_routing_options_transit";
 
 // static
 RoutingOptions RoutingOptions::LoadOptionsFromSettings(VehicleType type)
@@ -33,7 +33,7 @@ RoutingOptions RoutingOptions::LoadOptionsFromSettings(VehicleType type)
   case VehicleType::Pedestrian: settingsName = kAvoidRoutingOptionSettingsForPedestrian; break;
   case VehicleType::Transit: settingsName = kAvoidRoutingOptionSettingsForTransit; break;
   }
-
+  
   if (!settings::Get(settingsName, mode))
     mode = 0;
 
@@ -49,18 +49,18 @@ void RoutingOptions::SaveOptionsToSettings(RoutingOptions options)
   case VehicleType::Car: settingsName = kAvoidRoutingOptionSettingsForCar; break;
   case VehicleType::Bicycle: settingsName = kAvoidRoutingOptionSettingsForBicycle; break;
   case VehicleType::Pedestrian: settingsName = kAvoidRoutingOptionSettingsForPedestrian; break;
-  case VehicleType::Transit: settingsName = kAvoidRoutingOptionSettingsForTransit; break;
+  case VehicleType::Transit: settingsName  = kAvoidRoutingOptionSettingsForTransit; break;
   }
-
+  
   settings::Set(settingsName, strings::to_string(static_cast<int32_t>(options.GetOptions())));
 }
 
 void RoutingOptions::Add(RoutingOptions::Option type)
 {
-  if (type == RoutingOptions::Option::Paved)
-    Remove(RoutingOptions::Option::Dirty);
-  else if (type == RoutingOptions::Option::Dirty)
-    Remove(RoutingOptions::Option::Paved);
+  if (type == RoutingOptions::Option::AvoidPaved)
+    Remove(RoutingOptions::Option::AvoidDirty);
+  else if (type == RoutingOptions::Option::AvoidDirty)
+    Remove(RoutingOptions::Option::AvoidPaved);
   m_options |= static_cast<OptionType>(type);
 }
 
@@ -74,11 +74,6 @@ bool RoutingOptions::Has(RoutingOptions::Option type) const
   return (m_options & static_cast<OptionType>(type)) != 0;
 }
 
-void RoutingOptions::SetCyclingMode(RoadType mode)
-{
-  m_options = (m_options & ~CyclingMask) | (mode & CyclingMask);
-}
-
 // RoutingOptionsClassifier ---------------------------------------------------------------------------
 
 RoutingOptionsClassifier::RoutingOptionsClassifier()
@@ -86,20 +81,20 @@ RoutingOptionsClassifier::RoutingOptionsClassifier()
   Classificator const & c = classif();
 
   pair<vector<string>, RoutingOptions::Option> const types[] = {
-      {{"highway", "motorway"}, RoutingOptions::Option::Motorway},
+      {{"highway", "motorway"}, RoutingOptions::Option::AvoidMotorway},
 
-      {{"hwtag", "toll"}, RoutingOptions::Option::Toll},
+      {{"hwtag", "toll"}, RoutingOptions::Option::AvoidToll},
 
-      {{"route", "ferry"}, RoutingOptions::Option::Ferry},
+      {{"route", "ferry"}, RoutingOptions::Option::AvoidFerry},
 
-      {{"highway", "track"}, RoutingOptions::Option::Dirty},
-      {{"highway", "road"}, RoutingOptions::Option::Dirty},
-      {{"psurface", "unpaved_bad"}, RoutingOptions::Option::Dirty},
-      {{"psurface", "unpaved_good"}, RoutingOptions::Option::Dirty},
-      {{"highway", "steps"}, RoutingOptions::Option::Steps},
-      {{"highway", "ladder"}, RoutingOptions::Option::Steps},
-      {{"psurface", "paved_good"}, RoutingOptions::Option::Paved},
-      {{"psurface", "paved_bad"}, RoutingOptions::Option::Paved}};
+      {{"highway", "track"}, RoutingOptions::Option::AvoidDirty},
+      {{"highway", "road"}, RoutingOptions::Option::AvoidDirty},
+      {{"psurface", "unpaved_bad"}, RoutingOptions::Option::AvoidDirty},
+      {{"psurface", "unpaved_good"}, RoutingOptions::Option::AvoidDirty},
+      {{"highway", "steps"}, RoutingOptions::Option::AvoidSteps},
+      {{"highway", "ladder"}, RoutingOptions::Option::AvoidSteps},
+      {{"psurface", "paved_good"}, RoutingOptions::Option::AvoidPaved},
+      {{"psurface", "paved_bad"}, RoutingOptions::Option::AvoidPaved}};
 
   m_data.reserve(std::size(types));
   for (auto const & data : types)
@@ -124,23 +119,23 @@ RoutingOptionsClassifier const & RoutingOptionsClassifier::Instance()
 
 RoutingOptions::Option ChooseMainRoutingOption(RoutingOptions options, bool isCarRouter)
 {
-  if (isCarRouter && options.Has(RoutingOptions::Option::Toll))
-    return RoutingOptions::Option::Toll;
+  if (isCarRouter && options.Has(RoutingOptions::Option::AvoidToll))
+    return RoutingOptions::Option::AvoidToll;
 
-  if (options.Has(RoutingOptions::Option::Ferry))
-    return RoutingOptions::Option::Ferry;
+  if (options.Has(RoutingOptions::Option::AvoidFerry))
+    return RoutingOptions::Option::AvoidFerry;
 
-  if (options.Has(RoutingOptions::Option::Dirty))
-    return RoutingOptions::Option::Dirty;
+  if (options.Has(RoutingOptions::Option::AvoidDirty))
+    return RoutingOptions::Option::AvoidDirty;
 
-  if (options.Has(RoutingOptions::Option::Motorway))
-    return RoutingOptions::Option::Motorway;
+  if (options.Has(RoutingOptions::Option::AvoidMotorway))
+    return RoutingOptions::Option::AvoidMotorway;
 
   if (options.Has(RoutingOptions::Option::Steps))
     return RoutingOptions::Option::Steps;
 
-  if (options.Has(RoutingOptions::Option::Paved))
-    return RoutingOptions::Option::Paved;
+  if (options.Has(RoutingOptions::Option::AvoidPaved))
+    return RoutingOptions::Option::AvoidPaved;
 
   return RoutingOptions::Option::Usual;
 }
@@ -161,12 +156,12 @@ string DebugPrint(RoutingOptions const & routingOptions)
   };
 
   append(RoutingOptions::Option::Usual);
-  append(RoutingOptions::Option::Toll);
-  append(RoutingOptions::Option::Motorway);
-  append(RoutingOptions::Option::Ferry);
-  append(RoutingOptions::Option::Dirty);
+  append(RoutingOptions::Option::AvoidToll);
+  append(RoutingOptions::Option::AvoidMotorway);
+  append(RoutingOptions::Option::AvoidFerry);
+  append(RoutingOptions::Option::AvoidDirty);
   append(RoutingOptions::Option::Steps);
-  append(RoutingOptions::Option::Paved);
+  append(RoutingOptions::Option::AvoidPaved);
 
   if (wasAppended)
     ss << " | ";
@@ -180,23 +175,14 @@ string DebugPrint(RoutingOptions::Option type)
 {
   switch (type)
   {
-  case RoutingOptions::Option::Toll: return "toll";
-  case RoutingOptions::Option::Motorway: return "motorway";
-  case RoutingOptions::Option::Ferry: return "ferry";
-  case RoutingOptions::Option::Dirty: return "dirty";
+  case RoutingOptions::Option::AvoidToll: return "toll";
+  case RoutingOptions::Option::AvoidMotorway: return "motorway";
+  case RoutingOptions::Option::AvoidFerry: return "ferry";
+  case RoutingOptions::Option::AvoidDirty: return "dirty";
   case RoutingOptions::Option::Steps: return "steps";
-  case RoutingOptions::Option::Paved: return "paved";
+  case RoutingOptions::Option::AvoidPaved: return "paved";
   case RoutingOptions::Option::Usual: return "usual";
   case RoutingOptions::Option::Max: return "max";
-  default:
-    switch (type & RoutingOptions::CyclingMask)
-    {
-    default:
-    case RoutingOptions::CyclingDefault: return "defaultCycling";
-    //case RoutingOptions::CyclingRoad: return "roadCycling";
-    case RoutingOptions::CyclingGravel: return "gravelCycling";
-    //case RoutingOptions::CyclingMountainBike: return "MTBCycling";
-    }
   }
 
   UNREACHABLE();
