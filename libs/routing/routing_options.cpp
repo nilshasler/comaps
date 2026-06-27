@@ -171,9 +171,10 @@ string DebugPrint(RoutingOptions const & routingOptions)
     ss << " | ";
     
   switch (m_vehicle)
+  {
   case VehicleType::Car: ss << "car "; break;
   case VehicleType::Bicycle:
-    switch (getCyclingMode())
+    switch (GetCyclingMode())
     {
     case CyclingDefault: ss << "cycling "; break;
     case CyclingRoad: ss << "road cycling "; break;
@@ -182,7 +183,7 @@ string DebugPrint(RoutingOptions const & routingOptions)
     }
     break;
   case VehicleType::Pedestrian:
-    switch (getWalkingMode())
+    switch (GetWalkingMode())
     {
     case WalkingDefault: ss << "walking "; break;
     case WalkingHiking: ss << "hiking "; break;
