@@ -229,7 +229,11 @@ void RoadGeometry::Load(VehicleModelInterface const & vehicleModel, FeatureType 
   }
   m_distances.resize(count - 1, -1);
 
+<<<<<<< HEAD
   bool const isFerry = m_routingOptions.Has(RoutingOptions::AvoidFerry);
+=======
+  bool const isFerry = m_routingOptions.Has(RoutingOptions::Option::AvoidFerry);
+>>>>>>> 9dc5373bd (renamed routing options)
   /// @todo Add RouteShuttleTrain into RoutingOptions?
   if (isFerry || (m_highwayType && *m_highwayType == HighwayType::RouteShuttleTrain))
   {

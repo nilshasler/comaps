@@ -694,8 +694,13 @@ void RoutingManager::CollectRoadWarnings(vector<routing::RouteSegment> const & s
 {
   auto const isWarnedType = [](RoutingOptions::Option roadType)
   {
+<<<<<<< HEAD
     return (roadType == RoutingOptions::AvoidToll || roadType == RoutingOptions::AvoidFerry ||
             roadType == RoutingOptions::AvoidDirty);
+=======
+    return (roadType == RoutingOptions::Option::AvoidToll || roadType == RoutingOptions::Option::AvoidFerry ||
+            roadType == RoutingOptions::Option::AvoidDirty);
+>>>>>>> 9dc5373bd (renamed routing options)
   };
 
   bool const isCarRouter = (m_currentRouterType == RouterType::Vehicle);

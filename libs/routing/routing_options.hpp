@@ -59,6 +59,11 @@ public:
   void Remove(Option type);
   bool Has(Option type) const;
 
+  void SetCyclingMode(OptionType mode);
+  OptionType GetCyclingMode() const { return (m_options & SubModeMask); }
+  void SetWalkingMode(OptionType mode);
+  OptionType GetWalkingMode() const { return (m_options & SubModeMask); }
+
   Option GetTransportSubMode() const { return (m_options & SubModeMask); }
   void SetTransportSubMode(Option mode);
 
