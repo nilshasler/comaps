@@ -3,6 +3,7 @@ package app.organicmaps.sdk.routing;
 import androidx.annotation.NonNull;
 import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.settings.RoadType;
+import app.organicmaps.sdk.settings.BicycleMode;
 import app.organicmaps.sdk.util.log.Logger;
 import java.util.HashSet;
 import java.util.Set;
@@ -10,6 +11,11 @@ import java.util.Set;
 public final class RoutingOptions
 {
   private static final String TAG = RoutingOptions.class.getSimpleName();
+
+  public static getBicycleMode()
+  {
+    return BicycleMode.Default;
+  }
 
   public static void addOption(@NonNull RoadType roadType, @NonNull Router router)
   {

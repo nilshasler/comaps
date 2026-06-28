@@ -9,6 +9,69 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+  <RadioGroup
+    android:id="@+id/cycling_modes"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_base">
+  <LinearLayout
+    android:orientation="horizontal"
+    android:minHeight="@dimen/height_block_base"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/margin_half"
+    android:paddingStart="@dimen/margin_base">
+    <com.google.android.material.imageview.ShapeableImageView
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_marginEnd="@dimen/margin_base_plus"
+      android:layout_marginTop="@dimen/margin_half_plus"
+      app:srcCompat="@drawable/ic_bike"
+      app:tint="?iconTint" />
+    <com.google.android.material.textview.MaterialTextView
+      android:text="@string/default_cycling"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:textColor="?android:attr/textColorPrimary"/>
+    <com.google.android.material.button.MaterialRadioButton
+      android:id="@+id/default_bicycle_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:padding="@dimen/margin_half_double_plus"/>
+  </LinearLayout>
+  <LinearLayout
+    android:orientation="horizontal"
+    android:minHeight="@dimen/height_block_base"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/margin_half"
+    android:paddingStart="@dimen/margin_base">
+    <com.google.android.material.imageview.ShapeableImageView
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_marginEnd="@dimen/margin_base_plus"
+      android:layout_marginTop="@dimen/margin_half_plus"
+      app:srcCompat="@drawable/ic_bike_gravel"
+      app:tint="?iconTint" />
+    <com.google.android.material.textview.MaterialTextView
+      android:text="@string/gravel_cycling"
+      android:textAppearance="?android:attr/textAppearanceMedium"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_vertical"
+      android:textColor="?android:attr/textColorPrimary"/>
+    <com.google.android.material.button.MaterialRadioButton
+      android:id="@+id/gravel_bicycle_btn"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:padding="@dimen/margin_half_double_plus"/>
+  </LinearLayout>
+  </RadioButton>
   <LinearLayout
     android:orientation="horizontal"
     android:minHeight="@dimen/height_block_base"
