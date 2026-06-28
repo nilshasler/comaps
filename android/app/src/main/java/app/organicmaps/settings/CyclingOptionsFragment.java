@@ -46,15 +46,15 @@ public class CyclingOptionsFragment extends Fragment
     View.OnClickListener modeClickListener = v -> {
       String m = (String)v.getTag(); 
         
-      RoutingOptions.setCyclingMode(BicycleMode.valueOf(m));
+      RoutingOptions.setBicycleMode(BicycleMode.valueOf(m));
 
       defaultCyclingBtn.setChecked(defaultCyclingBtn.getTag() ==m);
       gravelCyclingBtn.setChecked(gravelCyclingBtn.getTag() == m);
     };
     defaultCyclingBtn.setChecked(mode == BicycleMode.Default);
-    defaultCyclingBtn.setOnCheckedChangeListener(modeClickListener);
+    defaultCyclingBtn.setOnClickListener(modeClickListener);
     gravelCyclingBtn.setChecked(mode == BicycleMode.Gravel);
-    gravelCyclingBtn.setOnCheckedChangeListener(modeClickListener);
+    gravelCyclingBtn.setOnClickListener(modeClickListener);
 //     CompoundButton.OnCheckedChangeListener gravelModeBtnListener =
 //         new ToggleModeListener(BicycleMode.Default, root);
 //     ferriesBtn.setOnCheckedChangeListener(gravelModeBtnListener);
