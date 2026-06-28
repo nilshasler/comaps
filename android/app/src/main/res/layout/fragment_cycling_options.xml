@@ -9,12 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-  <RadioGroup
-    android:id="@+id/cycling_modes"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/margin_base">
   <LinearLayout
     android:orientation="horizontal"
     android:minHeight="@dimen/height_block_base"
@@ -39,6 +33,7 @@
       android:textColor="?android:attr/textColorPrimary"/>
     <RadioButton
       android:id="@+id/default_bicycle_btn"
+      android:tag="0"
       android:layout_width="wrap_content"
       android:layout_height="match_parent"
       android:padding="@dimen/margin_half_double_plus"/>
@@ -67,11 +62,11 @@
       android:textColor="?android:attr/textColorPrimary"/>
     <RadioButton
       android:id="@+id/gravel_bicycle_btn"
+      android:tag="2048"
       android:layout_width="wrap_content"
       android:layout_height="match_parent"
       android:padding="@dimen/margin_half_double_plus"/>
   </LinearLayout>
-  </RadioGroup>
   <LinearLayout
     android:orientation="horizontal"
     android:minHeight="@dimen/height_block_base"
