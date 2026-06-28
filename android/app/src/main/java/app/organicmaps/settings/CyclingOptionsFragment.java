@@ -44,12 +44,12 @@ public class CyclingOptionsFragment extends Fragment
     MaterialSwitch gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
     
     View.OnClickListener modeClickListener = v -> {
-      String mode = (String)v.getTag(); 
+      String m = (String)v.getTag(); 
         
-      RoutingOptions.setCyclingMode(BicycleMode.valueOf(mode));
+      RoutingOptions.setCyclingMode(BicycleMode.valueOf(m));
 
-      defaultCyclingBtn.setChecked(defaultCyclingBtn.getTag() == mode);
-      gravelCyclingBtn.setChecked(gravelCyclingBtn.getTag() == mode);
+      defaultCyclingBtn.setChecked(defaultCyclingBtn.getTag() ==m);
+      gravelCyclingBtn.setChecked(gravelCyclingBtn.getTag() == m);
     };
     defaultCyclingBtn.setChecked(mode == BicycleMode.Default);
     defaultCyclingBtn.setOnCheckedChangeListener(modeClickListener);

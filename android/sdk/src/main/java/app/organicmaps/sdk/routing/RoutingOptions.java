@@ -16,6 +16,10 @@ public final class RoutingOptions
   {
     return BicycleMode.Default;
   }
+  public static void setBicycleMode(BicycleMode mode)
+  {
+    // TODO
+  }
 
   public static void addOption(@NonNull RoadType roadType, @NonNull Router router)
   {
