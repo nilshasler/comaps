@@ -39,7 +39,7 @@ void Checker(std::vector<RoutingOptions::Option> const & include)
   for (auto type : include)
     TEST(options.Has(type), ());
 
-  auto max = static_cast<OptionType>(RoutingOptions::Option::Max);
+  auto max = static_cast<OptionType>(RoutingOptions::Max);
   for (uint8_t i = 1; i < max; i <<= 1)
   {
     bool hasInclude = false;
@@ -54,21 +54,21 @@ void Checker(std::vector<RoutingOptions::Option> const & include)
 
 UNIT_TEST(RoutingOptionTest)
 {
-  Checker({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidMotorway, RoutingOptions::Option::AvoidDirty});
-  Checker({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidDirty});
+  Checker({RoutingOptions::AvoidToll, RoutingOptions::AvoidMotorway, RoutingOptions::AvoidDirty});
+  Checker({RoutingOptions::AvoidToll, RoutingOptions::AvoidDirty});
 
-  Checker({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidFerry, RoutingOptions::Option::AvoidDirty});
+  Checker({RoutingOptions::AvoidToll, RoutingOptions::AvoidFerry, RoutingOptions::AvoidDirty});
 
-  Checker({RoutingOptions::Option::AvoidDirty});
-  Checker({RoutingOptions::Option::AvoidToll});
-  Checker({RoutingOptions::Option::AvoidDirty, RoutingOptions::Option::AvoidMotorway});
+  Checker({RoutingOptions::AvoidDirty});
+  Checker({RoutingOptions::AvoidToll});
+  Checker({RoutingOptions::AvoidDirty, RoutingOptions::AvoidMotorway});
   Checker({});
 }
 
 UNIT_CLASS_TEST(RoutingOptionsTests, GetSetTest)
 {
   RoutingOptions options =
-      CreateOptions({RoutingOptions::Option::AvoidToll, RoutingOptions::Option::AvoidMotorway, RoutingOptions::Option::AvoidDirty});
+      CreateOptions({RoutingOptions::AvoidToll, RoutingOptions::AvoidMotorway, RoutingOptions::AvoidDirty});
 
   RoutingOptions::SaveCarOptionsToSettings(options);
   RoutingOptions fromSettings = RoutingOptions::LoadOptionsFromSettings(VehicleType::Car);

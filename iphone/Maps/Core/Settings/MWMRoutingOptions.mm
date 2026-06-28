@@ -20,51 +20,51 @@
 }
 
 - (BOOL)avoidToll {
-  return _options.Has(routing::RoutingOptions::Option::AvoidToll);
+  return _options.Has(routing::RoutingOptions::AvoidToll);
 }
 
 - (void)setAvoidToll:(BOOL)avoid {
-  [self setOption:(routing::RoutingOptions::Option::AvoidToll) enabled:avoid];
+  [self setOption:(routing::RoutingOptions::AvoidToll) enabled:avoid];
 }
 
 - (BOOL)avoidDirty {
-  return _options.Has(routing::RoutingOptions::Option::AvoidDirty);
+  return _options.Has(routing::RoutingOptions::AvoidDirty);
 }
 
 - (void)setAvoidDirty:(BOOL)avoid {
-  [self setOption:(routing::RoutingOptions::Option::AvoidDirty) enabled:avoid];
+  [self setOption:(routing::RoutingOptions::AvoidDirty) enabled:avoid];
 }
 
 - (BOOL)avoidPaved {
-  return _options.Has(routing::RoutingOptions::Option::AvoidPaved);
+  return _options.Has(routing::RoutingOptions::AvoidPaved);
 }
 
 - (void)setAvoidPaved:(BOOL)avoid {
-  [self setOption:(routing::RoutingOptions::Option::AvoidPaved) enabled:avoid];
+  [self setOption:(routing::RoutingOptions::AvoidPaved) enabled:avoid];
 }
 
 - (BOOL)avoidFerry {
-  return _options.Has(routing::RoutingOptions::Option::AvoidFerry);
+  return _options.Has(routing::RoutingOptions::AvoidFerry);
 }
 
 - (void)setAvoidFerry:(BOOL)avoid {
-  [self setOption:(routing::RoutingOptions::Option::AvoidFerry) enabled:avoid];
+  [self setOption:(routing::RoutingOptions::AvoidFerry) enabled:avoid];
 }
 
 - (BOOL)avoidMotorway {
-  return _options.Has(routing::RoutingOptions::Option::AvoidMotorway);
+  return _options.Has(routing::RoutingOptions::AvoidMotorway);
 }
 
 - (void)setAvoidMotorway:(BOOL)avoid {
-  [self setOption:(routing::RoutingOptions::Option::AvoidMotorway) enabled:avoid];
+  [self setOption:(routing::RoutingOptions::AvoidMotorway) enabled:avoid];
 }
 
 - (BOOL)avoidSteps {
-  return _options.Has(routing::RoutingOptions::Option::AvoidSteps);
+  return _options.Has(routing::RoutingOptions::AvoidSteps);
 }
 
 - (void)setAvoidSteps:(BOOL)avoid {
-  [self setOption:(routing::RoutingOptions::Option::AvoidSteps) enabled:avoid];
+  [self setOption:(routing::RoutingOptions::AvoidSteps) enabled:avoid];
 }
 
 - (BOOL)hasOptions {
