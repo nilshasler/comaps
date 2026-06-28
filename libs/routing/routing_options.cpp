@@ -131,8 +131,8 @@ RoutingOptions::Option ChooseMainRoutingOption(RoutingOptions options, bool isCa
   if (options.Has(RoutingOptions::AvoidMotorway))
     return RoutingOptions::AvoidMotorway;
 
-  if (options.Has(RoutingOptions::Steps))
-    return RoutingOptions::Steps;
+  if (options.Has(RoutingOptions::AvoidSteps))
+    return RoutingOptions::AvoidSteps;
 
   if (options.Has(RoutingOptions::AvoidPaved))
     return RoutingOptions::AvoidPaved;
@@ -173,8 +173,9 @@ string DebugPrint(RoutingOptions const & routingOptions)
   switch (m_vehicle)
   {
   case VehicleType::Car: ss << "car "; break;
+  case VehicleType::Transit: ss << "transit "; break;
   case VehicleType::Bicycle:
-    switch (GetCyclingMode())
+    switch (routingOptions.GetBicycleMode())
     {
     case RoutingOptions::CyclingDefault: ss << "cycling "; break;
     case RoutingOptions::CyclingRoad: ss << "road cycling "; break;
@@ -183,7 +184,7 @@ string DebugPrint(RoutingOptions const & routingOptions)
     }
     break;
   case VehicleType::Pedestrian:
-    switch (GetWalkingMode())
+    switch (routingOptions.GetPedestrianMode())
     {
     case RoutingOptions::WalkingDefault: ss << "walking "; break;
     case RoutingOptions::WalkingHiking: ss << "hiking "; break;
@@ -191,7 +192,6 @@ string DebugPrint(RoutingOptions const & routingOptions)
     case RoutingOptions::WalkingStrolling: ss << "strolling "; break;
     }
     break;
-  case VehicleType::Transit: ss << "transit "; break;
   }
 
   ss << "}";
