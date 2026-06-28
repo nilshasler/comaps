@@ -40,13 +40,21 @@ public class CyclingOptionsFragment extends Fragment
   {
     BicycleMode mode = RoutingOptions.getBicycleMode();
     
-//     MaterialSwitch defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
-//     defaultCyclingBtn.setChecked(mode == BicycleMode.Default);
-//     CompoundButton.OnCheckedChangeListener defaultModeBtnListener =
-//         new ToggleModeListener(BicycleMode.Default, root);
-//     ferriesBtn.setOnCheckedChangeListener(defaultModeBtnListener);
-//     MaterialSwitch gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
-//     gravelCyclingBtn.setChecked(mode == BicycleMode.Gravel);
+    MaterialSwitch defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
+    MaterialSwitch gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
+    
+    View.OnClickListener modeClickListener = v -> {
+      String mode = (String)v.getTag(); 
+        
+      RoutingOptions.setCyclingMode(BicycleMode.valueOf(mode));
+
+      defaultCyclingBtn.setChecked(defaultCyclingBtn.getTag() == mode);
+      gravelCyclingBtn.setChecked(gravelCyclingBtn.getTag() == mode);
+    };
+    defaultCyclingBtn.setChecked(mode == BicycleMode.Default);
+    defaultCyclingBtn.setOnCheckedChangeListener(modeClickListener);
+    gravelCyclingBtn.setChecked(mode == BicycleMode.Gravel);
+    gravelCyclingBtn.setOnCheckedChangeListener(modeClickListener);
 //     CompoundButton.OnCheckedChangeListener gravelModeBtnListener =
 //         new ToggleModeListener(BicycleMode.Default, root);
 //     ferriesBtn.setOnCheckedChangeListener(gravelModeBtnListener);
