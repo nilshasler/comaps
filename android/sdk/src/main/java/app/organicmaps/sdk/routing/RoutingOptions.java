@@ -12,7 +12,7 @@ public final class RoutingOptions
 {
   private static final String TAG = RoutingOptions.class.getSimpleName();
 
-  public static getBicycleMode()
+  public static BicycleMode getBicycleMode()
   {
     return BicycleMode.Default;
   }
