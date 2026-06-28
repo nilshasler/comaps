@@ -71,7 +71,7 @@
       android:layout_height="match_parent"
       android:padding="@dimen/margin_half_double_plus"/>
   </LinearLayout>
-  </RadioButton>
+  </RadioGroup>
   <LinearLayout
     android:orientation="horizontal"
     android:minHeight="@dimen/height_block_base"
