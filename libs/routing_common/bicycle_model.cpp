@@ -33,10 +33,10 @@ HighwayBasedFactors const& GetDefaultFactors(RoutingOptions::OptionType mode)
   {
   default:
   case RoutingOptions::CyclingDefault:
-  //case RoutingOptions::CyclingRoad:
+  case RoutingOptions::CyclingRoad:
     return kDefaultFactors;
   case RoutingOptions::CyclingGravel:
-  //case RoutingOptions::CyclingMountainBike:
+  case RoutingOptions::CyclingMountainBike:
     return kDefaultFactors;
   }
 }
@@ -361,7 +361,7 @@ BicycleModelFactory::BicycleModelFactory(CountryParentNameGetterFn const & count
   using namespace bicycle_model;
 
   //RoutingOptions const routingOptions = RoutingOptions::LoadCarOptionsFromSettings();
-  //RoutingOptions::OptionType mode = routingOptions.GetCyclingMode();
+  //RoutingOptions::OptionType mode = routingOptions.GetBicycleMode();
   RoutingOptions::OptionType mode = RoutingOptions::CyclingGravel;
 
   // Names must be the same with country names from countries.txt

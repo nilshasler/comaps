@@ -55,12 +55,13 @@ public:
   void Remove(Option type);
   bool Has(Option type) const;
 
-  void SetCyclingMode(OptionType mode);
-  OptionType GetCyclingMode() const { return (m_options & SubModeMask); }
-  void SetWalkingMode(OptionType mode);
-  OptionType GetWalkingMode() const { return (m_options & SubModeMask); }
+  void SetBicycleMode(OptionType mode);
+  OptionType GetBicycleMode() const { return (m_options & SubModeMask); }
+  void SetPedestrianMode(OptionType mode);
+  OptionType GetPedestrianMode() const { return (m_options & SubModeMask); }
 
-  void setVehicleType(VehicleType vt) { m_vehicle = vt; }
+  void SetVehicleType(VehicleType vt) { m_vehicle = vt; }
+  VehicleType GetVehicleType() const { return m_vehicle; }
 
   OptionType GetOptions() const { return m_options; }
 
