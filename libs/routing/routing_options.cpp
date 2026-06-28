@@ -170,7 +170,7 @@ string DebugPrint(RoutingOptions const & routingOptions)
   if (wasAppended)
     ss << " | ";
     
-  switch (m_vehicle)
+  switch (routingOptions.GetVehicleType())
   {
   case VehicleType::Car: ss << "car "; break;
   case VehicleType::Transit: ss << "transit "; break;
