@@ -6,7 +6,7 @@
 static routing::RoutingOptions::Option makeValue(jint option)
 {
   auto const opt = static_cast<uint16_t>(1u << static_cast<int>(option));
-  CHECK_LESS(opt, static_cast<uint16_t>(routing::RoutingOptions::Option::Max), ("invalid option", option));
+  CHECK_LESS(opt, static_cast<uint16_t>(routing::RoutingOptions::Max), ("invalid option", option));
   return static_cast<routing::RoutingOptions::Option>(opt);
 }
 
