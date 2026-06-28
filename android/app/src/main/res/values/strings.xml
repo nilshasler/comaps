@@ -710,6 +710,13 @@
     <string name="driving_options_title_bicycle">Cycling options</string>
     <string name="driving_options_title_pedestrian">Walking options</string>
     <string name="driving_options_title_transit">Transit options</string>
+    <string name="default_cycling">Cycling</string>
+    <string name="default_cycling_description">Fastest route optimized for cycling</string>
+    <string name="touring_bike_description">Prefer cycling paths</string>
+    <string name="gravel_cycling">Gravel Cycling</string>
+    <string name="gravel_cycling_description">Favor unpaved tracks</string>
+    <string name="road_bike">Road Bike</string>
+    <string name="road_bike_description">Paved roads and cycling paths</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->
     <string name="avoid_tolls">Avoid tolls</string>
     <!-- Recommended length for CarPlay and Android Auto is around 25-27 characters -->

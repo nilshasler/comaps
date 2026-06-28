@@ -15,6 +15,7 @@ import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.routing.RoutingController;
 import app.organicmaps.sdk.routing.RoutingOptions;
 import app.organicmaps.sdk.settings.RoadType;
+import app.organicmaps.sdk.settings.BicycleMode;
 import com.google.android.material.materialswitch.MaterialSwitch;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -37,6 +38,19 @@ public class CyclingOptionsFragment extends Fragment
 
   private void initViews(@NonNull View root)
   {
+    BicycleMode mode = RoutingOptions.getBicycleMode();
+    
+//     MaterialSwitch defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
+//     defaultCyclingBtn.setChecked(mode == BicycleMode.Default);
+//     CompoundButton.OnCheckedChangeListener defaultModeBtnListener =
+//         new ToggleModeListener(BicycleMode.Default, root);
+//     ferriesBtn.setOnCheckedChangeListener(defaultModeBtnListener);
+//     MaterialSwitch gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
+//     gravelCyclingBtn.setChecked(mode == BicycleMode.Gravel);
+//     CompoundButton.OnCheckedChangeListener gravelModeBtnListener =
+//         new ToggleModeListener(BicycleMode.Default, root);
+//     ferriesBtn.setOnCheckedChangeListener(gravelModeBtnListener);
+
     MaterialSwitch ferriesBtn = root.findViewById(R.id.avoid_ferries_bicycle_btn);
     ferriesBtn.setChecked(RoutingOptions.hasOption(RoadType.Ferry, Router.Bicycle));
     CompoundButton.OnCheckedChangeListener ferryBtnListener =
