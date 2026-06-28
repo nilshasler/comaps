@@ -72,13 +72,13 @@
 }
 
 - (void)save {
-  _options.setVehicleType(routing::VehicleType::Pedestrian);
+  _options.SetVehicleType(routing::VehicleType::Pedestrian);
   routing::RoutingOptions::SaveOptionsToSettings(_options);
-  _options.setVehicleType(routing::VehicleType::Bicycle);
+  _options.SetVehicleType(routing::VehicleType::Bicycle);
   routing::RoutingOptions::SaveOptionsToSettings(_options);
-  _options.setVehicleType(routing::VehicleType::Car);
+  _options.SetVehicleType(routing::VehicleType::Car);
   routing::RoutingOptions::SaveOptionsToSettings(_options);
-  _options.setVehicleType(routing::VehicleType::Transit);
+  _options.SetVehicleType(routing::VehicleType::Transit);
   routing::RoutingOptions::SaveOptionsToSettings(_options);
 }
 
