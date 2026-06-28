@@ -17,6 +17,7 @@ import app.organicmaps.sdk.routing.RoutingOptions;
 import app.organicmaps.sdk.settings.RoadType;
 import app.organicmaps.sdk.settings.BicycleMode;
 import com.google.android.material.materialswitch.MaterialSwitch;
+import com.google.android.material.materialradiobutton.MaterialRadioButton;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -40,8 +41,8 @@ public class CyclingOptionsFragment extends Fragment
   {
     BicycleMode mode = RoutingOptions.getBicycleMode();
     
-    MaterialSwitch defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
-    MaterialSwitch gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
+    MaterialRadioButton defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
+    MaterialRadioButton gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
     
     View.OnClickListener modeClickListener = v -> {
       String m = (String)v.getTag(); 
