@@ -10,6 +10,13 @@ static routing::RoutingOptions::Option makeValue(jint option)
   return static_cast<routing::RoutingOptions::Option>(opt);
 }
 
+static routing::RoutingOptions::Option makeTransportSubMode(jint type)
+{
+  auto const t = static_cast<uint16_t>(type);
+  CHECK_EQUAL(t & ~routing::RoutingOptions::SubModeMask, 0, ("invalid submode", type));
+  return t;
+}
+
 static routing::VehicleType makeVehicle(jint vehicle)
 {
   auto const v = static_cast<uint16_t>(vehicle);
@@ -44,8 +51,7 @@ JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeAdd
   routing::RoutingOptions::SaveOptionsToSettings(routingOptions);
 }
 
-JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeRemoveOption(JNIEnv *, jclass, jint option,
-                                                                                          jint vehicle)
+JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeRemoveOption(JNIEnv *, jclass, jint option, jint vehicle)
 {
   CHECK(g_framework, ("Framework isn't created yet!"));
   routing::RoutingOptions routingOptions = routing::RoutingOptions::LoadOptionsFromSettings(makeVehicle(vehicle));
@@ -53,4 +59,19 @@ JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeRem
   routingOptions.Remove(opt);
   routing::RoutingOptions::SaveOptionsToSettings(routingOptions);
 }
+
+JNIEXPORT jint JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeGetBicycleMode(JNIEnv *, jclass)
+{
+  CHECK(g_framework, ("Framework isn't created yet!"));
+  routing::RoutingOptions routingOptions = routing::RoutingOptions::LoadOptionsFromSettings(routing::VehicleType::Bicycle);
+  return static_cast<jint>(routingOptions.GetBicycleMode());
 }
+
+JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeSetBicycleMode(JNIEnv *, jclass, jint mode)
+{
+  CHECK(g_framework, ("Framework isn't created yet!"));
+  routing::RoutingOptions routingOptions = routing::RoutingOptions::LoadOptionsFromSettings(routing::VehicleType::Bicycle);
+  routingOptions.SetBicycleMode(makeTransportSubMode(mode));
+  routing::RoutingOptions::SaveOptionsToSettings(routingOptions);
+}
+} // extern "C"
