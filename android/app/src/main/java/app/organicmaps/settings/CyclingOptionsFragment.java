@@ -17,7 +17,7 @@ import app.organicmaps.sdk.routing.RoutingOptions;
 import app.organicmaps.sdk.settings.RoadType;
 import app.organicmaps.sdk.settings.BicycleMode;
 import com.google.android.material.materialswitch.MaterialSwitch;
-import com.google.android.material.materialradiobutton.MaterialRadioButton;
+import android.widget.RadioButton;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
