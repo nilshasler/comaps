@@ -14,11 +14,11 @@ public final class RoutingOptions
 
   public static BicycleMode getBicycleMode()
   {
-    return BicycleMode.Default;
+    return BicycleMode.fromInt(nativeGetBicycleMode());
   }
   public static void setBicycleMode(BicycleMode mode)
   {
-    // TODO
+    nativeSetBicycleMode(mode.ordinal());
   }
 
   public static void addOption(@NonNull RoadType roadType, @NonNull Router router)
