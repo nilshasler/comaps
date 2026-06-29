@@ -28,7 +28,7 @@ public:
     AvoidHills = 1u << 9,
     Ebike = 1u << 10,
 
-    SubModeMask = 3u << 11,
+    SubModeMask = 7u << 11,
     CyclingDefault = 0u << 11,
     CyclingRoad = 1u << 11,
     CyclingGravel = 2u << 11,
@@ -40,7 +40,7 @@ public:
     WalkingStrolling = 3u << 11,
     
 
-    Max = (1u << 12) + 1
+    Max = (1u << 13) + 1
   };
 
   using OptionType = std::underlying_type_t<Option>;
