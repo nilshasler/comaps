@@ -45,12 +45,13 @@ jobs:
 
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 100 # enough to get all commits for the current day
 
-      - name: Update submodules
-        uses: ./.forgejo/actions/update-submodules
+      - name: Parallel submodules checkout
+        shell: bash
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
 
       - name: Cache world map
         uses: actions/cache@v4
@@ -99,12 +100,13 @@ jobs:
 
     steps:
       - name: Checkout sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 100 # enough to get all commits for the current day
 
-      - name: Update submodules
-        uses: ./.forgejo/actions/update-submodules
+      - name: Parallel submodules checkout
+        shell: bash
+        run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
 
       - name: Cache world map
         uses: actions/cache@v4
