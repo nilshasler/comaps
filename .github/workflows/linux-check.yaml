@@ -31,7 +31,7 @@ on:
 jobs:
   linux-no-unity:
     name: Linux no unity build
-    runs-on: comaps-android
+    runs-on: ubuntu-latest
     # Cancels previous jobs if the same branch or PR was updated again.
     concurrency:
       group: ${{ github.workflow }}-no-unity-${{ github.event.pull_request.number || github.ref }}
