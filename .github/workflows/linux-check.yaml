@@ -53,16 +53,16 @@ jobs:
         shell: bash
         run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
 
-      - name: Cache world map
-        uses: actions/cache@v4
-        with:
-          path: data/world_mwm
-          key: world-mwm
+#       - name: Cache world map
+#         uses: actions/cache@v4
+#         with:
+#           path: data/world_mwm
+#           key: world-mwm
 
       - name: Configure ccache
-        uses: https://github.com/hendrikmuhs/ccache-action@v1.2
+        uses: hendrikmuhs/ccache-action@v1.2
         with:
-          key: ${{ github.workflow }}-no-unity
+          key: ${{ github.workflow }}-${{ matrix.flavor }}
 
       - name: Compile
         shell: bash
@@ -108,16 +108,16 @@ jobs:
         shell: bash
         run: git submodule update --depth 1 --init --recursive --jobs=$(($(nproc) * 20))
 
-      - name: Cache world map
-        uses: actions/cache@v4
-        with:
-          path: data/world_mwm
-          key: world-mwm
+#       - name: Cache world map
+#         uses: actions/cache@v4
+#         with:
+#           path: data/world_mwm
+#           key: world-mwm
 
       - name: Configure ccache
-        uses: https://github.com/hendrikmuhs/ccache-action@v1.2
+        uses: hendrikmuhs/ccache-action@v1.2
         with:
-          key: ${{ github.workflow }}-unity-${{ matrix.compiler.CC }}-${{ matrix.CMAKE_BUILD_TYPE }}
+          key: ${{ github.workflow }}-${{ matrix.flavor }}
 
       - name: Compile
         shell: bash
