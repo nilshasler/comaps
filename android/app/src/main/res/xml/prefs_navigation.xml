@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <SwitchPreferenceCompat
+    android:key="@string/pref_3d"
+    android:title="@string/pref_map_3d_title"
+    android:widgetLayout="@layout/preference_switch"
+    app:icon="@drawable/ic_three_d_rotation"
+    app:singleLineTitle="false" />
+  <SwitchPreferenceCompat
+    android:key="@string/pref_auto_zoom"
+    android:title="@string/pref_map_auto_zoom"
+    android:widgetLayout="@layout/preference_switch"
+    app:singleLineTitle="false" />
+  <Preference
+    android:key="@string/pref_tts_screen"
+    android:persistent="false"
+    android:title="@string/pref_tts_enable_title"
+    app:icon="@drawable/ic_record_voice_over"
+    app:singleLineTitle="false"/>
+  <PreferenceScreen
+    android:key="@string/prefs_routing"
+    android:title="@string/driving_options_title"
+    app:icon="@drawable/ic_instant_mix">
+    <intent
+      android:targetClass="app.organicmaps.settings.DrivingOptionsActivity"
+      android:targetPackage="@string/app_id">
+      <extra android:name="from" android:value="settings" />
+    </intent>
+  </PreferenceScreen>
+  <Preference
+    android:key="@string/pref_android_auto_support"
+    android:persistent="false"
+    android:title="@string/pref_aa_support_title" />
+
+</androidx.preference.PreferenceScreen>

@@ -208,9 +208,10 @@
     <string name="share_my_location">Share My Location</string>
     <!-- Settings general group in settings screen -->
     <string name="prefs_group_general">General settings</string>
-    <!-- Settings information group in settings screen -->
+    <string name="prefs_group_general_summary">Units, language, storage</string>
     <string name="prefs_group_information">Information</string>
     <string name="prefs_group_route">Navigation</string>
+    <string name="prefs_group_route_summary">Voice instructions, routing options</string>
     <string name="pref_zoom_title">Zoom buttons</string>
     <string name="pref_zoom_summary">Display on the map</string>
     <!-- Settings «Map» category: «Night style» title -->
@@ -677,8 +678,10 @@
     </plurals>
     <!-- Settings privacy group in settings screen -->
     <string name="privacy">Privacy</string>
+    <string name="prefs_group_privacy_summary">Google Play Services, search history</string>
     <string name="privacy_policy">Privacy policy</string>
     <string name="power_management">Power management</string>
+    <string name="prefs_group_power_summary">Map style, screen timeout</string>
     <string name="terms_of_use">Terms of use</string>
     <string name="button_layer_traffic">Traffic</string>
     <string name="subway">Subway</string>
@@ -993,9 +996,8 @@
     <string name="offline_explanation_title">Offline Maps</string>
     <string name="offline_explanation_text">A map needs to be downloaded to view and navigate the area.\nDownload maps for areas you want to travel.</string>
     <string name="list_description_empty">Edit the list to add a description</string>
-    <!-- Settings: Advanced group -->
+    <!-- Settings: Advanced group (inside General settings) -->
     <string name="advanced">Advanced</string>
-    <!-- Custom Download URL -->
     <string name="download_resources_custom_url_title">Custom Map Server</string>
     <string name="download_resources_custom_url_message">Override the default map download server used for map downloads. Leave empty to use CoMaps default server.</string>
     <string name="download_resources_custom_url_summary_none">Not set</string>
