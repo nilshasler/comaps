@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.FrameLayout;
 import android.widget.RadioGroup;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.DrawableRes;
@@ -56,7 +57,7 @@ public class RoutingPlanController extends ToolbarController
   final int mAnimToggle;
 
   @NonNull
-  private final View mRoutingOptionsBtnContainer;
+  private final FrameLayout mRoutingOptionsBtnContainer;
 
   @NonNull
   private final View.OnLayoutChangeListener mRoutingOptionsLayoutListener;
