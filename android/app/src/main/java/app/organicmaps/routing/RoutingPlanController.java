@@ -306,7 +306,7 @@ public class RoutingPlanController extends ToolbarController
     mRoutingBottomMenuController.showAddFinishFrame();
   }
   
-  private addRoutingOptionButton(RoadType type, int titleId)
+  private void addRoutingOptionButton(RoadType type, int titleId)
   {
     MaterialButton btn = (MaterialButton) LayoutInflater.from(getContext())
                 .inflate(R.layout.routing_option_button, mRoutingOptionsBtnContainer, false);
