@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?attr/materialButtonTonalStyle"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp" 
+    android:insetTop="0dp"
+    android:insetBottom="0dp"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:textSize="12sp" />
