@@ -311,7 +311,7 @@ public class RoutingPlanController extends ToolbarController
   
   private void addRoutingOptionButton(RoadType type, int titleId)
   {
-    MaterialButton btn = (MaterialButton) LayoutInflater.from(getContext())
+    MaterialButton btn = (MaterialButton) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.routing_option_button, mRoutingOptionsBtnContainer, false);
     btn.setText(titleId);
     btn.setOnClickListener(v -> {
