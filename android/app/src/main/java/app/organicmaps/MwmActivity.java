@@ -1137,7 +1137,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (mRoutingPlanInplaceController == null)
       return;
 
-    mRoutingPlanInplaceController.hideDrivingOptionsView();
+    mRoutingPlanInplaceController.hideRoutingOptionsView();
     RoutingController.get().rebuildLastRoute();
   }
 
@@ -1668,7 +1668,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (mRoutingPlanInplaceController == null)
       return;
 
-    mRoutingPlanInplaceController.hideDrivingOptionsView();
+    mRoutingPlanInplaceController.hideRoutingOptionsView();
   }
 
   @Override
@@ -1679,7 +1679,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (mRoutingPlanInplaceController == null)
       return;
 
-    mRoutingPlanInplaceController.hideDrivingOptionsView();
+    mRoutingPlanInplaceController.hideRoutingOptionsView();
     NavigationService.stopService(this);
     mMapButtonsViewModel.setSearchOption(null);
     mMapButtonsViewModel.setLayoutMode(MapButtonsController.LayoutMode.regular);
@@ -1761,7 +1761,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (mRoutingPlanInplaceController == null)
       return;
 
-    mRoutingPlanInplaceController.showDrivingOptionView();
+    mRoutingPlanInplaceController.showRoutingOptionsView();
   }
 
   @Override

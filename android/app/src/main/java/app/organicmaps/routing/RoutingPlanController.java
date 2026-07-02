@@ -3,6 +3,7 @@ package app.organicmaps.routing;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.FrameLayout;
@@ -295,7 +296,7 @@ public class RoutingPlanController extends ToolbarController
     mRoutingBottomMenuController.restoreRoutingPanelState(state);
     boolean hasView = state.getBoolean(BUNDLE_HAS_DRIVING_OPTIONS_VIEW);
     if (hasView)
-      showRoutingOptionView();
+      showRoutingOptionsView();
   }
 
   public void showAddStartFrame()
@@ -320,7 +321,7 @@ public class RoutingPlanController extends ToolbarController
     mRoutingOptionsBtnContainer.addView(btn);
   }
 
-  public void showRoutingOptionView()
+  public void showRoutingOptionsView()
   {
     mRoutingOptionsBtnContainer.addOnLayoutChangeListener(mRoutingOptionsLayoutListener);
     UiUtils.show(mRoutingOptionsBtnContainer);
@@ -329,11 +330,11 @@ public class RoutingPlanController extends ToolbarController
     {
       mRoutingOptionsBtnContainer.removeAllViews();
       addRoutingOptionButton(RoadType.Ferry, R.string.avoid_ferry);
-      addRoutingOptionButton(RoadType.Motorways, R.string.avoid_motorways);
+      addRoutingOptionButton(RoadType.Motorway, R.string.avoid_motorways);
       addRoutingOptionButton(RoadType.Paved, R.string.avoid_paved);
-      addRoutingOptionButton(RoadType.Unpaved, R.string.avoid_unpaved);
+      addRoutingOptionButton(RoadType.Dirty, R.string.avoid_unpaved);
       addRoutingOptionButton(RoadType.Steps, R.string.avoid_steps);
-      addRoutingOptionButton(RoadType.Tolls, R.string.avoid_tolls);
+      addRoutingOptionButton(RoadType.Toll, R.string.avoid_tolls);
     }
     else
     {
@@ -343,7 +344,7 @@ public class RoutingPlanController extends ToolbarController
     }
   }
 
-  public void hideDrivingOptionsView()
+  public void hideRoutingOptionsView()
   {
     UiUtils.hide(mRoutingOptionsBtnContainer);
     mRoutingPlanListener.onRoutingPlanStartAnimate(UiUtils.isVisible(getFrame()));
