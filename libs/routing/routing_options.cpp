@@ -80,14 +80,11 @@ bool RoutingOptions::Has(RoutingOptions::Option type) const
   return (m_options & static_cast<OptionType>(type)) != 0;
 }
 
-<<<<<<< HEAD
-void RoutingOptions::SetCyclingMode(Option mode)
+void RoutingOptions::SetBicycleMode(RoutingOptions::Option mode)
 {
   m_options = (m_options & ~CyclingMask) | (mode & CyclingMask);
 }
 
-=======
->>>>>>> 7cbf68e45 (renamed routing options)
 // RoutingOptionsClassifier ---------------------------------------------------------------------------
 
 RoutingOptionsClassifier::RoutingOptionsClassifier()
