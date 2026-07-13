@@ -16,7 +16,7 @@ import app.organicmaps.sdk.Router;
 import app.organicmaps.sdk.routing.RoutingController;
 import app.organicmaps.sdk.routing.RoutingOptions;
 import app.organicmaps.sdk.settings.RoadType;
-import app.organicmaps.sdk.settings.BicycleMode;
+import app.organicmaps.sdk.settings.TransportSubMode;
 import com.google.android.material.materialswitch.MaterialSwitch;
 import android.widget.RadioButton;
 import java.util.ArrayList;
@@ -40,25 +40,25 @@ public class CyclingOptionsFragment extends Fragment
 
   private void initViews(@NonNull View root)
   {
-    BicycleMode mode = RoutingOptions.getBicycleMode();
+    TransportSubMode mode = RoutingOptions.getTransportSubMode();
     
     MaterialRadioButton defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
     MaterialRadioButton gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
-    
+
     View.OnClickListener modeClickListener = v -> {
       String m = (String)v.getTag(); 
         
-      RoutingOptions.setBicycleMode(BicycleMode.valueOf(m));
+      RoutingOptions.setTransportSubMode(TransportSubMode.valueOf(m));
 
       defaultCyclingBtn.setChecked(defaultCyclingBtn.getTag() ==m);
       gravelCyclingBtn.setChecked(gravelCyclingBtn.getTag() == m);
     };
-    defaultCyclingBtn.setChecked(mode == BicycleMode.Default);
+    defaultCyclingBtn.setChecked(mode == TransportSubMode.CyclingDefault);
     defaultCyclingBtn.setOnClickListener(modeClickListener);
-    gravelCyclingBtn.setChecked(mode == BicycleMode.Gravel);
+    gravelCyclingBtn.setChecked(mode == TransportSubMode.CyclingGravel);
     gravelCyclingBtn.setOnClickListener(modeClickListener);
 //     CompoundButton.OnCheckedChangeListener gravelModeBtnListener =
-//         new ToggleModeListener(BicycleMode.Default, root);
+//         new ToggleModeListener(TransportSubMode.Default, root);
 //     ferriesBtn.setOnCheckedChangeListener(gravelModeBtnListener);
 
     MaterialSwitch ferriesBtn = root.findViewById(R.id.avoid_ferries_bicycle_btn);

@@ -60,18 +60,20 @@ JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeRem
   routing::RoutingOptions::SaveOptionsToSettings(routingOptions);
 }
 
-JNIEXPORT jint JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeGetBicycleMode(JNIEnv *, jclass)
+JNIEXPORT jint JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeGetTransportSubMode(JNIEnv *, jclass, jint vehicle)
 {
   CHECK(g_framework, ("Framework isn't created yet!"));
-  routing::RoutingOptions routingOptions = routing::RoutingOptions::LoadOptionsFromSettings(routing::VehicleType::Bicycle);
-  return static_cast<jint>(routingOptions.GetBicycleMode());
+  routing::VehicleType vt = makeVehicle(vehicle);
+  routing::RoutingOptions routingOptions = routing::RoutingOptions::LoadOptionsFromSettings(vt);
+  return static_cast<jint>(routingOptions.GetTransportSubMode(vt));
 }
 
-JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeSetBicycleMode(JNIEnv *, jclass, jint mode)
+JNIEXPORT void JNICALL Java_app_organicmaps_sdk_routing_RoutingOptions_nativeSetTransportSubMode(JNIEnv *, jclass, jint mode, jint vehicle)
 {
   CHECK(g_framework, ("Framework isn't created yet!"));
-  routing::RoutingOptions routingOptions = routing::RoutingOptions::LoadOptionsFromSettings(routing::VehicleType::Bicycle);
-  routingOptions.SetBicycleMode(makeTransportSubMode(mode));
+  routing::VehicleType vt = makeVehicle(vehicle);
+  routing::RoutingOptions routingOptions = routing::RoutingOptions::LoadOptionsFromSettings(vt);
+  routingOptions.SetTransportSubMode(makeTransportSubMode(mode), vt);
   routing::RoutingOptions::SaveOptionsToSettings(routingOptions);
 }
 } // extern "C"
