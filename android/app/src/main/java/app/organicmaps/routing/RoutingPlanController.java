@@ -106,6 +106,7 @@ public class RoutingPlanController extends ToolbarController
     mRoutingBottomMenuController = RoutingBottomMenuController.newInstance(requireActivity(), mFrame, listener);
 
     mRoutingOptionsBanner = mFrame.findViewById(R.id.routing_options_banner);
+    mRoutingOptionsBanner.setOnClickListener(v -> RoutingOptionsActivity.start(requireActivity(), startRoutingOptionsForResult));
     View btn = mFrame.findViewById(R.id.routing_options_btn);
     btn.setOnClickListener(v -> RoutingOptionsActivity.start(requireActivity(), startRoutingOptionsForResult));
 

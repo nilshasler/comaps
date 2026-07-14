@@ -71,11 +71,11 @@ public class RoutingOptionsFragment extends BaseMwmToolbarFragment
       {
         Context context = view.getContext();
         ImageView imageView = new ImageView(context);
-
+    
         int sizeInPixels = (int) (48 * context.getResources().getDisplayMetrics().density);
         FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(sizeInPixels, sizeInPixels);
         imageView.setLayoutParams(params);
-
+    
         switch (position)
         {
         case 0:
@@ -91,7 +91,7 @@ public class RoutingOptionsFragment extends BaseMwmToolbarFragment
           imageView.setContentDescription(getString(R.string.vehicle));
           break;
         }
-
+    
         ColorStateList tabColors = tabLayout.getTabTextColors();
         if (tabColors != null)
         {
@@ -181,7 +181,7 @@ public class RoutingOptionsFragment extends BaseMwmToolbarFragment
     else
     {
       requireActivity().setResult(Activity.RESULT_OK);
-      RoutingController.get().rebuildLastRoute();
+      //RoutingController.get().rebuildLastRoute();
     }
 
     return super.onBackPressed();
