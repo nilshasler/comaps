@@ -73,6 +73,7 @@ import app.organicmaps.location.TrackRecordingService;
 import app.organicmaps.maplayer.MapButtonsController;
 import app.organicmaps.maplayer.MapButtonsViewModel;
 import app.organicmaps.maplayer.ToggleMapLayerFragment;
+import app.organicmaps.routing.DirectionsPreviewBottomSheet;
 import app.organicmaps.routing.ManageRouteBottomSheet;
 import app.organicmaps.routing.NavigationController;
 import app.organicmaps.routing.NavigationService;
@@ -241,7 +242,9 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
   private PeriodicBackupRunner backupRunner;
 
-  ManageRouteBottomSheet mManageRouteBottomSheet;
+  private ManageRouteBottomSheet mManageRouteBottomSheet;
+
+  private DirectionsPreviewBottomSheet mDirectionsPreviewBottomSheet;
 
   private boolean mRemoveDisplayListener = true;
   private static int mLastUiMode = Configuration.UI_MODE_TYPE_UNDEFINED;
@@ -1664,6 +1667,13 @@ public class MwmActivity extends BaseMwmFragmentActivity
   }
 
   @Override
+  public void refreshNavigationController()
+  {
+    if (mNavigationController != null)
+      mNavigationController.refresh(getApplicationContext());
+  }
+
+  @Override
   public void onStartRouteBuilding()
   {
     if (mRoutingPlanInplaceController == null)
@@ -1762,7 +1772,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (mRoutingPlanInplaceController == null)
       return;
 
-    mRoutingPlanInplaceController.showDrivingOptionView();
+    mRoutingPlanInplaceController.showRoutingOptionsView();
   }
 
   @Override
@@ -2216,6 +2226,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
     closeFloatingPanels();
     setFullscreen(false);
+
     RoutingController.get().start();
   }
 
@@ -2226,6 +2237,12 @@ public class MwmActivity extends BaseMwmFragmentActivity
     mManageRouteBottomSheet = new ManageRouteBottomSheet();
     mManageRouteBottomSheet.setCancelable(false);
     mManageRouteBottomSheet.show(getSupportFragmentManager(), "ManageRouteBottomSheet");
+  }
+
+  @Override
+  public void onDirectionsPreviewOpen() {
+    mDirectionsPreviewBottomSheet = new DirectionsPreviewBottomSheet();
+    mDirectionsPreviewBottomSheet.show(getSupportFragmentManager(), "DirectionsPreviewBottomSheet");
   }
 
   private boolean requestBatterySaverPermission()
