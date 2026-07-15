@@ -142,8 +142,8 @@ public class ManageRouteBottomSheet
         Framework.addRoutePoint(newRoutePoints.get(pos), false);
 
       // Launch route planning.
-      ((MwmActivity) requireActivity()).rebuildLastRoute();
-      //RoutingController.get().launchPlanning();
+      //((MwmActivity) requireActivity()).rebuildLastRoute();
+      RoutingController.get().launchPlanning();
 
       // Dismiss (close) manage route bottom sheet.
       dismiss();

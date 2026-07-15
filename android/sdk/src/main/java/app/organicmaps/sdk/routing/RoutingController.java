@@ -188,6 +188,7 @@ public class RoutingController
   private void setState(State newState)
   {
     Logger.d(TAG, "[S] State: " + mState + " -> " + newState + ", BuildState: " + mBuildState);
+    Toast.makeText(getContext(), "State: " + mState + " -> " + newState + ", BuildState: " + mBuildState + ", container " + mContainer, Toast.LENGTH_SHORT).show();
     mState = newState;
 
     if (mContainer != null)
@@ -197,6 +198,7 @@ public class RoutingController
   private void setBuildState(BuildState newState)
   {
     Logger.d(TAG, "[B] State: " + mState + ", BuildState: " + mBuildState + " -> " + newState);
+    Toast.makeText(getContext(), "[B] State: " + mState + ", BuildState: " + mBuildState + " -> " + newState + ", container " + mContainer, Toast.LENGTH_SHORT).show();
     mBuildState = newState;
 
     final MapObject startPoint = getStartPoint();
