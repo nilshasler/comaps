@@ -29,6 +29,8 @@ void AndroidMessage(LogLevel level, SrcPoint const & src, std::string const & s)
   case LCRITICAL: pr = ANDROID_LOG_ERROR; break;
   case NUM_LOG_LEVELS: break;
   }
+  
+  __android_log_print(priority, "CoMapsDebug", "%s:%d %s %s - %s", src.FileName(), src.Line(), src.Function(), src.Postfix(), msg.c_str());
 
   ScopedEnv env(jni::GetJVM());
   static jmethodID const logMethod = jni::GetStaticMethodID(

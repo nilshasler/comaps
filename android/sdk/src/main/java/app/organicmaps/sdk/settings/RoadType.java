@@ -20,5 +20,7 @@ public enum TransportSubMode
   WalkingDefault,
   WalkingHiking,
   WalkingHardHiking,
-  WalkingStrolling
+  WalkingStrolling,
+  DrivingDefault,
+  RulerDefault
 }

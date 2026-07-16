@@ -31,31 +31,54 @@ public final class RoutingOptions
   public static TransportSubMode getTransportSubMode(@NonNull Router router)
   {
     if (router == Router.Ruler)
-      return false;
+      return TransportSubMode.RulerDefault;
+    if (router == Router.Vehicle)
+      return TransportSubMode.DrivingDefault;
+
     int mode = nativeGetTransportSubMode(router.ordinal());
-    switch (mode)
+
+    if (router == Router.Bicycle)
     {
-    case 0: return TransportSubMode.CyclingDefault;
-    case 1 << 11: return TransportSubMode.CyclingRoad;
-    case 2 << 11: return TransportSubMode.CyclingGravel;
-    case 3 << 11: return TransportSubMode.CyclingMountainBike;
+      switch (mode)
+      {
+      case 0: return TransportSubMode.CyclingDefault;
+      case 1 << 11: return TransportSubMode.CyclingRoad;
+      case 2 << 11: return TransportSubMode.CyclingGravel;
+      case 3 << 11: return TransportSubMode.CyclingMountainBike;
+      }
+    }
+    else // walking, transit
+    {
+      switch (mode)
+      {
+      case 0: return TransportSubMode.WalkingDefault;
+      case 1 << 11: return TransportSubMode.WalkingHiking;
+      case 2 << 11: return TransportSubMode.WalkingHardHiking;
+      case 3 << 11: return TransportSubMode.WalkingStrolling;
+      }
     }
   }
 
-  public static void setTransportSubMode(@NonNull TransportSubMode mode, @NonNull Router router)
+  public static void setTransportSubMode(@NonNull TransportSubMode mode)
   {
     if (router == Router.Ruler)
       return false;
     int m;
+    int router = -1;
     switch (mode)
     {
     default:
-    case TransportSubMode.CyclingDefault: m = 0; break;
-    case TransportSubMode.CyclingRoad: m = 1 << 11; break;
-    case TransportSubMode.CyclingGravel: m = 2 << 11; break;
-    case TransportSubMode.CyclingMountainBike: m = 3 << 11; break;
+    case TransportSubMode.CyclingDefault: m = 0; router = 1; break;
+    case TransportSubMode.CyclingRoad: m = 1 << 11; router = 1; break;
+    case TransportSubMode.CyclingGravel: m = 2 << 11; router = 1; break;
+    case TransportSubMode.CyclingMountainBike: m = 3 << 11; router = 1; break;
+    case TransportSubMode.WalkingDefault: m = 0; router = 0; break;
+    case TransportSubMode.WalkingHiking: m = 1 << 11; router = 0; break;
+    case TransportSubMode.WalkingHardHiking: m = 2 << 11; router = 0; break;
+    case TransportSubMode.WalkingStrolling: m = 3 << 11; router = 0; break;
     }
-    nativeSetTransportSubMode(m, router.ordinal());
+    if (router != -1)
+      nativeSetTransportSubMode(m, router);
   }
 
   public static boolean hasAnyOptions(@NonNull Router router)
