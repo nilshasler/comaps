@@ -10,6 +10,7 @@ import androidx.annotation.Nullable;
 import app.organicmaps.MwmActivity;
 import app.organicmaps.R;
 import app.organicmaps.util.UiUtils;
+import app.organicmaps.sdk.util.log.Logger;
 
 public class RoutingPlanInplaceController extends RoutingPlanController
 {
@@ -31,6 +32,7 @@ public class RoutingPlanInplaceController extends RoutingPlanController
 
   public void show(final boolean show)
   {
+    Logger.d(TAG, "show=" + show + " mAnimator=" + mAnimator);
     if (mAnimator != null)
     {
       mAnimator.cancel();
