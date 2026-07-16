@@ -30,6 +30,7 @@ public class RoutingPlanInplaceController extends RoutingPlanController
     mRoutingPlanListener = routingPlanListener;
   }
 
+  private static final String TAG = RoutingPlanInplaceController.class.getSimpleName();
   public void show(final boolean show)
   {
     Logger.d(TAG, "show=" + show + " mAnimator=" + mAnimator);
