@@ -1,0 +1,1204 @@
+Datetime: 2026-07-16 10:15:06.138
+
+Android version: 13 (API 33), security patch level: 2023-08-01, os.version: 4.14.113-27176651
+Device: samsung SM-A515F (a51)
+Is custom ROM: false
+Supported ABIs: arm64-v8a armeabi-v7a armeabi
+App version: app.comaps.fdroid.debug 2026.07.16-3-FDroid-debug
+Locale: en_GB
+Networks: 
+	id=102
+[ Transports: CELLULAR Capabilities: IMS&NOT_METERED&TRUSTED&NOT_VPN&VALIDATED&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED LinkUpBandwidth>=4885Kbps LinkDnBandwidth>=31028Kbps Specifier: <TelephonyNetworkSpecifier [mSubId = 1]> SubscriptionIds: {1} UnderlyingNetworks: Null]
+Location providers: passive network fused gps
+Location permissions: coarse fine
+
+07-16 10:15:06.175 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 0 fixed = false
+07-16 10:15:07.076 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 0 fixed = false
+07-16 10:15:08.091 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:09.074 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:10.080 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:10.427 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 37.622
+07-16 10:15:10.432 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447782,-3.645356 hAcc=37.622 et=+12d16h14m1s405ms alt=138.40000915527344 vAcc=1.2434123 vel=0.12118237 sAcc=1.5 bear=90.75347 bAcc=180.0]
+07-16 10:15:11.084 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:11.988 (main) I/BaseMwmFragmentActivity: BaseMwmFragmentActivity.java:169 onBackPressedInternal(): Fragment 'SettingsPrefsFragment{a0ea9d2} (79b723f8-8274-4799-be54-ddd70e96afb6 id=0x7f090197 tag=app.organicmaps.settings.SettingsPrefsFragment)' doesn't handle back press by itself.
+07-16 10:15:12.142 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:13.112 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:13.679 (main) I/BaseMwmFragmentActivity: BaseMwmFragmentActivity.java:169 onBackPressedInternal(): Fragment 'SettingsPrefsFragment{a0ea9d2} (79b723f8-8274-4799-be54-ddd70e96afb6 id=0x7f090197 tag=app.organicmaps.settings.SettingsPrefsFragment)' doesn't handle back press by itself.
+07-16 10:15:13.705 (main) D/MwmApplication: MwmApplication.java:192 onActivityPaused(): activity = app.organicmaps.settings.SettingsActivity@d45f340
+07-16 10:15:13.737 (main) I/OMcore: sdk/Framework.cpp:916 Java_app_organicmaps_sdk_Framework_nativePlacePageActivationListener(): Set global map object listener
+07-16 10:15:13.739 (main) D/LocationState: LocationHelper.java:372 addListener(): listener: app.organicmaps.MwmActivity@ba1c77b count was: 0
+07-16 10:15:13.740 (main) I/Utils: Utils.java:78 keepScreenOn(): KeepScreenOn = false window = com.android.internal.policy.PhoneWindow@7188c92
+07-16 10:15:13.742 (main) D/MapController[Device]: MapController.java:70 onStart(): 
+07-16 10:15:13.752 (main) D/MwmApplication: MwmApplication.java:183 onActivityResumed(): activity = app.organicmaps.MwmActivity@ba1c77b
+07-16 10:15:13.755 (main) I/Utils: Utils.java:95 showOnLockScreen(): showOnLockScreen = false window = com.android.internal.policy.PhoneWindow@7188c92
+07-16 10:15:13.758 (main) I/SensorHelper: SensorHelper.java:94 setRotation(): rotation = 0
+07-16 10:15:13.761 (main) D/SensorHelper: SensorHelper.java:105 addListener(): listener: app.organicmaps.MwmActivity@ba1c77b count was: 0
+07-16 10:15:13.794 (main) D/MapController[Device]: MapController.java:77 onResume(): 
+07-16 10:15:13.841 (main) D/MapView: MapView.java:28 surfaceCreated(): 
+07-16 10:15:13.842 (main) D/Map: Map.java:154 onSurfaceCreated(): mSurfaceCreated = true
+07-16 10:15:13.844 (main) I/OMcore: sdk/Framework.cpp:337 AttachSurface(): Attach surface started.
+07-16 10:15:13.867 (main) D/OMcore: drape_frontend/drape_engine.cpp:374 SetRenderingEnabled(): Rendering enabled
+07-16 10:15:13.868 (main) I/OMcore: sdk/Framework.cpp:381 AttachSurface(): Recover surface, viewport size: 1080 2400
+07-16 10:15:13.870 (main) I/OMcore: sdk/Framework.cpp:387 AttachSurface(): Attach surface finished.
+07-16 10:15:13.871 (main) I/OMcore: sdk/Framework.cpp:415 ResumeSurfaceRendering(): Resume surface rendering.
+07-16 10:15:13.873 (main) D/MapView: MapView.java:36 surfaceChanged(): 
+07-16 10:15:13.874 (main) D/Map: Map.java:209 onSurfaceChanged(): mSurfaceCreated = true
+07-16 10:15:14.053 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:14.351 (main) D/MwmApplication: MwmApplication.java:209 onActivityDestroyed(): activity = app.organicmaps.settings.SettingsActivity@d45f340
+07-16 10:15:15.067 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:16.082 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:17.082 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:18.076 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:19.045 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/Spain_Cantabria.mwm is f
+07-16 10:15:19.112 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file subtypes.csv is r
+07-16 10:15:19.139 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/Spain_Cantabria.mwm is f
+07-16 10:15:19.173 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:19.449 (main) D/LocationState: LocationHelper.java:372 addListener(): listener: PlacePageView{ba4ad21} (378a7708-0cb5-41cf-ab28-5e20065066d0 id=0x7f0902fb tag=PLACE_PAGE) count was: 1
+07-16 10:15:19.452 (main) D/SensorHelper: SensorHelper.java:105 addListener(): listener: PlacePageView{ba4ad21} (378a7708-0cb5-41cf-ab28-5e20065066d0 id=0x7f0902fb tag=PLACE_PAGE) count was: 1
+07-16 10:15:19.585 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 16.625
+07-16 10:15:19.589 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447761,-3.645381 hAcc=16.625 et=+12d16h14m10s193ms alt=138.20001220703125 vAcc=1.248075 vel=0.17377333 sAcc=1.5 bear=210.07597 bAcc=180.0]
+07-16 10:15:19.666 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = SETTLING
+07-16 10:15:19.938 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = COLLAPSED
+07-16 10:15:20.079 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:21.092 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:22.075 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:22.095 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = SETTLING
+07-16 10:15:22.098 (main) D/RoutingController: RoutingController.java:326 prepare(): prepare (p2p)
+07-16 10:15:22.101 (main) D/RoutingController: RoutingController.java:482 cancel(): cancel: none
+07-16 10:15:22.105 (main) D/RoutingController: RoutingController.java:190 setState(): [S] State: NONE -> PREPARE, BuildState: NONE
+07-16 10:15:22.110 (main) D/RoutingController: RoutingController.java:284 build(): build
+07-16 10:15:22.113 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: NONE -> BUILDING
+07-16 10:15:22.123 (Thread-9) I/OMcore: routing/async_router.cpp:310 CalculateRoute(): Calculating the route of direct length 7785.89 m. checkpoints: Checkpoints(ms::LatLon(43.4477614, -3.645381); ms::LatLon(43.4534751, -3.741404); passed: 0) startDirection: m2::Point<d>(0, 0) router name: astar-bidirectional-Pedestrian
+07-16 10:15:22.130 (Thread-9) I/OMcore: routing/index_router.cpp:1096 MakeWorldGraph(): Avoid next roads: RoutingOptions: { | steps | }
+07-16 10:15:22.197 (Thread-9) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/WorldCoasts.mwm is f
+07-16 10:15:22.351 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = HIDDEN
+07-16 10:15:22.364 (main) D/LocationState: LocationHelper.java:386 removeListener(): listener: PlacePageView{ba4ad21} (378a7708-0cb5-41cf-ab28-5e20065066d0 id=0x7f0902fb tag=PLACE_PAGE) count was: 2
+07-16 10:15:22.368 (main) D/SensorHelper: SensorHelper.java:119 removeListener(): listener: PlacePageView{ba4ad21} (378a7708-0cb5-41cf-ab28-5e20065066d0 id=0x7f0902fb tag=PLACE_PAGE) count was: 2
+07-16 10:15:23.053 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:23.229 (Thread-9) I/OMcore: routing/index_graph_loader.cpp:163 CreateIndexGraph(): routing section for Spain_Cantabria loaded in 1.02627 seconds
+07-16 10:15:23.629 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/Spain_Cantabria.mwm is f
+07-16 10:15:23.670 (Thread-9) I/OMcore: routing/index_router.cpp:703 CalculateSubroute(): Routing in mode: Joints
+07-16 10:15:23.862 (main) D/LocationState: LocationHelper.java:372 addListener(): listener: PlacePageView{d305fbb} (996fedfd-40e9-4f60-9723-8c7c71874f0f id=0x7f0902fb tag=PLACE_PAGE) count was: 1
+07-16 10:15:23.867 (main) D/SensorHelper: SensorHelper.java:105 addListener(): listener: PlacePageView{d305fbb} (996fedfd-40e9-4f60-9723-8c7c71874f0f id=0x7f0902fb tag=PLACE_PAGE) count was: 1
+07-16 10:15:24.115 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:24.126 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = SETTLING
+07-16 10:15:24.386 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = COLLAPSED
+07-16 10:15:24.969 (Thread-9) D/OMcore: routing/index_router.cpp:741 CalculateSubrouteJointsMode(): Result route weight: (0, 0, 0, 8012.74, 0)
+07-16 10:15:24.972 (Thread-9) I/OMcore: base/timer.cpp:185 ~ScopedTimerWithLog(): Route build time: 1299 ms
+07-16 10:15:25.023 (Thread-9) D/OMcore: routing/routing_helpers.cpp:84 ReconstructRoute(): ms::LatLon(43.4477614, -3.645381)
+TurnItem { m_index = 1, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = None }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4486013, -3.64585566)
+TurnItem { m_index = 13, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4546258, -3.64176798)
+TurnItem { m_index = 57, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Acceso a Güemes, m_ref = CA-444, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4657951, -3.66126495)
+TurnItem { m_index = 147, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Galizano-Güemes, m_ref = CA-443, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4676795, -3.66281795)
+TurnItem { m_index = 155, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Galizano-Güemes, m_ref = CA-443, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4664608, -3.6689468)
+TurnItem { m_index = 170, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Loredo-Galizano, m_ref = CA-440, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4669008, -3.66921234)
+TurnItem { m_index = 171, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4666555, -3.67236662)
+TurnItem { m_index = 178, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4665991, -3.67250341)
+TurnItem { m_index = 181, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4665173, -3.67252218)
+TurnItem { m_index = 183, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4664881, -3.67258388)
+TurnItem { m_index = 185, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4645083, -3.67950129)
+TurnItem { m_index = 208, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4547153, -3.72034061)
+TurnItem { m_index = 282, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Loredo-Galizano, m_ref = CA-440, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4554708, -3.72053909)
+TurnItem { m_index = 289, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562769, -3.72175145)
+TurnItem { m_index = 291, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562087, -3.72286993)
+TurnItem { m_index = 297, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561347, -3.72361022)
+TurnItem { m_index = 300, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4560666, -3.72374433)
+TurnItem { m_index = 305, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561484, -3.7238248)
+TurnItem { m_index = 309, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.455428, -3.72870642)
+TurnItem { m_index = 321, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4548555, -3.73595911)
+TurnItem { m_index = 339, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4543337, -3.73989659)
+TurnItem { m_index = 351, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4538314, -3.7412833)
+TurnItem { m_index = 361, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4534751, -3.741404)
+TurnItem { m_index = 365, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = ReachedYourDestination }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+
+07-16 10:15:25.027 (Thread-9) I/OMcore: routing/index_router.cpp:655 DoCalculateRoute(): Route length: 10582.9 meters. ETA: 7814.92 seconds.
+07-16 10:15:25.056 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:25.108 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 2.98738
+07-16 10:15:25.111 (Thread-9) I/OMcore: routing/async_router.cpp:320 CalculateRoute(): ETA: 7814.92 sec.
+07-16 10:15:25.114 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 2.98962
+07-16 10:15:25.157 (main) D/RoutingController: RoutingController.java:94 onRoutingEvent(): onRoutingEvent(resultCode: 0)
+07-16 10:15:25.161 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILDING -> BUILT
+07-16 10:15:25.392 (main) D/RoutingController: RoutingController.java:284 build(): build
+07-16 10:15:25.394 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILT -> BUILDING
+07-16 10:15:25.400 (Thread-9) I/OMcore: routing/async_router.cpp:310 CalculateRoute(): Calculating the route of direct length 7873.93 m. checkpoints: Checkpoints(ms::LatLon(43.4477614, -3.645381); ms::LatLon(43.4540592, -3.67135006); ms::LatLon(43.4534751, -3.741404); passed: 0) startDirection: m2::Point<d>(0, 0) router name: astar-bidirectional-Pedestrian
+07-16 10:15:25.405 (Thread-9) I/OMcore: routing/index_router.cpp:1096 MakeWorldGraph(): Avoid next roads: RoutingOptions: { | steps | }
+07-16 10:15:25.409 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = SETTLING
+07-16 10:15:25.671 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = HIDDEN
+07-16 10:15:25.694 (main) D/LocationState: LocationHelper.java:386 removeListener(): listener: PlacePageView{d305fbb} (996fedfd-40e9-4f60-9723-8c7c71874f0f id=0x7f0902fb tag=PLACE_PAGE) count was: 2
+07-16 10:15:25.697 (main) D/SensorHelper: SensorHelper.java:119 removeListener(): listener: PlacePageView{d305fbb} (996fedfd-40e9-4f60-9723-8c7c71874f0f id=0x7f0902fb tag=PLACE_PAGE) count was: 2
+07-16 10:15:26.067 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:26.440 (Thread-9) I/OMcore: routing/index_graph_loader.cpp:163 CreateIndexGraph(): routing section for Spain_Cantabria loaded in 1.03002 seconds
+07-16 10:15:26.580 (Thread-9) I/OMcore: routing/index_router.cpp:703 CalculateSubroute(): Routing in mode: Joints
+07-16 10:15:26.756 (Thread-9) D/OMcore: routing/index_router.cpp:741 CalculateSubrouteJointsMode(): Result route weight: (0, 0, 0, 3664.87, 0)
+07-16 10:15:26.759 (Thread-9) I/OMcore: base/timer.cpp:185 ~ScopedTimerWithLog(): Route build time: 176 ms
+07-16 10:15:26.945 (Thread-9) I/OMcore: routing/index_router.cpp:703 CalculateSubroute(): Routing in mode: Joints
+07-16 10:15:27.064 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:27.524 (Thread-9) D/OMcore: routing/index_router.cpp:741 CalculateSubrouteJointsMode(): Result route weight: (0, 0, 0, 5250.56, 0)
+07-16 10:15:27.528 (Thread-9) I/OMcore: base/timer.cpp:185 ~ScopedTimerWithLog(): Route build time: 579 ms
+07-16 10:15:27.587 (Thread-9) D/OMcore: routing/routing_helpers.cpp:84 ReconstructRoute(): ms::LatLon(43.4477614, -3.645381)
+TurnItem { m_index = 1, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = None }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4486013, -3.64585566)
+TurnItem { m_index = 13, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4506887, -3.64495712)
+TurnItem { m_index = 36, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4481573, -3.65490275)
+TurnItem { m_index = 101, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Higar, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4479275, -3.65733015)
+TurnItem { m_index = 102, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Higar, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4482391, -3.66768616)
+TurnItem { m_index = 139, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4542889, -3.67125082)
+TurnItem { m_index = 193, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio San Martín, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4542889, -3.67125082)
+TurnItem { m_index = 203, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio San Martín, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4546083, -3.67153245)
+TurnItem { m_index = 209, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Cuatro Caminos, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4539132, -3.67347169)
+TurnItem { m_index = 213, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Cuatro Caminos, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.455502, -3.67537874)
+TurnItem { m_index = 228, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Cuatro Caminos, m_ref = CA-435, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4550502, -3.67662328)
+TurnItem { m_index = 231, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle La Portilla, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4552742, -3.67993045)
+TurnItem { m_index = 256, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4545732, -3.68323225)
+TurnItem { m_index = 279, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4575599, -3.69548726)
+TurnItem { m_index = 315, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Barrio Baceña, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4589189, -3.69914579)
+TurnItem { m_index = 331, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Acceso a Castanedo, m_ref = CA-442, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4591233, -3.69920212)
+TurnItem { m_index = 334, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = CA-442, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 1 }
+ms::LatLon(43.4591973, -3.69921553)
+TurnItem { m_index = 336, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = CA-442, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 1 }
+ms::LatLon(43.4592947, -3.69949448)
+TurnItem { m_index = 341, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4595672, -3.69990754)
+TurnItem { m_index = 344, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4547153, -3.72034061)
+TurnItem { m_index = 386, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Loredo-Galizano, m_ref = CA-440, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4554708, -3.72053909)
+TurnItem { m_index = 393, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562769, -3.72175145)
+TurnItem { m_index = 395, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562087, -3.72286993)
+TurnItem { m_index = 401, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561347, -3.72361022)
+TurnItem { m_index = 404, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4560666, -3.72374433)
+TurnItem { m_index = 409, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561484, -3.7238248)
+TurnItem { m_index = 413, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.455428, -3.72870642)
+TurnItem { m_index = 425, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4548555, -3.73595911)
+TurnItem { m_index = 443, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4543337, -3.73989659)
+TurnItem { m_index = 455, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4538314, -3.7412833)
+TurnItem { m_index = 465, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4534751, -3.741404)
+TurnItem { m_index = 469, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = ReachedYourDestination }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+
+07-16 10:15:27.593 (Thread-9) I/OMcore: routing/index_router.cpp:655 DoCalculateRoute(): Route length: 10139 meters. ETA: 7885.26 seconds.
+07-16 10:15:27.660 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 2.26281
+07-16 10:15:27.663 (Thread-9) I/OMcore: routing/async_router.cpp:320 CalculateRoute(): ETA: 7885.26 sec.
+07-16 10:15:27.669 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 2.26379
+07-16 10:15:27.711 (main) D/RoutingController: RoutingController.java:94 onRoutingEvent(): onRoutingEvent(resultCode: 16)
+07-16 10:15:27.715 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILDING -> BUILT
+07-16 10:15:27.889 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 11.848
+07-16 10:15:27.894 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447751,-3.645383 hAcc=11.848 et=+12d16h14m18s842ms alt=138.20001220703125 vAcc=1.5617205 vel=0.14866005 sAcc=1.5 bear=196.38225 bAcc=180.0]
+07-16 10:15:28.058 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:29.064 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:30.125 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:31.089 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:15:31.183 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 0 fixed = false
+07-16 10:15:31.729 (main) D/RoutingController: RoutingController.java:462 cancel(): cancel: planning
+07-16 10:15:31.735 (main) D/RoutingController: RoutingController.java:446 cancelInternal(): cancelInternal
+07-16 10:15:31.740 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILT -> NONE
+07-16 10:15:31.746 (main) D/RoutingController: RoutingController.java:190 setState(): [S] State: PREPARE -> NONE, BuildState: NONE
+07-16 10:15:32.088 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 0 fixed = false
+07-16 10:15:33.205 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 0 fixed = false
+07-16 10:15:34.078 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 0 fixed = false
+07-16 10:15:35.077 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 0 fixed = false
+07-16 10:15:36.112 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 0 fixed = false
+07-16 10:15:36.600 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 11.845
+07-16 10:15:36.604 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447750,-3.645383 hAcc=11.845 et=+12d16h14m27s611ms alt=138.20001220703125 vAcc=1.3453312 vel=0.068813875 sAcc=1.5]
+07-16 10:15:36.983 (main) D/MapController[Device]: MapController.java:84 onPause(): 
+07-16 10:15:36.985 (main) I/OMcore: sdk/Framework.cpp:399 PauseSurfaceRendering(): Pause surface rendering.
+07-16 10:15:36.986 (main) D/SensorHelper: SensorHelper.java:119 removeListener(): listener: app.organicmaps.MwmActivity@ba1c77b count was: 1
+07-16 10:15:36.988 (main) D/MwmApplication: MwmApplication.java:192 onActivityPaused(): activity = app.organicmaps.MwmActivity@ba1c77b
+07-16 10:15:37.245 (main) D/MwmApplication: MwmApplication.java:183 onActivityResumed(): activity = app.organicmaps.help.HelpActivity@ff2522e
+07-16 10:15:37.247 (main) I/Utils: Utils.java:95 showOnLockScreen(): showOnLockScreen = false window = com.android.internal.policy.PhoneWindow@949dd5a
+07-16 10:15:37.248 (main) I/SensorHelper: SensorHelper.java:94 setRotation(): rotation = 0
+07-16 10:15:37.364 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 0 fixed = false
+07-16 10:15:37.837 (main) D/MapView: MapView.java:44 surfaceDestroyed(): 
+07-16 10:15:37.839 (main) D/Map: Map.java:224 onSurfaceDestroyed(): mSurfaceCreated = true, mSurfaceAttached = true
+07-16 10:15:37.840 (main) I/OMcore: sdk/Framework.cpp:297 DetachSurface(): Detach surface started. destroySurface = 1
+07-16 10:15:37.841 (main) I/OMcore: sdk/Framework.cpp:310 DetachSurface(): Destroy surface.
+07-16 10:15:37.842 (main) D/OMcore: drape_frontend/drape_engine.cpp:382 SetRenderingDisabled(): Rendering disabled
+07-16 10:15:37.847 (main) I/OMcore: sdk/Framework.cpp:332 DetachSurface(): Detach surface finished.
+07-16 10:15:37.869 (main) D/MapController[Device]: MapController.java:91 onStop(): 
+07-16 10:15:37.873 (main) I/OMcore: sdk/Framework.cpp:958 Java_app_organicmaps_sdk_Framework_nativeRemovePlacePageActivationListener(): Remove global map object listener
+07-16 10:15:37.875 (main) D/LocationState: LocationHelper.java:386 removeListener(): listener: app.organicmaps.MwmActivity@ba1c77b count was: 1
+07-16 10:15:37.877 (main) I/Utils: Utils.java:78 keepScreenOn(): KeepScreenOn = false window = com.android.internal.policy.PhoneWindow@7188c92
+07-16 10:15:37.879 (main) D/MwmApplication: MwmApplication.java:203 onActivitySaveInstanceState(): activity = app.organicmaps.MwmActivity@ba1c77b outState = Bundle[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@3bf91cd, 2131296314=android.view.AbsSavedState$1@3bf91cd, 2131296325=android.view.AbsSavedState$1@3bf91cd, 2131296338=android.view.AbsSavedState$1@3bf91cd, 2131296339=android.view.AbsSavedState$1@3bf91cd, 2131296340=android.view.AbsSavedState$1@3bf91cd, 2131296374=android.view.AbsSavedState$1@3bf91cd, 2131296381=CompoundButton.SavedState{e35955b checked=false}, 2131296427=com.google.android.material.button.MaterialButton$SavedState@fb481f8, 2131296429=com.google.android.material.button.MaterialButton$SavedState@d4516d1, 2131296430=android.view.AbsSavedState$1@3bf91cd, 2131296435=com.google.android.material.button.MaterialButton$SavedState@a049536, 2131296436=android.view.AbsSavedState$1@3bf91cd, 2131296452=android.view.AbsSavedState$1@3bf91cd, 2131296474=android.view.AbsSavedState$1@3bf91cd, 2131296475=android.view.AbsSavedState$1@3bf91cd, 2131296491=android.view.AbsSavedState$1@3bf91cd, 2131296494=androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState@72e2c37, 2131296555=android.view.AbsSavedState$1@3bf91cd, 2131296556=android.view.AbsSavedState$1@3bf91cd, 2131296557=android.view.AbsSavedState$1@3bf91cd, 2131296559=android.view.AbsSavedState$1@3bf91cd, 2131296566=ExtendableSavedState{9abc5a4 states={expandableWidgetHelper=Bundle[{expanded=false, expandedComponentIdHint=0}]}}, 2131296567=android.view.AbsSavedState$1@3bf91cd, 2131296568=android.view.AbsSavedState$1@3bf91cd, 2131296571=com.google.android.material.button.MaterialButton$SavedState@5334f0d, 2131296572=android.view.AbsSavedState$1@3bf91cd, 2131296573=android.view.AbsSavedState$1@3bf91cd, 2131296576=android.view.AbsSavedState$1@3bf91cd, 2131296579=android.view.AbsSavedState$1@3bf91cd, 2131296625=android.view.AbsSavedState$1@3bf91cd, 2131296632=android.view.AbsSavedState$1@3bf91cd, 2131296633=android.view.AbsSavedState$1@3bf91cd, 2131296634=android.view.AbsSavedState$1@3bf91cd, 2131296635=android.view.AbsSavedState$1@3bf91cd, 2131296636=android.view.AbsSavedState$1@3bf91cd, 2131296649=android.view.AbsSavedState$1@3bf91cd, 2131296714=android.view.AbsSavedState$1@3bf91cd, 2131296754=android.view.AbsSavedState$1@3bf91cd, 2131296765=android.view.AbsSavedState$1@3bf91cd, 2131296823=android.view.AbsSavedState$1@3bf91cd, 2131296824=android.view.AbsSavedState$1@3bf91cd, 2131296829=android.view.AbsSavedState$1@3bf91cd, 2131296865=android.view.AbsSavedState$1@3bf91cd, 2131296907=android.view.AbsSavedState$1@3bf91cd, 2131296908=android.view.AbsSavedState$1@3bf91cd, 2131296909=android.view.AbsSavedState$1@3bf91cd, 2131296910=androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState@9fccec2, 2131296911=android.view.AbsSavedState$1@3bf91cd, 2131296912=android.view.AbsSavedState$1@3bf91cd, 2131296913=android.view.AbsSavedState$1@3bf91cd, 2131296914=android.view.AbsSavedState$1@3bf91cd, 2131296915=android.view.AbsSavedState$1@3bf91cd, 2131296916=android.view.AbsSavedState$1@3bf91cd, 2131296917=android.view.AbsSavedState$1@3bf91cd, 2131296926=android.view.AbsSavedState$1@3bf91cd, 2131296928=android.view.AbsSavedState$1@3bf91cd, 2131296933=android.view.AbsSavedState$1@3bf91cd, 2131296946=android.view.AbsSavedState$1@3bf91cd, 2131296955=ScrollView.SavedState{3af54d3 scrollPosition=0}, 2131296993=CompoundButton.SavedState{bb19810 checked=true}, 2131296994=android.view.AbsSavedState$1@3bf91cd, 2131297006=android.view.AbsSavedState$1@3bf91cd, 2131297024=android.view.AbsSavedState$1@3bf91cd, 2131297035=android.widget.ProgressBar$SavedState@352cf09, 2131297036=android.view.AbsSavedState$1@3bf91cd, 2131297038=android.view.AbsSavedState$1@3bf91cd, 2131297040=android.widget.ProgressBar$SavedState@f4d150e, 2131297041=android.view.AbsSavedState$1@3bf91cd, 2131297042=android.view.AbsSavedState$1@3bf91cd, 2131297043=android.view.AbsSavedState$1@3bf91cd, 2131297044=android.view.AbsSavedState$1@3bf91cd, 2131297047=TextView.SavedState{7106b2f start=0 end=0 text=}, 2131297052=com.google.android.material.button.MaterialButton$SavedState@800253c, 2131297053=android.widget.ProgressBar$SavedState@bd052c5, 2131297075=android.view.AbsSavedState$1@3bf91cd, 2131297076=android.view.View$BaseSavedState@a49741a, 2131297077=android.view.AbsSavedState$1@3bf91cd, 2131297078=android.view.AbsSavedState$1@3bf91cd, 2131297079=android.view.AbsSavedState$1@3bf91cd, 2131297080=android.view.AbsSavedState$1@3bf91cd, 2131297081=android.view.AbsSavedState$1@3bf91cd, 2131297082=android.view.AbsSavedState$1@3bf91cd, 2131297085=CompoundButton.SavedState{8c28b4b checked=false}, 2131297107=android.view.AbsSavedState$1@3bf91cd, 2131297129=android.view.AbsSavedState$1@3bf91cd, 2131297176=com.google.android.material.button.MaterialButton$SavedState@ee85641, 2131297183=android.view.AbsSavedState$1@3bf91cd, 2131297187=com.google.android.material.button.MaterialButton$SavedState@a7ab7e6, 2131297190=android.view.AbsSavedState$1@3bf91cd, 2131297192=android.view.AbsSavedState$1@3bf91cd, 2131297244=android.view.AbsSavedState$1@3bf91cd, 2131297247=android.view.AbsSavedState$1@3bf91cd, 2131297248=android.view.AbsSavedState$1@3bf91cd, 2131297249=android.view.AbsSavedState$1@3bf91cd, 2131297250=android.view.AbsSavedState$1@3bf91cd, 2131297251=android.view.AbsSavedState$1@3bf91cd, 2131297254=android.view.AbsSavedState$1@3bf91cd, 2131297255=android.view.AbsSavedState$1@3bf91cd, 2131297263=androidx.appcompat.widget.Toolbar$SavedState@c2c9127, 2131297264=android.view.AbsSavedState$1@3bf91cd, 2131297266=androidx.appcompat.widget.Toolbar$SavedState@e5ddfd4, 2131297269=android.view.AbsSavedState$1@3bf91cd, 2131297270=android.view.AbsSavedState$1@3bf91cd, 2131297274=CompoundButton.SavedState{a23157d checked=false}, 2131297275=android.view.AbsSavedState$1@3bf91cd, 2131297276=androidx.recyclerview.widget.RecyclerView$SavedState@d2a6c72, 2131297288=android.view.AbsSavedState$1@3bf91cd, 2131297289=android.view.AbsSavedState$1@3bf91cd, 2131297310=android.view.AbsSavedState$1@3bf91cd, 2131297373=CompoundButton.SavedState{a4718c3 checked=false}, 2131297387=android.view.AbsSavedState$1@3bf91cd, 2131297392=android.view.AbsSavedState$1@3bf91cd}}], POWER_SAVE_DISCLAIMER_SHOWN=false, android:lastAutofillId=1073741832, android:fragments=android.app.FragmentManagerState@3a32540}]
+07-16 10:15:38.076 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 3 fixed = true
+07-16 10:15:39.095 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 3 fixed = true
+07-16 10:15:40.685 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 3 fixed = true
+07-16 10:15:40.715 (main) I/SharingUtils: SharingUtils.java:219 shareFile(): Sharing file application/x-zip /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/logs.zip with URI content://app.comaps.fdroid.debug.provider/external_files/logs.zip
+07-16 10:15:40.755 (main) D/MwmApplication: MwmApplication.java:192 onActivityPaused(): activity = app.organicmaps.help.HelpActivity@ff2522e
+07-16 10:15:41.052 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 3 fixed = true
+07-16 10:15:42.065 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 3 fixed = true
+07-16 10:15:43.059 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 3 fixed = true
+07-16 10:15:43.249 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 11.897
+07-16 10:15:43.255 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447733,-3.645386 hAcc=11.897 et=+12d16h14m34s279ms alt=138.20001220703125 vAcc=1.3453312 vel=0.28759664 sAcc=1.5 bear=187.0154 bAcc=180.0]
+07-16 10:15:43.821 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447732,-3.645387 hAcc=12.146 et=+12d16h14m34s859ms alt=138.20001220703125 vAcc=1.3453312 vel=0.22911032 sAcc=1.5 bear=202.83873 bAcc=180.0]
+07-16 10:15:44.102 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 4 fixed = true
+07-16 10:15:45.064 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 4 fixed = true
+07-16 10:15:45.108 (main) D/LocationState: LocationHelper.java:83 onFirstFix(): ttffMillis = 52388
+07-16 10:15:45.224 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447731,-3.645374 hAcc=12.647 et=+12d16h14m36s133ms alt=138.20001220703125 vAcc=1.4310827 vel=3.4963186 sAcc=10.810274 bear=91.32853 bAcc=180.0]
+07-16 10:15:46.087 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 4 fixed = true
+07-16 10:15:46.128 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447738,-3.645338 hAcc=14.861 et=+12d16h14m37s153ms alt=138.20001220703125 vAcc=1.1219488 vel=4.793616 sAcc=8.744746 bear=86.687546 bAcc=180.0]
+07-16 10:15:47.057 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 4 fixed = true
+07-16 10:15:47.097 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 14.332
+07-16 10:15:47.102 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447746,-3.645298 hAcc=17.674 et=+12d16h14m38s130ms alt=138.20001220703125 vAcc=1.1317222 vel=5.8176045 sAcc=9.328246 bear=85.442535 bAcc=180.0]
+07-16 10:15:48.064 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 6 used = 4 fixed = true
+07-16 10:15:48.110 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447783,-3.645282 hAcc=20.468 et=+12d16h14m39s128ms alt=138.20001220703125 vAcc=1.1417054 vel=5.412873 sAcc=9.690601 bear=32.261864 bAcc=114.671364]
+07-16 10:15:49.065 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 7 used = 4 fixed = true
+07-16 10:15:49.098 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447815,-3.645311 hAcc=25.981 et=+12d16h14m40s127ms alt=138.20001220703125 vAcc=1.1516871 vel=5.333146 sAcc=9.467314 bear=357.10934 bAcc=105.34455]
+07-16 10:15:50.106 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 7 used = 4 fixed = true
+07-16 10:15:50.152 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 26.664667
+07-16 10:15:50.158 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447846,-3.645358 hAcc=33.545 et=+12d16h14m41s177ms alt=138.20001220703125 vAcc=1.1621907 vel=6.0437875 sAcc=9.091132 bear=338.44775 bAcc=103.37849]
+07-16 10:15:51.065 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 7 used = 4 fixed = true
+07-16 10:15:51.102 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447863,-3.645407 hAcc=38.018 et=+12d16h14m42s132ms alt=138.20001220703125 vAcc=1.1717432 vel=6.595308 sAcc=9.711926 bear=327.8536 bAcc=99.32095]
+07-16 10:15:52.060 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 7 used = 4 fixed = true
+07-16 10:15:52.097 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447878,-3.645455 hAcc=42.473 et=+12d16h14m43s130ms alt=138.20001220703125 vAcc=1.1817231 vel=6.999492 sAcc=9.40372 bear=321.67398 bAcc=90.54241]
+07-16 10:15:53.060 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 7 used = 4 fixed = true
+07-16 10:15:53.103 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447887,-3.645500 hAcc=43.029 et=+12d16h14m44s136ms alt=138.20001220703125 vAcc=1.1917782 vel=6.841939 sAcc=9.409371 bear=315.11148 bAcc=86.60677]
+07-16 10:15:54.083 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 7 used = 4 fixed = true
+07-16 10:15:54.130 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 41.645
+07-16 10:15:54.133 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447889,-3.645537 hAcc=43.06 et=+12d16h14m45s164ms alt=138.20001220703125 vAcc=1.2020562 vel=6.3701057 sAcc=8.761238 bear=312.33044 bAcc=86.61264]
+07-16 10:15:55.051 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 7 used = 4 fixed = true
+07-16 10:15:55.079 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447804,-3.645432 hAcc=36.4 et=+12d16h14m46s123ms alt=138.20001220703125 vAcc=1.0565135 vel=5.00531 sAcc=8.187038 bear=331.65265 bAcc=112.049385]
+07-16 10:15:55.873 (main) D/MwmActivity: MwmActivity.java:2573 onTrimMemory(): trim memory, level = 20
+07-16 10:15:55.884 (main) I/OMcore: map/framework.cpp:1241 MemoryWarning(): MemoryWarning
+07-16 10:15:56.787 (main) D/MwmApplication: MwmApplication.java:221 onBackground(): 
+07-16 10:15:56.796 (main) I/LocationState: MwmApplication.java:235 onBackground(): Stopping location in the background
+07-16 10:15:56.802 (main) I/LocationState: LocationHelper.java:459 stop(): 
+07-16 10:15:56.806 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:128 stop(): 
+07-16 10:15:56.811 (main) D/SensorHelper: SensorHelper.java:152 stop(): 
+07-16 10:15:56.819 (main) D/MwmApplication: MwmApplication.java:203 onActivitySaveInstanceState(): activity = app.organicmaps.help.HelpActivity@ff2522e outState = Bundle[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@3bf91cd, 2131296314=android.view.AbsSavedState$1@3bf91cd, 2131296325=android.view.AbsSavedState$1@3bf91cd, 2131296663=android.view.AbsSavedState$1@3bf91cd, 2131297263=androidx.appcompat.widget.Toolbar$SavedState@833be3a}}], android:lastAutofillId=1073741823, android:fragments=android.app.FragmentManagerState@cd9daeb}]
+07-16 10:16:02.168 (main) D/MwmApplication: MwmApplication.java:214 onForeground(): 
+07-16 10:16:02.172 (main) I/LocationState: LocationHelper.java:432 start(): 
+07-16 10:16:02.176 (main) D/SensorHelper: SensorHelper.java:144 start(): 
+07-16 10:16:02.185 (main) I/LocationState: LocationHelper.java:440 start(): provider = AndroidNativeProvider mInFirstRun = false oldInterval = 500 interval = 500
+07-16 10:16:02.188 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:80 start(): 
+07-16 10:16:02.192 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:116 start(): Request Android native provider 'fused' to get locations at this interval = 500 ms
+07-16 10:16:02.262 (main) D/LocationState: LocationHelper.java:71 onStarted(): 
+07-16 10:16:02.870 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 3 fixed = true
+07-16 10:16:03.856 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 3 fixed = true
+07-16 10:16:04.253 (main) D/MwmActivity: MwmActivity.java:2573 onTrimMemory(): trim memory, level = 20
+07-16 10:16:04.256 (main) I/OMcore: map/framework.cpp:1241 MemoryWarning(): MemoryWarning
+07-16 10:16:06.193 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 29.987
+07-16 10:16:06.204 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447752,-3.645396 hAcc=23.574 et=+12d16h14m57s64ms alt=138.20001220703125 vAcc=1.0 vel=0.17891678 sAcc=1.5 bear=149.31541 bAcc=45.0]
+07-16 10:16:08.854 (main) D/MwmActivity: MwmActivity.java:2573 onTrimMemory(): trim memory, level = 40
+07-16 10:16:08.884 (main) I/OMcore: map/framework.cpp:1241 MemoryWarning(): MemoryWarning
+07-16 10:16:09.376 (main) D/MwmApplication: MwmApplication.java:221 onBackground(): 
+07-16 10:16:09.387 (main) I/LocationState: MwmApplication.java:235 onBackground(): Stopping location in the background
+07-16 10:16:09.392 (main) I/LocationState: LocationHelper.java:459 stop(): 
+07-16 10:16:09.452 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:128 stop(): 
+07-16 10:16:09.464 (main) D/SensorHelper: SensorHelper.java:152 stop(): 
+07-16 10:16:15.868 (main) D/MwmApplication: MwmApplication.java:214 onForeground(): 
+07-16 10:16:15.883 (main) I/LocationState: LocationHelper.java:432 start(): 
+07-16 10:16:15.894 (main) D/SensorHelper: SensorHelper.java:144 start(): 
+07-16 10:16:15.901 (main) I/LocationState: LocationHelper.java:440 start(): provider = AndroidNativeProvider mInFirstRun = false oldInterval = 500 interval = 500
+07-16 10:16:15.917 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:80 start(): 
+07-16 10:16:15.919 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:116 start(): Request Android native provider 'fused' to get locations at this interval = 500 ms
+07-16 10:16:16.009 (main) D/MwmApplication: MwmApplication.java:183 onActivityResumed(): activity = app.organicmaps.help.HelpActivity@ff2522e
+07-16 10:16:16.012 (main) I/Utils: Utils.java:95 showOnLockScreen(): showOnLockScreen = false window = com.android.internal.policy.PhoneWindow@949dd5a
+07-16 10:16:16.013 (main) I/SensorHelper: SensorHelper.java:94 setRotation(): rotation = 0
+07-16 10:16:16.206 (main) D/LocationState: LocationHelper.java:71 onStarted(): 
+07-16 10:16:16.629 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 3 fixed = true
+07-16 10:16:17.619 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 3 fixed = true
+07-16 10:16:18.069 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 3 fixed = true
+07-16 10:16:18.173 (main) D/MwmApplication: MwmApplication.java:192 onActivityPaused(): activity = app.organicmaps.help.HelpActivity@ff2522e
+07-16 10:16:18.667 (main) D/MwmActivity: MwmActivity.java:2573 onTrimMemory(): trim memory, level = 20
+07-16 10:16:18.672 (main) I/OMcore: map/framework.cpp:1241 MemoryWarning(): MemoryWarning
+07-16 10:16:18.680 (main) D/MwmActivity: MwmActivity.java:2573 onTrimMemory(): trim memory, level = 40
+07-16 10:16:18.693 (main) I/OMcore: map/framework.cpp:1241 MemoryWarning(): MemoryWarning
+07-16 10:16:18.706 (main) D/MwmApplication: MwmApplication.java:203 onActivitySaveInstanceState(): activity = app.organicmaps.help.HelpActivity@ff2522e outState = Bundle[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@3bf91cd, 2131296314=android.view.AbsSavedState$1@3bf91cd, 2131296325=android.view.AbsSavedState$1@3bf91cd, 2131296663=android.view.AbsSavedState$1@3bf91cd, 2131297263=androidx.appcompat.widget.Toolbar$SavedState@973bf7f}}], android:lastAutofillId=1073741823, android:fragments=android.app.FragmentManagerState@5db6b4c}]
+07-16 10:16:18.880 (main) D/MwmApplication: MwmApplication.java:221 onBackground(): 
+07-16 10:16:18.895 (main) I/LocationState: MwmApplication.java:235 onBackground(): Stopping location in the background
+07-16 10:16:18.900 (main) I/LocationState: LocationHelper.java:459 stop(): 
+07-16 10:16:18.909 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:128 stop(): 
+07-16 10:16:18.919 (main) D/SensorHelper: SensorHelper.java:152 stop(): 
+07-16 10:50:14.578 (main) D/LocationProviderFactoryImpl: LocationProviderFactoryImpl.java:31 getProvider(): Use native provider
+07-16 10:50:14.609 (main) I/NavigationService: NavigationService.java:113 createNotificationChannel(): 
+07-16 10:50:15.011 (main) D/MwmApplication: MwmApplication.java:183 onActivityResumed(): activity = app.organicmaps.SplashActivity@acf8e0e
+07-16 10:50:15.024 (main) I/Utils: Utils.java:95 showOnLockScreen(): showOnLockScreen = false window = com.android.internal.policy.PhoneWindow@fabc88
+07-16 10:50:15.037 (main) I/SensorHelper: SensorHelper.java:94 setRotation(): rotation = 0
+07-16 10:50:15.608 (main) D/OrganicMaps: OrganicMaps.java:154 initNativePlatform(): Apk path = /data/app/~~PYa1VxiRgPYCwa1bvrt0Xg==/app.comaps.fdroid.debug-MJO_yC3gfzRxpjU7zakTlQ==/base.apk
+07-16 10:50:15.612 (main) I/StoragePathManager: StoragePathManager.java:255 scanAvailableStorages(): Currently configured storage: /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/
+07-16 10:50:15.619 (main) I/StoragePathManager: StoragePathManager.java:257 scanAvailableStorages(): Begin scanning storages
+07-16 10:50:15.633 (main) D/StorageUtils: StorageUtils.java:33 isDirWritable(): Checking for writability /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files
+07-16 10:50:15.643 (main) I/StoragePathManager: StoragePathManager.java:245 addStorageOption(): Accepted /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/ - currently configured, external, 30497648640 available of 119489409024 bytes, emulated, state=mounted, primary, label='Internal shared storage'
+07-16 10:50:15.650 (main) D/StorageUtils: StorageUtils.java:33 isDirWritable(): Checking for writability /data/data/app.comaps.fdroid.debug/files
+07-16 10:50:15.660 (main) I/StoragePathManager: StoragePathManager.java:245 addStorageOption(): Accepted /data/data/app.comaps.fdroid.debug/files/ - internal, 30497648640 available of 119489409024 bytes
+07-16 10:50:15.665 (main) I/StoragePathManager: StoragePathManager.java:271 scanAvailableStorages(): End scanning storages
+07-16 10:50:15.672 (main) I/StoragePathManager: StoragePathManager.java:339 findMapsStorage(): Found map files at the currently configured /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/
+07-16 10:50:15.677 (main) D/OrganicMaps: OrganicMaps.java:157 initNativePlatform(): Writable path = /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/
+07-16 10:50:15.680 (main) D/OrganicMaps: OrganicMaps.java:159 initNativePlatform(): Private path = /data/user/0/app.comaps.fdroid.debug/files/
+07-16 10:50:15.684 (main) D/OrganicMaps: OrganicMaps.java:161 initNativePlatform(): Temp path = /data/user/0/app.comaps.fdroid.debug/cache/
+07-16 10:50:15.688 (main) I/OMcore: platform/AndroidPlatform.cpp:144 Initialize(): Flavor name: fdroid
+07-16 10:50:15.692 (main) I/OMcore: platform/AndroidPlatform.cpp:145 Initialize(): Build type name: debug
+07-16 10:50:15.694 (main) I/OMcore: platform/AndroidPlatform.cpp:163 SetWritableDir(): Writable path =  /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/
+07-16 10:50:15.697 (main) I/OMcore: platform/AndroidPlatform.cpp:151 Initialize(): Apk path =  /data/app/~~PYa1VxiRgPYCwa1bvrt0Xg==/app.comaps.fdroid.debug-MJO_yC3gfzRxpjU7zakTlQ==/base.apk
+07-16 10:50:15.701 (main) I/OMcore: platform/AndroidPlatform.cpp:152 Initialize(): Temporary path =  /data/user/0/app.comaps.fdroid.debug/cache/
+07-16 10:50:15.720 (main) I/OMcore: sdk/Framework.cpp:1558 Java_app_organicmaps_sdk_Framework_nativeSetCustomMapDownloadUrl(): nativeSetCustomMapDownloadUrl: framework not created yet, skipping ResetMapDownloadMetaConfig
+07-16 10:50:15.723 (main) I/OrganicMaps: OrganicMaps.java:178 initNativePlatform(): Platform initialized
+07-16 10:50:15.764 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries-strings/en.json/localize.json is r
+07-16 10:50:15.813 (main) D/OMcore: storage/storage.cpp:440 Storage(): COUNTRIES: Storage ctor entered. pathToCountriesFile= countries.txt dataDir= 
+07-16 10:50:15.822 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries.txt is r
+07-16 10:50:15.824 (main) D/OMcore: storage/country_tree.cpp:458 LoadCountriesFromFile(): COUNTRIES: loading bundled countries.txt
+07-16 10:50:15.881 (main) D/OMcore: storage/country_tree.cpp:414 LoadCountriesFromBuffer(): COUNTRIES: loaded and parsed map version 260603 mapSeries 2026.04.05
+07-16 10:50:16.014 (main) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: countries.txt in scope w
+07-16 10:50:16.020 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries.txt is w
+07-16 10:50:16.027 (main) I/OMcore: storage/storage.cpp:921 LoadCountriesFile(): Loaded countries list for map version: 260603
+07-16 10:50:16.042 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file editor.config is r
+07-16 10:50:16.047 (main) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/notes.xml in scope f
+07-16 10:50:16.055 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/notes.xml is f
+07-16 10:50:16.061 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file transit_colors.txt is r
+07-16 10:50:16.067 (main) D/OMcore: indexer/classificator_loader.cpp:46 Load(): Reading of classificator started
+07-16 10:50:16.072 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file classificator.txt is r
+07-16 10:50:16.076 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file types.txt is r
+07-16 10:50:16.169 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file drules_proto_default_light.bin is r
+07-16 10:50:16.356 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file classificator.txt is r
+07-16 10:50:16.364 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file types.txt is r
+07-16 10:50:16.451 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file drules_proto_default_dark.bin is r
+07-16 10:50:16.599 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file classificator.txt is r
+07-16 10:50:16.607 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file types.txt is r
+07-16 10:50:16.692 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file drules_proto_vehicle_light.bin is r
+07-16 10:50:16.787 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file classificator.txt is r
+07-16 10:50:16.797 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file types.txt is r
+07-16 10:50:16.889 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file drules_proto_vehicle_dark.bin is r
+07-16 10:50:16.990 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file classificator.txt is r
+07-16 10:50:16.999 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file types.txt is r
+07-16 10:50:17.090 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file drules_proto_outdoors_light.bin is r
+07-16 10:50:17.260 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file classificator.txt is r
+07-16 10:50:17.284 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file types.txt is r
+07-16 10:50:17.378 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file drules_proto_outdoors_dark.bin is r
+07-16 10:50:17.518 (main) D/OMcore: indexer/classificator_loader.cpp:67 Load(): Reading of classificator finished
+07-16 10:50:17.520 (main) D/OMcore: map/framework.cpp:357 Framework(): Classificator initialized
+07-16 10:50:17.523 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file categories.txt is r
+07-16 10:50:19.461 (main) W/OMcore: indexer/categories_holder.cpp:48 ParseEmoji(): Bad emoji code: U+2139
+07-16 10:50:19.467 (main) W/OMcore: indexer/categories_holder.cpp:48 ParseEmoji(): Bad emoji code: U+2139
+07-16 10:50:19.521 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file packed_polygons.bin is r
+07-16 10:50:19.525 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries.txt is r
+07-16 10:50:19.688 (main) D/OMcore: map/framework.cpp:363 Framework(): Country info getter initialized
+07-16 10:50:19.925 (main) I/OMcore: search/processor.cpp:195 SetPreferredLocale(): New preferred locale: en
+07-16 10:50:19.930 (main) D/OMcore: search/processor.cpp:214 SetInputLocale(): New input locale: en ; locale code: 1
+07-16 10:50:19.934 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries-strings/en.json/localize.json is r
+07-16 10:50:19.965 (Thread-11) W/OMcore: search/geocoder.cpp:719 CacheWorldLocalities(): Can't find World map file.
+07-16 10:50:19.970 (main) D/OMcore: map/framework.cpp:366 Framework(): Search API initialized, part 1
+07-16 10:50:19.974 (Thread-11) W/OMcore: search/cities_boundaries_table.cpp:52 Load(): Can't find World map file.
+07-16 10:50:19.979 (Thread-11) W/OMcore: search/processor.cpp:312 LoadCitiesBoundaries(): Can't load cities boundaries
+07-16 10:50:19.984 (main) D/SecureStorage: SecureStorage.java:32 load(): load: key = LastBookmarkCategoryId
+07-16 10:50:19.988 (Thread-11) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries.txt is r
+07-16 10:50:19.993 (Thread-11) D/OMcore: storage/country_tree.cpp:458 LoadCountriesFromFile(): COUNTRIES: loading bundled countries.txt
+07-16 10:50:19.997 (main) D/SecureStorage: SecureStorage.java:32 load(): load: key = LastBookmarkId
+07-16 10:50:20.000 (main) D/SecureStorage: SecureStorage.java:32 load(): load: key = LastTrackId
+07-16 10:50:20.004 (main) D/SecureStorage: SecureStorage.java:32 load(): load: key = LastBookmarkId
+07-16 10:50:20.008 (main) D/SecureStorage: SecureStorage.java:32 load(): load: key = LastTrackId
+07-16 10:50:20.011 (main) D/SecureStorage: SecureStorage.java:32 load(): load: key = LastBookmarkCategoryId
+07-16 10:50:20.014 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries.txt is r
+07-16 10:50:20.017 (main) D/OMcore: storage/country_tree.cpp:458 LoadCountriesFromFile(): COUNTRIES: loading bundled countries.txt
+07-16 10:50:20.020 (Thread-11) D/OMcore: storage/country_tree.cpp:414 LoadCountriesFromBuffer(): COUNTRIES: loaded and parsed map version 260603 mapSeries 2026.04.05
+07-16 10:50:20.026 (main) D/OMcore: storage/country_tree.cpp:414 LoadCountriesFromBuffer(): COUNTRIES: loaded and parsed map version 260603 mapSeries 2026.04.05
+07-16 10:50:20.124 (Thread-11) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: countries.txt in scope w
+07-16 10:50:20.127 (Thread-11) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries.txt is w
+07-16 10:50:20.131 (main) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: countries.txt in scope w
+07-16 10:50:20.134 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries.txt is w
+07-16 10:50:20.139 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries-strings/en.json/localize.json is r
+07-16 10:50:20.228 (main) I/OMcore: routing/edge_estimator.cpp:180 EdgeEstimator(): Loading turn penalties for vehicle type: 2
+07-16 10:50:20.231 (main) I/OMcore: routing/edge_estimator.cpp:515 EdgeEstimator(): Loaded 144 turn penalties with default: 0.0727778
+07-16 10:50:20.235 (main) I/OMcore: map/framework.cpp:394 Framework(): System languages: en_GB
+07-16 10:50:20.238 (main) D/OMcore: map/framework.cpp:407 Framework(): Transliterators initialized
+07-16 10:50:20.241 (main) W/OMcore: power_management/power_manager.cpp:70 Load(): Cannot read power manager config file. Exception: /data/user/0/app.comaps.fdroid.debug/files/power_manager_config; READ; No such file or directory
+07-16 10:50:20.296 (Thread-12) W/OMcore: platform/platform_android.cpp:117 GetReader(): Can't get reader: LocateZipException /home/runner/work/comaps/comaps/libs/coding/zip_reader.cpp:55, "Can't locate file inside zip assets/World.mwm"
+07-16 10:50:20.301 (Thread-12) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: World.mwm in scope r
+07-16 10:50:20.304 (Thread-12) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file World.mwm is r
+07-16 10:50:20.361 (main) I/OMcore: routing/edge_estimator.cpp:180 EdgeEstimator(): Loading turn penalties for vehicle type: 0
+07-16 10:50:20.364 (main) W/OMcore: routing/edge_estimator.cpp:519 EdgeEstimator(): No turn penalties loaded for vehicle type: 0
+07-16 10:50:20.367 (Thread-12) W/OMcore: platform/platform_android.cpp:117 GetReader(): Can't get reader: LocateZipException /home/runner/work/comaps/comaps/libs/coding/zip_reader.cpp:55, "Can't locate file inside zip assets/WorldCoasts.mwm"
+07-16 10:50:20.370 (Thread-12) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: WorldCoasts.mwm in scope r
+07-16 10:50:20.372 (Thread-12) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file WorldCoasts.mwm is r
+07-16 10:50:20.375 (Thread-12) I/OMcore: storage/storage.cpp:1258 RegisterLocalFile(): Found file: Spain_Cantabria in directory: /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603 with size: 41636026
+07-16 10:50:20.379 (main) D/TrafficManager: TrafficManager.java:29 initialize(): Initialization of traffic manager and setting the listener for traffic state changes
+07-16 10:50:20.383 (Thread-12) I/OMcore: storage/storage.cpp:1258 RegisterLocalFile(): Found file: World in directory: /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603 with size: 53254586
+07-16 10:50:20.387 (main) I/OrganicMaps: OrganicMaps.java:199 initNativeFramework(): Framework initialized
+07-16 10:50:20.391 (Thread-12) I/OMcore: storage/storage.cpp:1258 RegisterLocalFile(): Found file: WorldCoasts in directory: /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603 with size: 8491724
+07-16 10:50:20.392 (Thread-12) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/Spain_Cantabria.mwm is f
+07-16 10:50:20.394 (Thread-12) I/OMcore: map/framework.cpp:171 RegisterMap(): Loaded Spain_Cantabria map, of version 260603
+07-16 10:50:20.398 (Thread-12) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/World.mwm is f
+07-16 10:50:20.400 (Thread-12) I/OMcore: map/framework.cpp:171 RegisterMap(): Loaded World map, of version 260603
+07-16 10:50:20.401 (Thread-12) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/WorldCoasts.mwm is f
+07-16 10:50:20.403 (main) D/SecureStorage: SecureStorage.java:21 save(): save: key = LastBookmarkId
+07-16 10:50:20.405 (main) D/SecureStorage: SecureStorage.java:21 save(): save: key = LastTrackId
+07-16 10:50:20.406 (main) D/SecureStorage: SecureStorage.java:21 save(): save: key = LastBookmarkCategoryId
+07-16 10:50:20.408 (Thread-12) I/OMcore: map/framework.cpp:171 RegisterMap(): Loaded WorldCoasts map, of version 260603
+07-16 10:50:20.410 (Thread-12) D/OMcore: map/framework.cpp:547 operator()(): Maps initialized
+07-16 10:50:20.412 (Thread-12) D/OMcore: map/framework.cpp:550 operator()(): Search API initialized, part 2, after World was loaded
+07-16 10:50:20.413 (Thread-11) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/World.mwm is f
+07-16 10:50:20.434 (main) I/OMcore: editor/osm_editor.cpp:157 LoadEdits(): Loading OSM edits...
+07-16 10:50:20.435 (main) D/OMcore: map/framework.cpp:556 operator()(): Editor initialized
+07-16 10:50:20.444 (main) D/MwmApplication: MwmApplication.java:214 onForeground(): 
+07-16 10:50:20.446 (main) D/LocationState: LocationHelper.java:478 resumeLocationInForeground(): Engine is not created yet.
+07-16 10:50:20.513 (main) D/MwmApplication: MwmApplication.java:192 onActivityPaused(): activity = app.organicmaps.SplashActivity@acf8e0e
+07-16 10:50:20.974 (main) W/OMcore: platform/platform_android.cpp:117 GetReader(): Can't get reader: LocateZipException /home/runner/work/comaps/comaps/libs/coding/zip_reader.cpp:55, "Can't locate file inside zip assets/World.mwm"
+07-16 10:50:20.987 (main) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: World.mwm in scope r
+07-16 10:50:21.000 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file World.mwm is r
+07-16 10:50:21.050 (main) W/OMcore: platform/platform_android.cpp:117 GetReader(): Can't get reader: LocateZipException /home/runner/work/comaps/comaps/libs/coding/zip_reader.cpp:55, "Can't locate file inside zip assets/WorldCoasts.mwm"
+07-16 10:50:21.052 (main) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: WorldCoasts.mwm in scope r
+07-16 10:50:21.054 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file WorldCoasts.mwm is r
+07-16 10:50:21.056 (main) I/OMcore: platform/platform_unix_impl.cpp:115 GetWritableStorageStatus(): statfs return = 0 ; block size = 4096 ; blocks available = 7445687
+07-16 10:50:21.057 (main) I/OMcore: platform/platform_unix_impl.cpp:124 GetWritableStorageStatus(): Free space check: requested = 0 ; available = 30497533952
+07-16 10:50:21.870 (main) D/DisplayManager: DisplayManager.java:62 addListener(): displayType = Device, listener = app.organicmaps.MwmActivity@d392b56
+07-16 10:50:22.013 (main) I/OMcore: sdk/Framework.cpp:916 Java_app_organicmaps_sdk_Framework_nativePlacePageActivationListener(): Set global map object listener
+07-16 10:50:22.014 (main) D/LocationState: LocationHelper.java:372 addListener(): listener: app.organicmaps.MwmActivity@d392b56 count was: 0
+07-16 10:50:22.016 (main) I/Utils: Utils.java:78 keepScreenOn(): KeepScreenOn = false window = com.android.internal.policy.PhoneWindow@1caed3f
+07-16 10:50:22.017 (main) D/MapController[Device]: MapController.java:70 onStart(): 
+07-16 10:50:22.047 (main) D/MwmApplication: MwmApplication.java:183 onActivityResumed(): activity = app.organicmaps.MwmActivity@d392b56
+07-16 10:50:22.050 (main) I/Utils: Utils.java:95 showOnLockScreen(): showOnLockScreen = false window = com.android.internal.policy.PhoneWindow@1caed3f
+07-16 10:50:22.053 (main) I/SensorHelper: SensorHelper.java:94 setRotation(): rotation = 0
+07-16 10:50:22.060 (main) D/SensorHelper: SensorHelper.java:105 addListener(): listener: app.organicmaps.MwmActivity@d392b56 count was: 0
+07-16 10:50:22.103 (main) D/MapController[Device]: MapController.java:77 onResume(): 
+07-16 10:50:22.583 (main) D/MapView: MapView.java:28 surfaceCreated(): 
+07-16 10:50:22.590 (main) D/Map: Map.java:154 onSurfaceCreated(): mSurfaceCreated = false
+07-16 10:50:22.592 (Thread-11) D/OMcore: search/cities_boundaries_table.cpp:107 Load(): Localities count = 117359 ; with boundary = 47310
+07-16 10:50:22.595 (main) I/OMcore: sdk/Framework.cpp:192 CreateDrapeEngine(): Android SDK version in the Drape Engine: 33
+07-16 10:50:22.598 (Thread-11) I/OMcore: search/processor.cpp:310 LoadCitiesBoundaries(): Loaded cities boundaries
+07-16 10:50:22.623 (main) I/OMcore: vulkan/vulkan_layers.cpp:259 Layers(): Vulkan instance extension prepared VK_KHR_surface
+07-16 10:50:22.625 (main) I/OMcore: vulkan/vulkan_layers.cpp:259 Layers(): Vulkan instance extension prepared VK_KHR_android_surface
+07-16 10:50:22.636 (main) I/OMcore: drape/support_manager.cpp:92 IsVulkanForbidden(): Device = Mali-G72 API = [3: 1 1 213 ] Driver = [3: 38 1 0 ] SDK = 33
+07-16 10:50:22.638 (main) I/OMcore: vulkan/vulkan_layers.cpp:372 Initialize(): Vulkan device extension prepared VK_KHR_swapchain
+07-16 10:50:22.640 (main) W/OMcore: vulkan/vulkan_context_factory.cpp:204 VulkanContextFactory(): Widelines Vulkan feature is not supported.
+07-16 10:50:22.703 (main) I/OMcore: drape_frontend/visual_params.cpp:55 Init(): Visual scale = 2.625 ; Tile size = 1024 ; Resources = 6plus
+07-16 10:50:22.716 (Thread-20) I/OMcore: drape_frontend/backend_renderer.cpp:729 Do(): Start routine.
+07-16 10:50:22.718 (Thread-20) I/OMcore: drape_frontend/backend_renderer.cpp:697 OnContextCreate(): On context create.
+07-16 10:50:22.724 (Thread-20) I/OMcore: drape/support_manager.cpp:35 Init(): Renderer = Mali-G72 | Api = Vulkan | Version = API:1.1.213/Driver:38.1.0
+07-16 10:50:22.734 (Thread-20) I/OMcore: drape/support_manager.cpp:56 Init(): Max line width = 1 | Max texture size = 16384
+07-16 10:50:22.739 (Thread-21) I/OMcore: drape_frontend/frontend_renderer.cpp:2401 Do(): Start routine.
+07-16 10:50:22.742 (Thread-21) I/OMcore: drape_frontend/frontend_renderer.cpp:2326 OnContextCreate(): On context create.
+07-16 10:50:22.744 (Thread-11) I/OMcore: search/processor.cpp:195 SetPreferredLocale(): New preferred locale: en
+07-16 10:50:22.750 (Thread-11) D/OMcore: search/processor.cpp:214 SetInputLocale(): New input locale: en ; locale code: 1
+07-16 10:50:22.752 (main) I/OMcore: sdk/Framework.cpp:415 ResumeSurfaceRendering(): Resume surface rendering.
+07-16 10:50:22.753 (Thread-11) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file countries-strings/en.json/localize.json is r
+07-16 10:50:22.755 (Thread-20) I/OMcore: platform/platform.cpp:216 GetFontNames(): Available font files: [129: fonts/00_NotoNaskhArabic-Regular.ttf fonts/00_NotoSansBengali-Regular.ttf fonts/00_NotoSansHebrew-Regular.ttf fonts/00_NotoSansMalayalam-Regular.ttf fonts/00_NotoSansThai-Regular.ttf fonts/00_NotoSerifDevanagari-Regular.ttf fonts/01_dejavusans.ttf fonts/02_droidsans-fallback.ttf fonts/03_jomolhari-id-a3d.ttf fonts/04_padauk.ttf fonts/05_khmeros.ttf fonts/06_code2000.ttf fonts/07_roboto_medium.ttf /system/fonts/NotoNaskhArabic-Regular.ttf /system/fonts/NotoNaskhArabicUI-Regular.ttf /system/fonts/NotoSansAhom-Regular.otf /system/fonts/NotoSansAnatolianHieroglyphs-Regular.otf /system/fonts/NotoSansAvestan-Regular.ttf /system/fonts/NotoSansBalinese-Regular.ttf /system/fonts/NotoSansBamum-Regular.ttf /system/fonts/NotoSansBassaVah-Regular.otf /system/fonts/NotoSansBatak-Regular.ttf /system/fonts/NotoSansBhaiksuki-Regular.otf /system/fonts/NotoSansBrahmi-Regular.ttf /system/fonts/NotoSansBuginese-Regular.ttf /system/fonts/NotoSansBuhid-Regular.ttf /system/fonts/NotoSansCJK-Regular.ttc /system/fonts/NotoSansCanadianAboriginal-Regular.ttf /system/fonts/NotoSansCarian-Regular.ttf /system/fonts/NotoSansChakma-Regular.otf /system/fonts/NotoSansCham-Regular.ttf /system/fonts/NotoSansCherokee-Regular.ttf /system/fonts/NotoSansCoptic-Regular.ttf /system/fonts/NotoSansCuneiform-Regular.ttf /system/fonts/NotoSansCypriot-Regular.ttf /system/fonts/NotoSansDeseret-Regular.ttf /system/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf /system/fonts/NotoSansElbasan-Regular.otf /system/fonts/NotoSansGlagolitic-Regular.ttf /system/fonts/NotoSansGothic-Regular.ttf /system/fonts/NotoSansGrantha-Regular.ttf /system/fonts/NotoSansGujarati-Regular.ttf /system/fonts/NotoSansGujaratiUI-Regular.ttf /system/fonts/NotoSansGunjalaGondi-Regular.otf /system/fonts/NotoSansHanifiRohingya-Regular.otf /system/fonts/NotoSansHanunoo-Regular.ttf /system/fonts/NotoSansHatran-Regular.otf /system/fonts/NotoSansHebrew-Regular.ttf /system/fonts/NotoSansImperialAramaic-Regular.ttf /system/fonts/NotoSansInscriptionalPahlavi-Regular.ttf /system/fonts/NotoSansInscriptionalParthian-Regular.ttf /system/fonts/NotoSansJavanese-Regular.otf /system/fonts/NotoSansKaithi-Regular.ttf /system/fonts/NotoSansKayahLi-Regular.ttf /system/fonts/NotoSansKharoshthi-Regular.ttf /system/fonts/NotoSansKhmerUI-Regular.ttf /system/fonts/NotoSansKhojki-Regular.otf /system/fonts/NotoSansLao-Regular.ttf /system/fonts/NotoSansLaoUI-Regular.ttf /system/fonts/NotoSansLepcha-Regular.ttf /system/fonts/NotoSansLimbu-Regular.ttf /system/fonts/NotoSansLinearA-Regular.otf /system/fonts/NotoSansLinearB-Regular.ttf /system/fonts/NotoSansLisu-Regular.ttf /system/fonts/NotoSansLycian-Regular.ttf /system/fonts/NotoSansLydian-Regular.ttf /system/fonts/NotoSansMandaic-Regular.ttf /system/fonts/NotoSansManichaean-Regular.otf /system/fonts/NotoSansMarchen-Regular.otf /system/fonts/NotoSansMasaramGondi-Regular.otf /system/fonts/NotoSansMeeteiMayek-Regular.ttf /system/fonts/NotoSansMeroitic-Regular.otf /system/fonts/NotoSansMiao-Regular.otf /system/fonts/NotoSansModi-Regular.ttf /system/fonts/NotoSansMongolian-Regular.ttf /system/fonts/NotoSansMro-Regular.otf /system/fonts/NotoSansMultani-Regular.otf /system/fonts/NotoSansMyanmar-Regular.otf /system/fonts/NotoSansMyanmarUI-Regular.otf /system/fonts/NotoSansNKo-Regular.ttf /system/fonts/NotoSansNabataean-Regular.otf /system/fonts/NotoSansNewTaiLue-Regular.ttf /system/fonts/NotoSansNewa-Regular.otf /system/fonts/NotoSansOgham-Regular.ttf /system/fonts/NotoSansOlChiki-Regular.ttf /system/fonts/NotoSansOldItalic-Regular.ttf /system/fonts/NotoSansOldNorthArabian-Regular.otf /system/fonts/NotoSansOldPermic-Regular.otf /system/fonts/NotoSansOldPersian-Regular.ttf /system/fonts/NotoSansOldSouthArabian-Regular.ttf /system/fonts/NotoSansOldTurkic-Regular.ttf /system/fonts/NotoSansOriya-Regular.ttf /system/fonts/NotoSansOriyaUI-Regular.ttf /system/fonts/NotoSansOsage-Regular.ttf /system/fonts/NotoSansOsmanya-Regular.ttf /system/fonts/NotoSansPahawhHmong-Regular.otf /system/fonts/NotoSansPalmyrene-Regular.otf /system/fonts/NotoSansPauCinHau-Regular.otf /system/fonts/NotoSansPhagsPa-Regular.ttf /system/fonts/NotoSansPhoenician-Regular.ttf /system/fonts/NotoSansRejang-Regular.ttf /system/fonts/NotoSansRunic-Regular.ttf /system/fonts/NotoSansSamaritan-Regular.ttf /system/fonts/NotoSansSaurashtra-Regular.ttf /system/fonts/NotoSansSharada-Regular.otf /system/fonts/NotoSansShavian-Regular.ttf /system/fonts/NotoSansSoraSompeng-Regular.otf /system/fonts/NotoSansSundanese-Regular.ttf /system/fonts/NotoSansSylotiNagri-Regular.ttf /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf /system/fonts/NotoSansSymbols-Regular-Subsetted2.ttf /system/fonts/NotoSansSyriacEastern-Regular.ttf /system/fonts/NotoSansSyriacEstrangela-Regular.ttf /system/fonts/NotoSansSyriacWestern-Regular.ttf /system/fonts/NotoSansTagalog-Regular.ttf /system/fonts/NotoSansTagbanwa-Regular.ttf /system/fonts/NotoSansTaiLe-Regular.ttf /system/fonts/NotoSansTaiTham-Regular.ttf /system/fonts/NotoSansTaiViet-Regular.ttf /system/fonts/NotoSansThaana-Regular.ttf /system/fonts/NotoSansThai-Regular.ttf /system/fonts/NotoSansThaiUI-Regular.ttf /system/fonts/NotoSansTifinagh-Regular.otf /system/fonts/NotoSansUgaritic-Regular.ttf /system/fonts/NotoSansVai-Regular.ttf /system/fonts/NotoSansWancho-Regular.otf /system/fonts/NotoSansWarangCiti-Regular.otf /system/fonts/NotoSansYi-Regular.ttf /system/fonts/Roboto-Regular.ttf ]
+07-16 10:50:22.761 (main) D/MapView: MapView.java:36 surfaceChanged(): 
+07-16 10:50:22.768 (main) D/Map: Map.java:209 onSurfaceChanged(): mSurfaceCreated = true
+07-16 10:50:22.775 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/6plus/light/symbols.sdf is r
+07-16 10:50:22.798 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/6plus/light/symbols.png is r
+07-16 10:50:22.839 (Thread-21) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file vulkan_shaders/reflection.json is r
+07-16 10:50:22.853 (Thread-21) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file vulkan_shaders/shaders_pack.spv is r
+07-16 10:50:22.984 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "in" is not supported by current TTS engine
+07-16 10:50:22.995 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "ca" is not supported by current TTS engine
+07-16 10:50:23.004 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "da" is not supported by current TTS engine
+07-16 10:50:23.010 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "eu" is not supported by current TTS engine
+07-16 10:50:23.012 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "hr" is not supported by current TTS engine
+07-16 10:50:23.014 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "sw" is not supported by current TTS engine
+07-16 10:50:23.016 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "lv" is not supported by current TTS engine
+07-16 10:50:23.018 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "lt" is not supported by current TTS engine
+07-16 10:50:23.021 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "hu" is not supported by current TTS engine
+07-16 10:50:23.023 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "nl" is not supported by current TTS engine
+07-16 10:50:23.025 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "nb" is not supported by current TTS engine
+07-16 10:50:23.028 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "pl" is not supported by current TTS engine
+07-16 10:50:23.033 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "ro" is not supported by current TTS engine
+07-16 10:50:23.036 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "sk" is not supported by current TTS engine
+07-16 10:50:23.040 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "fi" is not supported by current TTS engine
+07-16 10:50:23.049 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "sv" is not supported by current TTS engine
+07-16 10:50:23.056 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "vi" is not supported by current TTS engine
+07-16 10:50:23.059 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "tr" is not supported by current TTS engine
+07-16 10:50:23.061 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "cs" is not supported by current TTS engine
+07-16 10:50:23.069 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "el" is not supported by current TTS engine
+07-16 10:50:23.079 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "be" is not supported by current TTS engine
+07-16 10:50:23.082 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "bg" is not supported by current TTS engine
+07-16 10:50:23.084 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "sr" is not supported by current TTS engine
+07-16 10:50:23.085 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "uk" is not supported by current TTS engine
+07-16 10:50:23.087 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "ar" is not supported by current TTS engine
+07-16 10:50:23.090 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "fa" is not supported by current TTS engine
+07-16 10:50:23.094 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "mr" is not supported by current TTS engine
+07-16 10:50:23.095 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "hi" is not supported by current TTS engine
+07-16 10:50:23.097 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "th" is not supported by current TTS engine
+07-16 10:50:23.099 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "zh_CN" is not supported by current TTS engine
+07-16 10:50:23.101 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "zh_TW" is not supported by current TTS engine
+07-16 10:50:23.105 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "ja" is not supported by current TTS engine
+07-16 10:50:23.109 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "ko" is not supported by current TTS engine
+07-16 10:50:23.113 (main) W/TtsPlayer: TtsPlayer.java:366 getUsableLanguages(): Failed to get usable languages Locale "ta" is not supported by current TTS engine
+07-16 10:50:23.115 (main) D/TtsPlayer: TtsPlayer.java:394 refreshLanguagesInternal(): Selected locale en will be used for TTS
+07-16 10:50:23.120 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/6plus/light/traffic-arrow.png is r
+07-16 10:50:23.132 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/6plus/light/area-hatching.png is r
+07-16 10:50:23.166 (main) I/OMcore: routing/routing_session.cpp:920 SetTurnNotificationsLocale(): The language for turn notifications is en
+07-16 10:50:23.178 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file sound-strings/en.json/localize.json is r
+07-16 10:50:23.215 (Thread-20) W/OMcore: platform/platform_android.cpp:117 GetReader(): Can't get reader: LocateZipException /home/runner/work/comaps/comaps/libs/coding/zip_reader.cpp:55, "Can't locate file inside zip assets/symbols/default/arrow-texture.png"
+07-16 10:50:23.217 (Thread-20) W/OMcore: platform/platform_android.cpp:125 GetReader(): Can't get reader for: symbols/default/arrow-texture.png in scope rw
+07-16 10:50:23.224 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/default/arrow-texture.png is w
+07-16 10:50:23.231 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/default/smaa-area.png is r
+07-16 10:50:23.249 (main) D/LocationState: MwmActivity.java:1885 onMyPositionModeChanged(): newMode = PENDING_POSITION
+07-16 10:50:23.260 (main) I/LocationState: LocationHelper.java:432 start(): 
+07-16 10:50:23.263 (main) D/LocationState: LocationHelper.java:504 checkForAgpsUpdates(): A-GPS should be up to date
+07-16 10:50:23.266 (main) D/SensorHelper: SensorHelper.java:144 start(): 
+07-16 10:50:23.299 (main) I/LocationState: LocationHelper.java:440 start(): provider = AndroidNativeProvider mInFirstRun = false oldInterval = 0 interval = 500
+07-16 10:50:23.301 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:80 start(): 
+07-16 10:50:23.307 (main) D/AndroidNativeProvider: AndroidNativeProvider.java:116 start(): Request Android native provider 'fused' to get locations at this interval = 500 ms
+07-16 10:50:23.314 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/default/smaa-search.png is r
+07-16 10:50:23.319 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file patterns.txt is r
+07-16 10:50:23.322 (Thread-20) D/OMcore: drape/texture_manager.cpp:397 InitStipplePen(): Patterns texture size = 512 512
+07-16 10:50:23.328 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file colors.txt is r
+07-16 10:50:23.334 (Thread-20) I/OMcore: drape/texture_manager.cpp:346 Init(): Colors count = 958 texture size = 128 128
+07-16 10:50:23.345 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/unicode_blocks.txt is r
+07-16 10:50:23.353 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/whitelist.txt is r
+07-16 10:50:23.358 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/blacklist.txt is r
+07-16 10:50:23.389 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/00_NotoNaskhArabic-Regular.ttf is r
+07-16 10:50:23.391 (main) D/MwmApplication: MwmApplication.java:209 onActivityDestroyed(): activity = app.organicmaps.DownloadResourcesLegacyActivity@7aacbae
+07-16 10:50:23.393 (main) I/Utils: Utils.java:78 keepScreenOn(): KeepScreenOn = false window = com.android.internal.policy.PhoneWindow@24c6916
+07-16 10:50:23.398 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/00_NotoSansBengali-Regular.ttf is r
+07-16 10:50:23.401 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/00_NotoSansHebrew-Regular.ttf is r
+07-16 10:50:23.405 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/00_NotoSansMalayalam-Regular.ttf is r
+07-16 10:50:23.409 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/00_NotoSansThai-Regular.ttf is r
+07-16 10:50:23.412 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/00_NotoSerifDevanagari-Regular.ttf is r
+07-16 10:50:23.415 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/01_dejavusans.ttf is r
+07-16 10:50:23.423 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/02_droidsans-fallback.ttf is r
+07-16 10:50:23.451 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/03_jomolhari-id-a3d.ttf is r
+07-16 10:50:23.463 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/04_padauk.ttf is r
+07-16 10:50:23.471 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/05_khmeros.ttf is r
+07-16 10:50:23.479 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/06_code2000.ttf is r
+07-16 10:50:23.505 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file fonts/07_roboto_medium.ttf is r
+07-16 10:50:23.511 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoNaskhArabic-Regular.ttf is f
+07-16 10:50:23.514 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoNaskhArabicUI-Regular.ttf is f
+07-16 10:50:23.518 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansAhom-Regular.otf is f
+07-16 10:50:23.523 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansAnatolianHieroglyphs-Regular.otf is f
+07-16 10:50:23.533 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansAvestan-Regular.ttf is f
+07-16 10:50:23.534 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBalinese-Regular.ttf is f
+07-16 10:50:23.537 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBamum-Regular.ttf is f
+07-16 10:50:23.545 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBassaVah-Regular.otf is f
+07-16 10:50:23.548 (main) D/MwmApplication: MwmApplication.java:209 onActivityDestroyed(): activity = app.organicmaps.SplashActivity@acf8e0e
+07-16 10:50:23.552 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBatak-Regular.ttf is f
+07-16 10:50:23.554 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBhaiksuki-Regular.otf is f
+07-16 10:50:23.556 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBrahmi-Regular.ttf is f
+07-16 10:50:23.561 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBuginese-Regular.ttf is f
+07-16 10:50:23.563 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansBuhid-Regular.ttf is f
+07-16 10:50:23.570 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCJK-Regular.ttc is f
+07-16 10:50:23.619 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCanadianAboriginal-Regular.ttf is f
+07-16 10:50:23.622 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCarian-Regular.ttf is f
+07-16 10:50:23.624 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansChakma-Regular.otf is f
+07-16 10:50:23.628 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCham-Regular.ttf is f
+07-16 10:50:23.630 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCherokee-Regular.ttf is f
+07-16 10:50:23.633 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCoptic-Regular.ttf is f
+07-16 10:50:23.635 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCuneiform-Regular.ttf is f
+07-16 10:50:23.639 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansCypriot-Regular.ttf is f
+07-16 10:50:23.641 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansDeseret-Regular.ttf is f
+07-16 10:50:23.643 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf is f
+07-16 10:50:23.646 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansElbasan-Regular.otf is f
+07-16 10:50:23.648 (main) D/LocationState: LocationHelper.java:71 onStarted(): 
+07-16 10:50:23.650 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansGlagolitic-Regular.ttf is f
+07-16 10:50:23.651 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansGothic-Regular.ttf is f
+07-16 10:50:23.653 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansGrantha-Regular.ttf is f
+07-16 10:50:23.656 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansGujarati-Regular.ttf is f
+07-16 10:50:23.659 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansGujaratiUI-Regular.ttf is f
+07-16 10:50:23.664 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansGunjalaGondi-Regular.otf is f
+07-16 10:50:23.667 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansHanifiRohingya-Regular.otf is f
+07-16 10:50:23.669 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansHanunoo-Regular.ttf is f
+07-16 10:50:23.671 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansHatran-Regular.otf is f
+07-16 10:50:23.673 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansHebrew-Regular.ttf is f
+07-16 10:50:23.677 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansImperialAramaic-Regular.ttf is f
+07-16 10:50:23.678 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansInscriptionalPahlavi-Regular.ttf is f
+07-16 10:50:23.680 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansInscriptionalParthian-Regular.ttf is f
+07-16 10:50:23.683 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansJavanese-Regular.otf is f
+07-16 10:50:23.687 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansKaithi-Regular.ttf is f
+07-16 10:50:23.689 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansKayahLi-Regular.ttf is f
+07-16 10:50:23.691 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansKharoshthi-Regular.ttf is f
+07-16 10:50:23.695 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansKhmerUI-Regular.ttf is f
+07-16 10:50:23.697 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansKhojki-Regular.otf is f
+07-16 10:50:23.700 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLao-Regular.ttf is f
+07-16 10:50:23.703 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLaoUI-Regular.ttf is f
+07-16 10:50:23.704 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLepcha-Regular.ttf is f
+07-16 10:50:23.708 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLimbu-Regular.ttf is f
+07-16 10:50:23.710 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLinearA-Regular.otf is f
+07-16 10:50:23.715 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLinearB-Regular.ttf is f
+07-16 10:50:23.719 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLisu-Regular.ttf is f
+07-16 10:50:23.720 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLycian-Regular.ttf is f
+07-16 10:50:23.723 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansLydian-Regular.ttf is f
+07-16 10:50:23.725 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMandaic-Regular.ttf is f
+07-16 10:50:23.730 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansManichaean-Regular.otf is f
+07-16 10:50:23.732 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMarchen-Regular.otf is f
+07-16 10:50:23.736 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMasaramGondi-Regular.otf is f
+07-16 10:50:23.741 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMeeteiMayek-Regular.ttf is f
+07-16 10:50:23.743 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMeroitic-Regular.otf is f
+07-16 10:50:23.746 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMiao-Regular.otf is f
+07-16 10:50:23.748 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansModi-Regular.ttf is f
+07-16 10:50:23.750 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMongolian-Regular.ttf is f
+07-16 10:50:23.753 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMro-Regular.otf is f
+07-16 10:50:23.755 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMultani-Regular.otf is f
+07-16 10:50:23.757 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMyanmar-Regular.otf is f
+07-16 10:50:23.761 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansMyanmarUI-Regular.otf is f
+07-16 10:50:23.764 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansNKo-Regular.ttf is f
+07-16 10:50:23.766 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansNabataean-Regular.otf is f
+07-16 10:50:23.768 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansNewTaiLue-Regular.ttf is f
+07-16 10:50:23.769 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansNewa-Regular.otf is f
+07-16 10:50:23.772 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOgham-Regular.ttf is f
+07-16 10:50:23.774 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOlChiki-Regular.ttf is f
+07-16 10:50:23.776 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOldItalic-Regular.ttf is f
+07-16 10:50:23.778 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOldNorthArabian-Regular.otf is f
+07-16 10:50:23.780 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOldPermic-Regular.otf is f
+07-16 10:50:23.781 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOldPersian-Regular.ttf is f
+07-16 10:50:23.783 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOldSouthArabian-Regular.ttf is f
+07-16 10:50:23.786 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOldTurkic-Regular.ttf is f
+07-16 10:50:23.787 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOriya-Regular.ttf is f
+07-16 10:50:23.790 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOriyaUI-Regular.ttf is f
+07-16 10:50:23.794 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOsage-Regular.ttf is f
+07-16 10:50:23.795 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansOsmanya-Regular.ttf is f
+07-16 10:50:23.798 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansPahawhHmong-Regular.otf is f
+07-16 10:50:23.801 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansPalmyrene-Regular.otf is f
+07-16 10:50:23.803 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansPauCinHau-Regular.otf is f
+07-16 10:50:23.805 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansPhagsPa-Regular.ttf is f
+07-16 10:50:23.808 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansPhoenician-Regular.ttf is f
+07-16 10:50:23.810 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansRejang-Regular.ttf is f
+07-16 10:50:23.813 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansRunic-Regular.ttf is f
+07-16 10:50:23.816 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSamaritan-Regular.ttf is f
+07-16 10:50:23.818 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSaurashtra-Regular.ttf is f
+07-16 10:50:23.820 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSharada-Regular.otf is f
+07-16 10:50:23.823 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansShavian-Regular.ttf is f
+07-16 10:50:23.826 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSoraSompeng-Regular.otf is f
+07-16 10:50:23.827 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSundanese-Regular.ttf is f
+07-16 10:50:23.829 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSylotiNagri-Regular.ttf is f
+07-16 10:50:23.831 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf is f
+07-16 10:50:23.840 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSymbols-Regular-Subsetted2.ttf is f
+07-16 10:50:23.843 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSyriacEastern-Regular.ttf is f
+07-16 10:50:23.846 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSyriacEstrangela-Regular.ttf is f
+07-16 10:50:23.849 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansSyriacWestern-Regular.ttf is f
+07-16 10:50:23.851 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansTagalog-Regular.ttf is f
+07-16 10:50:23.853 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansTagbanwa-Regular.ttf is f
+07-16 10:50:23.855 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansTaiLe-Regular.ttf is f
+07-16 10:50:23.857 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansTaiTham-Regular.ttf is f
+07-16 10:50:23.860 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansTaiViet-Regular.ttf is f
+07-16 10:50:23.862 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansThaana-Regular.ttf is f
+07-16 10:50:23.865 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansThai-Regular.ttf is f
+07-16 10:50:23.868 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansThaiUI-Regular.ttf is f
+07-16 10:50:23.871 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansTifinagh-Regular.otf is f
+07-16 10:50:23.874 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansUgaritic-Regular.ttf is f
+07-16 10:50:23.876 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansVai-Regular.ttf is f
+07-16 10:50:23.879 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansWancho-Regular.otf is f
+07-16 10:50:23.882 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansWarangCiti-Regular.otf is f
+07-16 10:50:23.884 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/NotoSansYi-Regular.ttf is f
+07-16 10:50:23.888 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /system/fonts/Roboto-Regular.ttf is f
+07-16 10:50:23.894 (Thread-20) D/OMcore: drape/glyph_manager.cpp:466 GlyphManager(): How unicode blocks are mapped on font files:
+07-16 10:50:23.895 (Thread-20) D/OMcore: Basic_Latin is in fonts/07_roboto_medium.ttf
+07-16 10:50:23.897 (Thread-20) D/OMcore: Latin-1_Supplement is in fonts/07_roboto_medium.ttf
+07-16 10:50:23.898 (Thread-20) D/OMcore: Latin_Extended-A is in fonts/07_roboto_medium.ttf
+07-16 10:50:23.900 (Thread-20) D/OMcore: Latin_Extended-B is in fonts/07_roboto_medium.ttf
+07-16 10:50:23.901 (Thread-20) D/OMcore: IPA_Extensions is in fonts/01_dejavusans.ttf
+07-16 10:50:23.903 (Thread-20) D/OMcore: Spacing_Modifier_Letters is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:23.904 (Thread-20) D/OMcore: Combining_Diacritical_Marks is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:23.906 (Thread-20) D/OMcore: Greek_and_Coptic is in fonts/01_dejavusans.ttf
+07-16 10:50:23.908 (Thread-20) D/OMcore: Cyrillic is in fonts/07_roboto_medium.ttf
+07-16 10:50:23.909 (Thread-20) D/OMcore: Cyrillic_Supplement is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:23.911 (Thread-20) D/OMcore: Armenian is in fonts/01_dejavusans.ttf
+07-16 10:50:23.912 (Thread-20) D/OMcore: Hebrew is in /system/fonts/NotoSansHebrew-Regular.ttf
+07-16 10:50:23.914 (Thread-20) D/OMcore: Arabic is in fonts/00_NotoNaskhArabic-Regular.ttf
+07-16 10:50:23.916 (Thread-20) D/OMcore: Syriac is in /system/fonts/NotoSansSyriacEastern-Regular.ttf
+07-16 10:50:23.917 (Thread-20) D/OMcore: Arabic_Supplement is in fonts/00_NotoNaskhArabic-Regular.ttf
+07-16 10:50:23.918 (Thread-20) D/OMcore: Thaana is in fonts/06_code2000.ttf
+07-16 10:50:23.920 (Thread-20) D/OMcore: NKo is in /system/fonts/NotoSansNKo-Regular.ttf
+07-16 10:50:23.921 (Thread-20) D/OMcore: Samaritan is in /system/fonts/NotoSansSamaritan-Regular.ttf
+07-16 10:50:23.923 (Thread-20) D/OMcore: Mandaic is in /system/fonts/NotoSansMandaic-Regular.ttf
+07-16 10:50:23.924 (Thread-20) D/OMcore: Arabic_Extended-A is in fonts/00_NotoNaskhArabic-Regular.ttf
+07-16 10:50:23.926 (Thread-20) D/OMcore: Devanagari is in fonts/00_NotoSerifDevanagari-Regular.ttf
+07-16 10:50:23.928 (Thread-20) D/OMcore: Bengali is in fonts/00_NotoSansBengali-Regular.ttf
+07-16 10:50:23.930 (Thread-20) D/OMcore: Gurmukhi is in fonts/06_code2000.ttf
+07-16 10:50:23.932 (Thread-20) D/OMcore: Gujarati is in /system/fonts/NotoSansGujarati-Regular.ttf
+07-16 10:50:23.934 (Thread-20) D/OMcore: Oriya is in /system/fonts/NotoSansOriya-Regular.ttf
+07-16 10:50:23.935 (Thread-20) D/OMcore: Tamil is in fonts/06_code2000.ttf
+07-16 10:50:23.937 (Thread-20) D/OMcore: Telugu is in fonts/06_code2000.ttf
+07-16 10:50:23.938 (Thread-20) D/OMcore: Kannada is in fonts/06_code2000.ttf
+07-16 10:50:23.939 (Thread-20) D/OMcore: Malayalam is in fonts/00_NotoSansMalayalam-Regular.ttf
+07-16 10:50:23.941 (Thread-20) D/OMcore: Sinhala is unsupported
+07-16 10:50:23.943 (Thread-20) D/OMcore: Thai is in fonts/00_NotoSansThai-Regular.ttf
+07-16 10:50:23.944 (Thread-20) D/OMcore: Lao is in /system/fonts/NotoSansLao-Regular.ttf
+07-16 10:50:23.946 (Thread-20) D/OMcore: Tibetan is in fonts/03_jomolhari-id-a3d.ttf
+07-16 10:50:23.947 (Thread-20) D/OMcore: Myanmar is in /system/fonts/NotoSansMyanmar-Regular.otf
+07-16 10:50:23.949 (Thread-20) D/OMcore: Georgian is in fonts/01_dejavusans.ttf
+07-16 10:50:23.950 (Thread-20) D/OMcore: Hangul_Jamo is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:23.951 (Thread-20) D/OMcore: Ethiopic is in fonts/06_code2000.ttf
+07-16 10:50:23.953 (Thread-20) D/OMcore: Ethiopic_Supplement is in fonts/06_code2000.ttf
+07-16 10:50:23.955 (Thread-20) D/OMcore: Cherokee is in /system/fonts/NotoSansCherokee-Regular.ttf
+07-16 10:50:23.956 (Thread-20) D/OMcore: Unified_Canadian_Aboriginal_Syllabics is in /system/fonts/NotoSansCanadianAboriginal-Regular.ttf
+07-16 10:50:23.958 (Thread-20) D/OMcore: Ogham is in fonts/01_dejavusans.ttf
+07-16 10:50:23.959 (Thread-20) D/OMcore: Runic is in fonts/06_code2000.ttf
+07-16 10:50:23.961 (Thread-20) D/OMcore: Tagalog is in /system/fonts/NotoSansTagalog-Regular.ttf
+07-16 10:50:23.962 (Thread-20) D/OMcore: Hanunoo is in /system/fonts/NotoSansHanunoo-Regular.ttf
+07-16 10:50:23.964 (Thread-20) D/OMcore: Buhid is in fonts/06_code2000.ttf
+07-16 10:50:23.966 (Thread-20) D/OMcore: Tagbanwa is in /system/fonts/NotoSansTagbanwa-Regular.ttf
+07-16 10:50:23.967 (Thread-20) D/OMcore: Khmer is in fonts/05_khmeros.ttf
+07-16 10:50:23.969 (Thread-20) D/OMcore: Mongolian is in /system/fonts/NotoSansMongolian-Regular.ttf
+07-16 10:50:23.971 (Thread-20) D/OMcore: Unified_Canadian_Aboriginal_Syllabics_Extended is in /system/fonts/NotoSansCanadianAboriginal-Regular.ttf
+07-16 10:50:23.973 (Thread-20) D/OMcore: Limbu is in /system/fonts/NotoSansLimbu-Regular.ttf
+07-16 10:50:23.975 (Thread-20) D/OMcore: Tai_Le is in /system/fonts/NotoSansTaiLe-Regular.ttf
+07-16 10:50:23.977 (Thread-20) D/OMcore: New_Tai_Lue is in /system/fonts/NotoSansNewTaiLue-Regular.ttf
+07-16 10:50:23.978 (Thread-20) D/OMcore: Khmer_Symbols is in fonts/05_khmeros.ttf
+07-16 10:50:23.980 (Thread-20) D/OMcore: Buginese is in /system/fonts/NotoSansBuginese-Regular.ttf
+07-16 10:50:23.982 (Thread-20) D/OMcore: Tai_Tham is in /system/fonts/NotoSansTaiTham-Regular.ttf
+07-16 10:50:23.983 (Thread-20) D/OMcore: Balinese is in /system/fonts/NotoSansBalinese-Regular.ttf
+07-16 10:50:23.985 (Thread-20) D/OMcore: Sundanese is in /system/fonts/NotoSansSundanese-Regular.ttf
+07-16 10:50:23.987 (Thread-20) D/OMcore: Batak is in /system/fonts/NotoSansBatak-Regular.ttf
+07-16 10:50:23.988 (Thread-20) D/OMcore: Lepcha is in /system/fonts/NotoSansLepcha-Regular.ttf
+07-16 10:50:23.989 (Thread-20) D/OMcore: Ol_Chiki is in /system/fonts/NotoSansOlChiki-Regular.ttf
+07-16 10:50:23.991 (Thread-20) D/OMcore: Vedic_Extensions is in fonts/00_NotoSerifDevanagari-Regular.ttf
+07-16 10:50:23.992 (Thread-20) D/OMcore: Phonetic_Extensions is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:23.994 (Thread-20) D/OMcore: Phonetic_Extensions_Supplement is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:23.996 (Thread-20) D/OMcore: Combining_Diacritical_Marks_Supplement is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:23.998 (Thread-20) D/OMcore: Latin_Extended_Additional is in fonts/07_roboto_medium.ttf
+07-16 10:50:23.999 (Thread-20) D/OMcore: Greek_Extended is in fonts/01_dejavusans.ttf
+07-16 10:50:24.001 (Thread-20) D/OMcore: General_Punctuation is in fonts/01_dejavusans.ttf
+07-16 10:50:24.002 (Thread-20) D/OMcore: Superscripts_and_Subscripts is in fonts/01_dejavusans.ttf
+07-16 10:50:24.004 (Thread-20) D/OMcore: Currency_Symbols is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.005 (Thread-20) D/OMcore: Combining_Diacritical_Marks_for_Symbols is in /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf
+07-16 10:50:24.007 (Thread-20) D/OMcore: Letterlike_Symbols is in fonts/06_code2000.ttf
+07-16 10:50:24.009 (Thread-20) D/OMcore: Number_Forms is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.010 (Thread-20) D/OMcore: Arrows is in fonts/01_dejavusans.ttf
+07-16 10:50:24.012 (Thread-20) D/OMcore: Mathematical_Operators is in fonts/01_dejavusans.ttf
+07-16 10:50:24.014 (Thread-20) D/OMcore: Miscellaneous_Technical is in /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf
+07-16 10:50:24.016 (Thread-20) D/OMcore: Control_Pictures is in fonts/06_code2000.ttf
+07-16 10:50:24.018 (Thread-20) D/OMcore: Optical_Character_Recognition is in fonts/06_code2000.ttf
+07-16 10:50:24.020 (Thread-20) D/OMcore: Enclosed_Alphanumerics is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.021 (Thread-20) D/OMcore: Box_Drawing is in fonts/01_dejavusans.ttf
+07-16 10:50:24.023 (Thread-20) D/OMcore: Block_Elements is in fonts/01_dejavusans.ttf
+07-16 10:50:24.024 (Thread-20) D/OMcore: Geometric_Shapes is in fonts/01_dejavusans.ttf
+07-16 10:50:24.026 (Thread-20) D/OMcore: Miscellaneous_Symbols is in /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf
+07-16 10:50:24.028 (Thread-20) D/OMcore: Dingbats is in fonts/01_dejavusans.ttf
+07-16 10:50:24.029 (Thread-20) D/OMcore: Miscellaneous_Mathematical_Symbols-A is in /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf
+07-16 10:50:24.031 (Thread-20) D/OMcore: Supplemental_Arrows-A is in fonts/01_dejavusans.ttf
+07-16 10:50:24.032 (Thread-20) D/OMcore: Braille_Patterns is in fonts/01_dejavusans.ttf
+07-16 10:50:24.034 (Thread-20) D/OMcore: Supplemental_Arrows-B is in fonts/06_code2000.ttf
+07-16 10:50:24.035 (Thread-20) D/OMcore: Miscellaneous_Mathematical_Symbols-B is in fonts/06_code2000.ttf
+07-16 10:50:24.036 (Thread-20) D/OMcore: Supplemental_Mathematical_Operators is in fonts/06_code2000.ttf
+07-16 10:50:24.038 (Thread-20) D/OMcore: Miscellaneous_Symbols_and_Arrows is in /system/fonts/NotoSansSymbols-Regular-Subsetted.ttf
+07-16 10:50:24.039 (Thread-20) D/OMcore: Glagolitic is in /system/fonts/NotoSansGlagolitic-Regular.ttf
+07-16 10:50:24.041 (Thread-20) D/OMcore: Latin_Extended-C is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.042 (Thread-20) D/OMcore: Coptic is in /system/fonts/NotoSansCoptic-Regular.ttf
+07-16 10:50:24.044 (Thread-20) D/OMcore: Georgian_Supplement is in fonts/01_dejavusans.ttf
+07-16 10:50:24.045 (Thread-20) D/OMcore: Tifinagh is in /system/fonts/NotoSansTifinagh-Regular.otf
+07-16 10:50:24.047 (Thread-20) D/OMcore: Ethiopic_Extended is unsupported
+07-16 10:50:24.049 (Thread-20) D/OMcore: Cyrillic_Extended-A is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.050 (Thread-20) D/OMcore: Supplemental_Punctuation is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.052 (Thread-20) D/OMcore: CJK_Radicals_Supplement is in fonts/06_code2000.ttf
+07-16 10:50:24.053 (Thread-20) D/OMcore: Kangxi_Radicals is in fonts/06_code2000.ttf
+07-16 10:50:24.056 (Thread-20) D/OMcore: Ideographic_Description_Characters is in fonts/06_code2000.ttf
+07-16 10:50:24.057 (Thread-20) D/OMcore: CJK_Symbols_and_Punctuation is in fonts/06_code2000.ttf
+07-16 10:50:24.063 (Thread-20) D/OMcore: Hiragana is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.066 (Thread-20) D/OMcore: Katakana is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.067 (Thread-20) D/OMcore: Bopomofo is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.069 (Thread-20) D/OMcore: Hangul_Compatibility_Jamo is in fonts/02_droidsans-fallback.ttf
+07-16 10:50:24.071 (Thread-20) D/OMcore: Kanbun is in fonts/06_code2000.ttf
+07-16 10:50:24.072 (Thread-20) D/OMcore: Bopomofo_Extended is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.074 (Thread-20) D/OMcore: CJK_Strokes is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.076 (Thread-20) D/OMcore: Katakana_Phonetic_Extensions is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.078 (Thread-20) D/OMcore: Enclosed_CJK_Letters_and_Months is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.079 (Thread-20) D/OMcore: CJK_Compatibility is in fonts/02_droidsans-fallback.ttf
+07-16 10:50:24.081 (Thread-20) D/OMcore: CJK_Unified_Ideographs_Extension_A is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.082 (Thread-20) D/OMcore: Yijing_Hexagram_Symbols is in fonts/01_dejavusans.ttf
+07-16 10:50:24.084 (Thread-20) D/OMcore: CJK_Unified_Ideographs is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.086 (Thread-20) D/OMcore: Yi_Syllables is in fonts/06_code2000.ttf
+07-16 10:50:24.087 (Thread-20) D/OMcore: Yi_Radicals is in fonts/06_code2000.ttf
+07-16 10:50:24.090 (Thread-20) D/OMcore: Lisu is in fonts/01_dejavusans.ttf
+07-16 10:50:24.093 (Thread-20) D/OMcore: Vai is in /system/fonts/NotoSansVai-Regular.ttf
+07-16 10:50:24.096 (Thread-20) D/OMcore: Cyrillic_Extended-B is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.100 (Thread-20) D/OMcore: Bamum is in /system/fonts/NotoSansBamum-Regular.ttf
+07-16 10:50:24.102 (Thread-20) D/OMcore: Modifier_Tone_Letters is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.103 (Thread-20) D/OMcore: Latin_Extended-D is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.104 (Thread-20) D/OMcore: Syloti_Nagri is in /system/fonts/NotoSansSylotiNagri-Regular.ttf
+07-16 10:50:24.105 (Thread-20) D/OMcore: Common_Indic_Number_Forms is in fonts/00_NotoSerifDevanagari-Regular.ttf
+07-16 10:50:24.108 (Thread-20) D/OMcore: Phags-pa is in /system/fonts/NotoSansPhagsPa-Regular.ttf
+07-16 10:50:24.109 (Thread-20) D/OMcore: Saurashtra is in /system/fonts/NotoSansSaurashtra-Regular.ttf
+07-16 10:50:24.111 (Thread-20) D/OMcore: Devanagari_Extended is in fonts/00_NotoSerifDevanagari-Regular.ttf
+07-16 10:50:24.113 (Thread-20) D/OMcore: Kayah_Li is in /system/fonts/NotoSansKayahLi-Regular.ttf
+07-16 10:50:24.115 (Thread-20) D/OMcore: Rejang is in /system/fonts/NotoSansRejang-Regular.ttf
+07-16 10:50:24.117 (Thread-20) D/OMcore: Hangul_Jamo_Extended-A is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.118 (Thread-20) D/OMcore: Javanese is in /system/fonts/NotoSansJavanese-Regular.otf
+07-16 10:50:24.120 (Thread-20) D/OMcore: Cham is in /system/fonts/NotoSansCham-Regular.ttf
+07-16 10:50:24.121 (Thread-20) D/OMcore: Myanmar_Extended-A is in /system/fonts/NotoSansMyanmar-Regular.otf
+07-16 10:50:24.122 (Thread-20) D/OMcore: Tai_Viet is in /system/fonts/NotoSansTaiViet-Regular.ttf
+07-16 10:50:24.124 (Thread-20) D/OMcore: Ethiopic_Extended-A is unsupported
+07-16 10:50:24.128 (Thread-20) D/OMcore: Meetei_Mayek is in /system/fonts/NotoSansMeeteiMayek-Regular.ttf
+07-16 10:50:24.130 (Thread-20) D/OMcore: Hangul_Syllables is in fonts/02_droidsans-fallback.ttf
+07-16 10:50:24.132 (Thread-20) D/OMcore: Hangul_Jamo_Extended-B is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.133 (Thread-20) D/OMcore: High_Surrogates is unsupported
+07-16 10:50:24.135 (Thread-20) D/OMcore: High_Private_Use_Surrogates is unsupported
+07-16 10:50:24.136 (Thread-20) D/OMcore: Low_Surrogates is unsupported
+07-16 10:50:24.138 (Thread-20) D/OMcore: Private_Use_Area is in fonts/03_jomolhari-id-a3d.ttf
+07-16 10:50:24.140 (Thread-20) D/OMcore: CJK_Compatibility_Ideographs is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.141 (Thread-20) D/OMcore: Alphabetic_Presentation_Forms is in fonts/01_dejavusans.ttf
+07-16 10:50:24.143 (Thread-20) D/OMcore: Arabic_Presentation_Forms-A is in fonts/00_NotoNaskhArabic-Regular.ttf
+07-16 10:50:24.145 (Thread-20) D/OMcore: Variation_Selectors is in fonts/01_dejavusans.ttf
+07-16 10:50:24.146 (Thread-20) D/OMcore: Vertical_Forms is in fonts/02_droidsans-fallback.ttf
+07-16 10:50:24.149 (Thread-20) D/OMcore: Combining_Half_Marks is in /system/fonts/Roboto-Regular.ttf
+07-16 10:50:24.150 (Thread-20) D/OMcore: CJK_Compatibility_Forms is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.152 (Thread-20) D/OMcore: Small_Form_Variants is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.154 (Thread-20) D/OMcore: Arabic_Presentation_Forms-B is in fonts/00_NotoNaskhArabic-Regular.ttf
+07-16 10:50:24.156 (Thread-20) D/OMcore: Halfwidth_and_Fullwidth_Forms is in /system/fonts/NotoSansCJK-Regular.ttc
+07-16 10:50:24.158 (Thread-20) D/OMcore: drape/texture_manager.cpp:362 Init(): Glyphs texture size = 1024 with max glyphs count = 1397
+07-16 10:50:24.162 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/default/arrow.obj is r
+07-16 10:50:24.165 (Thread-20) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file symbols/default/arrow_shadow.obj is r
+07-16 10:50:24.170 (Thread-18) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/Spain_Cantabria.mwm is f
+07-16 10:50:24.174 (Thread-19) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/Spain_Cantabria.mwm is f
+07-16 10:50:24.176 (Thread-18) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/WorldCoasts.mwm is f
+07-16 10:50:24.178 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_tram-s
+07-16 10:50:24.183 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_tram-m
+07-16 10:50:24.185 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_bus-s
+07-16 10:50:24.187 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_bus-m
+07-16 10:50:24.189 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_ferry-s
+07-16 10:50:24.192 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_ferry-m
+07-16 10:50:24.195 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_cable_tram-s
+07-16 10:50:24.196 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_cable_tram-m
+07-16 10:50:24.198 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_aerial_lift-s
+07-16 10:50:24.200 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_aerial_lift-m
+07-16 10:50:24.202 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_funicular-s
+07-16 10:50:24.204 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_funicular-m
+07-16 10:50:24.207 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_trolleybus-s
+07-16 10:50:24.210 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_trolleybus-m
+07-16 10:50:24.212 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_air_service-s
+07-16 10:50:24.238 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_air_service-m
+07-16 10:50:24.240 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_water_service-s
+07-16 10:50:24.242 (Thread-20) W/OMcore: drape/texture_manager.cpp:481 GetSymbolRegion(): Detected using of unknown symbol  transit_water_service-m
+07-16 10:50:24.244 (Thread-14) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file /storage/emulated/0/Android/data/app.comaps.fdroid.debug/files/260603/Spain_Cantabria.mwm is f
+07-16 10:50:25.651 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 3 used = 0 fixed = false
+07-16 10:50:26.130 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:50:26.382 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 24.184
+07-16 10:50:26.392 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447771,-3.645374 hAcc=24.184 et=+12d16h49m17s83ms alt=138.40000915527344 vAcc=1.0]
+07-16 10:50:26.410 (main) D/LocationState: MwmActivity.java:1885 onMyPositionModeChanged(): newMode = NOT_FOLLOW
+07-16 10:50:26.464 (Thread-14) D/OMcore: drape_frontend/metaline_manager.cpp:69 OnTaskFinished(): Metalines prepared: MwmId [Spain_Cantabria, 260603]
+07-16 10:50:27.118 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:50:28.122 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:50:29.118 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:50:30.121 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 0 fixed = false
+07-16 10:50:30.444 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:31.117 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:31.248 (main) D/OMcore: platform/platform_android.cpp:36 ~DbgLogger(): Source for file subtypes.csv is r
+07-16 10:50:31.585 (main) D/LocationState: LocationHelper.java:372 addListener(): listener: PlacePageView{fc55fa7} (e24ed4d4-8598-43ec-8c2d-406f7bba1da4 id=0x7f0902fb tag=PLACE_PAGE) count was: 1
+07-16 10:50:31.589 (main) D/SensorHelper: SensorHelper.java:105 addListener(): listener: PlacePageView{fc55fa7} (e24ed4d4-8598-43ec-8c2d-406f7bba1da4 id=0x7f0902fb tag=PLACE_PAGE) count was: 1
+07-16 10:50:31.890 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = SETTLING
+07-16 10:50:32.118 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:32.155 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = COLLAPSED
+07-16 10:50:33.122 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:33.271 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = SETTLING
+07-16 10:50:33.275 (main) D/RoutingController: RoutingController.java:326 prepare(): prepare (p2p)
+07-16 10:50:33.279 (main) D/RoutingController: RoutingController.java:482 cancel(): cancel: none
+07-16 10:50:33.283 (main) D/RoutingController: RoutingController.java:190 setState(): [S] State: NONE -> PREPARE, BuildState: NONE
+07-16 10:50:33.289 (main) D/RoutingPlanInplaceController: RoutingPlanInplaceController.java:36 show(): show=true mAnimator=null
+07-16 10:50:33.292 (main) D/RoutingController: RoutingController.java:284 build(): build
+07-16 10:50:33.295 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: NONE -> BUILDING
+07-16 10:50:33.304 (Thread-9) I/OMcore: routing/async_router.cpp:310 CalculateRoute(): Calculating the route of direct length 7786.36 m. checkpoints: Checkpoints(ms::LatLon(43.4477707, -3.6453741); ms::LatLon(43.4534751, -3.741404); passed: 0) startDirection: m2::Point<d>(0, 0) router name: astar-bidirectional-Pedestrian
+07-16 10:50:33.310 (Thread-9) I/OMcore: routing/index_router.cpp:1096 MakeWorldGraph(): Avoid next roads: RoutingOptions: { | steps | }
+07-16 10:50:33.622 (main) D/PlacePageController: PlacePageController.java:133 onStateChanged(): State change, new = HIDDEN
+07-16 10:50:33.638 (main) D/LocationState: LocationHelper.java:386 removeListener(): listener: PlacePageView{fc55fa7} (e24ed4d4-8598-43ec-8c2d-406f7bba1da4 id=0x7f0902fb tag=PLACE_PAGE) count was: 2
+07-16 10:50:33.641 (main) D/SensorHelper: SensorHelper.java:119 removeListener(): listener: PlacePageView{fc55fa7} (e24ed4d4-8598-43ec-8c2d-406f7bba1da4 id=0x7f0902fb tag=PLACE_PAGE) count was: 2
+07-16 10:50:34.121 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:34.479 (Thread-9) I/OMcore: routing/index_graph_loader.cpp:163 CreateIndexGraph(): routing section for Spain_Cantabria loaded in 1.12738 seconds
+07-16 10:50:34.969 (Thread-9) I/OMcore: routing/index_router.cpp:703 CalculateSubroute(): Routing in mode: Joints
+07-16 10:50:35.116 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:35.941 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 13.919
+07-16 10:50:35.944 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447770,-3.645364 hAcc=13.919 et=+12d16h49m26s864ms alt=138.20001220703125 vAcc=1.0 vel=0.06041061 sAcc=1.5]
+07-16 10:50:36.126 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:36.318 (Thread-9) D/OMcore: routing/index_router.cpp:741 CalculateSubrouteJointsMode(): Result route weight: (0, 0, 0, 8008.65, 0)
+07-16 10:50:36.321 (Thread-9) I/OMcore: base/timer.cpp:185 ~ScopedTimerWithLog(): Route build time: 1353 ms
+07-16 10:50:36.386 (Thread-9) D/OMcore: routing/routing_helpers.cpp:84 ReconstructRoute(): ms::LatLon(43.4477707, -3.6453741)
+TurnItem { m_index = 1, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = None }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4486013, -3.64585566)
+TurnItem { m_index = 13, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4546258, -3.64176798)
+TurnItem { m_index = 57, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Acceso a Güemes, m_ref = CA-444, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4657951, -3.66126495)
+TurnItem { m_index = 147, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Galizano-Güemes, m_ref = CA-443, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4676795, -3.66281795)
+TurnItem { m_index = 155, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Galizano-Güemes, m_ref = CA-443, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4664608, -3.6689468)
+TurnItem { m_index = 170, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Loredo-Galizano, m_ref = CA-440, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4669008, -3.66921234)
+TurnItem { m_index = 171, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4666555, -3.67236662)
+TurnItem { m_index = 178, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4665991, -3.67250341)
+TurnItem { m_index = 181, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4665173, -3.67252218)
+TurnItem { m_index = 183, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4664881, -3.67258388)
+TurnItem { m_index = 185, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4645083, -3.67950129)
+TurnItem { m_index = 208, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4547153, -3.72034061)
+TurnItem { m_index = 282, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Loredo-Galizano, m_ref = CA-440, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4554708, -3.72053909)
+TurnItem { m_index = 289, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562769, -3.72175145)
+TurnItem { m_index = 291, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562087, -3.72286993)
+TurnItem { m_index = 297, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561347, -3.72361022)
+TurnItem { m_index = 300, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4560666, -3.72374433)
+TurnItem { m_index = 305, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561484, -3.7238248)
+TurnItem { m_index = 309, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.455428, -3.72870642)
+TurnItem { m_index = 321, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4548555, -3.73595911)
+TurnItem { m_index = 339, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4543337, -3.73989659)
+TurnItem { m_index = 351, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4538314, -3.7412833)
+TurnItem { m_index = 361, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4534751, -3.741404)
+TurnItem { m_index = 365, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = ReachedYourDestination }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+
+07-16 10:50:36.390 (Thread-9) I/OMcore: routing/index_router.cpp:655 DoCalculateRoute(): Route length: 10581.3 meters. ETA: 7813.6 seconds.
+07-16 10:50:36.472 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 3.16814
+07-16 10:50:36.475 (Thread-9) I/OMcore: routing/async_router.cpp:320 CalculateRoute(): ETA: 7813.6 sec.
+07-16 10:50:36.479 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 3.17041
+07-16 10:50:36.517 (main) D/RoutingController: RoutingController.java:94 onRoutingEvent(): onRoutingEvent(resultCode: 0)
+07-16 10:50:36.523 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILDING -> BUILT
+07-16 10:50:37.143 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:38.115 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:39.119 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:40.114 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:40.982 (main) D/RoutingController: RoutingController.java:284 build(): build
+07-16 10:50:40.985 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILT -> BUILDING
+07-16 10:50:40.994 (Thread-9) I/OMcore: routing/async_router.cpp:310 CalculateRoute(): Calculating the route of direct length 7787.21 m. checkpoints: Checkpoints(ms::LatLon(43.44777, -3.6453636); ms::LatLon(43.4534751, -3.741404); passed: 0) startDirection: m2::Point<d>(0, 0) router name: astar-bidirectional-Pedestrian
+07-16 10:50:40.995 (main) D/RoutingController: RoutingController.java:190 setState(): [S] State: PREPARE -> PREPARE, BuildState: BUILDING
+07-16 10:50:40.997 (Thread-9) I/OMcore: routing/index_router.cpp:1096 MakeWorldGraph(): Avoid next roads: RoutingOptions: { | steps | }
+07-16 10:50:40.998 (main) D/RoutingPlanInplaceController: RoutingPlanInplaceController.java:36 show(): show=true mAnimator=ValueAnimator@80ec634
+    :  -277.0  0.0  
+07-16 10:50:41.000 (main) I/NavigationService: NavigationService.java:102 stopService(): 
+07-16 10:50:41.119 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:42.125 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:42.163 (Thread-9) I/OMcore: routing/index_graph_loader.cpp:163 CreateIndexGraph(): routing section for Spain_Cantabria loaded in 1.14994 seconds
+07-16 10:50:42.681 (Thread-9) I/OMcore: routing/index_router.cpp:703 CalculateSubroute(): Routing in mode: Joints
+07-16 10:50:43.119 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:44.041 (Thread-9) D/OMcore: routing/index_router.cpp:741 CalculateSubrouteJointsMode(): Result route weight: (0, 0, 0, 8002.51, 0)
+07-16 10:50:44.045 (Thread-9) I/OMcore: base/timer.cpp:185 ~ScopedTimerWithLog(): Route build time: 1360 ms
+07-16 10:50:44.116 (Thread-9) D/OMcore: routing/routing_helpers.cpp:84 ReconstructRoute(): ms::LatLon(43.44777, -3.6453636)
+TurnItem { m_index = 1, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = None }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4486013, -3.64585566)
+TurnItem { m_index = 13, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle del Albergue, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4546258, -3.64176798)
+TurnItem { m_index = 57, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Acceso a Güemes, m_ref = CA-444, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4657951, -3.66126495)
+TurnItem { m_index = 147, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Galizano-Güemes, m_ref = CA-443, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4676795, -3.66281795)
+TurnItem { m_index = 155, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Galizano-Güemes, m_ref = CA-443, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4664608, -3.6689468)
+TurnItem { m_index = 170, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Loredo-Galizano, m_ref = CA-440, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4669008, -3.66921234)
+TurnItem { m_index = 171, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4666555, -3.67236662)
+TurnItem { m_index = 178, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4665991, -3.67250341)
+TurnItem { m_index = 181, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4665173, -3.67252218)
+TurnItem { m_index = 183, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Verdes, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4664881, -3.67258388)
+TurnItem { m_index = 185, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4645083, -3.67950129)
+TurnItem { m_index = 208, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4547153, -3.72034061)
+TurnItem { m_index = 282, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Loredo-Galizano, m_ref = CA-440, m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4554708, -3.72053909)
+TurnItem { m_index = 289, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562769, -3.72175145)
+TurnItem { m_index = 291, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4562087, -3.72286993)
+TurnItem { m_index = 297, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Barrio Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561347, -3.72361022)
+TurnItem { m_index = 300, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4560666, -3.72374433)
+TurnItem { m_index = 305, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4561484, -3.7238248)
+TurnItem { m_index = 309, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle Latas, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.455428, -3.72870642)
+TurnItem { m_index = 321, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4548555, -3.73595911)
+TurnItem { m_index = 339, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnRight }
+RoadNameInfo { m_name = Calle de la Arna, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4543337, -3.73989659)
+TurnItem { m_index = 351, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4538314, -3.7412833)
+TurnItem { m_index = 361, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = TurnLeft }
+RoadNameInfo { m_name = Calle de la Fuente, m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+ms::LatLon(43.4534751, -3.741404)
+TurnItem { m_index = 365, m_turn = None, m_lanes = [0: ], m_exitNum = 0, m_pedestrianDir = ReachedYourDestination }
+RoadNameInfo { m_name = , m_ref = , m_junction_ref = , m_destination_ref = , m_destination = , m_isLink = 0 }
+
+07-16 10:50:44.120 (Thread-9) I/OMcore: routing/index_router.cpp:655 DoCalculateRoute(): Route length: 10580.5 meters. ETA: 7812.57 seconds.
+07-16 10:50:44.125 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:44.193 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 3.20008
+07-16 10:50:44.197 (Thread-9) I/OMcore: routing/async_router.cpp:320 CalculateRoute(): ETA: 7812.57 sec.
+07-16 10:50:44.201 (Thread-9) I/OMcore: routing/async_router.cpp:212 LogCode(): Route found, elapsed seconds: 3.20122
+07-16 10:50:44.231 (main) D/RoutingController: RoutingController.java:94 onRoutingEvent(): onRoutingEvent(resultCode: 0)
+07-16 10:50:44.234 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILDING -> BUILT
+07-16 10:50:45.136 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:46.119 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:46.224 (main) D/LocationState: LocationHelper.java:272 updateProviderDecision(): Selected: fused, with acc. 10.414
+07-16 10:50:46.228 (main) D/LocationState: LocationHelper.java:216 onLocationChanged(): provider = AndroidNativeProvider location = Location[fused 43.447763,-3.645368 hAcc=10.414 et=+12d16h49m37s153ms alt=138.50001525878906 vAcc=1.0 vel=0.08802123 sAcc=1.5]
+07-16 10:50:47.136 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:47.702 (main) D/RoutingController: RoutingController.java:462 cancel(): cancel: planning
+07-16 10:50:47.706 (main) D/RoutingController: RoutingController.java:446 cancelInternal(): cancelInternal
+07-16 10:50:47.710 (main) D/RoutingController: RoutingController.java:199 setBuildState(): [B] State: PREPARE, BuildState: BUILT -> NONE
+07-16 10:50:47.715 (main) D/RoutingController: RoutingController.java:190 setState(): [S] State: PREPARE -> NONE, BuildState: NONE
+07-16 10:50:47.717 (main) D/RoutingPlanInplaceController: RoutingPlanInplaceController.java:36 show(): show=false mAnimator=ValueAnimator@92ecfc7
+    :  -398.0  0.0  
+07-16 10:50:48.168 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:49.143 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:49.620 (main) D/MapController[Device]: MapController.java:84 onPause(): 
+07-16 10:50:49.622 (main) I/OMcore: sdk/Framework.cpp:399 PauseSurfaceRendering(): Pause surface rendering.
+07-16 10:50:49.623 (main) D/SensorHelper: SensorHelper.java:119 removeListener(): listener: app.organicmaps.MwmActivity@d392b56 count was: 1
+07-16 10:50:49.624 (main) D/MwmApplication: MwmApplication.java:192 onActivityPaused(): activity = app.organicmaps.MwmActivity@d392b56
+07-16 10:50:49.866 (main) D/MwmApplication: MwmApplication.java:183 onActivityResumed(): activity = app.organicmaps.help.HelpActivity@223da04
+07-16 10:50:49.868 (main) I/Utils: Utils.java:95 showOnLockScreen(): showOnLockScreen = false window = com.android.internal.policy.PhoneWindow@bdf0590
+07-16 10:50:49.869 (main) I/SensorHelper: SensorHelper.java:94 setRotation(): rotation = 0
+07-16 10:50:50.118 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:50.485 (main) D/MapView: MapView.java:44 surfaceDestroyed(): 
+07-16 10:50:50.487 (main) D/Map: Map.java:224 onSurfaceDestroyed(): mSurfaceCreated = true, mSurfaceAttached = true
+07-16 10:50:50.489 (main) I/OMcore: sdk/Framework.cpp:297 DetachSurface(): Detach surface started. destroySurface = 1
+07-16 10:50:50.490 (main) I/OMcore: sdk/Framework.cpp:310 DetachSurface(): Destroy surface.
+07-16 10:50:50.492 (main) D/OMcore: drape_frontend/drape_engine.cpp:382 SetRenderingDisabled(): Rendering disabled
+07-16 10:50:50.498 (main) I/OMcore: sdk/Framework.cpp:332 DetachSurface(): Detach surface finished.
+07-16 10:50:50.526 (main) D/MapController[Device]: MapController.java:91 onStop(): 
+07-16 10:50:50.533 (main) I/OMcore: sdk/Framework.cpp:958 Java_app_organicmaps_sdk_Framework_nativeRemovePlacePageActivationListener(): Remove global map object listener
+07-16 10:50:50.535 (main) D/LocationState: LocationHelper.java:386 removeListener(): listener: app.organicmaps.MwmActivity@d392b56 count was: 1
+07-16 10:50:50.536 (main) I/Utils: Utils.java:78 keepScreenOn(): KeepScreenOn = false window = com.android.internal.policy.PhoneWindow@1caed3f
+07-16 10:50:50.544 (main) D/MwmApplication: MwmApplication.java:203 onActivitySaveInstanceState(): activity = app.organicmaps.MwmActivity@d392b56 outState = Bundle[{android:viewHierarchyState=Bundle[{android:views={16908290=android.view.AbsSavedState$1@95837f, 2131296314=android.view.AbsSavedState$1@95837f, 2131296325=android.view.AbsSavedState$1@95837f, 2131296338=android.view.AbsSavedState$1@95837f, 2131296339=android.view.AbsSavedState$1@95837f, 2131296340=android.view.AbsSavedState$1@95837f, 2131296374=android.view.AbsSavedState$1@95837f, 2131296381=CompoundButton.SavedState{f3df4c checked=false}, 2131296427=com.google.android.material.button.MaterialButton$SavedState@6a76b95, 2131296429=com.google.android.material.button.MaterialButton$SavedState@24e64aa, 2131296430=android.view.AbsSavedState$1@95837f, 2131296435=com.google.android.material.button.MaterialButton$SavedState@388d89b, 2131296436=android.view.AbsSavedState$1@95837f, 2131296452=android.view.AbsSavedState$1@95837f, 2131296474=android.view.AbsSavedState$1@95837f, 2131296475=android.view.AbsSavedState$1@95837f, 2131296491=android.view.AbsSavedState$1@95837f, 2131296494=androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState@625a438, 2131296555=android.view.AbsSavedState$1@95837f, 2131296556=android.view.AbsSavedState$1@95837f, 2131296557=android.view.AbsSavedState$1@95837f, 2131296559=android.view.AbsSavedState$1@95837f, 2131296566=ExtendableSavedState{1602c11 states={expandableWidgetHelper=Bundle[{expanded=false, expandedComponentIdHint=0}]}}, 2131296567=android.view.AbsSavedState$1@95837f, 2131296568=android.view.AbsSavedState$1@95837f, 2131296571=com.google.android.material.button.MaterialButton$SavedState@9862176, 2131296572=android.view.AbsSavedState$1@95837f, 2131296573=android.view.AbsSavedState$1@95837f, 2131296576=android.view.AbsSavedState$1@95837f, 2131296579=android.view.AbsSavedState$1@95837f, 2131296625=android.view.AbsSavedState$1@95837f, 2131296632=android.view.AbsSavedState$1@95837f, 2131296633=android.view.AbsSavedState$1@95837f, 2131296634=android.view.AbsSavedState$1@95837f, 2131296635=android.view.AbsSavedState$1@95837f, 2131296636=android.view.AbsSavedState$1@95837f, 2131296649=android.view.AbsSavedState$1@95837f, 2131296714=android.view.AbsSavedState$1@95837f, 2131296754=android.view.AbsSavedState$1@95837f, 2131296765=android.view.AbsSavedState$1@95837f, 2131296823=android.view.AbsSavedState$1@95837f, 2131296824=android.view.AbsSavedState$1@95837f, 2131296829=android.view.AbsSavedState$1@95837f, 2131296865=android.view.AbsSavedState$1@95837f, 2131296907=android.view.AbsSavedState$1@95837f, 2131296908=android.view.AbsSavedState$1@95837f, 2131296909=android.view.AbsSavedState$1@95837f, 2131296910=androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState@3926377, 2131296911=android.view.AbsSavedState$1@95837f, 2131296912=android.view.AbsSavedState$1@95837f, 2131296913=android.view.AbsSavedState$1@95837f, 2131296914=android.view.AbsSavedState$1@95837f, 2131296915=android.view.AbsSavedState$1@95837f, 2131296916=android.view.AbsSavedState$1@95837f, 2131296917=android.view.AbsSavedState$1@95837f, 2131296926=android.view.AbsSavedState$1@95837f, 2131296928=android.view.AbsSavedState$1@95837f, 2131296933=android.view.AbsSavedState$1@95837f, 2131296946=android.view.AbsSavedState$1@95837f, 2131296955=ScrollView.SavedState{4accbe4 scrollPosition=0}, 2131296993=CompoundButton.SavedState{a0a784d checked=true}, 2131296994=android.view.AbsSavedState$1@95837f, 2131297006=android.view.AbsSavedState$1@95837f, 2131297024=android.view.AbsSavedState$1@95837f, 2131297035=android.widget.ProgressBar$SavedState@faadf02, 2131297036=android.view.AbsSavedState$1@95837f, 2131297038=android.view.AbsSavedState$1@95837f, 2131297040=android.widget.ProgressBar$SavedState@93fc013, 2131297041=android.view.AbsSavedState$1@95837f, 2131297042=android.view.AbsSavedState$1@95837f, 2131297043=android.view.AbsSavedState$1@95837f, 2131297044=android.view.AbsSavedState$1@95837f, 2131297047=TextView.SavedState{e5cc250 start=0 end=0 text=}, 2131297052=com.google.android.material.button.MaterialButton$SavedState@a934c49, 2131297053=android.widget.ProgressBar$SavedState@b6be94e, 2131297075=android.view.AbsSavedState$1@95837f, 2131297076=android.view.View$BaseSavedState@e5c4a6f, 2131297077=android.view.AbsSavedState$1@95837f, 2131297078=android.view.AbsSavedState$1@95837f, 2131297079=android.view.AbsSavedState$1@95837f, 2131297080=android.view.AbsSavedState$1@95837f, 2131297081=android.view.AbsSavedState$1@95837f, 2131297082=android.view.AbsSavedState$1@95837f, 2131297085=CompoundButton.SavedState{cd3b37c checked=false}, 2131297107=android.view.AbsSavedState$1@95837f, 2131297129=android.view.AbsSavedState$1@95837f, 2131297176=com.google.android.material.button.MaterialButton$SavedState@4bb6405, 2131297183=android.view.AbsSavedState$1@95837f, 2131297187=com.google.android.material.button.MaterialButton$SavedState@d214c5a, 2131297190=android.view.AbsSavedState$1@95837f, 2131297192=android.view.AbsSavedState$1@95837f, 2131297244=android.view.AbsSavedState$1@95837f, 2131297247=android.view.AbsSavedState$1@95837f, 2131297248=android.view.AbsSavedState$1@95837f, 2131297249=android.view.AbsSavedState$1@95837f, 2131297250=android.view.AbsSavedState$1@95837f, 2131297251=android.view.AbsSavedState$1@95837f, 2131297254=android.view.AbsSavedState$1@95837f, 2131297255=android.view.AbsSavedState$1@95837f, 2131297263=androidx.appcompat.widget.Toolbar$SavedState@40d1e8b, 2131297264=android.view.AbsSavedState$1@95837f, 2131297266=androidx.appcompat.widget.Toolbar$SavedState@3668b68, 2131297269=android.view.AbsSavedState$1@95837f, 2131297270=android.view.AbsSavedState$1@95837f, 2131297274=CompoundButton.SavedState{b933b81 checked=false}, 2131297275=android.view.AbsSavedState$1@95837f, 2131297276=androidx.recyclerview.widget.RecyclerView$SavedState@97d426, 2131297288=android.view.AbsSavedState$1@95837f, 2131297289=android.view.AbsSavedState$1@95837f, 2131297310=android.view.AbsSavedState$1@95837f, 2131297373=CompoundButton.SavedState{ead1867 checked=false}, 2131297387=android.view.AbsSavedState$1@95837f, 2131297392=android.view.AbsSavedState$1@95837f}}], POWER_SAVE_DISCLAIMER_SHOWN=false, android:lastAutofillId=1073741830, android:fragments=android.app.FragmentManagerState@3ccf614}]
+07-16 10:50:51.141 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true
+07-16 10:50:52.120 (main) D/LocationState: LocationHelper.java:99 onSatelliteStatusChanged(): total = 4 used = 3 fixed = true

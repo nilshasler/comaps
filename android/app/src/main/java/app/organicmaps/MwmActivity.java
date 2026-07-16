@@ -1130,14 +1130,16 @@ public class MwmActivity extends BaseMwmFragmentActivity
     mPowerSaveDisclaimerShown = savedInstanceState.getBoolean(POWER_SAVE_DISCLAIMER_SHOWN, false);
   }
 
-  private void rebuildLastRoute()
+  public void rebuildLastRoute()
   {
+    Logger.d(TAG, "rebuildLastRoute");
     RoutingController.get().attach(this);
     rebuildLastRouteInternal();
   }
 
   private void rebuildLastRouteInternal()
   {
+    Logger.d(TAG, "rebuildLastRouteInternal " + mRoutingPlanInplaceController);
     if (mRoutingPlanInplaceController == null)
       return;
 
