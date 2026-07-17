@@ -187,7 +187,7 @@ public class RoutingController
 
   private void setState(State newState)
   {
-    Logger.d(TAG, "[S] State: " + mState + " -> " + newState + ", BuildState: " + mBuildState);
+    Logger.d(TAG, "[S] State: " + mState + " -> " + newState + ", BuildState: " + mBuildState + mContainer);
     mState = newState;
 
     if (mContainer != null)
@@ -196,7 +196,7 @@ public class RoutingController
 
   private void setBuildState(BuildState newState)
   {
-    Logger.d(TAG, "[B] State: " + mState + ", BuildState: " + mBuildState + " -> " + newState);
+    Logger.d(TAG, "[B] State: " + mState + ", BuildState: " + mBuildState + " -> " + newState + mContainer);
     mBuildState = newState;
 
     final MapObject startPoint = getStartPoint();

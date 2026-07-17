@@ -1471,6 +1471,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
   public void updateMenu()
   {
     final RoutingController controller = RoutingController.get();
+    
+    Logger.d(TAG, "isNav: " + controller.isNavigating() + " isBuilt " + controller.isBuilt() + ", planning: " + controller.isPlanning() + controller.isBuilding() + controller.isErrorEncountered() + "fs " + isFullscreen());
 
     if (controller.isNavigating())
     {
