@@ -5,6 +5,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout; // Match your root layout type
+import app.organicmaps.sdk.util.log.Logger;
+
 
 public class SpyView extends LinearLayout {
 
@@ -32,12 +34,12 @@ public class SpyView extends LinearLayout {
         }
 
         // Passing a new Exception() forces Logcat to print the full execution stack trace
-        Log.d("SpyView", "Root view visibility changed to " + visibilityString, new Exception("Visibility Stacktrace"));
+        Logger.d("SpyView", "Root view visibility changed to " + visibilityString, new Exception("Visibility Stacktrace"));
     }
 
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
-        Log.d("SpyView", "Root view was DETACHED from window!", new Exception("Detachment Stacktrace"));
+        Logger.d("SpyView", "Root view was DETACHED from window!", new Exception("Detachment Stacktrace"));
     }
 }
