@@ -61,6 +61,7 @@ public class RoutingPlanInplaceController extends RoutingPlanController
   @Nullable
   private ValueAnimator animateFrame(final boolean show, final @Nullable Runnable completion)
   {
+    Logger.d(TAG, "animateFrame show=" + show + " height=" + checkFrameHeight() +" vis=" + UiUtils.isVisible(getFrame()));
     if (!checkFrameHeight())
     {
       getFrame().post(() -> animateFrame(show, completion));
