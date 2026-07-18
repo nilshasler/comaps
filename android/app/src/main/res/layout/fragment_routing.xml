@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<aapp.organicmaps.routing.SpyView
   xmlns:android="http://schemas.android.com/apk/res/android"
   style="@style/MwmWidget.Floating"
   android:layout_width="match_parent"
@@ -46,4 +46,4 @@
     android:visibility="gone"
     android:layout_width="match_parent"
     android:layout_height="48dp"/>
-</LinearLayout>
+</app.organicmaps.routing.SpyView>
