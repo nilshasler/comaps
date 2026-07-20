@@ -33,7 +33,7 @@ public class RoutingPlanInplaceController extends RoutingPlanController
   private static final String TAG = RoutingPlanInplaceController.class.getSimpleName();
   public void show(final boolean show)
   {
-    Logger.d(TAG, "show=" + show + " mAnimator=" + mAnimator);
+    Logger.d(TAG, "show=" + show + " mAnimator=" + mAnimator, new Exception("Visibility Stacktrace"));
     if (mAnimator != null)
     {
       mAnimator.cancel();
