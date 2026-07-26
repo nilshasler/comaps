@@ -1,9 +1,11 @@
 package app.organicmaps.routing;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.LinearLayout; // Match your root layout type
 import app.organicmaps.sdk.util.log.Logger;
 
