@@ -46,6 +46,13 @@ public class SpyView extends LinearLayout {
     }
 
   @Override
+  protected void onWindowVisibilityChanged(int visibility)
+  {
+    super.onWindowVisibilityChanged(visibility);
+    Logger.d("SpyView", "Window visibility changed to: " + visibility, new Exception("Detachment Stacktrace"));
+  }
+
+@Override
   protected void onDraw(Canvas canvas) {
       super.onDraw(canvas);
       
