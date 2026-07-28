@@ -1491,7 +1491,11 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (controller.isPlanning() || controller.isBuilding() || controller.isErrorEncountered())
     {
       if (showAddStartOrFinishFrame(controller, true))
+      {
+        Logger.d(TAG, "not show start / finish frame");
+        showMainMenu(true);
         return;
+      }
 
       if (controller.isPlanning())
       {
