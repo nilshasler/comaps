@@ -1485,6 +1485,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (controller.isBuilt())
     {
       showMainMenu(true);
+      Logger.d(TAG, "show menu: built");
       return;
     }
 
@@ -1492,18 +1493,21 @@ public class MwmActivity extends BaseMwmFragmentActivity
     {
       if (showAddStartOrFinishFrame(controller, true))
       {
-        Logger.d(TAG, "not show start / finish frame");
-        showMainMenu(true);
+        Logger.d(TAG, "hide menu: start / finish frame");
         return;
       }
 
       if (controller.isPlanning())
       {
+        Logger.d(TAG, "show menu: planning");
         mMainMenu.setState(MainMenu.State.ROUTE_PREPARE, isFullscreen());
         return;
       }
+      Logger.d(TAG, "show menu: building");
+        mMainMenu.setState(MainMenu.State.ROUTE_PREPARE, isFullscreen());
     }
 
+    Logger.d(TAG, "hide menu: menu mode");
     mMainMenu.setState(MainMenu.State.MENU, isFullscreen());
   }
 
