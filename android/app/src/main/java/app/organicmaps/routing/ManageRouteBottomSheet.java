@@ -140,7 +140,7 @@ public class ManageRouteBottomSheet
       for (int pos = 1; pos < newRoutePoints.size() - 1; pos++)
         Framework.addRoutePoint(newRoutePoints.get(pos), false);
 
-      MwmApplication app = (MwmApplication) getContext().getApplication();
+      MwmApplication app = (MwmApplication) getContext().getApplicationContext();
       app.startHeartbeat();
       // Launch route planning.
       RoutingController.get().launchPlanning();
