@@ -1291,6 +1291,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
       try
       {
         super.onBackPressed();
+        stopHeartbeat();
       }
       catch (IllegalStateException e)
       {
@@ -1809,6 +1810,32 @@ public class MwmActivity extends BaseMwmFragmentActivity
             .setOnDismissListener(dialog -> mAlertDialog = null)
             .show();
   }
+
+    private Runnable heartbeatRunnable;
+
+    private void startHeartbeat() {
+        heartbeatRunnable = new Runnable() {
+            @Override
+            public void run() {
+                Logger.d("ThreadCheck", "Main thread is ALIVE at " + System.currentTimeMillis());
+                
+                // Re-queue itself every 100ms
+                mainHandler.postDelayed(this, 100); 
+            }
+        };
+
+        // Start it
+        mainHandler.post(heartbeatRunnable);
+    }
+
+    private void stopHeartbeat() {
+        if (heartbeatRunnable != null) {
+            // This cancels any pending posts in the queue
+            mainHandler.removeCallbacks(heartbeatRunnable);
+            heartbeatRunnable = null;
+            Logger.d("ThreadCheck", "Heartbeat stopped.");
+        }
+    }
 
   private boolean showRoutingDisclaimer()
   {

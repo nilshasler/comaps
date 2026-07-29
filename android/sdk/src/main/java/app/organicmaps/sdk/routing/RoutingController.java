@@ -316,7 +316,7 @@ public class RoutingController
 
   public void rebuildLastRoute()
   {
-    Logger.d(TAG, "launchPlanning state=" + mState + " buildState=" + mBuildState);
+    Logger.d(TAG, "rebuildLastRoute state=" + mState + " buildState=" + mBuildState);
 
     setState(State.NONE);
     setBuildState(BuildState.NONE);
