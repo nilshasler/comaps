@@ -18,6 +18,8 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Dialog;
 import android.app.PendingIntent;
+import android.os.Handler;
+import android.os.Looper;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.ColorStateList;
@@ -1811,6 +1813,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
             .show();
   }
 
+    private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private Runnable heartbeatRunnable;
 
     private void startHeartbeat() {
