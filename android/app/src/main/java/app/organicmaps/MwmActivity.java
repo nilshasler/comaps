@@ -1815,13 +1815,13 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private Runnable heartbeatRunnable;
-    private int lastHeartbeat = 0;
+    private long lastHeartbeat = 0;
 
     public void startHeartbeat() {
         heartbeatRunnable = new Runnable() {
             @Override
             public void run() {
-              int hb = System.currentTimeMillis();
+              long hb = System.currentTimeMillis();
                 Logger.d("ThreadCheck", "Main thread is ALIVE at " + hb + " AFTER " + (hb - lastHeartbeat));
                 lastHeartbeat = hb;
                 // Re-queue itself every 100ms
