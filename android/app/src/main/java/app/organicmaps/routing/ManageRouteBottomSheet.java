@@ -142,12 +142,12 @@ public class ManageRouteBottomSheet
         Framework.addRoutePoint(newRoutePoints.get(pos), false);
 
       MwmActivity act = (MwmActivity) getContext();
+      ((MwmActivity) getActivity()).launchPlanning();
       act.startHeartbeat();
-      v.post(() -> {
-        if (isAdded() && getActivity() instanceof MwmActivity) {
-        ((MwmActivity) getActivity()).launchPlanning();
-        }
-      });
+      // v.post(() -> {
+      //   if (isAdded() && getActivity() instanceof MwmActivity) {
+      //   }
+      // });
       // Launch route planning.
       // RoutingController.get().launchPlanning();
 

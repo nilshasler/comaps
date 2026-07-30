@@ -1137,6 +1137,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     Logger.d(TAG, "rebuildLastRoute");
     //if (isFullscreen())
       setFullscreen(false);
+    mRoutingPlanInplaceController.showRoutingOptionsView();
     RoutingController.get().attach(this);
     RoutingController.get().launchPlanning();
   }
