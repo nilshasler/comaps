@@ -143,8 +143,13 @@ public class ManageRouteBottomSheet
 
       MwmActivity act = (MwmActivity) getContext();
       act.startHeartbeat();
+      v.post(() -> {
+        if (isAdded() && getActivity() instanceof MwmActivity) {
+        ((MwmActivity) getActivity()).launchPlanning();
+        }
+      });
       // Launch route planning.
-      RoutingController.get().launchPlanning();
+      // RoutingController.get().launchPlanning();
 
       // Dismiss (close) manage route bottom sheet.
       dismiss();
