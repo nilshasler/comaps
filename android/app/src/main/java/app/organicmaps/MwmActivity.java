@@ -1814,23 +1814,30 @@ public class MwmActivity extends BaseMwmFragmentActivity
   }
 
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
-    private Runnable heartbeatRunnable;
+    private Runnable heartbeatRunnable = null;
     private long lastHeartbeat = 0;
 
     public void startHeartbeat() {
-        heartbeatRunnable = new Runnable() {
-            @Override
-            public void run() {
-              long hb = System.currentTimeMillis();
-                Logger.d("ThreadCheck", "Main thread is ALIVE at " + hb + " AFTER " + (hb - lastHeartbeat));
-                lastHeartbeat = hb;
-                // Re-queue itself every 100ms
-                mainHandler.postDelayed(this, 100); 
-            }
-        };
+      if (heartbeatRunnable != null)
+        return;
+      long hb = System.currentTimeMillis();
+      Logger.d("ThreadCheck", "Heartbeat started at " + hb);
+      heartbeatRunnable = new Runnable() {
+        @Override
+        public void run() {
+          long hb = System.currentTimeMillis();
+          if (hb - lastHeartbeat > 200)
+            Logger.d("ThreadCheck", "Main thread is DELAYED at " + hb + " AFTER " + (hb - lastHeartbeat));
+          else
+            Logger.d("ThreadCheck", "Main thread is ALIVE at " + hb + " AFTER " + (hb - lastHeartbeat));
+          lastHeartbeat = hb;
+          // Re-queue itself every 100ms
+          mainHandler.postDelayed(this, 100); 
+        }
+      };
 
         // Start it
-        mainHandler.post(heartbeatRunnable);
+      mainHandler.post(heartbeatRunnable);
     }
 
     private void stopHeartbeat() {
@@ -1838,7 +1845,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
             // This cancels any pending posts in the queue
             mainHandler.removeCallbacks(heartbeatRunnable);
             heartbeatRunnable = null;
-            Logger.d("ThreadCheck", "Heartbeat stopped.");
+            long hb = System.currentTimeMillis();
+            Logger.d("ThreadCheck", "Heartbeat stopped at " + hb);
         }
     }
 
