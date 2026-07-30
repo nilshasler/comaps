@@ -1815,7 +1815,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
     private final Handler mainHandler = new Handler(Looper.getMainLooper());
     private Runnable heartbeatRunnable;
-    private int = lastHeartbeat;
+    private int lastHeartbeat = 0;
 
     public void startHeartbeat() {
         heartbeatRunnable = new Runnable() {
