@@ -164,7 +164,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
   public final ActivityResultLauncher<Intent> startRoutingOptionsForResult =
       registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), activityResult -> {
         if (activityResult.getResultCode() == Activity.RESULT_OK)
-          rebuildLastRoute();
+          launchPlanning();
       });
 
   private static final String MAIN_MENU_ID = "MAIN_MENU_BOTTOM_SHEET";
@@ -1132,6 +1132,13 @@ public class MwmActivity extends BaseMwmFragmentActivity
     mPowerSaveDisclaimerShown = savedInstanceState.getBoolean(POWER_SAVE_DISCLAIMER_SHOWN, false);
   }
 
+  public void launchPlanning()
+  {
+    Logger.d(TAG, "rebuildLastRoute");
+    RoutingController.get().attach(this);
+    RoutingController.get().launchPlanning();
+  }
+
   public void rebuildLastRoute()
   {
     Logger.d(TAG, "rebuildLastRoute");
@@ -1828,8 +1835,8 @@ public class MwmActivity extends BaseMwmFragmentActivity
           long hb = System.currentTimeMillis();
           if (hb - lastHeartbeat > 200)
             Logger.d("ThreadCheck", "Main thread is DELAYED at " + hb + " AFTER " + (hb - lastHeartbeat));
-          else
-            Logger.d("ThreadCheck", "Main thread is ALIVE at " + hb + " AFTER " + (hb - lastHeartbeat));
+          // else
+          //   Logger.d("ThreadCheck", "Main thread is ALIVE at " + hb + " AFTER " + (hb - lastHeartbeat));
           lastHeartbeat = hb;
           // Re-queue itself every 100ms
           mainHandler.postDelayed(this, 100); 

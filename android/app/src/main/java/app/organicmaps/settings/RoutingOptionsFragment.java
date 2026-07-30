@@ -181,7 +181,6 @@ public class RoutingOptionsFragment extends BaseMwmToolbarFragment
     else
     {
       requireActivity().setResult(Activity.RESULT_OK);
-      RoutingController.get().rebuildLastRoute();
     }
 
     return super.onBackPressed();
