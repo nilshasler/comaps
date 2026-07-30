@@ -16,6 +16,7 @@ import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import app.organicmaps.MwmActivity;
 import app.organicmaps.MwmApplication;
 import app.organicmaps.R;
 import app.organicmaps.sdk.Framework;
@@ -140,8 +141,8 @@ public class ManageRouteBottomSheet
       for (int pos = 1; pos < newRoutePoints.size() - 1; pos++)
         Framework.addRoutePoint(newRoutePoints.get(pos), false);
 
-      MwmApplication app = (MwmApplication) getContext().getApplicationContext();
-      app.startHeartbeat();
+      MwmActivity act = (MwmActivity) getContext();
+      act.startHeartbeat();
       // Launch route planning.
       RoutingController.get().launchPlanning();
 
