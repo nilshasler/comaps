@@ -1164,7 +1164,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
     if (mRoutingPlanInplaceController == null)
       return;
 
-    mRoutingPlanInplaceController.hideRoutingOptionsView();
+    mRoutingPlanInplaceController.showRoutingOptionsView();
     RoutingController.get().rebuildLastRoute();
   }
 
@@ -1641,6 +1641,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
   @Override
   public void showRoutePlan(boolean show, @Nullable Runnable completionListener)
   {
+    Logger.d(TAG, "show=" + show + " isTablet=" + mIsTabletLayout);
     if (show)
     {
       if (mIsTabletLayout)
@@ -1657,6 +1658,7 @@ public class MwmActivity extends BaseMwmFragmentActivity
       else
       {
         mRoutingPlanInplaceController.show(true);
+        mRoutingPlanInplaceController.showRoutingOptionsView();
         if (completionListener != null)
           completionListener.run();
       }
