@@ -1134,12 +1134,19 @@ public class MwmActivity extends BaseMwmFragmentActivity
 
   public void launchPlanning()
   {
-    Logger.d(TAG, "rebuildLastRoute");
-    //if (isFullscreen())
+    Logger.d(TAG, "launch planning");
+    closeFloatingPanels();
+    if (isFullscreen())
       setFullscreen(false);
-    mRoutingPlanInplaceController.showRoutingOptionsView();
-    RoutingController.get().attach(this);
+
+    // Calls onMyPositionModeChanged(PENDING_POSITION).
+    LocationState.nativeStartPendingPositionMode();
+
+    MapObject startPoint = MwmApplication.from(this).getLocationHelper().getMyPosition();
     RoutingController.get().launchPlanning();
+
+    // TODO: check for tablet.
+    closePlacePage();
   }
 
   public void rebuildLastRoute()
