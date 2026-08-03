@@ -72,9 +72,9 @@ bool CheckRoute(Params const & params, ReferenceRoutes && referenceRoutes)
   return CheckWaypoints(params, std::move(referenceRoutes)) == 1.0;
 }
 
-bool CheckCarRoute(ms::LatLon const & start, ms::LatLon const & finish, ReferenceRoutes && referenceTracks)
+bool CheckRoute(ms::LatLon const & start, ms::LatLon const & finish, ReferenceRoutes && referenceTracks, routing::VehicleType vehicle)
 {
-  Params const params(routing::VehicleType::Car, start, finish);
+  Params const params(vehicle, start, finish);
   return CheckRoute(params, std::move(referenceTracks));
 }
 }  // namespace routing_quality

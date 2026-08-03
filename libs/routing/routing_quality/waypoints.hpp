@@ -31,5 +31,8 @@ Similarity CheckWaypoints(Params const & params, ReferenceRoutes && referenceRou
 /// \returns true if route from |start| to |finish| fully conforms one of |candidates|
 /// and false otherwise.
 bool CheckRoute(Params const & params, ReferenceRoutes && referenceRoutes);
-bool CheckCarRoute(ms::LatLon const & start, ms::LatLon const & finish, ReferenceRoutes && referenceRoutes);
+bool CheckRoute(ms::LatLon const & start, ms::LatLon const & finish, ReferenceRoutes && referenceRoutes, routing::VehicleType vehicle);
+bool CheckCarRoute(ms::LatLon const & start, ms::LatLon const & finish, ReferenceRoutes && referenceRoutes) { CheckRoute(start, finish, referenceRoutes, routing::VehicleType::Car);
+bool CheckBicycleRoute(ms::LatLon const & start, ms::LatLon const & finish, ReferenceRoutes && referenceRoutes) { CheckRoute(start, finish, referenceRoutes, routing::VehicleType::Bicycle);
+bool CheckPedestrianRoute(ms::LatLon const & start, ms::LatLon const & finish, ReferenceRoutes && referenceRoutes) { CheckRoute(start, finish, referenceRoutes, routing::VehicleType::Pedestrian);
 }  // namespace routing_quality

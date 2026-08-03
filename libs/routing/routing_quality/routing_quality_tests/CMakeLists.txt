@@ -8,6 +8,7 @@ set(SRC
   leaps_postprocessing_tests.cpp
   passby_roads_tests.cpp
   waypoints_tests.cpp
+  bicycle_tests.cpp
 )
 
 omim_add_test(${PROJECT_NAME} ${SRC})
