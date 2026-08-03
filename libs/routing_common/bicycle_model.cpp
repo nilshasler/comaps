@@ -107,7 +107,7 @@ HighwayBasedSpeeds const kGravelSpeeds = {
     {HighwayType::HighwayPath, InOutCitySpeedKMpH(SpeedKMpH(10.0, 10.0), SpeedKMpH(12.0, 12.0))},
     {HighwayType::HighwayBridleway, InOutCitySpeedKMpH(SpeedKMpH(4.0, 10.0), SpeedKMpH(5.0, 12.0))},
 
-    {HighwayType::HighwayCycleway, InOutCitySpeedKMpH(SpeedKMpH(10.0, 18.0), SpeedKMpH(14.0, 20.0))},
+    {HighwayType::HighwayCycleway, InOutCitySpeedKMpH(SpeedKMpH(10.0, 18.0), SpeedKMpH(15.0, 20.0))},
     {HighwayType::HighwayLivingStreet, InOutCitySpeedKMpH(SpeedKMpH(7.0, 10.0), SpeedKMpH(10.0, 12.0))},
     // Steps have obvious inconvenience of a bike in hands.
     {HighwayType::HighwaySteps, InOutCitySpeedKMpH(SpeedKMpH(1.0, 1.0))},
