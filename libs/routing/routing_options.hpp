@@ -45,9 +45,9 @@ public:
   
   using OptionType = std::underlying_type_t<Option>;
 
-  static constexpr OptionType kPedestrianOptionsMask = Ferry + Dirty + Steps + Paved;
-  static constexpr OptionType kBicycleOptionsMask = Ferry + Dirty + Steps + Paved;
-  static constexpr OptionType kVehicleOptionsMask = Toll + Motorway + Ferry + Dirty + Paved;
+  static constexpr OptionType kPedestrianOptionsMask = AvoidFerry + AvoidDirty + AvoidSteps + AvoidPaved;
+  static constexpr OptionType kBicycleOptionsMask = AvoidFerry + AvoidDirty + AvoidSteps + AvoidPaved;
+  static constexpr OptionType kVehicleOptionsMask = AvoidToll + AvoidMotorway + AvoidFerry + AvoidDirty + AvoidPaved;
 
   RoutingOptions() = default;
   explicit RoutingOptions(OptionType mask, routing::VehicleType type) : m_options(mask), m_vehicle(type) {}
