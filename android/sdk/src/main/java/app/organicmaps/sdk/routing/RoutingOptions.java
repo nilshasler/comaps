@@ -62,21 +62,19 @@ public final class RoutingOptions
 
   public static void setTransportSubMode(@NonNull TransportSubMode mode)
   {
-    if (router == Router.Ruler)
-      return false;
     int m;
     int router = -1;
     switch (mode)
     {
     default:
-    case TransportSubMode.CyclingDefault: m = 0; router = 1; break;
-    case TransportSubMode.CyclingRoad: m = 1 << 11; router = 1; break;
-    case TransportSubMode.CyclingGravel: m = 2 << 11; router = 1; break;
-    case TransportSubMode.CyclingMountainBike: m = 3 << 11; router = 1; break;
-    case TransportSubMode.WalkingDefault: m = 0; router = 0; break;
-    case TransportSubMode.WalkingHiking: m = 1 << 11; router = 0; break;
-    case TransportSubMode.WalkingHardHiking: m = 2 << 11; router = 0; break;
-    case TransportSubMode.WalkingStrolling: m = 3 << 11; router = 0; break;
+    case CyclingDefault: m = 0; router = 1; break;
+    case CyclingRoad: m = 1 << 11; router = 1; break;
+    case CyclingGravel: m = 2 << 11; router = 1; break;
+    case CyclingMountainBike: m = 3 << 11; router = 1; break;
+    case WalkingDefault: m = 0; router = 0; break;
+    case WalkingHiking: m = 1 << 11; router = 0; break;
+    case WalkingHardHiking: m = 2 << 11; router = 0; break;
+    case WalkingStrolling: m = 3 << 11; router = 0; break;
     }
     if (router != -1)
       nativeSetTransportSubMode(m, router);
