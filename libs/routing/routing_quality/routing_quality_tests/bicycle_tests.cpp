@@ -16,6 +16,22 @@ UNIT_TEST(Bicycle_AvoidCrossingMajorRoads_Netherlands)
        ());
 }
 
+// in this case the cycleway with fewer crossings should be preferred
+UNIT_TEST(Bicycle_AvoidRoadCrossings_Netherlands)
+{
+  TEST(CheckBicycleRoute({52.36563, 6.456203} /* start */, {52.365251, 6.483756} /* finish */,
+                     {{{52.365341, 6.481678}}} /* reference track */),
+       ());
+}
+
+// 
+UNIT_TEST(Bicycle_Gates_Italy)
+{
+  TEST(CheckBicycleRoute({45.681458, 9.444558} /* start */, {45.686259, 9.463326} /* finish */,
+                     {{{45.682428, 9.452505}}} /* reference track */),
+       ());
+}
+
 
 
 } // namespace
