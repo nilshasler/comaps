@@ -42,6 +42,7 @@ public final class RoutingOptions
     {
       switch (mode)
       {
+      default:
       case 0: return TransportSubMode.CyclingDefault;
       case 1 << 11: return TransportSubMode.CyclingRoad;
       case 2 << 11: return TransportSubMode.CyclingGravel;
@@ -52,12 +53,15 @@ public final class RoutingOptions
     {
       switch (mode)
       {
+      default:
       case 0: return TransportSubMode.WalkingDefault;
       case 1 << 11: return TransportSubMode.WalkingHiking;
       case 2 << 11: return TransportSubMode.WalkingHardHiking;
       case 3 << 11: return TransportSubMode.WalkingStrolling;
       }
     }
+    
+    return TransportSubMode.DrivingDefault;
   }
 
   public static void setTransportSubMode(@NonNull TransportSubMode mode)
