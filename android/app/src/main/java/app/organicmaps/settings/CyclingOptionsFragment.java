@@ -42,15 +42,15 @@ public class CyclingOptionsFragment extends Fragment
   {
     TransportSubMode mode = RoutingOptions.getTransportSubMode();
     
-    MaterialRadioButton defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
-    MaterialRadioButton gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
+    MaterialSwitch defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
+    MaterialSwitch gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
 
     View.OnClickListener modeClickListener = v -> {
       String m = (String)v.getTag(); 
         
       RoutingOptions.setTransportSubMode(TransportSubMode.valueOf(m));
 
-      defaultCyclingBtn.setChecked(defaultCyclingBtn.getTag() ==m);
+      defaultCyclingBtn.setChecked(defaultCyclingBtn.getTag() == m);
       gravelCyclingBtn.setChecked(gravelCyclingBtn.getTag() == m);
     };
     defaultCyclingBtn.setChecked(mode == TransportSubMode.CyclingDefault);
