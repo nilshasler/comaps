@@ -61,7 +61,7 @@ public final class RoutingOptions
       }
     }
     
-    return TransportSubMode.DrivingDefault;
+    // unreachable
   }
 
   public static void setTransportSubMode(@NonNull TransportSubMode mode)
