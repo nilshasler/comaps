@@ -6,7 +6,6 @@ import static app.organicmaps.sdk.editor.data.Language.DEFAULT_LANG_CODE;
 import static app.organicmaps.util.Utils.isAndroidAutoSupported;
 
 import android.annotation.SuppressLint;
->>>>>>> 2c37e7393 ([routing] [android] options per transport type)
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
