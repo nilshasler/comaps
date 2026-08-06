@@ -64,7 +64,7 @@ public:
   void SetWalkingMode(OptionType mode);
   OptionType GetWalkingMode() const { return (m_options & SubModeMask); }
 
-  Option GetTransportSubMode() const { return (m_options & SubModeMask); }
+  Option GetTransportSubMode() const { return (Option)(m_options & SubModeMask); }
   void SetTransportSubMode(Option mode);
 
   void SetVehicleType(VehicleType vt) { m_vehicle = vt; }
