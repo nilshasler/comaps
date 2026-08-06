@@ -101,16 +101,16 @@ RoutingOptionsClassifier::RoutingOptionsClassifier()
 
       {{"hwtag", "toll"}, RoutingOptions::Option::Toll},
 
-      {{"route", "ferry"}, RoutingOptions::Option::Ferry},
+      {{"route", "ferry"}, RoutingOptions::Option::AvoidFerry},
 
-      {{"highway", "track"}, RoutingOptions::Option::Dirty},
-      {{"highway", "road"}, RoutingOptions::Option::Dirty},
-      {{"psurface", "unpaved_bad"}, RoutingOptions::Option::Dirty},
-      {{"psurface", "unpaved_good"}, RoutingOptions::Option::Dirty},
-      {{"highway", "steps"}, RoutingOptions::Option::Steps},
-      {{"highway", "ladder"}, RoutingOptions::Option::Steps},
-      {{"psurface", "paved_good"}, RoutingOptions::Option::Paved},
-      {{"psurface", "paved_bad"}, RoutingOptions::Option::Paved}};
+      {{"highway", "track"}, RoutingOptions::Option::AvoidDirty},
+      {{"highway", "road"}, RoutingOptions::Option::AvoidDirty},
+      {{"psurface", "unpaved_bad"}, RoutingOptions::Option::AvoidDirty},
+      {{"psurface", "unpaved_good"}, RoutingOptions::Option::AvoidDirty},
+      {{"highway", "steps"}, RoutingOptions::Option::AvoidSteps},
+      {{"highway", "ladder"}, RoutingOptions::Option::AvoidSteps},
+      {{"psurface", "paved_good"}, RoutingOptions::Option::AvoidPaved},
+      {{"psurface", "paved_bad"}, RoutingOptions::Option::AvoidPaved}};
 
   m_data.reserve(std::size(types));
   for (auto const & data : types)
@@ -138,17 +138,17 @@ RoutingOptions::Option ChooseMainRoutingOption(RoutingOptions options, bool isCa
   if (isCarRouter && options.Has(RoutingOptions::Option::Toll))
     return RoutingOptions::Option::Toll;
 
-  if (options.Has(RoutingOptions::Option::Ferry))
-    return RoutingOptions::Option::Ferry;
+  if (options.Has(RoutingOptions::Option::AvoidFerry))
+    return RoutingOptions::Option::AvoidFerry;
 
-  if (options.Has(RoutingOptions::Option::Dirty))
-    return RoutingOptions::Option::Dirty;
+  if (options.Has(RoutingOptions::Option::AvoidDirty))
+    return RoutingOptions::Option::AvoidDirty;
 
   if (options.Has(RoutingOptions::Option::Motorway))
     return RoutingOptions::Option::Motorway;
 
-  if (options.Has(RoutingOptions::Option::Steps))
-    return RoutingOptions::Option::Steps;
+  if (options.Has(RoutingOptions::Option::AvoidSteps))
+    return RoutingOptions::Option::AvoidSteps;
 
   if (options.Has(RoutingOptions::Option::AvoidPaved))
     return RoutingOptions::Option::AvoidPaved;
@@ -176,7 +176,7 @@ string DebugPrint(RoutingOptions const & routingOptions)
   append(RoutingOptions::Option::AvoidMotorway);
   append(RoutingOptions::Option::AvoidFerry);
   append(RoutingOptions::Option::AvoidDirty);
-  append(RoutingOptions::Option::Steps);
+  append(RoutingOptions::Option::AvoidSteps);
   append(RoutingOptions::Option::AvoidPaved);
 
   if (wasAppended)
@@ -195,7 +195,7 @@ string DebugPrint(RoutingOptions::Option type)
   case RoutingOptions::Option::AvoidMotorway: return "motorway";
   case RoutingOptions::Option::AvoidFerry: return "ferry";
   case RoutingOptions::Option::AvoidDirty: return "dirty";
-  case RoutingOptions::Option::Steps: return "steps";
+  case RoutingOptions::Option::AvoidSteps: return "steps";
   case RoutingOptions::Option::AvoidPaved: return "paved";
   case RoutingOptions::Option::Usual: return "usual";
   case RoutingOptions::Option::Max: return "max";
