@@ -40,7 +40,7 @@ public class CyclingOptionsFragment extends Fragment
 
   private void initViews(@NonNull View root)
   {
-    TransportSubMode mode = RoutingOptions.getTransportSubMode();
+    TransportSubMode mode = RoutingOptions.getTransportSubMode(Router.Bicycle);
     
     MaterialSwitch defaultCyclingBtn = root.findViewById(R.id.default_bicycle_btn);
     MaterialSwitch gravelCyclingBtn = root.findViewById(R.id.gravel_bicycle_btn);
