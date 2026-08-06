@@ -1,7 +1,5 @@
 package app.organicmaps.settings;
 
-<<<<<<< HEAD
-=======
 import static app.organicmaps.leftbutton.LeftButtonsHolder.DISABLE_BUTTON_CODE;
 import static app.organicmaps.sdk.editor.data.Language.AUTO_LANG_CODE;
 import static app.organicmaps.sdk.editor.data.Language.DEFAULT_LANG_CODE;
@@ -20,10 +18,6 @@ import androidx.preference.Preference;
 import app.organicmaps.BuildConfig;
 import app.organicmaps.R;
 import app.organicmaps.editor.ProfileActivity;
-<<<<<<< HEAD
-import app.organicmaps.help.HelpActivity;
-import app.organicmaps.sdk.editor.OsmOAuth;
-=======
 import app.organicmaps.leftbutton.LeftButton;
 import app.organicmaps.leftbutton.LeftButtonsHolder;
 import app.organicmaps.sdk.Framework;
@@ -49,7 +43,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
->>>>>>> 2c37e7393 ([routing] [android] options per transport type)
 
 public class SettingsPrefsFragment extends BaseXmlSettingsFragment
 {
@@ -63,8 +56,6 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
   public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState)
   {
     super.onViewCreated(view, savedInstanceState);
-<<<<<<< HEAD
-=======
 
     initStoragePrefCallbacks();
     initMeasureUnitsPrefsCallbacks();
@@ -197,7 +188,6 @@ public class SettingsPrefsFragment extends BaseXmlSettingsFragment
     }
     else
       pref.setSummary(R.string.not_signed_in);
->>>>>>> 2c37e7393 ([routing] [android] options per transport type)
   }
 
   @Override
