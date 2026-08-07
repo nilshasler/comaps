@@ -97,9 +97,9 @@ RoutingOptionsClassifier::RoutingOptionsClassifier()
   Classificator const & c = classif();
 
   pair<vector<string>, RoutingOptions::Option> const types[] = {
-      {{"highway", "motorway"}, RoutingOptions::Option::Motorway},
+      {{"highway", "motorway"}, RoutingOptions::Option::AvoidMotorway},
 
-      {{"hwtag", "toll"}, RoutingOptions::Option::Toll},
+      {{"hwtag", "toll"}, RoutingOptions::Option::AvoidToll},
 
       {{"route", "ferry"}, RoutingOptions::Option::AvoidFerry},
 
@@ -135,8 +135,8 @@ RoutingOptionsClassifier const & RoutingOptionsClassifier::Instance()
 
 RoutingOptions::Option ChooseMainRoutingOption(RoutingOptions options, bool isCarRouter)
 {
-  if (isCarRouter && options.Has(RoutingOptions::Option::Toll))
-    return RoutingOptions::Option::Toll;
+  if (isCarRouter && options.Has(RoutingOptions::Option::AvoidToll))
+    return RoutingOptions::Option::AvoidToll;
 
   if (options.Has(RoutingOptions::Option::AvoidFerry))
     return RoutingOptions::Option::AvoidFerry;
@@ -144,8 +144,8 @@ RoutingOptions::Option ChooseMainRoutingOption(RoutingOptions options, bool isCa
   if (options.Has(RoutingOptions::Option::AvoidDirty))
     return RoutingOptions::Option::AvoidDirty;
 
-  if (options.Has(RoutingOptions::Option::Motorway))
-    return RoutingOptions::Option::Motorway;
+  if (options.Has(RoutingOptions::Option::AvoidMotorway))
+    return RoutingOptions::Option::AvoidMotorway;
 
   if (options.Has(RoutingOptions::Option::AvoidSteps))
     return RoutingOptions::Option::AvoidSteps;
